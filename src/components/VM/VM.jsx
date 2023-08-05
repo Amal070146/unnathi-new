@@ -1,5 +1,6 @@
 import React from "react";
 import "./VM.css";
+import JOIN from '../../components/JoinUs/JoinUs'
 
 const VM = () => {
   return (
@@ -116,6 +117,7 @@ const VM = () => {
           </div>
         </div>
       </div>
+      <JOIN />
       <div className="collaborate-wrap">
         <div className="collaborator-header">
           <h1>

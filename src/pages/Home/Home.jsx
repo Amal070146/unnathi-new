@@ -4,7 +4,6 @@ import Navbar from "../../components/Navbar/Navbar";
 import NGO from "../../components/NGO/NGO";
 import About from "../../components/About/About";
 import VM from "../../components/VM/VM";
-import Curious from "../../components/JoinUs/JoinUs";
 import Gallery from "../../components/Testimonial/Gallery";
 import Map from "../../components/Map/Map";
 import Footer from "../../components/Footer/Footer";
@@ -24,8 +23,9 @@ const Home = () => {
       </div>
       <NGO />
       <About />
+
       <VM />
-      <Curious />
+
       {/* <Gallery /> */}
 
       <Swiper />

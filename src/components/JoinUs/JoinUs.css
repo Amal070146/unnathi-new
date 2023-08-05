@@ -1,0 +1,118 @@
+.joinus-wrapper {
+  width: 100%;
+  height: 45vh;
+  min-height: 350px;
+  margin-top: 5%;
+  position: relative;
+}
+
+.joinus-bg-sect {
+  background-color: #fff6e0;
+  width: 100%;
+  height: 40vh;
+  min-height: 300px;
+}
+
+.joinus-content-wrapper {
+  display: flex;
+  position: absolute;
+  z-index: 5000;
+  top: -5%;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.joinus-content-wrapper a {
+  width: calc(100% / 6);
+  min-width: 200px;
+  height: 45vh;
+  min-height: 350px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: rgba(193, 11, 11, 0);
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #ffffff;
+  color: black;
+  border: 15px solid #fbba16;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #fbba16;
+  color: white;
+  transform: rotateY(180deg);
+  border: 15px solid #ffd56c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .joinus-wrapper {
+    height: 69vh;
+    min-height: 350px;
+    margin-top: 8%;
+  }
+
+  .joinus-bg-sect {
+    height: 63vh;
+    min-height: 300px;
+  }
+
+  .joinus-content-wrapper {
+    display: flex;
+    top: -5%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .joinus-content-wrapper a {
+    width: calc(100% / 3);
+
+    height: 25vh;
+    min-height: 280px;
+  }
+}
