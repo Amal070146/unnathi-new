@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap");
 body {
   margin: 0;
-  font-family: "Poppins", "Red Hat Text","MyFont";
+  font-family:  "Red Hat Text","MyFont";
   src: local("MyFont"), url("./fonts/rage.TTF") format("woff");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

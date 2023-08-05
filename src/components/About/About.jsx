@@ -5,13 +5,10 @@ import img from "../../assets/about-img.png";
 const About = () => {
   return (
     <div className="about-home-wrapper" id="ABOUT">
-      <div className="about-home-img-wrap">
-        <img src={img} alt="" />
-      </div>
       <div className="about-home-content-wrap">
         <h1>
-          <span className="color-font">What is</span> Unnathi
-          <span className="color-font">?</span>
+          <span className="about-header-bottonline">What is</span>
+          Unnathi ?
         </h1>
         <p>
           Unnathi (Kerala Empowerment Society) is an initiative of the
@@ -24,6 +21,9 @@ const About = () => {
           techniques and technologies that can cut red-tape and deliver results
           in the most transparent and democratic means.
         </p>
+      </div>
+      <div className="about-home-img-wrap">
+        <img src={img} alt="" />
       </div>
     </div>
   );
