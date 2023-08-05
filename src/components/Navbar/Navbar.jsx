@@ -90,7 +90,7 @@ const Navbar = () => {
           <a href="/">
             <img
               className="nav-logo"
-              style={{ width: navlogo ? "90px" : "140px" }}
+              style={{ width: navlogo ? "90px" : "150px" }}
               src={logo}
               alt=""
             />
