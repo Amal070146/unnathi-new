@@ -88,7 +88,12 @@ const Navbar = () => {
         </div>
         <div className="navbar-mob">
           <a href="/">
-            <img className="nav-logo" src={logo} alt="" />
+            <img
+              className="nav-logo"
+              style={{ width: navlogo ? "90px" : "140px" }}
+              src={logo}
+              alt=""
+            />
           </a>
           <button
             style={{ backgroundColor: "transparent", border: "none" }}
