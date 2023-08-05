@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar-wrapper">
-      <div className="navbar">
+      <div className="navbar" style={{ background: navlogo ? "rgba(255,255,255,0.7)" : "transparent" }}>
         <div className="navbar-desk">
           {navContent.slice(0, 3).map((content, i) => (
             <a href={`#${content}`} key={i.toString() + content}>
