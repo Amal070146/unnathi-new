@@ -7,7 +7,6 @@ import img4 from "../../assets/gallery/img4.png";
 import img5 from "../../assets/gallery/img5.png";
 
 const Gallery = () => {
-
   return (
     <div className="slider-container">
       <div className="slider-wrapper">

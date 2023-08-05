@@ -1,56 +1,81 @@
-.about-home-wrapper{
-    display: flex;
-    padding: 8vh 15vw;
-    gap: 5%;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #FFF6E1;
+.about-home-wrapper {
+  display: flex;
+  padding: 8vh 13vw;
+  gap: 5%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff6e1;
 }
 
-.about-home-img-wrap{
-    width:50%;
+.about-home-img-wrap {
+  width: 50%;
+  height: 100%;
 }
-.about-home-img-wrap >img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.about-home-img-wrap > img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
 }
-.about-home-content-wrap{
-    width: 50%;
+.about-home-content-wrap {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
 }
 
-.about-home-content-wrap h1{
-font-size: 70px;
-font-weight: 600;
+.about-home-content-wrap h1 {
+  font-size: 62px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1;
 }
-.about-home-content-wrap p{
-    font-size: 20px;
+.about-home-content-wrap p {
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.4;
 }
 
 @media screen and (max-width: 1450px) {
-.about-home-wrapper{
+  .about-home-wrapper {
     padding: 3vh 6vw;
     gap: 3%;
-}
-.about-home-content-wrap p{
-    font-size: 17px;
-}
+  }
+  .about-home-content-wrap p {
+    font-size: 16px;
+  }
+  .about-home-img-wrap > img {
+    height: 370px;
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 970px) {
-.about-home-content-wrap h1{
-font-size: 40px;
-}
-.about-home-content-wrap p{
+  .about-home-content-wrap h1 {
+    font-size: 40px;
+  }
+  .about-home-content-wrap p {
     font-size: 14px;
+  }
+  .about-home-img-wrap > img {
+    height: 330px;
+    object-fit: cover;
+  }
 }
-}
-@media screen and (max-width: 760px){
-.about-home-wrapper{
+@media screen and (max-width: 760px) {
+  .about-home-wrapper {
     flex-direction: column;
-    gap: 20px;
-}
-.about-home-img-wrap,.about-home-content-wrap{
+    gap: 15px;
+  }
+  .about-home-img-wrap,
+  .about-home-content-wrap {
     width: 90%;
-}
+  }
+  .about-home-img-wrap > img {
+    height: 100%;
+    object-fit: contain;
+  }
+  .about-home-content-wrap p {
+    font-size: 13px;
+  }
 }

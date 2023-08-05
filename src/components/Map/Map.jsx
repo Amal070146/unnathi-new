@@ -13,7 +13,6 @@ const Map = () => {
             borderRadius: "0px",
           }}
           allowfullscreen=""
-          loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
@@ -22,8 +21,10 @@ const Map = () => {
           <h1>
             Get In <span style={{ color: "white" }}>Touch</span>
           </h1>
-          <p>Connect with us this is just a sample data for reference.
-          <span> This should be atleast two sentences.</span></p>
+          <p>
+            Connect with us this is just a sample data for reference.
+            <span> This should be atleast two sentences.</span>
+          </p>
         </div>
         <div className="contact-second-sect">
           <div>
@@ -58,10 +59,11 @@ const Map = () => {
               />
             </svg>
             <div className="phone-no">
-              <a href="mailto:info@unnathikerala.org">info@unnathikerala.org</a>
-              <a href="mailto:offce@unnathikerala.org">
-                offce@unnathikerala.org
+              <a href="mailto:office@unnathikerala.org">
+                office@unnathikerala.org
               </a>
+              <a href="mailto:info@unnathikerala.org">info@unnathikerala.org</a>
+              <a href="mailto:ceo@unnathikerala.org">ceo@unnathikerala.org</a>
             </div>
           </div>
           <div>
@@ -77,14 +79,14 @@ const Map = () => {
                 fill="black"
               />
             </svg>
-            <p className="phone-no">
+            <p className="phone-no" style={{ textAlign: "left" }}>
               Ambedkar Bhavan,<br></br> Thiruvananthapuram, Kerala
             </p>
           </div>
         </div>
         <div className="contact-third-sect">
           <div className="contact-social-media-icons">
-            <a href="">
+            <a href="https://www.linkedin.com/company/unnathi-kerala-empowerment-society/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -98,7 +100,7 @@ const Map = () => {
                 />
               </svg>
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/profile.php?id=100094319246742&mibextid=LQQJ4d">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -112,7 +114,7 @@ const Map = () => {
                 />
               </svg>
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/unnathi_kes/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"

@@ -1,6 +1,6 @@
-import React from 'react'
-import './About.css'
-import img from '../../assets/about-img.png'
+import React from "react";
+import "./About.css";
+import img from "../../assets/about-img.png";
 
 const About = () => {
   return (
@@ -10,20 +10,23 @@ const About = () => {
       </div>
       <div className="about-home-content-wrap">
         <h1>
-          <span className="color-font">About</span> Us
+          <span className="color-font">What is</span> Unnathi
+          <span className="color-font">?</span>
         </h1>
         <p>
-          Unnathi (Kerala Empowerment Society), a government of Kerala
-          initiative, registered under the The Travancore-Cochin Literary,
-          Scientific and Charitable Societies Registration Act.<br></br> Our
-          primary focus is the welfare of vulnerable Scheduled Caste (SC) &
-          Scheduled Tribe (ST)communities. We are committed to empowerment,
-          operating through the dedicated efforts of interns from esteemed
-          universities and passionate volunteers.
+          Unnathi (Kerala Empowerment Society) is an initiative of the
+          Government of Kerala, registered under the the Travancore-Cochin
+          Literary, Scientific and Charitable Societies Registration Act.
+          <br></br> Our primary focus is the welfare and development of
+          Scheduled Caste (SC) & Scheduled Tribe (ST)communities of Kerala
+          through innovative and collaborative solutions. We adopt the best
+          practices worldwide, listen to ideas, take reasonable risks and adopt
+          techniques and technologies that can cut red-tape and deliver results
+          in the most transparent and democratic means.
         </p>
       </div>
     </div>
   );
-}
+};
 
-export default About
+export default About;

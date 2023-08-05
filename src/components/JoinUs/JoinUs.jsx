@@ -4,33 +4,10 @@ import "./Curious.css";
 const Curious = () => {
   return (
     <div className="curious-wrapper">
-      <h1>
-        <span className="color-font">Join</span> Us
-      </h1>
-      <div className="curious-content-wrapper">
-        <div>
-          <p>Administrative Department</p>
-        </div>
-        <div>
-          <p>Technology Department</p>
-        </div>
-        <div>
-          <p>Human Resource Department</p>
-        </div>
-        <div>
-          <p>Finance Department</p>
-        </div>
-        <div>
-          <p>Project Department</p>
-        </div>
-        <div>
-          <p>Legal and Documentation Department</p>
-        </div>
-      </div>
       <div className="curious-button-wrapper">
         <div className="curious-buttons">
           <h1>Volunteering</h1>
-          <a href="">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5FgrM2Z72F0blVXNgx0Q1zNlR24_b0C7G4J5qAiOy7n_XUA/viewform">
             Apply
             <div>
               <svg
@@ -77,7 +54,7 @@ const Curious = () => {
         </div>
         <div className="curious-buttons">
           <h1>Internships</h1>
-          <a href="">
+          <a href="https://forms.gle/GV56Vb5D7qP6ZhcR6">
             Apply{" "}
             <div>
               <svg

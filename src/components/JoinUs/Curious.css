@@ -4,11 +4,9 @@
   align-items: center;
   gap: 30px;
   text-align: center;
+  margin-top: 50px;
 }
-.curious-wrapper h1 {
-  font-weight: 500;
-  font-size: 40px;
-}
+
 .curious-content-wrapper {
   display: flex;
   flex-wrap: wrap;

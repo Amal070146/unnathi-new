@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/logo.png";
-import './Footer.css'
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -16,7 +16,6 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-      
         <p style={{ textAlign: "center" }}>
           Copyright © 2023 All Rights Reserved. Unnathi x GTech MuLearn
         </p>

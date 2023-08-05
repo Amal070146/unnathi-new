@@ -20,7 +20,7 @@ const VM = () => {
               />
             </svg>
           </div>
-          <div>
+          <div className="vm-content-wrapper">
             <h2>Vision</h2>
             <p>
               Kerala Empowerment Society envisions a thriving, inclusive
@@ -48,7 +48,7 @@ const VM = () => {
               />
             </svg>
           </div>
-          <div>
+          <div className="vm-content-wrapper">
             <h2>Mission</h2>
             <p>
               Empowering communities through co-creative collaboration,
@@ -65,11 +65,11 @@ const VM = () => {
             Co-create
           </h1>
           <p>
-            We are excited to collaborate with the Scheduled Caste Development
-            Department and Scheduled Tribes Development Department, leveraging
-            their valuable resources for training, asset maintenance, and
-            upskilling purposes. Together, we aim to foster positive growth and
-            empowerment within our communities.
+            Unnathi converges the activities of the Scheduled Caste Development
+            Department and Scheduled Tribes Development Department, optimising
+            valuable resources and facilitates partnerships with civil society
+            and citizens at large to co-create a collaborative and
+            transformative community development process.
           </p>
         </div>
         <div className="colaborator-stages-wrapper">
@@ -109,15 +109,15 @@ const VM = () => {
                   <circle cx="10.1768" cy="51" r="7" fill="#FBBA16" />
                 </g>
               </svg>
-              <h1 style={{ color: "#FFF4D9", fontSize: 200, marginTop: -50 }}>
+              <h1 style={{ color: "#FFF4D9", fontSize: 200, marginTop: -30 }}>
                 1
               </h1>
             </div>
-            <p style={{ textAlign: "left", marginTop: -150, fontSize: 18 }}>
+            <p style={{ textAlign: "left", marginTop: -150 }}>
               Training/Skilling Agency with multi-sectoral partnerships
             </p>
           </div>
-          <div className="colaborator-individual-content">
+          <div className="colaborator-individual-content spl-vm-container">
             <div className="colaborator-individual-content-top">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -162,8 +162,9 @@ const VM = () => {
                 2
               </h1>
             </div>
-            <p style={{ textAlign: "left", marginTop: -130, fontSize: 18 }}>
-              Asset maintenance and House keeping Agency
+            <p style={{ textAlign: "left", marginTop: -140 }}>
+              Asset development, maintenance and house keeping agency for the
+              Government.
             </p>
           </div>
           <div className="colaborator-individual-content spl-vm-container">
@@ -200,7 +201,7 @@ const VM = () => {
                 3
               </h1>
             </div>
-            <p style={{ textAlign: "left", marginTop: -140, fontSize: 18 }}>
+            <p style={{ textAlign: "left", marginTop: -140 }}>
               Implementation arm of Welfare activities converging expertise
               &field agencies
             </p>

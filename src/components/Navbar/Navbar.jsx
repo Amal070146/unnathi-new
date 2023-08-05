@@ -9,6 +9,7 @@ import { useReactPath } from "./path.hook";
 
 const Navbar = () => {
   const [openmenu, setopenmenu] = useState(false);
+  const [navlogo, setnavlogo] = useState(false);
   function openMenu() {
     console.log("true");
     setopenmenu(!openmenu);
@@ -16,7 +17,6 @@ const Navbar = () => {
   function closeMenu() {
     setopenmenu(false);
   }
-  const [navbg, setNavBg] = useState(false);
 
   const path = useReactPath();
   const navContent = [
@@ -28,16 +28,19 @@ const Navbar = () => {
     "PROJECTS",
   ];
   useEffect(() => {}, [path]);
-  const changeNavBg = () => {
-    window.scrollY >= 150 ? setNavBg(true) : setNavBg(false);
+  const changenavlogo = () => {
+    window.scrollY >= 250 ? setnavlogo(true) : setnavlogo(false);
+    return navlogo;
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", changeNavBg);
+    window.addEventListener("scroll", changenavlogo);
+
     return () => {
-      window.removeEventListener("scroll", changeNavBg);
+      window.removeEventListener("scroll", changenavlogo);
     };
   }, []);
+
   return (
     <div className="navbar-wrapper">
       <div className="navbar">
@@ -59,7 +62,12 @@ const Navbar = () => {
             </a>
           ))}
           <a href="/">
-            <img className="nav-logo" src={logo} alt="" />
+            <img
+              className="nav-logo"
+              style={{ width: navlogo ? "90px" : "140px" }}
+              src={logo}
+              alt=""
+            />
           </a>
           {navContent.slice(3, 6).map((content, i) => (
             <a href={`#${content}`} key={i.toString() + content}>
