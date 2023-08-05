@@ -1,6 +1,6 @@
 import React from "react";
 import "./VM.css";
-import JOIN from '../../components/JoinUs/JoinUs'
+import JOIN from "../../components/JoinUs/JoinUs";
 
 const VM = () => {
   return (
@@ -10,7 +10,6 @@ const VM = () => {
           <div className="vm-svg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-            
               viewBox="0 0 211 237"
               fill="none"
             >
@@ -57,7 +56,6 @@ const VM = () => {
           <div className="vm-svg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-             
               viewBox="0 0 219 220"
               fill="none"
             >
@@ -121,8 +119,8 @@ const VM = () => {
       <div className="collaborate-wrap">
         <div className="collaborator-header">
           <h1>
-            Converge, <span className="color-font">Collaborate</span> &
-            Co-create
+            <span>
+            Converge, <span className="collaborate-header-bottonline">Collaborate</span></span> & Co-create
           </h1>
           <p>
             Unnathi converges the activities of the Scheduled Caste Development
@@ -169,11 +167,11 @@ const VM = () => {
                   <circle cx="10.1768" cy="51" r="7" fill="#FBBA16" />
                 </g>
               </svg>
-              <h1 style={{ color: "#FFF4D9", fontSize: 200, marginTop: -30 }}>
+              <h1 style={{ color: "#FFF4D9", fontSize: 200,marginTop:"-65px" }}>
                 1
               </h1>
             </div>
-            <p style={{ textAlign: "left", marginTop: -150 }}>
+            <p style={{ textAlign: "left", marginTop: -100 }}>
               Training/Skilling Agency with multi-sectoral partnerships
             </p>
           </div>

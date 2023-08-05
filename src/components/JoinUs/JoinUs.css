@@ -103,7 +103,6 @@
   }
 
   .joinus-content-wrapper {
-    display: flex;
     top: -5%;
     flex-wrap: wrap;
     gap: 20px;
@@ -114,5 +113,19 @@
 
     height: 25vh;
     min-height: 280px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .joinus-wrapper {
+    height: 105vh;
+    margin-top: 12%;
+  }
+
+  .joinus-bg-sect {
+    height: 97vh;
+  }
+
+  .joinus-content-wrapper a {
+    width: calc(100% / 2);
   }
 }
