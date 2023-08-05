@@ -20,8 +20,8 @@ const Navbar = () => {
 
   const path = useReactPath();
   const navContent = [
-    "ABOUT US",
-    "GOVERNING BODY",
+    "ABOUT",
+    "GOVERNING-BODY",
     "MEDIA",
     "PARTNERS",
     "DONATE",
@@ -43,28 +43,32 @@ const Navbar = () => {
 
   return (
     <div className="navbar-wrapper">
-      <div className="navbar" style={{ background: navlogo ? "rgba(255,255,255,0.7)" : "transparent" }}>
+      <div
+        className="navbar"
+        style={{
+          background: navlogo ? "rgba(1,1,1,0.4)" : "transparent",
+        }}
+      >
         <div className="navbar-desk">
           {navContent.slice(0, 3).map((content, i) => (
             <a href={`#${content}`} key={i.toString() + content}>
               <p
                 style={{
-                  color: window.location.href.includes(`#${content}`)
-                    ? "#FBBA16"
+                  borderBottom: window.location.href.includes(`#${content}`)
+                    ? "4px solid #FBBA16"
                     : "",
                   textTransform: "capitalize",
-                  padding: "5px 10px",
-                  borderRadius: "20px",
+                  padding: "5px 10px 0px",
                 }}
               >
                 {content}
               </p>
             </a>
           ))}
-          <a href="/">
+          <a href="#home">
             <img
               className="nav-logo"
-              style={{ width: navlogo ? "90px" : "140px" }}
+              style={{ width: navlogo ? "90px" : "180px" }}
               src={logo}
               alt=""
             />
@@ -73,12 +77,11 @@ const Navbar = () => {
             <a href={`#${content}`} key={i.toString() + content}>
               <p
                 style={{
-                  color: window.location.href.includes(`#${content}`)
-                    ? "#FBBA16"
+                  borderBottom: window.location.href.includes(`#${content}`)
+                    ? "4px solid #FBBA16"
                     : "",
                   textTransform: "capitalize",
-                  padding: "5px 10px",
-                  borderRadius: "20px",
+                  padding: "5px 10px 0px",
                 }}
               >
                 {content}
@@ -87,7 +90,7 @@ const Navbar = () => {
           ))}
         </div>
         <div className="navbar-mob">
-          <a href="/">
+          <a href="#home">
             <img
               className="nav-logo"
               style={{ width: navlogo ? "90px" : "150px" }}
@@ -100,9 +103,9 @@ const Navbar = () => {
             onClick={openMenu}
           >
             {openmenu ? (
-              <RxCross1 style={{ color: "black", fontSize: "40px" }} />
+              <RxCross1 style={{ color: "white", fontSize: "40px" }} />
             ) : (
-              <BiMenu style={{ color: "black", fontSize: "40px" }} />
+              <BiMenu style={{ color: "white", fontSize: "40px" }} />
             )}
           </button>
 

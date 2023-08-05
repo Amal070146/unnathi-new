@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
+import NGO from "../../components/NGO/NGO";
 import About from "../../components/About/About";
 import VM from "../../components/VM/VM";
 import Curious from "../../components/JoinUs/JoinUs";
@@ -13,15 +14,15 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       <Navbar />
-      <div className="home-screen-wrapper">
-      
-        <a href="#ABOUT US" className="home-button-nav">
+      <div className="home-screen-wrapper" id="home">
+        <a href="#ABOUT" className="home-button-nav">
           <span class="m_scroll_arrows unu"></span>
           <span class="m_scroll_arrows doi"></span>
           <span class="m_scroll_arrows trei"></span>
           <span class="m_scroll_arrows quad"></span>
         </a>
       </div>
+      <NGO />
       <About />
       <VM />
       <Curious />

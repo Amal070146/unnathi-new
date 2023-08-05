@@ -26,13 +26,18 @@
   display: none;
 }
 .navbar-wrapper a {
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 500;
 }
-.navbar-wrapper a:hover{
+/* .navbar-wrapper a:hover{
   color: #FBBA16;
-}
+} */
+@media screen and (max-width: 970px){
+.navbar-desk {
 
+  gap: 1vw;
+}
+}
 @media screen and (max-width: 880px) {
   .navbar-mob {
     display: flex;
@@ -50,8 +55,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.4);
     width: 200px;
+    border-radius: 10px;
   }
  
 }
