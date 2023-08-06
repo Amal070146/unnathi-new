@@ -1,14 +1,16 @@
 import React from "react";
 import "./About.css";
 import img from "../../assets/about-img.png";
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <div className="about-home-wrapper" id="ABOUT" data-aos="fade-right">
       <div className="about-home-content-wrap">
         <h1>
           <span className="about-header-bottonline">What is</span>
-          Unnathi ?
+          {t('unnathi')} ?
         </h1>
         <p>
           Unnathi (Kerala Empowerment Society) is an initiative of the

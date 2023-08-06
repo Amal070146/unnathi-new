@@ -13,6 +13,7 @@ import Swiper from "../../components/Testimonial/Slider";
 import AOS from "aos";
 
 import "aos/dist/aos.css";
+import LanguageSwitcher from "../../components/LanguageTranslator/LanguageTranslator";
 AOS.init();
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
           <span class="m_scroll_arrows quad"></span>
         </a>
       </div>
+      {/* <LanguageSwitcher /> */}
       <NGO />
       <About />
 
