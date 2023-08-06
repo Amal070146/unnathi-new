@@ -3,7 +3,7 @@ import "./NGO.css";
 
 const NGO = () => {
   return (
-    <div className="ngo-wrapper">
+    <div className="ngo-wrapper" data-aos="fade-up">
       <a href="">
         <svg
           xmlns="http://www.w3.org/2000/svg"

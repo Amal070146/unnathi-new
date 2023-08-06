@@ -5,7 +5,7 @@ import JOIN from "../../components/JoinUs/JoinUs";
 const VM = () => {
   return (
     <>
-      <div className="vm-wrapper">
+      <div className="vm-wrapper" data-aos="fade-left">
         <div className="vm-individual">
           <div className="vm-svg">
             <svg
@@ -116,11 +116,14 @@ const VM = () => {
         </div>
       </div>
       <JOIN />
-      <div className="collaborate-wrap">
+      <div className="collaborate-wrap" data-aos="fade-right">
         <div className="collaborator-header">
           <h1>
             <span>
-            Converge, <span className="collaborate-header-bottonline">Collaborate</span></span> & Co-create
+              Converge,{" "}
+              <span className="collaborate-header-bottonline">Collaborate</span>
+            </span>{" "}
+            & Co-create
           </h1>
           <p>
             Unnathi converges the activities of the Scheduled Caste Development
@@ -167,7 +170,9 @@ const VM = () => {
                   <circle cx="10.1768" cy="51" r="7" fill="#FBBA16" />
                 </g>
               </svg>
-              <h1 style={{ color: "#FFF4D9", fontSize: 200,marginTop:"-65px" }}>
+              <h1
+                style={{ color: "#FFF4D9", fontSize: 200, marginTop: "-65px" }}
+              >
                 1
               </h1>
             </div>
