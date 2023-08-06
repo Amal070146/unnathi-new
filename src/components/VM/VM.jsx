@@ -5,7 +5,7 @@ import JOIN from "../../components/JoinUs/JoinUs";
 const VM = () => {
   return (
     <>
-      <div className="vm-wrapper" data-aos="fade-left">
+      <div className="vm-wrapper" data-aos="fade-right">
         <div className="vm-individual">
           <div className="vm-svg">
             <svg
