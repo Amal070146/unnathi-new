@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import "./LanguageSwitcher.css";
 
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
@@ -9,10 +10,10 @@ function LanguageSwitcher() {
   };
 
   return (
-    <div>
+    <div className="LanguageSwitcher-wrapper">
       <select onChange={changeLanguage} value={i18n.language}>
-        <option value="en">English</option>
-        <option value="mal">മലയാളം</option>
+        <option value="en">A</option>
+        <option value="mal">അ</option>
       </select>
     </div>
   );

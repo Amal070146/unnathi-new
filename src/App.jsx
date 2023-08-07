@@ -8,7 +8,7 @@ import Volunteering from "./pages/JoinUs-pages/Volunteering/volunteering";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/home",
       element: <Home />,
     },
     {

@@ -1,0 +1,26 @@
+.LanguageSwitcher-wrapper {
+  position: fixed;
+  z-index: 9000;
+  top: 45px;
+  right: 2%;
+}
+
+.LanguageSwitcher-wrapper > select {
+  background-color: #fbba16;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  appearance: none;
+
+  width: fit-content;
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 880px) {
+  .LanguageSwitcher-wrapper {
+    position: initial;
+  }
+}
+
