@@ -13,11 +13,12 @@ import Swiper from "../../components/Testimonial/Slider";
 import AOS from "aos";
 
 import "aos/dist/aos.css";
-import LanguageSwitcher from "../../components/LanguageTranslator/LanguageTranslator";
+import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher";
 AOS.init();
 const Home = () => {
   return (
     <div className="home-wrapper">
+      
       <Navbar />
       <div className="home-screen-wrapper" id="home">
         <a href="#ABOUT" className="home-button-nav">
@@ -27,8 +28,8 @@ const Home = () => {
           <span class="m_scroll_arrows quad"></span>
         </a>
       </div>
-      {/* <LanguageSwitcher /> */}
       <NGO />
+      <LanguageSwitcher />
       <About />
 
       <VM />
