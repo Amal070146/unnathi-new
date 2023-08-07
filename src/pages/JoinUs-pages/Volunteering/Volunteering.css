@@ -100,7 +100,7 @@
 .about-volunteering {
   width: 100%;
   height: fit-content;
-  padding: 2vh 5.8vw;
+  padding: 0vh 5.8vw 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,7 +167,7 @@
   .about-volunteering-heading > p {
     font-size: 16px;
   }
-  .volunteer-card-individual{
+  .volunteer-card-individual {
     min-height: 320px;
     min-width: 220px;
   }
@@ -193,4 +193,97 @@
   .about-volunteering-heading > p {
     font-size: 14px;
   }
+}
+
+.yellow-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fbba16;
+}
+
+.volunteering-eligibility-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  font-family: "Red Hat Text";
+  padding: 2vh 5.8vw;
+}
+
+.volunteering-eligibility-selection h1 {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5vw;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.volunteering-eligibility-selection h1 span {
+  border-bottom: 1vw solid #fbba16;
+  height: 3.2vw;
+}
+.volunteering-eligilibility-set {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 25px;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.volunteering-eligilibility-set > div {
+  display: flex;
+  gap: 15px;
+  width: fit-content;
+}
+.volunteering-selection-content{
+  font-size: 20px;
+}
+@media screen and (max-width: 850px) {
+  .volunteering-eligibility-selection h1 {
+    font-size: 5vw;
+  }
+  .volunteering-eligibility-selection h1 span {
+    height: 4.6vw;
+  }
+  .volunteering-eligilibility-set {
+    font-size: 17px;
+  }
+  .volunteering-selection-content{
+  font-size: 16px;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .volunteering-eligibility-selection h1 {
+    font-size: 5.8vw;
+  }
+  .volunteering-eligibility-selection h1 span {
+    height: 5.1vw;
+  }
+  .volunteering-eligilibility-set {
+    font-size: 14px;
+    line-height: 1.5;
+    gap: 10px;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .yellow-circle {
+    width: 14px;
+    height: 14px;
+  }
+  .volunteering-eligilibility-set > div {
+  gap: 10px;
+}
+.volunteering-selection-content{
+  font-size: 14px;
+}
 }

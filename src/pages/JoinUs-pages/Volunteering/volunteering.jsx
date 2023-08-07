@@ -278,8 +278,52 @@ const volunteering = () => {
           </div>
         </div>
 
-        <div>
-          
+        <div className="volunteering-eligibility-selection">
+          <div>
+            <h1>
+              <span>Eligibility</span>&nbsp;Criteria
+            </h1>
+            <div className="volunteering-eligilibility-set">
+              <div>
+                <div className="yellow-circle"></div>
+                <p>
+                  Minimum qualification of 12th grade completion or its
+                  equivalent
+                </p>
+              </div>{" "}
+              <div>
+                <div className="yellow-circle"></div>
+                <p>Indian nationality</p>
+              </div>{" "}
+              <div>
+                <div className="yellow-circle"></div>
+                <p>Must have 18 years of age</p>
+              </div>{" "}
+              <div>
+                <div className="yellow-circle"></div>
+                <p>
+                  Preference to aspiring candidates from the SC/ST communities
+                  of Kerala
+                </p>
+              </div>{" "}
+              <div>
+                <div className="yellow-circle"></div>
+                <p>Proficiency in either English or Malayalam</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1>
+              <span>Selection</span>&nbsp;Process
+            </h1>
+            <p className="volunteering-selection-content">
+              Our comprehensive selection process involves the meticulous
+              evaluation of CV submissions, followed by a rigorous online
+              interview. This interview evaluates candidates on both their
+              adeptness in technical domains and the quality of their soft
+              skills.
+            </p>
+          </div>
         </div>
       </div>
 
