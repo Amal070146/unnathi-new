@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
+import logo_mal from "../../assets/logo_mal.png";
 
 import React, { useEffect, useState } from "react";
 import { BiMenu } from "react-icons/bi";
@@ -9,6 +10,7 @@ import { useReactPath } from "./path.hook";
 
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const Navbar = () => {
   const { t } = useTranslation(["Navbar"]);
@@ -73,7 +75,7 @@ const Navbar = () => {
             <img
               className="nav-logo"
               style={{ width: navlogo ? "90px" : "180px" }}
-              src={logo}
+              src={i18next.language === "en" ? logo : logo_mal}
               alt=""
             />
           </a>

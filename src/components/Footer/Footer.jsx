@@ -1,14 +1,16 @@
 import React from "react";
 import logo from "../../assets/logo.png";
+import logo_mal from "../../assets/logo_mal.png";
 import "./Footer.css";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const Footer = () => {
   const { t } = useTranslation(["Footer"]);
   return (
     <div className="footer-wrapper">
       <div className="footer-toper">
-        <img src={logo} alt="" />
+        <img src={i18next.language === "en" ? logo : logo_mal} alt="" />
         <div>
           <a href="">{t("media")}</a>
           <a href="">{t("news")}</a>
