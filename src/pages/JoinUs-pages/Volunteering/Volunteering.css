@@ -1,0 +1,289 @@
+/* volunteering */
+
+.volunteering-wrapper {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Red Hat Text";
+}
+.volunteering-header-sect {
+  background: url("../../../assets/JoinUspage/volunteeringbg.png") center
+    center/cover no-repeat;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.volunteering-header-sect h1 {
+  text-align: center;
+  font-family: "Red Hat Text";
+  font-size: 6vw;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.2);
+  background-clip: text;
+  font-weight: 900;
+
+  text-transform: uppercase;
+}
+.volunteering-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.volunteering-quote {
+  padding: 3vh 5.8vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.volunteering-quote h1 {
+  font-family: "Red Hat Text";
+  font-size: 4vw;
+  font-weight: 400;
+
+  text-transform: uppercase;
+  line-height: 0.9;
+}
+
+.volunteering-quote h1 p {
+  font-weight: 600;
+  font-size: 6vw;
+}
+
+.volunteering-quote > p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 850px) {
+  .volunteering-header-sect h1 {
+    font-size: 8vw;
+  }
+  .volunteering-quote h1 {
+    font-size: 5vw;
+    line-height: 1.1;
+  }
+
+  .volunteering-quote h1 p {
+    font-size: 7.8vw;
+  }
+  .volunteering-quote > p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .volunteering-quote > p {
+    font-size: 14px;
+  }
+  .volunteering-quote h1 {
+    font-size: 5.8vw;
+    line-height: 1.1;
+  }
+
+  .volunteering-quote h1 p {
+    font-size: 8.7vw;
+  }
+}
+
+.about-volunteering {
+  width: 100%;
+  height: fit-content;
+  padding: 0vh 5.8vw 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.about-volunteering-heading h1 {
+  font-weight: 500;
+  font-size: 3.5vw;
+  line-height: 1;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-volunteering-heading h1 span {
+  border-bottom: 1vw solid #fbba16;
+  height: 3.2vw;
+}
+.about-volunteering-heading > p {
+  font-size: 20px;
+}
+.volunteer-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.volunteer-card-individual {
+  width: calc(100% / 5);
+  max-width: 300px;
+  min-width: 250px;
+  border: 8px solid #fbba16;
+  padding: 10px 15px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.volunteer-card-individual svg {
+  width: 110px;
+  height: 110px;
+}
+.volunteer-card-individual h4 {
+  font-weight: 500;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.volunteer-card-individual p {
+  font-size: 18px;
+}
+@media screen and (max-width: 850px) {
+  .about-volunteering-heading h1 {
+    font-size: 5vw;
+  }
+  .about-volunteering-heading h1 span {
+    height: 4.6vw;
+  }
+  .about-volunteering-heading > p {
+    font-size: 16px;
+  }
+  .volunteer-card-individual {
+    min-height: 320px;
+    min-width: 220px;
+  }
+  .volunteer-card-individual svg {
+    width: 90px;
+    height: 90px;
+  }
+  .volunteer-card-individual h4 {
+    font-size: 20px;
+  }
+  .volunteer-card-individual p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-volunteering-heading h1 {
+    font-size: 5.8vw;
+  }
+  .about-volunteering-heading h1 span {
+    height: 5.1vw;
+  }
+  .about-volunteering-heading > p {
+    font-size: 14px;
+  }
+}
+
+.yellow-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fbba16;
+}
+
+.volunteering-eligibility-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  font-family: "Red Hat Text";
+  padding: 2vh 5.8vw;
+}
+
+.volunteering-eligibility-selection h1 {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5vw;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.volunteering-eligibility-selection h1 span {
+  border-bottom: 1vw solid #fbba16;
+  height: 3.2vw;
+}
+.volunteering-eligilibility-set {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 25px;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.volunteering-eligilibility-set > div {
+  display: flex;
+  gap: 15px;
+  width: fit-content;
+}
+.volunteering-selection-content {
+  font-size: 20px;
+}
+@media screen and (max-width: 850px) {
+  .volunteering-eligibility-selection h1 {
+    font-size: 5vw;
+  }
+  .volunteering-eligibility-selection h1 span {
+    height: 4.6vw;
+  }
+  .volunteering-eligilibility-set {
+    font-size: 17px;
+  }
+  .volunteering-selection-content {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .volunteering-eligibility-selection h1 {
+    font-size: 5.8vw;
+  }
+  .volunteering-eligibility-selection h1 span {
+    height: 5.1vw;
+  }
+  .volunteering-eligilibility-set {
+    font-size: 14px;
+    line-height: 1.5;
+    gap: 10px;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .yellow-circle {
+    width: 14px;
+    height: 14px;
+  }
+  .volunteering-eligilibility-set > div {
+    gap: 10px;
+  }
+  .volunteering-selection-content {
+    font-size: 14px;
+  }
+}

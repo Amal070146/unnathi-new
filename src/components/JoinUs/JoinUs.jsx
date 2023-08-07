@@ -200,10 +200,8 @@ const Curious = () => {
             </div>
           </div>
         </a>
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSd5FgrM2Z72F0blVXNgx0Q1zNlR24_b0C7G4J5qAiOy7n_XUA/viewform"
-          className="flip-card"
-        >
+        {/* href="https://docs.google.com/forms/d/e/1FAIpQLSd5FgrM2Z72F0blVXNgx0Q1zNlR24_b0C7G4J5qAiOy7n_XUA/viewform" */}
+        <a href="/volunteering" className="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src={kyyb} alt="" />
