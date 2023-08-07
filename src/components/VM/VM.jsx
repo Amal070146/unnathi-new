@@ -1,8 +1,10 @@
 import React from "react";
 import "./VM.css";
 import JOIN from "../../components/JoinUs/JoinUs";
+import { useTranslation } from "react-i18next";
 
 const VM = () => {
+  const { t } = useTranslation(["VM"]);
   return (
     <>
       <div className="vm-wrapper" data-aos="fade-right">
@@ -29,16 +31,8 @@ const VM = () => {
             </svg>
           </div>
           <div className="vm-content-wrapper">
-            <h2>Vision</h2>
-            <p>
-              Kerala Empowerment Society envisions a thriving, inclusive
-              ecosystem empowering vulnerable SC & ST communities with abundant
-              livelihood opportunities. Our approach prioritizes compassion,
-              self-respect, and teamwork, fostering co-creative collaboration
-              over bureaucracy. We believe in empowering individuals from
-              within, valuing the process as much as the goal, to build a
-              brighter, uplifted future for all."
-            </p>
+            <h2>{t("vision")}</h2>
+            <p>{t("visionText")}</p>
           </div>
         </div>
         <div className="vm-individual">
@@ -46,12 +40,8 @@ const VM = () => {
             className="vm-content-wrapper"
             style={{ alignItems: "flex-end", textAlign: "right" }}
           >
-            <h2>Mission</h2>
-            <p>
-              Empowering communities through co-creative collaboration,
-              innovation, education, skilling and entrepreneurship for a
-              brighter and sustainable future.
-            </p>
+            <h2>{t("mission")}</h2>
+            <p>{t("missionText")}</p>
           </div>
           <div className="vm-svg">
             <svg
@@ -120,18 +110,14 @@ const VM = () => {
         <div className="collaborator-header">
           <h1>
             <span>
-              Converge,{" "}
-              <span className="collaborate-header-bottonline">Collaborate</span>
+              {t("converge")}{" "}
+              <span className="collaborate-header-bottonline">
+                {t("collaborate")}
+              </span>
             </span>{" "}
-            & Co-create
+            {t("coCreate")}
           </h1>
-          <p>
-            Unnathi converges the activities of the Scheduled Caste Development
-            Department and Scheduled Tribes Development Department, optimising
-            valuable resources and facilitates partnerships with civil society
-            and citizens at large to co-create a collaborative and
-            transformative community development process.
-          </p>
+          <p>{t("cccText")}</p>
         </div>
         <div className="colaborator-stages-wrapper">
           <div className="colaborator-individual-content">
@@ -177,7 +163,7 @@ const VM = () => {
               </h1>
             </div>
             <p style={{ textAlign: "left", marginTop: -130 }}>
-              Training/Skilling Agency with multi-sectoral partnerships
+            {t("point1")}
             </p>
           </div>
           <div className="colaborator-individual-content spl-vm-container">
@@ -226,8 +212,7 @@ const VM = () => {
               </h1>
             </div>
             <p style={{ textAlign: "left", marginTop: -140 }}>
-              Asset development, maintenance and house keeping agency for the
-              Government.
+            {t("point2")}
             </p>
           </div>
           <div className="colaborator-individual-content spl-vm-container">
@@ -265,8 +250,7 @@ const VM = () => {
               </h1>
             </div>
             <p style={{ textAlign: "left", marginTop: -140 }}>
-              Implementation arm of Welfare activities converging expertise
-              &field agencies
+            {t("point3")}
             </p>
           </div>
         </div>

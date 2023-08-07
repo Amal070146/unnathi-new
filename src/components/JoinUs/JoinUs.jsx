@@ -2,8 +2,10 @@ import React from "react";
 import "./JoinUs.css";
 import kyyb from "../../assets/kayyy.png";
 import kyyy from "../../assets/kayyyy.png";
+import { useTranslation } from "react-i18next";
 
 const Curious = () => {
+  const { t } = useTranslation(["VM"]);
   return (
     <div className="joinus-wrapper">
       <div className="joinus-bg-sect"></div>
@@ -101,7 +103,7 @@ const Curious = () => {
                   fill="black"
                 />
               </svg>
-              <p>INTERNSHIPS</p>
+              <p>{t("internships")}</p>
             </div>
             <div class="flip-card-back">
               <svg
@@ -194,7 +196,7 @@ const Curious = () => {
                   fill="white"
                 />
               </svg>
-              <p style={{ color: "white" }}>INTERNSHIPS</p>
+              <p style={{ color: "white" }}>{t("internships")}</p>
             </div>
           </div>
         </a>
@@ -205,11 +207,11 @@ const Curious = () => {
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src={kyyb} alt="" />
-              <p>VOLUNTEERING</p>
+              <p>{t("volunteering")}</p>
             </div>
             <div class="flip-card-back">
               <img src={kyyy} alt="" />
-              <p style={{ color: "white" }}>VOLUNTEERING</p>
+              <p style={{ color: "white" }}>{t("volunteering")}</p>
             </div>
           </div>
         </a>
@@ -238,7 +240,7 @@ const Curious = () => {
                   stroke-width="2.83981"
                 />
               </svg>
-              <p>UAS</p>
+              <p>{t("uas")}</p>
             </div>
             <div class="flip-card-back">
               <svg
@@ -263,7 +265,7 @@ const Curious = () => {
                   stroke-width="2.83981"
                 />
               </svg>
-              <p style={{ color: "white" }}>UAS</p>
+              <p style={{ color: "white" }}>{t("uas")}</p>
             </div>
           </div>
         </a>
