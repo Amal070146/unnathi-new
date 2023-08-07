@@ -10,7 +10,8 @@ const Curious = () => {
     <div className="joinus-wrapper">
       <div className="joinus-bg-sect"></div>
       <div className="joinus-content-wrapper">
-        <a href="https://forms.gle/GV56Vb5D7qP6ZhcR6" className="flip-card">
+        {/* href="https://forms.gle/GV56Vb5D7qP6ZhcR6" */}
+        <a href="/internship" className="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <svg
