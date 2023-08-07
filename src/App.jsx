@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
 import Volunteering from "./pages/JoinUs-pages/Volunteering/Volunteering";
-import Internship from "./pages/JoinUs-pages/Internship/internship";
+import Internship from "./pages/JoinUs-pages/Internship/Internship";
 import SubmitIdea from "./pages/JoinUs-pages/SubmitIdea/SubmitIdea";
 function App() {
   const router = createBrowserRouter([
