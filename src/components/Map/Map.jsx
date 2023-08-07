@@ -1,7 +1,9 @@
 import React from "react";
 import "./Map.css";
+import { useTranslation } from "react-i18next";
 
 const Map = () => {
+  const {t} = useTranslation(["Map"]);
   return (
     <div className="map-wrapper">
       <div className="map-wrap">
@@ -19,11 +21,11 @@ const Map = () => {
       <div className="map-section-right-wrapper">
         <div className="contact-first-sect">
           <h1>
-            Get In <span style={{ color: "white" }}>Touch</span>
+            {t("getIn")} <span style={{ color: "white" }}>{t("Touch")}</span>
           </h1>
           <p>
-            Connect with us this is just a sample data for reference.
-            <span> This should be atleast two sentences.</span>
+            {t("connect1")}
+            <span>{t("connect2")}</span>
           </p>
         </div>
         <div className="contact-second-sect">
@@ -80,7 +82,7 @@ const Map = () => {
               />
             </svg>
             <p className="phone-no" style={{ textAlign: "left" }}>
-              Ambedkar Bhavan,<br></br> Thiruvananthapuram, Kerala
+            {t("address1")}<br></br> {t("address2")}
             </p>
           </div>
         </div>
@@ -145,7 +147,7 @@ const Map = () => {
                 stroke-linejoin="round"
               />
             </svg>
-            <p>Get the Brochure</p>
+            <p>{t("brochure")}</p>
           </a>
         </div>
       </div>
