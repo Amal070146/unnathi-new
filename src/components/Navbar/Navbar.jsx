@@ -7,6 +7,8 @@ import { RxCross1 } from "react-icons/rx";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { useReactPath } from "./path.hook";
 
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+
 const Navbar = () => {
   const [openmenu, setopenmenu] = useState(false);
   const [navlogo, setnavlogo] = useState(false);
@@ -65,7 +67,7 @@ const Navbar = () => {
               </p>
             </a>
           ))}
-          <a href="#home">
+          <a href="/home">
             <img
               className="nav-logo"
               style={{ width: navlogo ? "90px" : "180px" }}
@@ -89,8 +91,9 @@ const Navbar = () => {
             </a>
           ))}
         </div>
+
         <div className="navbar-mob">
-          <a href="#home">
+          <a href="/home">
             <img
               className="nav-logo"
               style={{ width: navlogo ? "90px" : "150px" }}
@@ -127,6 +130,7 @@ const Navbar = () => {
                   </p>
                 </a>
               ))}
+              <LanguageSwitcher />
             </div>
           )}
         </div>

@@ -25,9 +25,12 @@
 
 @media screen and (max-width: 1150px) {
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 880px) {
   .home-wrapper {
     background: url("../../assets/home-bg.png") left center/cover no-repeat;
+  }
+  .home-language-switcher {
+    display: none;
   }
 }
 

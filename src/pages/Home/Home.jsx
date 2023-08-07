@@ -18,7 +18,6 @@ AOS.init();
 const Home = () => {
   return (
     <div className="home-wrapper">
-      
       <Navbar />
       <div className="home-screen-wrapper" id="home">
         <a href="#ABOUT" className="home-button-nav">
@@ -29,7 +28,9 @@ const Home = () => {
         </a>
       </div>
       <NGO />
-      <LanguageSwitcher />
+      <div className="home-language-switcher">
+        <LanguageSwitcher />
+      </div>
       <About />
 
       <VM />
@@ -44,5 +45,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
