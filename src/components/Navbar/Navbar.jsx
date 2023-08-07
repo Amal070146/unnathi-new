@@ -8,8 +8,10 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { useReactPath } from "./path.hook";
 
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t } = useTranslation(["Navbar"]);
   const [openmenu, setopenmenu] = useState(false);
   const [navlogo, setnavlogo] = useState(false);
   function openMenu() {
@@ -22,12 +24,12 @@ const Navbar = () => {
 
   const path = useReactPath();
   const navContent = [
-    "ABOUT",
-    "GOVERNING-BODY",
-    "MEDIA",
-    "PARTNERS",
-    "DONATE",
-    "PROJECTS",
+    t("about"),
+    t("governingBody"),
+    t("media"),
+    t("partners"),
+    t("donate"),
+    t("projects"),
   ];
   useEffect(() => {}, [path]);
   const changenavlogo = () => {

@@ -1,24 +1,24 @@
 import React from "react";
 import logo from "../../assets/logo.png";
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation(["Footer"]);
   return (
     <div className="footer-wrapper">
       <div className="footer-toper">
         <img src={logo} alt="" />
         <div>
-          <a href="">MEDIA</a>
-          <a href="">NEWS</a>
-          <a href="">IMPACT</a>
-          <a href="">PRIVACY POLICY</a>
-          <a href="">DISCLAIMER</a>
+          <a href="">{t("media")}</a>
+          <a href="">{t("news")}</a>
+          <a href="">{t("impact")}</a>
+          <a href="">{t("privacyPolicy")}</a>
+          <a href="">{t("disclaimer")}</a>
         </div>
       </div>
       <div className="footer-bottom">
-        <p style={{ textAlign: "center" }}>
-          Copyright © 2023 All Rights Reserved. Unnathi x GTech MuLearn
-        </p>
+        <p style={{ textAlign: "center" }}>{t("copyright")}</p>
       </div>
     </div>
   );
