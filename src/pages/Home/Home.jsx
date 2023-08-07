@@ -33,7 +33,7 @@ const Home = () => {
 
       <VM />
 
-      {/* <Gallery /> */}
+      <Gallery />
 
       <Swiper />
       <Map />
