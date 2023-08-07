@@ -23,10 +23,12 @@ const NGO = () => {
           />
         </svg>
         <p>
-          {t("submit")}<br></br>{t("idea")}
+          {t("submit")}
+          <br></br>
+          {t("idea")}
         </p>
       </a>
-      <a href="">
+      <a href="/ngocollaboration">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="73"
@@ -40,7 +42,9 @@ const NGO = () => {
           />
         </svg>
         <p>
-        {t("ngo")}<br></br>{t("collaboration")}
+          {t("ngo")}
+          <br></br>
+          {t("collaboration")}
         </p>
       </a>
       <a href="">
@@ -90,7 +94,9 @@ const NGO = () => {
           />
         </svg>
         <p>
-        {t("projects")}<br></br>{t("canFund")}
+          {t("projects")}
+          <br></br>
+          {t("canFund")}
         </p>
       </a>
       <a href="">
@@ -128,7 +134,9 @@ const NGO = () => {
           />
         </svg>
         <p>
-        {t("entrepreneurship")}<br></br>{t("support")}
+          {t("entrepreneurship")}
+          <br></br>
+          {t("support")}
         </p>
       </a>
     </div>

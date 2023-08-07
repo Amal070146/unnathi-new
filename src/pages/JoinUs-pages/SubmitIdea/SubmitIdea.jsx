@@ -8,7 +8,7 @@ const SubmitIdea = () => {
       <Navbar />
       <div className="submitidea-wrapper">
         <div className="volunteering-header-sect submitidea-header-sect">
-          <h1>INTERNSHIPS</h1>
+          <h1>Submit an idea</h1>
           <a href="#about-submitidea" className="volunteering-arrow">
             <span class="m_scroll_arrows unu"></span>
             <span class="m_scroll_arrows doi"></span>
