@@ -176,7 +176,7 @@ const VM = () => {
                 1
               </h1>
             </div>
-            <p style={{ textAlign: "left", marginTop: -100 }}>
+            <p style={{ textAlign: "left", marginTop: -130 }}>
               Training/Skilling Agency with multi-sectoral partnerships
             </p>
           </div>

@@ -114,7 +114,7 @@
   height: 40px;
 }
 .collaborator-header p {
-  font-size: 16px;
+  font-size: 20px;
   color: #767676;
 }
 .colaborator-stages-wrapper {
@@ -134,7 +134,7 @@
 }
 .colaborator-individual-content p {
   line-height: 1.3;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 }
 .colaborator-stages-wrapper .spl-vm-container {
