@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
 import Volunteering from "./pages/JoinUs-pages/Volunteering/volunteering";
-
+import Internship from "./pages/JoinUs-pages/Internship/internship";
 function App() {
   const router = createBrowserRouter([
     {
@@ -18,6 +18,10 @@ function App() {
     {
       path: "/volunteering",
       element: <Volunteering />,
+    },
+    {
+      path: "/internship",
+      element: <Internship />,
     },
   ]);
   return <RouterProvider router={router} />;
