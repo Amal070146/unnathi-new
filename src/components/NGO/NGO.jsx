@@ -1,7 +1,9 @@
 import React from "react";
 import "./NGO.css";
+import { useTranslation } from "react-i18next";
 
 const NGO = () => {
+  const { t } = useTranslation(["NGO"]);
   return (
     <div className="ngo-wrapper" data-aos="fade-up">
       <a href="">
@@ -21,7 +23,7 @@ const NGO = () => {
           />
         </svg>
         <p>
-          Submit an<br></br>idea
+          {t("submit")}<br></br>{t("idea")}
         </p>
       </a>
       <a href="">
@@ -38,7 +40,7 @@ const NGO = () => {
           />
         </svg>
         <p>
-          NGO/Corporate<br></br>collaboration
+        {t("ngo")}<br></br>{t("collaboration")}
         </p>
       </a>
       <a href="">
@@ -88,7 +90,7 @@ const NGO = () => {
           />
         </svg>
         <p>
-          Projects you<br></br>can fund
+        {t("projects")}<br></br>{t("canFund")}
         </p>
       </a>
       <a href="">
@@ -126,7 +128,7 @@ const NGO = () => {
           />
         </svg>
         <p>
-          Entrepreneurship<br></br>support
+        {t("entrepreneurship")}<br></br>{t("support")}
         </p>
       </a>
     </div>
