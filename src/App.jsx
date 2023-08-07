@@ -3,6 +3,7 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
+import Volunteering from "./pages/JoinUs-pages/volunteering";
 import { useTranslation, initReactI18next } from 'react-i18next';
 import i18n from 'i18next';
 import enTranslations from './locales/en.json'; // Import your translation files
@@ -28,7 +29,10 @@ function App() {
       path: "/",
       element: <Home />,
     },
-
+    {
+      path: "/volunteering",
+      element: <Volunteering />,
+    },
   ]);
   return <RouterProvider router={router} />;
 }
