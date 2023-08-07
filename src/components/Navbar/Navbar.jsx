@@ -93,7 +93,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-mob">
-          <a href="#home">
+          <a href="/home">
             <img
               className="nav-logo"
               style={{ width: navlogo ? "90px" : "150px" }}
