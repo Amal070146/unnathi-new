@@ -3,14 +3,16 @@ import "./Volunteering.css";
 
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
+import { useTranslation } from "react-i18next";
 
-const volunteering = () => {
+const Volunteering = () => {
+  const { t } = useTranslation(["Volunteering"]);
   return (
     <>
       <Navbar />
       <div className="volunteering-wrapper">
         <div className="volunteering-header-sect">
-          <h1>Volunteering</h1>
+          <h1>{t("volunteerng")}</h1>
           <a href="#about-volunteering" className="volunteering-arrow">
             <span class="m_scroll_arrows unu"></span>
             <span class="m_scroll_arrows doi"></span>
@@ -20,32 +22,19 @@ const volunteering = () => {
         </div>
         <div className="volunteering-quote">
           <h1>
-            <span style={{ color: "#fbba16" }}>Lend</span> a Hand, Make a{" "}
+            <span style={{ color: "#fbba16" }}>{t("lend")}</span> {t("aHand")}{" "}
             <span style={{ color: "#EC1D25" }}>
-              <p>Difference</p>
+              <p>{t("difference")}</p>
             </span>
           </h1>
-          <p>
-            At Unnathi, we believe that the strength of our community lies in
-            the selfless hands and hearts of our volunteers. By choosing to
-            volunteer with us, you are not only offering your time and skills
-            but are also making a profound impact on countless lives. Every task
-            you undertake, no matter how big or small, contributes to our shared
-            vision of a brighter, more equitable world.
-          </p>
+          <p>{t("differentText")}</p>
         </div>
         <div id="about-volunteering" className="about-volunteering">
           <div className="about-volunteering-heading">
             <h1>
-              <span>Why Volunteer</span>&nbsp;with Unnathi?
+              <span>{t("whyVolunteer")}</span>&nbsp;{t("withUnnathi")}
             </h1>
-            <p>
-              Whether you have a few hours a week or can commit to a longer-term
-              project, there's a place for you at Unnathi. No effort is too
-              small, and every contribution matters. Join our family of
-              dedicated volunteers today and be part of a transformative
-              journey.
-            </p>
+            <p>{t("whyVolunteerText")}</p>
           </div>
           <div className="volunteer-card-wrapper">
             <div className="volunteer-card-individual">
@@ -85,11 +74,8 @@ const volunteering = () => {
                   fill="black"
                 />
               </svg>
-              <h4>Personal Growth</h4>
-              <p>
-                Experience the joy of giving, learn new skills, and understand
-                the world from diverse perspectives.
-              </p>
+              <h4>{t("personalGrowth")}</h4>
+              <p>{t("personalGrowthText")}</p>
             </div>
             <div className="volunteer-card-individual">
               <svg
@@ -182,11 +168,8 @@ const volunteering = () => {
                   fill="black"
                 />
               </svg>
-              <h4>Community Impact</h4>
-              <p>
-                Experience the joy of giving, learn new skills, and understand
-                the world from diverse perspectives.
-              </p>
+              <h4>{t("communityImpact")}</h4>
+              <p>{t("communityImpactText")}</p>
             </div>
 
             <div className="volunteer-card-individual">
@@ -269,11 +252,8 @@ const volunteering = () => {
                   stroke-width="4"
                 />
               </svg>
-              <h4>Networking</h4>
-              <p>
-                Engage with like-minded individuals, professionals, and
-                community leaders who share your passion.
-              </p>
+              <h4>{t("networking")}</h4>
+              <p>{t("networkingText")}</p>
             </div>
           </div>
         </div>
@@ -281,47 +261,37 @@ const volunteering = () => {
         <div className="volunteering-eligibility-selection">
           <div>
             <h1>
-              <span>Eligibility</span>&nbsp;Criteria
+              <span>{t("eligibility")}</span>&nbsp;{t("criteria")}
             </h1>
             <div className="volunteering-eligilibility-set">
               <div>
                 <div className="yellow-circle"></div>
-                <p>
-                  Minimum qualification of 12th grade completion or its
-                  equivalent
-                </p>
+                <p>{t("ec1")}</p>
               </div>{" "}
               <div>
                 <div className="yellow-circle"></div>
-                <p>Indian nationality</p>
+                <p>{t("ec2")}</p>
               </div>{" "}
               <div>
                 <div className="yellow-circle"></div>
-                <p>Must have 18 years of age</p>
+                <p>{t("ec3")}</p>
               </div>{" "}
               <div>
                 <div className="yellow-circle"></div>
-                <p>
-                  Preference to aspiring candidates from the SC/ST communities
-                  of Kerala
-                </p>
+                <p>{t("ec4")}</p>
               </div>{" "}
               <div>
                 <div className="yellow-circle"></div>
-                <p>Proficiency in either English or Malayalam</p>
+                <p>{t("ec5")}</p>
               </div>
             </div>
           </div>
           <div>
             <h1>
-              <span>Selection</span>&nbsp;Process
+              <span>{t("selection")}</span>&nbsp;{t("process")}
             </h1>
             <p className="volunteering-selection-content">
-              Our comprehensive selection process involves the meticulous
-              evaluation of CV submissions, followed by a rigorous online
-              interview. This interview evaluates candidates on both their
-              adeptness in technical domains and the quality of their soft
-              skills.
+              {t("selectionProcessText")}
             </p>
           </div>
         </div>
@@ -332,4 +302,4 @@ const volunteering = () => {
   );
 };
 
-export default volunteering;
+export default Volunteering;
