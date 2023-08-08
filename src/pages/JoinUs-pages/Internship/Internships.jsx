@@ -25,33 +25,31 @@ const Internship = () => {
         <div className="internship-quote-wrapper">
           <div>
             <h1>
-              <span style={{ color: "#FBBA16", fontWeight: 600 }}>Ignite</span>{" "}
-              Your Potential,
+              <span style={{ color: "#FBBA16", fontWeight: 600 }}>
+                {t("ignite")}
+              </span>{" "}
+              {t("yourPotential")}
               <p>
-                Impact
+                {t("impact")}
                 <span style={{ color: "#EC1D25", fontWeight: 600 }}>
-                  Communities
+                  {t("communities")}
                 </span>
               </p>
             </h1>
             <h2>
-              Discover<span style={{ color: "#F37020" }}>.</span> Develop
+              {t("discover")}
+              <span style={{ color: "#F37020" }}>.</span> {t("develop")}
               <span style={{ color: "#F37020" }}>.</span>
-              Deliver<span style={{ color: "#F37020" }}>.</span>
+              {t("deliver")}
+              <span style={{ color: "#F37020" }}>.</span>
             </h2>
           </div>
-          <p>
-            At the heart of Unnathi's success lies a unique blend of
-            professional acumen and passionate voluntarism. The Unnathi
-            Internship Program is a testament to this synergy, offering aspiring
-            change-makers an unparalleled opportunity to engage, learn, and make
-            a difference.
-          </p>
+          <p>{t("dddText")}</p>
         </div>
         {/* card section starts*/}
         <div className="internship-page-card-wrapper">
           <h1>
-            <span>Why Choose</span> the Unnathi Internship?
+            <span> {t("whyChoose")}</span> {t("unnathiInternship")}
           </h1>
           <div className="internship-cards-wrapper-div">
             <div className="internship-individual-cards-wrapper">
@@ -87,14 +85,11 @@ const Internship = () => {
                   />
                 </svg>
                 <h3>
-                  Real-world<br></br>Impact
+                  {t("realWorld")}
+                  <br></br>
+                  {t("impact")}
                 </h3>
-                <p>
-                  Dive into projects that matter. Your contributions will
-                  directly influence the lives of the SC/ST community, crafting
-                  narratives of empowerment and growth. The projects that you
-                  work on are live and real, ones that on will show results.
-                </p>
+                <p>{t("realWorldText")}</p>
               </div>
             </div>{" "}
             <div className="internship-individual-cards-wrapper">
@@ -152,14 +147,11 @@ const Internship = () => {
                   />
                 </svg>
                 <h3>
-                  Mentorship<br></br>from the Best
+                  {t("mentorship")}
+                  <br></br>
+                  {t("formTheBest")}
                 </h3>
-                <p>
-                  Be guided by seasoned professionals from our UAS cadre. Absorb
-                  insights, strategies, and leadership nuances from individuals
-                  who've excelled in both the private sector and government
-                  service.
-                </p>
+                <p>{t("mentorshipText")}</p>
               </div>
             </div>{" "}
             <div className="internship-individual-cards-wrapper">
@@ -196,14 +188,11 @@ const Internship = () => {
                   />
                 </svg>
                 <h3>
-                  Dynamic Learning<br></br>Environment
+                  {t("dynamicLearning")}
+                  <br></br>
+                  {t("environment")}
                 </h3>
-                <p>
-                  Our zero-staffing model ensures that every task, every
-                  challenge, and every success is a collective endeavor.
-                  Experience the dynamism of a workspace where interns drive
-                  innovation.
-                </p>
+                <p>{t("dynamicLearningText")}</p>
               </div>
             </div>{" "}
             <div className="internship-individual-cards-wrapper">
@@ -264,12 +253,11 @@ const Internship = () => {
                   />
                 </svg>
                 <h3>
-                  Holistic Skill<br></br>Development
+                  {t("holistic")}
+                  <br></br>
+                  {t("development")}
                 </h3>
-                <p>
-                  Beyond technical skills, imbibe qualities of leadership,
-                  teamwork, problem-solving, and community engagement.
-                </p>
+                <p>{t("holistiDevText")}</p>
               </div>
             </div>
             <div className="internship-individual-cards-wrapper">
@@ -351,13 +339,11 @@ const Internship = () => {
                   <path d="M68.5 79L85 104.5" stroke="black" stroke-width="5" />
                 </svg>
                 <h3>
-                  Network &<br></br>Collaborate
+                  {t("network")}
+                  <br></br>
+                  {t("collaborate")}
                 </h3>
-                <p>
-                  Engage with a vibrant community of like-minded individuals,
-                  including peers, UAS professionals, and community leaders.
-                  Build connections that last a lifetime.
-                </p>
+                <p>{t("networkText")}</p>
               </div>
             </div>
           </div>
@@ -366,19 +352,14 @@ const Internship = () => {
 
         <div className="internship-numbered-descriptions-wrapper">
           <h1>
-            <span>Who</span> Are We Looking For?
+            <span>{t("who")}</span> {t("lookingFor")}
           </h1>
           <div>
             <div>
               <h2>1</h2>
               <div>
-                <h3>Passionate Individuals:</h3>
-                <p>
-                  Do you have an unyielding spirit to make a difference? A
-                  desire to use your skills for a cause greater than personal
-                  gain? Do you take initiative and love to innovate? We're
-                  looking for you.
-                </p>
+                <h3>{t("passionateIndividuals")}</h3>
+                <p>{t("passionateIndividualsText")}</p>
               </div>
             </div>
             <div></div>
