@@ -6,7 +6,9 @@ import timeline from "../../../assets/JoinUspage/timelinebg.png";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 const NGOCollaboration = () => {
+  const { t } = useTranslation(["NGOCollaboration"]);
   return (
     <>
       <Navbar />
@@ -15,7 +17,7 @@ const NGOCollaboration = () => {
       </div>
       <div className="ngocollaboration-wrapper">
         <div className="volunteering-header-sect ngocollobaration-header-sect">
-          <h1>Collaboration</h1>
+          <h1> {t("collaboration")}</h1>
           <a href="#about-submitidea" className="volunteering-arrow">
             <span class="m_scroll_arrows unu"></span>
             <span class="m_scroll_arrows doi"></span>
@@ -51,7 +53,7 @@ const NGOCollaboration = () => {
         {/* card section starts*/}
         <div className="internship-page-card-wrapper">
           <h1>
-            <span>Why Collaborate</span> with Unnathi?
+            <span>{t("whyCollaborate")}</span> {t("withUnnathi")}
           </h1>
           <div className="internship-cards-wrapper-div">
             <div className="internship-individual-cards-wrapper">
@@ -105,13 +107,10 @@ const NGOCollaboration = () => {
                   />
                 </svg>
                 <h3>
-                  Resource<br></br>Sourcing
+                  {t("resource")}
+                  <br></br> {t("sourcing")}
                 </h3>
-                <p>
-                  Partnering with Unnathi provides an avenue for corporates and
-                  NGOs to channel their resources effectively, ensuring they are
-                  optimally utilized for maximum community impact.
-                </p>
+                <p>{t("resourceSourcingText")}</p>
               </div>
             </div>{" "}
             <div className="internship-individual-cards-wrapper">
@@ -307,16 +306,10 @@ const NGOCollaboration = () => {
                   />
                 </svg>
                 <h3>
-                  Technology<br></br>Integration
+                  {t("technology")}
+                  <br></br> {t("integration")}
                 </h3>
-                <p>
-                  In this digital age, Unnathi seeks to harness cutting-edge
-                  technology from our partners, aiming to innovate and
-                  streamline community development projects. White labelling
-                  technologies and rolling out CSR/sponsored initiatives for the
-                  welfare of the communities can be made possible through
-                  Unnathi.
-                </p>
+                <p>{t("technologyIntegrationText")}</p>
               </div>
             </div>{" "}
             <div className="internship-individual-cards-wrapper">
@@ -402,13 +395,10 @@ const NGOCollaboration = () => {
                   <path d="M68 79L84.5 104.5" stroke="black" stroke-width="7" />
                 </svg>
                 <h3>
-                  Network<br></br>Expansion
+                  {t("network")}
+                  <br></br> {t("expansion")}
                 </h3>
-                <p>
-                  Leverage Unnathi's extensive network to reach previously
-                  inaccessible communities, stakeholders, and influencers in the
-                  target communities.
-                </p>
+                <p>{t("networkExpanisionText")}</p>
               </div>
             </div>{" "}
             <div className="internship-individual-cards-wrapper">
@@ -502,13 +492,11 @@ const NGOCollaboration = () => {
                   />
                 </svg>
                 <h3>
-                  Shared Vision,<br></br>Multiplied Impact
+                  {t("sharedVision")}
+                  <br></br>
+                  {t("multipliedImpact")}
                 </h3>
-                <p>
-                  Our mission aligns with the CSR objectives of corporates and
-                  the grassroots initiatives of NGOs. This synergy can scale
-                  projects, magnify outreach, and drive transformative change.
-                </p>
+                <p>{t("sharedVisionText")}</p>
               </div>
             </div>
             <div className="internship-individual-cards-wrapper">
@@ -548,13 +536,11 @@ const NGOCollaboration = () => {
                   />
                 </svg>
                 <h3>
-                  Branding &<br></br>Recognition
+                  {t("branding")}
+                  <br></br>
+                  {t("recognition")}
                 </h3>
-                <p>
-                  Collaborative projects offer shared success stories,
-                  acknowledgments, and branding opportunities, enhancing the
-                  visibility and impact of all parties involved.
-                </p>
+                <p>{t("brandingRecognitionText")}</p>
               </div>
             </div>
           </div>
@@ -680,15 +666,11 @@ const NGOCollaboration = () => {
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
             <h1>
-              <span>Together,</span> We Can Achieve Monumental Change
+              <span>{t("together")},</span> {t("weCanAchieveMonumentalChange")}
             </h1>
-            <p>
-              Collaboration transcends mere partnership; it's a unified journey
-              towards a shared vision. Join forces with Unnathi, and let's
-              co-create transformative narratives for all communities.
-            </p>
+            <p>{t("togetherText")}</p>
             <a href="">
-              <p>Initiate Collaboration</p>
+              <p>{t("initiateCollaboration")}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
