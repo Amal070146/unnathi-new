@@ -1,6 +1,26 @@
-
-
-.enterprenuership-header-sect{
-    background: url("../../../assets/JoinUspage/Enterprenuershipbg.png") center
+.enterprenuership-header-sect {
+  background: url("../../../assets/JoinUspage/Enterprenuershipbg.png") center
     center/cover no-repeat;
+}
+.enterprenuership-wrapper {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Red Hat Text";
+}
+
+.enterprenuership-wrapper .submitidea-timeline-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 85px !important;
+}
+
+@media screen and (max-width: 850px) {
+  .enterprenuership-wrapper .submitidea-timeline-content {
+    gap: 90px !important;
+  }
 }
