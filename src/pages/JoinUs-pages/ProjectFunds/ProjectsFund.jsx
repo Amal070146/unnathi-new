@@ -1,5 +1,5 @@
-import React from 'react'
-import './ProjectsFunds.css'
+import React from "react";
+import "./ProjectsFunds.css";
 
 import banner from "../../../assets/JoinUspage/yellow-banner-img/projectfund.png";
 import timeline from "../../../assets/JoinUspage/timelinebg.png";
@@ -10,7 +10,7 @@ import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitc
 import { useTranslation } from "react-i18next";
 
 const ProjectsFund = () => {
-    const { t } = useTranslation(["NGOCollaboration"]);
+  const { t } = useTranslation(["NGOCollaboration"]);
   return (
     <>
       <Navbar />
@@ -19,7 +19,7 @@ const ProjectsFund = () => {
       </div>
       <div className="projectfund-wrapper">
         <div className="volunteering-header-sect projectfunds-header-sect">
-          <h1>Projects to Fund</h1>
+          <h1>{t("projectToFund")}</h1>
           <a href="#about-submitidea" className="volunteering-arrow">
             <span class="m_scroll_arrows unu"></span>
             <span class="m_scroll_arrows doi"></span>
@@ -31,7 +31,7 @@ const ProjectsFund = () => {
 
         <div className="submitidea-timeline-wrapper">
           <h1>
-            <span>{t("howTo")}</span> Initiate Collaboration?
+            <span>{t("howTo")}</span> {t("projectToFund")}
           </h1>
           <div className="submitidea-timeline-content-wrapper">
             <div>
@@ -44,8 +44,7 @@ const ProjectsFund = () => {
                 </div>
                 <div>
                   <p>
-                    Browse through the project list to identify one that aligns
-                    with your objectives.
+                  {t("step1")}
                   </p>
                 </div>
               </div>
@@ -53,8 +52,7 @@ const ProjectsFund = () => {
               <div className="submitidea-timeline-content-individual timeline2">
                 <div>
                   <p>
-                    Click on the 'Collaborate on This Project' button next to
-                    the chosen project.
+                  {t("step2")}
                   </p>
                 </div>
                 <div>
@@ -67,15 +65,14 @@ const ProjectsFund = () => {
                   <h2>3</h2>
                 </div>
                 <div>
-                  <p>Specify if you wish to fund, directly execute, or both.</p>
+                  <p>{t("step3")}</p>
                 </div>
               </div>
 
               <div className="submitidea-timeline-content-individual timeline4">
                 <div>
                   <p>
-                    Our team will engage with you, providing more information,
-                    project blueprints, and collaboration modalities.
+                  {t("step4")}
                   </p>
                 </div>{" "}
                 <div>
@@ -85,9 +82,7 @@ const ProjectsFund = () => {
             </div>
           </div>
           <p style={{ textAlign: "center" }}>
-            Note: Our projects are meticulously planned to ensure their success
-            and sustainability. Your collaboration—be it through funding, direct
-            execution, or both—accelerates this transformative journey.
+          {t("note")}
           </p>
         </div>
         {/*  timeline end */}
@@ -95,14 +90,12 @@ const ProjectsFund = () => {
         {/* yellow banner start */}
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
-            <h1>Your Vision. Their Dreams. Our Shared Mission.</h1>
+            <h1>{t("yourVisionTheirDreamsOurSharedMission")}</h1>
             <p>
-              Every project undertaken reshapes futures, crafting legacies of
-              empowerment and growth. Partner with Unnathi and be a part of this
-              transformative odyssey.
+            {t("yourVisionTheirDreamsOurSharedMissionText")}
             </p>
             <a href="">
-              <p>Explore & Collaborate on Projects</p>
+              <p>{t("pexploreCollaborateProjects")}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
@@ -128,6 +121,6 @@ const ProjectsFund = () => {
       <Footer />
     </>
   );
-}
+};
 
-export default ProjectsFund
+export default ProjectsFund;
