@@ -26,12 +26,12 @@ const Navbar = () => {
 
   const path = useReactPath();
   const navContent = [
-    // t("about"),
-    // t("governingBody"),
-    // t("media"),
-    // t("partners"),
-    // t("donate"),
-    // t("projects"),
+    t("about"),
+    t("governingBody"),
+    t("media"),
+    t("partners"),
+    t("donate"),
+    t("projects"),
   ];
   useEffect(() => {}, [path]);
   const changenavlogo = () => {
@@ -57,10 +57,10 @@ const Navbar = () => {
       >
         <div className="navbar-desk">
           {navContent.slice(0, 3).map((content, i) => (
-            <a href={`#${content}`} key={i.toString() + content}>
+            <a href={`/${content}`} key={i.toString() + content}>
               <p
                 style={{
-                  borderBottom: window.location.href.includes(`#${content}`)
+                  borderBottom: window.location.href.includes(`/${content}`)
                     ? "4px solid #FBBA16"
                     : "",
                   textTransform: "capitalize",
@@ -80,10 +80,10 @@ const Navbar = () => {
             />
           </a>
           {navContent.slice(3, 6).map((content, i) => (
-            <a href={`#${content}`} key={i.toString() + content}>
+            <a href={`/${content}`} key={i.toString() + content}>
               <p
                 style={{
-                  borderBottom: window.location.href.includes(`#${content}`)
+                  borderBottom: window.location.href.includes(`/${content}`)
                     ? "4px solid #FBBA16"
                     : "",
                   textTransform: "capitalize",
@@ -119,10 +119,10 @@ const Navbar = () => {
           {openmenu && (
             <div className="menu-div">
               {navContent.map((content, i) => (
-                <a href={`#${content}`} key={i.toString() + content}>
+                <a href={`/${content}`} key={i.toString() + content}>
                   <p
                     style={{
-                      color: window.location.href.includes(`#${content}`)
+                      color: window.location.href.includes(`/${content}`)
                         ? "#FBBA16"
                         : "",
                       textTransform: "capitalize",
