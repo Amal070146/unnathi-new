@@ -27,24 +27,24 @@ const SubmitIdea = () => {
         <div className="submitidea-quote-wrapper">
           <div>
             <h1>
-              Shape the{" "}
-              <span style={{ color: "#FBBA16", fontWeight: 600 }}>Future</span>{" "}
-              with{" "}
-              <span style={{ color: "#EC1D25", fontWeight: 600 }}>Unnathi</span>
+              {t("shapeThe")}{" "}
+              <span style={{ color: "#FBBA16", fontWeight: 600 }}>
+                {t("future")}
+              </span>{" "}
+              {t("with")}{" "}
+              <span style={{ color: "#EC1D25", fontWeight: 600 }}>
+                {t("unnathi")}
+              </span>
             </h1>
             <h2>
-              Your Vision<span style={{ color: "#F37020" }}>.</span> Our
-              Platform<span style={{ color: "#F37020" }}>.</span> Collective
-              Impact
+              {t("yourVision")}
+              <span style={{ color: "#F37020" }}>.</span> {t("ourPlatform")}
+              <span style={{ color: "#F37020" }}>.</span>{" "}
+              {t("collectiveImpact")}
               <span style={{ color: "#F37020" }}>.</span>
             </h2>
           </div>
-          <p>
-            Unnathi thrives on innovation, collaboration, and the power of
-            collective wisdom. We believe that every idea, big or small, has the
-            potential to create waves of change, especially when it aligns with
-            our mission of empowering the SC/ST community.
-          </p>
+          <p>{t("collectiveImpactText")}</p>
         </div>
         {/* about of submitidea */}
         <div id="about-submitidea" className="about-volunteering">
@@ -305,49 +305,35 @@ const SubmitIdea = () => {
         {/* guidelines start */}
         <div className="submitidea-guidelines-wrapper">
           <h1>
-            <span>Guidelines</span> for Submission
+            <span>{t("guidelines")}</span> {t("forSubmission")}
           </h1>
           <div className="submitidea-guidelines-content-wrapper">
             <div className="submitidea-guidelines-individual">
               <div className="yellow-circle"></div>
               <div>
-                <h3>Relevance:</h3>
-                <p>
-                  Ensure your idea aligns with Unnathi's core mission and
-                  objectives.
-                </p>
+                <h3>{t("relevant")}</h3>
+                <p>{t("relevantText")}</p>
               </div>
             </div>
             <div className="submitidea-guidelines-individual">
               <div className="yellow-circle"></div>
               <div>
-                <h3>Clarity:</h3>
-                <p>
-                  Be as detailed and clear as possible. The more we understand
-                  your vision, the better we can evaluate its potential.
-                </p>
+                <h3>{t("clriyty")}</h3>
+                <p>{t("clriytyText")}</p>
               </div>
             </div>{" "}
             <div className="submitidea-guidelines-individual">
               <div className="yellow-circle"></div>
               <div>
-                <h3>Originality:</h3>
-                <p>
-                  We value fresh, innovative perspectives. Make sure your idea
-                  is original and hasn't been replicated elsewhere. If it is not
-                  an original idea, but you feel it is good to replicate or
-                  adapt, give due credit and submit it.
-                </p>
+                <h3>{t("originality")}</h3>
+                <p>{t("originalityText")}</p>
               </div>
             </div>{" "}
             <div className="submitidea-guidelines-individual">
               <div className="yellow-circle"></div>
               <div>
-                <h3>Feasibility:</h3>
-                <p>
-                  While we love groundbreaking ideas, consider the practicality
-                  and feasibility of implementation.
-                </p>
+                <h3>{t("feasibility")}</h3>
+                <p>{t("feasibilityText")}</p>
               </div>
             </div>
           </div>
@@ -358,7 +344,7 @@ const SubmitIdea = () => {
 
         <div className="submitidea-timeline-wrapper">
           <h1>
-            <span>How to</span> Submit Your Idea?
+            <span>{t("howTo")}</span> {t("submitYourIdeas")}
           </h1>
           <div className="submitidea-timeline-content-wrapper">
             <div>
@@ -370,13 +356,13 @@ const SubmitIdea = () => {
                   <h2>1</h2>
                 </div>
                 <div>
-                  <p>Click on the 'Submit your idea' button below.</p>
+                  <p>{t("step1")}</p>
                 </div>
               </div>
 
               <div className="submitidea-timeline-content-individual timeline2">
                 <div>
-                  <p>Fill in the necessary details in the provided form.</p>
+                  <p>{t("step2")}</p>
                 </div>
                 <div>
                   <h2>2</h2>
@@ -388,18 +374,13 @@ const SubmitIdea = () => {
                   <h2>3</h2>
                 </div>
                 <div>
-                  <p>
-                    Describe your idea, its potential impact, and any other
-                    relevant details.
-                  </p>
+                  <p>{t("step3")}</p>
                 </div>
               </div>
 
               <div className="submitidea-timeline-content-individual timeline4">
                 <div>
-                  <p>
-                    Submit the form, and our team will review your submission.
-                  </p>
+                  <p>{t("step4")}</p>
                 </div>{" "}
                 <div>
                   <h2>4</h2>
@@ -407,11 +388,7 @@ const SubmitIdea = () => {
               </div>
             </div>
           </div>
-          <p style={{ textAlign: "center" }}>
-            Note: All ideas will undergo a thorough review process. While we
-            appreciate every submission, due to the volume of ideas we receive,
-            only those selected for further exploration will be contacted.
-          </p>
+          <p style={{ textAlign: "center" }}>{t("note")}</p>
         </div>
         {/*  timeline end */}
         {/* yellow banner start */}
