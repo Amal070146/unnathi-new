@@ -1,13 +1,15 @@
-import React from 'react'
+import React from "react";
 import "./NGOCollaboration.css";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
-import LanguageSwitcher from '../../../components/LanguageSwitcher/LanguageSwitcher';
+import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 const NGOCollaboration = () => {
   return (
     <>
       <Navbar />
-      <LanguageSwitcher />
+      <div className="home-language-switcher">
+        <LanguageSwitcher />
+      </div>
       <div className="ngocollaboration-wrapper">
         <div className="volunteering-header-sect ngocollobaration-header-sect">
           <h1>Collaboration</h1>
@@ -22,6 +24,6 @@ const NGOCollaboration = () => {
       <Footer />
     </>
   );
-}
+};
 
-export default NGOCollaboration
+export default NGOCollaboration;

@@ -9,7 +9,9 @@ const Internship = () => {
   return (
     <>
       <Navbar />
-      <LanguageSwitcher />
+      <div className="home-language-switcher">
+        <LanguageSwitcher />
+      </div>
       <div className="internship-wrapper">
         <div className="volunteering-header-sect internship-header-sect">
           <h1>{t("internships")}</h1>
@@ -61,8 +63,9 @@ const Internship = () => {
         {/* apply */}
         <div className="volunteering-apply-button-wrapper">
           <p>
-            {t("takeThe")} <span style={{ color: "#FBBA16" }}> {t("leap")}</span>
-            .{t("embarkOn")}{" "}
+            {t("takeThe")}{" "}
+            <span style={{ color: "#FBBA16" }}> {t("leap")}</span>.
+            {t("embarkOn")}{" "}
             <span style={{ color: "#EC1D25" }}> {t("purpose")}</span>,{" "}
             <span style={{ color: "#F37020" }}> {t("passion")}</span>{" "}
             {t("professionalGrowth")}

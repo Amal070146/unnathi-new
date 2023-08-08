@@ -27,7 +27,7 @@
 }
 @media screen and (max-width: 880px) {
   .home-wrapper {
-    background: url("../../assets/home-bg.png") left center/cover no-repeat;
+    background: url("../../assets/tabhome-bg.png") left center/cover no-repeat;
   }
   .home-language-switcher {
     display: none;
@@ -38,7 +38,7 @@
 }
 @media screen and (max-width: 490px) {
   .home-wrapper {
-    background: url("../../assets/home-bg.png") center center/cover no-repeat;
+    background: url("../../assets/mobhome-bg.png") center center/cover no-repeat;
   }
 }
 
