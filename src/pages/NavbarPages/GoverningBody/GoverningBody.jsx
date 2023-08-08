@@ -37,12 +37,10 @@ const GoverningBody = () => {
 
   const path = useReactPath();
   const navContent = [
-    t("about"),
     t("governingBody"),
-    t("media"),
-    t("partners"),
-    t("donate"),
-    t("projects"),
+    t("uas"),
+    t("internship"),
+    t("volunteering"),
   ];
   useEffect(() => {}, [path]);
   const changenavlogo = () => {
@@ -67,7 +65,7 @@ const GoverningBody = () => {
           }}
         >
           <div className="navbar-desk">
-            {navContent.slice(0, 3).map((content, i) => (
+            {navContent.slice(0, 2).map((content, i) => (
               <a href={`/${content}`} key={i.toString() + content}>
                 <p
                   style={{
@@ -91,7 +89,7 @@ const GoverningBody = () => {
                 alt=""
               />
             </a>
-            {navContent.slice(3, 6).map((content, i) => (
+            {navContent.slice(2, 4).map((content, i) => (
               <a href={`/${content}`} key={i.toString() + content}>
                 <p
                   style={{
