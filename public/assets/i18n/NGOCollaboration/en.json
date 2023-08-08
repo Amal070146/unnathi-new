@@ -1,5 +1,15 @@
 {
   "collaboration": "Collaboration",
+
+  "amplify": "Amplify",
+  "impact": "Impact",
+  "with": "with",
+  "unnathi": "Unnathi",
+  "synergyInPurpose": "Synergy in Purpose",
+  "excellenceInExecution": "Excellence in Execution",
+  "excellenceInExecutionText": "In the ever-evolving landscape of community development and empowerment, collaboration assures accelerated change. At Unnathi, we firmly believe that the confluence of grassroots understanding with corporate resources can create unparalleled impact, especially for the vulnerable communities.",
+
+
   "whyCollaborate": "Why Collaborate?",
   "withUnnathi": "With Unnathi",
   "resource": "Resource",
@@ -17,6 +27,25 @@
   "branding": "Branding &",
   "recognition": "Recognition",
   "brandingRecognitionText": "Collaborative projects offer shared success stories, acknowledgments, and branding opportunities, enhancing the visibility and impact of all parties involved.",
+
+  "guidelines": "Guidelines",
+  "forSubmission": "for Submission",
+  "alignmentOfObjectives": "Alignment of Objectives",
+  "alignmentOfObjectivesText": " Collaborative goals should resonate with Unnathi's mission and the welfare of the SC/ST community.",
+  "transparencyAndTrust": "Transparency & Trust:",
+  "transparencyAndTrustText": "A successful collaboration thrives on open communication, transparent processes, and mutual respect.",
+  "commitmentToImpact": "Commitment to Impact:",
+  "commitmentToImpactText": "Beyond just resources, a genuine commitment to tangible, on-ground impact is essential.",
+  "regularReview": "Regular Review & Feedback",
+  "regularReviewText": " Collaborative initiatives will involve periodic reviews, feedback sessions, and strategic adjustments to ensure efficacy.",
+  "howTo": "How to",
+  "submitYourIdeas": "Submit Your Idea?",
+  "step1": "Click on the 'Initiate Collaboration' button below.",
+  "step2": "Furnish details about your NGO or corporate entity in the form.",
+  "step3": "Describe the objectives, potential projects, or resources that you would offer and sector on you wish to collaborate on.",
+  "step4": " Submit the form, and our dedicated collaboration team will connect with you.",
+  "note": "Note: All ideas will undergo a thorough review process. While we appreciate every submission, due to the volume of ideas we receive, only those selected for further exploration will be contacted.",
+
   "together": "Together",
   "weCanAchieveMonumentalChange": "We Can Achieve Monumental Change",
   "togetherText": " Collaboration transcends mere partnership; it's a unified journey towards a shared vision. Join forces with Unnathi, and let's co-create transformative narratives for all communities.",

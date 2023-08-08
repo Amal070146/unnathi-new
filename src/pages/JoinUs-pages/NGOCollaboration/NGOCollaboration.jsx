@@ -29,24 +29,22 @@ const NGOCollaboration = () => {
         <div className="submitidea-quote-wrapper">
           <div>
             <h1>
-              Amplify{" "}
-              <span style={{ color: "#FBBA16", fontWeight: 600 }}>Impact</span>{" "}
-              with{" "}
-              <span style={{ color: "#EC1D25", fontWeight: 600 }}>Unnathi</span>
+              {t("amplify")}{" "}
+              <span style={{ color: "#FBBA16", fontWeight: 600 }}>
+                {t("impact")}
+              </span>{" "}
+              {t("with")}{" "}
+              <span style={{ color: "#EC1D25", fontWeight: 600 }}>
+                {t("unnathi")}
+              </span>
             </h1>
             <h2>
-              Synergy in Purpose<span style={{ color: "#F37020" }}>.</span>{" "}
-              Excellence in Execution
+              {t("synergyInPurpose")}
+              <span style={{ color: "#F37020" }}>.</span> {t("excellenceInExecution")}
               <span style={{ color: "#F37020" }}>.</span>
             </h2>
           </div>
-          <p>
-            In the ever-evolving landscape of community development and
-            empowerment, collaboration assures accelerated change. At Unnathi,
-            we firmly believe that the confluence of grassroots understanding
-            with corporate resources can create unparalleled impact, especially
-            for the vulnerable communities.
-          </p>
+          <p>{t("excellenceInExecutionText")}</p>
         </div>
 
         {/* end of quote */}
@@ -549,48 +547,36 @@ const NGOCollaboration = () => {
         {/* guidelines start */}
         <div className="submitidea-guidelines-wrapper">
           <h1>
-            <span>Guidelines</span> for Submission
+            <span>{t("guidelines")}</span>
+            {t("forSubmission")}
           </h1>
           <div className="submitidea-guidelines-content-wrapper">
             <div className="submitidea-guidelines-individual">
               <div className="yellow-circle"></div>
               <div>
-                <h3>Alignment of Objectives:</h3>
-                <p>
-                  Collaborative goals should resonate with Unnathi's mission and
-                  the welfare of the SC/ST community.
-                </p>
+                <h3>{t("alignmentOfObjectives")}</h3>
+                <p>{t("alignmentOfObjectivesText")}</p>
               </div>
             </div>
             <div className="submitidea-guidelines-individual">
               <div className="yellow-circle"></div>
               <div>
-                <h3>Transparency & Trust:</h3>
-                <p>
-                  A successful collaboration thrives on open communication,
-                  transparent processes, and mutual respect.
-                </p>
+                <h3>{t("transparencyAndTrust")}</h3>
+                <p>{t("transparencyAndTrustText")}</p>
               </div>
             </div>{" "}
             <div className="submitidea-guidelines-individual">
               <div className="yellow-circle"></div>
               <div>
-                <h3>Commitment to Impact:</h3>
-                <p>
-                  Beyond just resources, a genuine commitment to tangible,
-                  on-ground impact is essential.
-                </p>
+                <h3>{t("commitmentToImpact")}</h3>
+                <p>{t("commitmentToImpactText")}</p>
               </div>
             </div>{" "}
             <div className="submitidea-guidelines-individual">
               <div className="yellow-circle"></div>
               <div>
-                <h3>Regular Review & Feedback:</h3>
-                <p>
-                  Collaborative initiatives will involve periodic reviews,
-                  feedback sessions, and strategic adjustments to ensure
-                  efficacy.
-                </p>
+                <h3>{t("regularReview")}</h3>
+                <p>{t("regularReviewText")}</p>
               </div>
             </div>
           </div>
@@ -600,7 +586,7 @@ const NGOCollaboration = () => {
 
         <div className="submitidea-timeline-wrapper">
           <h1>
-            <span>How to</span> Submit Your Idea?
+            <span>{t("howTo")}</span> {t("submitYourIdeas")}
           </h1>
           <div className="submitidea-timeline-content-wrapper">
             <div>
@@ -612,16 +598,13 @@ const NGOCollaboration = () => {
                   <h2>1</h2>
                 </div>
                 <div>
-                  <p>Click on the 'Initiate Collaboration' button below.</p>
+                  <p>{t("step1")}</p>
                 </div>
               </div>
 
               <div className="submitidea-timeline-content-individual timeline2">
                 <div>
-                  <p>
-                    Furnish details about your NGO or corporate entity in the
-                    form.
-                  </p>
+                  <p>{t("step2")}</p>
                 </div>
                 <div>
                   <h2>2</h2>
@@ -633,20 +616,13 @@ const NGOCollaboration = () => {
                   <h2>3</h2>
                 </div>
                 <div>
-                  <p>
-                    Describe the objectives, potential projects, or resources
-                    that you would offer and sector on you wish to collaborate
-                    on.
-                  </p>
+                  <p>{t("step3")}</p>
                 </div>
               </div>
 
               <div className="submitidea-timeline-content-individual timeline4">
                 <div>
-                  <p>
-                    Submit the form, and our dedicated collaboration team will
-                    connect with you.
-                  </p>
+                  <p>{t("step4")}</p>
                 </div>{" "}
                 <div>
                   <h2>4</h2>
@@ -654,11 +630,7 @@ const NGOCollaboration = () => {
               </div>
             </div>
           </div>
-          <p style={{ textAlign: "center" }}>
-            Note: All ideas will undergo a thorough review process. While we
-            appreciate every submission, due to the volume of ideas we receive,
-            only those selected for further exploration will be contacted.
-          </p>
+          <p style={{ textAlign: "center" }}>{t("note")}</p>
         </div>
         {/*  timeline end */}
 
