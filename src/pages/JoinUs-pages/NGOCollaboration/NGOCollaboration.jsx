@@ -1,6 +1,7 @@
 import React from "react";
 import "./NGOCollaboration.css";
 import banner from "../../../assets/JoinUspage/yellow-banner-img/NGO.png";
+import timeline from "../../../assets/JoinUspage/timelinebg.png";
 
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
@@ -22,7 +23,31 @@ const NGOCollaboration = () => {
             <span class="m_scroll_arrows quad"></span>
           </a>
         </div>
+        {/* quote of submitidea used */}
+        <div className="submitidea-quote-wrapper">
+          <div>
+            <h1>
+              Amplify{" "}
+              <span style={{ color: "#FBBA16", fontWeight: 600 }}>Impact</span>{" "}
+              with{" "}
+              <span style={{ color: "#EC1D25", fontWeight: 600 }}>Unnathi</span>
+            </h1>
+            <h2>
+              Synergy in Purpose<span style={{ color: "#F37020" }}>.</span>{" "}
+              Excellence in Execution
+              <span style={{ color: "#F37020" }}>.</span>
+            </h2>
+          </div>
+          <p>
+            In the ever-evolving landscape of community development and
+            empowerment, collaboration assures accelerated change. At Unnathi,
+            we firmly believe that the confluence of grassroots understanding
+            with corporate resources can create unparalleled impact, especially
+            for the vulnerable communities.
+          </p>
+        </div>
 
+        {/* end of quote */}
         {/* card section starts*/}
         <div className="internship-page-card-wrapper">
           <h1>
@@ -535,6 +560,121 @@ const NGOCollaboration = () => {
           </div>
         </div>
         {/* card section ends*/}
+        {/* guidelines start */}
+        <div className="submitidea-guidelines-wrapper">
+          <h1>
+            <span>Guidelines</span> for Submission
+          </h1>
+          <div className="submitidea-guidelines-content-wrapper">
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Alignment of Objectives:</h3>
+                <p>
+                  Collaborative goals should resonate with Unnathi's mission and
+                  the welfare of the SC/ST community.
+                </p>
+              </div>
+            </div>
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Transparency & Trust:</h3>
+                <p>
+                  A successful collaboration thrives on open communication,
+                  transparent processes, and mutual respect.
+                </p>
+              </div>
+            </div>{" "}
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Commitment to Impact:</h3>
+                <p>
+                  Beyond just resources, a genuine commitment to tangible,
+                  on-ground impact is essential.
+                </p>
+              </div>
+            </div>{" "}
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Regular Review & Feedback:</h3>
+                <p>
+                  Collaborative initiatives will involve periodic reviews,
+                  feedback sessions, and strategic adjustments to ensure
+                  efficacy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* guidelines end */}
+        {/*  timeline start */}
+
+        <div className="submitidea-timeline-wrapper">
+          <h1>
+            <span>How to</span> Submit Your Idea?
+          </h1>
+          <div className="submitidea-timeline-content-wrapper">
+            <div>
+              <img src={timeline} alt="" />
+            </div>
+            <div className="submitidea-timeline-content">
+              <div className="submitidea-timeline-content-individual timeline1">
+                <div>
+                  <h2>1</h2>
+                </div>
+                <div>
+                  <p>Click on the 'Initiate Collaboration' button below.</p>
+                </div>
+              </div>
+
+              <div className="submitidea-timeline-content-individual timeline2">
+                <div>
+                  <p>
+                    Furnish details about your NGO or corporate entity in the
+                    form.
+                  </p>
+                </div>
+                <div>
+                  <h2>2</h2>
+                </div>
+              </div>
+
+              <div className="submitidea-timeline-content-individual timeline3">
+                <div>
+                  <h2>3</h2>
+                </div>
+                <div>
+                  <p>
+                    Describe the objectives, potential projects, or resources
+                    that you would offer and sector on you wish to collaborate
+                    on.
+                  </p>
+                </div>
+              </div>
+
+              <div className="submitidea-timeline-content-individual timeline4">
+                <div>
+                  <p>
+                    Submit the form, and our dedicated collaboration team will
+                    connect with you.
+                  </p>
+                </div>{" "}
+                <div>
+                  <h2>4</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p style={{ textAlign: "center" }}>
+            Note: All ideas will undergo a thorough review process. While we
+            appreciate every submission, due to the volume of ideas we receive,
+            only those selected for further exploration will be contacted.
+          </p>
+        </div>
+        {/*  timeline end */}
 
         {/* yellow banner start */}
         <div className="internship-yellow-banner-wrapper">

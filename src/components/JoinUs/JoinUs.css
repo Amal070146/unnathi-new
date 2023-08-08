@@ -69,12 +69,12 @@
 .flip-card-front {
   background-color: #ffffff;
   color: black;
-  border: 15px solid #fbba16;
+  border: 10px solid #fbba16;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
 }
 
 /* Style the back side */
@@ -82,12 +82,12 @@
   background-color: #fbba16;
   color: white;
   transform: rotateY(180deg);
-  border: 15px solid #ffd56c;
+  border: 10px solid #ffd56c;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
 }
 
 @media screen and (max-width: 650px) {
@@ -115,7 +115,7 @@
     min-height: 280px;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 490px) {
   .joinus-wrapper {
     height: 870px;
     margin-top: 12%;

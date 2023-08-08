@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 import "./SubmitIdea.css";
 import banner from "../../../assets/JoinUspage/yellow-banner-img/submitidea.png";
-
+import timeline from "../../../assets/JoinUspage/timelinebg.png";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from '../../../components/LanguageSwitcher/LanguageSwitcher';
+import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 const SubmitIdea = () => {
   const { t } = useTranslation(["SubmitIdea"]);
   return (
@@ -24,7 +24,28 @@ const SubmitIdea = () => {
             <span class="m_scroll_arrows quad"></span>
           </a>
         </div>
-
+        <div className="submitidea-quote-wrapper">
+          <div>
+            <h1>
+              Shape the{" "}
+              <span style={{ color: "#FBBA16", fontWeight: 600 }}>Future</span>{" "}
+              with{" "}
+              <span style={{ color: "#EC1D25", fontWeight: 600 }}>Unnathi</span>
+            </h1>
+            <h2>
+              Your Vision<span style={{ color: "#F37020" }}>.</span> Our
+              Platform<span style={{ color: "#F37020" }}>.</span> Collective
+              Impact
+              <span style={{ color: "#F37020" }}>.</span>
+            </h2>
+          </div>
+          <p>
+            Unnathi thrives on innovation, collaboration, and the power of
+            collective wisdom. We believe that every idea, big or small, has the
+            potential to create waves of change, especially when it aligns with
+            our mission of empowering the SC/ST community.
+          </p>
+        </div>
         {/* about of submitidea */}
         <div id="about-submitidea" className="about-volunteering">
           <div className="about-volunteering-heading">
@@ -280,6 +301,119 @@ const SubmitIdea = () => {
           </div>
         </div>
         {/* about of submitidea ends */}
+
+        {/* guidelines start */}
+        <div className="submitidea-guidelines-wrapper">
+          <h1>
+            <span>Guidelines</span> for Submission
+          </h1>
+          <div className="submitidea-guidelines-content-wrapper">
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Relevance:</h3>
+                <p>
+                  Ensure your idea aligns with Unnathi's core mission and
+                  objectives.
+                </p>
+              </div>
+            </div>
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Clarity:</h3>
+                <p>
+                  Be as detailed and clear as possible. The more we understand
+                  your vision, the better we can evaluate its potential.
+                </p>
+              </div>
+            </div>{" "}
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Originality:</h3>
+                <p>
+                  We value fresh, innovative perspectives. Make sure your idea
+                  is original and hasn't been replicated elsewhere. If it is not
+                  an original idea, but you feel it is good to replicate or
+                  adapt, give due credit and submit it.
+                </p>
+              </div>
+            </div>{" "}
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Feasibility:</h3>
+                <p>
+                  While we love groundbreaking ideas, consider the practicality
+                  and feasibility of implementation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* guidelines end */}
+
+        {/*  timeline start */}
+
+        <div className="submitidea-timeline-wrapper">
+          <h1>
+            <span>How to</span> Submit Your Idea?
+          </h1>
+          <div className="submitidea-timeline-content-wrapper">
+            <div>
+              <img src={timeline} alt="" />
+            </div>
+            <div className="submitidea-timeline-content">
+              <div className="submitidea-timeline-content-individual timeline1">
+                <div>
+                  <h2>1</h2>
+                </div>
+                <div>
+                  <p>Click on the 'Submit your idea' button below.</p>
+                </div>
+              </div>
+
+              <div className="submitidea-timeline-content-individual timeline2">
+                <div>
+                  <p>Fill in the necessary details in the provided form.</p>
+                </div>
+                <div>
+                  <h2>2</h2>
+                </div>
+              </div>
+
+              <div className="submitidea-timeline-content-individual timeline3">
+                <div>
+                  <h2>3</h2>
+                </div>
+                <div>
+                  <p>
+                    Describe your idea, its potential impact, and any other
+                    relevant details.
+                  </p>
+                </div>
+              </div>
+
+              <div className="submitidea-timeline-content-individual timeline4">
+                <div>
+                  <p>
+                    Submit the form, and our team will review your submission.
+                  </p>
+                </div>{" "}
+                <div>
+                  <h2>4</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p style={{ textAlign: "center" }}>
+            Note: All ideas will undergo a thorough review process. While we
+            appreciate every submission, due to the volume of ideas we receive,
+            only those selected for further exploration will be contacted.
+          </p>
+        </div>
+        {/*  timeline end */}
         {/* yellow banner start */}
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
@@ -319,6 +453,6 @@ const SubmitIdea = () => {
       <Footer />
     </>
   );
-}
+};
 
-export default SubmitIdea
+export default SubmitIdea;
