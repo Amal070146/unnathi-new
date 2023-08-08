@@ -11,13 +11,13 @@ const Footer = () => {
     <div className="footer-wrapper">
       <div className="footer-toper">
         <img src={i18next.language === "en" ? logo : logo_mal} alt="" />
-        {/* <div>
+        <div>
           <a href="">{t("media")}</a>
           <a href="">{t("news")}</a>
           <a href="">{t("impact")}</a>
           <a href="">{t("privacyPolicy")}</a>
           <a href="">{t("disclaimer")}</a>
-        </div> */}
+        </div>
       </div>
       <div className="footer-bottom">
         <p style={{ textAlign: "center" }}>{t("copyright")}</p>
