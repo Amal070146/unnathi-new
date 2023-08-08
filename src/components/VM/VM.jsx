@@ -36,10 +36,7 @@ const VM = () => {
           </div>
         </div>
         <div className="vm-individual mission-wrap">
-          <div
-            className="vm-content-wrapper"
-           
-          >
+          <div className="vm-content-wrapper">
             <h2>{t("mission")}</h2>
             <p>{t("missionText")}</p>
           </div>
@@ -157,13 +154,13 @@ const VM = () => {
                 </g>
               </svg>
               <h1
-                style={{ color: "#FFF4D9", fontSize: 200, marginTop: "-65px" }}
+                style={{ color: "#FFE9EA", fontSize: 200, marginTop: "-65px" }}
               >
                 1
               </h1>
             </div>
-            <p style={{ textAlign: "left", marginTop: -130 }}>
-            {t("point1")}
+            <p style={{ textAlign: "left", marginTop: -130, fontWeight: 400 }}>
+              {t("point1")}
             </p>
           </div>
           <div className="colaborator-individual-content spl-vm-container">
@@ -207,12 +204,12 @@ const VM = () => {
                   />
                 </g>
               </svg>
-              <h1 style={{ color: "#FFF4D9", fontSize: 200, marginTop: -50 }}>
+              <h1 style={{ color: "#FFE9EA", fontSize: 200, marginTop: -50 }}>
                 2
               </h1>
             </div>
-            <p style={{ textAlign: "left", marginTop: -140 }}>
-            {t("point2")}
+            <p style={{ textAlign: "left", marginTop: -140, fontWeight: 400 }}>
+              {t("point2")}
             </p>
           </div>
           <div className="colaborator-individual-content spl-vm-container">
@@ -245,12 +242,17 @@ const VM = () => {
                   stroke-width="0.5"
                 />
               </svg>
-              <h1 style={{ color: "#FFF4D9", fontSize: 200, marginTop: -50 }}>
+              <h1 style={{ color: "#FFE9EA", fontSize: 200, marginTop: -50 }}>
                 3
               </h1>
             </div>
-            <p style={{ textAlign: "left", marginTop: -140 }}>
-            {t("point3")}
+            <p
+              style={{
+                textAlign: "left",
+                marginTop: -140,
+              }}
+            >
+              {t("point3")}
             </p>
           </div>
         </div>

@@ -82,7 +82,7 @@
 }
 @media screen and (max-width: 500px) {
   .vm-content-wrapper p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .vm-individual {
     align-items: center;
@@ -102,10 +102,13 @@
   .vision-wrap > .vm-content-wrapper {
     align-items: center;
     text-align: center;
+    gap: 20px;
+
   }
   .mission-wrap > .vm-content-wrapper {
     align-items: center;
     text-align: center;
+    gap: 20px;
   }
 }
 
@@ -192,7 +195,7 @@
     gap: 40px;
   }
   .collaborator-header p {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 

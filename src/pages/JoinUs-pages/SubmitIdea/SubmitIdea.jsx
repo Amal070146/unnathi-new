@@ -1,7 +1,7 @@
 import React from "react";
 import "./SubmitIdea.css";
 import banner from "../../../assets/JoinUspage/yellow-banner-img/submitidea.png";
-
+import timeline from "../../../assets/JoinUspage/timelinebg.png";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
@@ -355,6 +355,32 @@ const SubmitIdea = () => {
         {/* guidelines end */}
 
         {/*  timeline start */}
+
+        <div className="submitidea-timeline-wrapper">
+          <h1>
+            <span>How to</span> Submit Your Idea?
+          </h1>
+          <div className="submitidea-timeline-content-wrapper">
+            <div>
+              <img src={timeline} alt="" />
+            </div>
+            <div className="submitidea-timeline-content">
+              <div className="submitidea-timeline-content-individual">
+                <div>
+                  <h2>1</h2>
+                </div>
+                <div>
+                  <p>Click on the 'Submit your idea' button below.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>
+            Note: All ideas will undergo a thorough review process. While we
+            appreciate every submission, due to the volume of ideas we receive,
+            only those selected for further exploration will be contacted.
+          </p>
+        </div>
         {/*  timeline end */}
         {/* yellow banner start */}
         <div className="internship-yellow-banner-wrapper">
