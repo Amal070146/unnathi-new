@@ -214,7 +214,7 @@ const Curious = () => {
             </div>
           </div>
         </a>
-        <a href="" className="flip-card">
+        <a href="/uas" className="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <svg

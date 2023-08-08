@@ -10,6 +10,7 @@ import NGOCollaboration from "./pages/JoinUs-pages/NGOCollaboration/NGOCollabora
 import i18next from "i18next";
 import Enterprenuership from './pages/JoinUs-pages/Enterprenuership/Enterprenuership'
 import ProjectsFund from "./pages/JoinUs-pages/ProjectFunds/ProjectsFund";
+import UAS from "./pages/JoinUs-pages/UAS/UAS";
 function App() {
   //Check whether the path contains the query parameter lang and if it does, set the language to the value of the query parameter
   const urlParams = new URLSearchParams(window.location.search);
@@ -63,6 +64,10 @@ function App() {
     {
       path: "/enterprenuership",
       element: <Enterprenuership />,
+    },
+    {
+      path: "/uas",
+      element: <UAS />,
     },
   ]);
   return <RouterProvider router={router} />;

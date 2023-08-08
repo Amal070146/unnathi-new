@@ -25,7 +25,7 @@
   font-family: "Red Hat Text";
   font-size: 6vw;
   color: transparent;
-  -webkit-text-stroke: 3px rgba(255, 255, 255,1);
+  -webkit-text-stroke: 3px rgba(255, 255, 255, 1);
   background-clip: text;
   font-weight: 900;
 
@@ -196,6 +196,8 @@
 }
 
 .yellow-circle {
+  max-width: 20px !important;
+  max-height: 20px;
   min-width: 20px !important;
   min-height: 20px;
   border-radius: 50%;
@@ -232,7 +234,7 @@
   width: 100%;
   flex-wrap: wrap;
   gap: 25px;
-  font-size: 24px;
+  font-size: 20px;
   align-items: center;
   justify-content: center;
   line-height: 1;
@@ -277,8 +279,8 @@
   }
 
   .yellow-circle {
-     min-width: 14px;
-     min-height: 14px;
+    min-width: 14px;
+    min-height: 14px;
   }
   .volunteering-eligilibility-set > div {
     gap: 10px;
