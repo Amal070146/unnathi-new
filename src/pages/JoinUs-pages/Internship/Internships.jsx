@@ -362,8 +362,27 @@ const Internship = () => {
                 <p>{t("passionateIndividualsText")}</p>
               </div>
             </div>
-            <div></div>
-            <div></div>
+            <div>
+              <h2>2</h2>
+              <div>
+                <h3>Collaborative Team Players:</h3>
+                <p>
+                  At Unnathi, every voice matters. We seek individuals who can
+                  collaborate, communicate, and contribute to our collective
+                  vision.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2>3</h2>
+              <div>
+                <h3>Quick Learners:</h3>
+                <p>
+                  The challenges are many and varied. An ability to adapt,
+                  learn, and apply knowledge swiftly is a valued trait.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         {/* eligibility criteria */}
