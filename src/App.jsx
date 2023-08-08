@@ -11,6 +11,7 @@ import i18next from "i18next";
 import Enterprenuership from './pages/JoinUs-pages/Enterprenuership/Enterprenuership'
 import ProjectsFund from "./pages/JoinUs-pages/ProjectFunds/ProjectsFund";
 import UAS from "./pages/JoinUs-pages/UAS/UAS";
+import GoverningBody from './pages/NavbarPages/GoverningBody/GoverningBody'
 function App() {
   //Check whether the path contains the query parameter lang and if it does, set the language to the value of the query parameter
   const urlParams = new URLSearchParams(window.location.search);
@@ -68,6 +69,10 @@ function App() {
     {
       path: "/uas",
       element: <UAS />,
+    },
+    {
+      path: "/governing-body",
+      element: <GoverningBody />,
     },
   ]);
   return <RouterProvider router={router} />;
