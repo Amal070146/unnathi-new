@@ -2,13 +2,15 @@ import React from 'react'
 import "./SubmitIdea.css";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
+import { useTranslation } from "react-i18next";
 const SubmitIdea = () => {
+  const { t } = useTranslation(["SubmitIdea"]);
   return (
     <>
       <Navbar />
       <div className="submitidea-wrapper">
         <div className="volunteering-header-sect submitidea-header-sect">
-          <h1>Submit an idea</h1>
+          <h1>{t("submitIdea")}</h1>
           <a href="#about-submitidea" className="volunteering-arrow">
             <span class="m_scroll_arrows unu"></span>
             <span class="m_scroll_arrows doi"></span>
@@ -21,7 +23,7 @@ const SubmitIdea = () => {
         <div id="about-submitidea" className="about-volunteering">
           <div className="about-volunteering-heading">
             <h1>
-              <span>Why Share</span>&nbsp;Your Idea with Unnathi?
+              <span>{t("whyShare")}</span>&nbsp;{t("withUnnathi")}
             </h1>
           </div>
           <div className="volunteer-card-wrapper">
@@ -62,10 +64,9 @@ const SubmitIdea = () => {
                   fill="black"
                 />
               </svg>
-              <h4>Platform for Change</h4>
+              <h4>{t("platformForChange")}</h4>
               <p>
-                Your idea will find a home with Unnathi, where we have the
-                resources, expertise, and commitment to bring it to fruition.
+              {t("platformForChangeText")}
               </p>
             </div>
             <div className="volunteer-card-individual">
@@ -159,11 +160,9 @@ const SubmitIdea = () => {
                   fill="black"
                 />
               </svg>
-              <h4>Collaborative Growth</h4>
+              <h4>{t("collaborativeGrowth")}</h4>
               <p>
-                Once submitted, your idea may be refined, expanded upon, or
-                merged with other initiatives to achieve the best possible
-                impact.
+              {t("collaborativeGrowthText")}
               </p>
             </div>
 
@@ -273,11 +272,9 @@ const SubmitIdea = () => {
                   stroke-width="0.821688"
                 />
               </svg>
-              <h4>Recognition</h4>
+              <h4>{t("recognition")}</h4>
               <p>
-                Every idea holds value. While the primary goal is community
-                welfare, contributors of selected ideas will be acknowledged for
-                their visionary thinking.
+              {t("recognitionText")}
               </p>
             </div>
           </div>
