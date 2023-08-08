@@ -1,6 +1,5 @@
 import React from 'react'
-import './ProjectsFunds.css'
-
+import "./Enterprenuership.css";
 import banner from "../../../assets/JoinUspage/yellow-banner-img/projectfund.png";
 import timeline from "../../../assets/JoinUspage/timelinebg.png";
 
@@ -8,8 +7,7 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
-
-const ProjectsFund = () => {
+const Enterprenuership = () => {
     const { t } = useTranslation(["NGOCollaboration"]);
   return (
     <>
@@ -17,8 +15,8 @@ const ProjectsFund = () => {
       <div className="home-language-switcher">
         <LanguageSwitcher />
       </div>
-      <div className="projectfund-wrapper">
-        <div className="volunteering-header-sect projectfunds-header-sect">
+      <div className="enterprenuership-wrapper">
+        <div className="volunteering-header-sect enterprenuership-header-sect">
           <h1>Projects to Fund</h1>
           <a href="#about-submitidea" className="volunteering-arrow">
             <span class="m_scroll_arrows unu"></span>
@@ -27,6 +25,55 @@ const ProjectsFund = () => {
             <span class="m_scroll_arrows quad"></span>
           </a>
         </div>
+        {/* guidelines start */}
+        <div className="submitidea-guidelines-wrapper">
+          <h1>
+            <span>Eligibility</span> Criteria
+          </h1>
+          <div className="submitidea-guidelines-content-wrapper">
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Entities That Can Apply:</h3>
+                <p>
+                  Societies, cooperatives, proprietorships, companies, and other
+                  formal business structures are welcome to apply.
+                </p>
+              </div>
+            </div>
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>SC/ST Ownership:</h3>
+                <p>
+                  The entity should have substantial ownership by individuals
+                  from the SC/ST community.
+                </p>
+              </div>
+            </div>{" "}
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Aligned Vision:</h3>
+                <p>
+                  Your venture should align with empowerment, development, or
+                  solutions that significantly benefit the SC/ST community.
+                </p>
+              </div>
+            </div>{" "}
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Commitment:</h3>
+                <p>
+                  An unwavering dedication to navigating the entrepreneurial
+                  journey, through its challenges and triumphs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* guidelines end */}
         {/*  timeline start */}
 
         <div className="submitidea-timeline-wrapper">
@@ -44,8 +91,8 @@ const ProjectsFund = () => {
                 </div>
                 <div>
                   <p>
-                    Browse through the project list to identify one that aligns
-                    with your objectives.
+                    Click on the 'Apply for the Entrepreneurship Support
+                    Programme' button below.
                   </p>
                 </div>
               </div>
@@ -53,8 +100,8 @@ const ProjectsFund = () => {
               <div className="submitidea-timeline-content-individual timeline2">
                 <div>
                   <p>
-                    Click on the 'Collaborate on This Project' button next to
-                    the chosen project.
+                    Detail your startup idea, vision, and potential impact in
+                    the application form.
                   </p>
                 </div>
                 <div>
@@ -67,15 +114,17 @@ const ProjectsFund = () => {
                   <h2>3</h2>
                 </div>
                 <div>
-                  <p>Specify if you wish to fund, directly execute, or both.</p>
+                  <p>
+                    Attach pertinent documents, business plans, or prototypes.
+                  </p>
                 </div>
               </div>
 
               <div className="submitidea-timeline-content-individual timeline4">
                 <div>
                   <p>
-                    Our team will engage with you, providing more information,
-                    project blueprints, and collaboration modalities.
+                    Post submission, our collaborative team from Unnathi and
+                    Startup Mission will evaluate your application.
                   </p>
                 </div>{" "}
                 <div>
@@ -85,9 +134,9 @@ const ProjectsFund = () => {
             </div>
           </div>
           <p style={{ textAlign: "center" }}>
-            Note: Our projects are meticulously planned to ensure their success
-            and sustainability. Your collaboration—be it through funding, direct
-            execution, or both—accelerates this transformative journey.
+            Note: The selection follows a rigorous criterion, ensuring ventures
+            with the most promise and alignment gain access to our aggregator
+            model and the myriad benefits it offers.
           </p>
         </div>
         {/*  timeline end */}
@@ -95,14 +144,15 @@ const ProjectsFund = () => {
         {/* yellow banner start */}
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
-            <h1>Your Vision. Their Dreams. Our Shared Mission.</h1>
+            <h1>Embark on Your Entrepreneurial Odyssey with Unnathi</h1>
             <p>
-              Every project undertaken reshapes futures, crafting legacies of
-              empowerment and growth. Partner with Unnathi and be a part of this
-              transformative odyssey.
+              If your venture holds the promise of innovation and societal
+              impact, the Entrepreneurship Support Programme is your launchpad.
+              Join us, and let's co-create entrepreneurial tales that resonate,
+              inspire, and endure.
             </p>
             <a href="">
-              <p>Explore & Collaborate on Projects</p>
+              <p>Apply for the Entrepreneurship Support Programme</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
@@ -130,4 +180,4 @@ const ProjectsFund = () => {
   );
 }
 
-export default ProjectsFund
+export default Enterprenuership

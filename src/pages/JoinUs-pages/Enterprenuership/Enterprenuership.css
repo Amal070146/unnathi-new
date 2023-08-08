@@ -1,9 +1,8 @@
-.projectfunds-header-sect {
-  background: url("../../../assets/JoinUspage/projectfundbg.png") center
+.enterprenuership-header-sect {
+  background: url("../../../assets/JoinUspage/Enterprenuershipbg.png") center
     center/cover no-repeat;
 }
-
-.projectfund-wrapper {
+.enterprenuership-wrapper {
   width: 100vw;
   height: 100%;
   display: flex;
@@ -13,7 +12,7 @@
   font-family: "Red Hat Text";
 }
 
-.projectfund-wrapper .submitidea-timeline-content {
+.enterprenuership-wrapper .submitidea-timeline-content {
   display: flex;
   flex-direction: column;
 
@@ -21,7 +20,7 @@
 }
 
 @media screen and (max-width: 850px) {
-  .projectfund-wrapper .submitidea-timeline-content {
+  .enterprenuership-wrapper .submitidea-timeline-content {
     gap: 90px !important;
   }
 }

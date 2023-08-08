@@ -40,7 +40,8 @@ const NGOCollaboration = () => {
             </h1>
             <h2>
               {t("synergyInPurpose")}
-              <span style={{ color: "#F37020" }}>.</span> {t("excellenceInExecution")}
+              <span style={{ color: "#F37020" }}>.</span>{" "}
+              {t("excellenceInExecution")}
               <span style={{ color: "#F37020" }}>.</span>
             </h2>
           </div>
@@ -586,7 +587,7 @@ const NGOCollaboration = () => {
 
         <div className="submitidea-timeline-wrapper">
           <h1>
-            <span>{t("howTo")}</span> {t("submitYourIdeas")}
+            <span>{t("howTo")}</span> Initiate Collaboration?
           </h1>
           <div className="submitidea-timeline-content-wrapper">
             <div>
