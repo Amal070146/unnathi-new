@@ -25,3 +25,222 @@
     gap: 90px !important;
   }
 }
+
+.projectfund-quotes-wrapper {
+  text-align: center;
+  padding: 3vh 5.8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.projectfund-quotes-wrapper h2 {
+  font-weight: 400;
+  font-size: 3.8vw;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.projectfund-quotes-wrapper h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.projectfund-quotes-wrapper h3 {
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+.projectfund-quotes-wrapper p {
+  font-size: 20px;
+}
+
+.projectfund-quotes-wrapper div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (max-width: 1350px) {
+  .projectfund-quotes-wrapper div:nth-child(2) {
+    gap: 15px;
+  }
+  .projectfund-quotes-wrapper h2 {
+    font-size: 4vw;
+  }
+  .projectfund-quotes-wrapper h1 {
+    font-size: 7vw;
+  }
+  .projectfund-quotes-wrapper h3 {
+    font-size: 1.7vw;
+  }
+
+  .projectfund-quotes-wrapper p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .projectfund-quotes-wrapper div:nth-child(2) {
+    gap: 10px;
+  }
+  .projectfund-quotes-wrapper h2 {
+    font-size: 4.5vw;
+  }
+  .projectfund-quotes-wrapper h1 {
+    font-size: 7.5vw;
+  }
+  .projectfund-quotes-wrapper h3 {
+    font-size: 2.4vw;
+    line-height: 1.2;
+  }
+
+  .projectfund-quotes-wrapper p {
+    font-size: 14px;
+  }
+}
+
+.projectfund-cardset-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.projectfund-cardset-wrapper h1 {
+  font-size: 4vw;
+  line-height: 1;
+  font-weight: 600;
+  text-align: center;
+}
+.projectfund-cardset-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+}
+.projectfund-cardset-individual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+  width: 320px;
+  padding: 20px;
+}
+.projectfund-cardset-individual svg {
+  width: 100px;
+  height: 100px;
+}
+.projectfund-cardset-individual h3 {
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 23px;
+  font-weight: 500;
+}
+.projectfund-cardset-individual p {
+  line-height: 1.2;
+  font-size: 20px;
+}
+
+.projectfund-cardset-content-wrapper div:nth-child(1) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+.projectfund-cardset-content-wrapper div:nth-child(2) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+.projectfund-cardset-content-wrapper div:nth-child(3) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+.projectfund-cardset-content-wrapper div:nth-child(4) {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+.projectfund-cardset-content-wrapper div:nth-child(5) {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+.projectfund-cardset-content-wrapper div:nth-child(6) {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 970px) {
+  .projectfund-cardset-individual svg {
+    width: 90px;
+    height: 90px;
+  }
+  .projectfund-cardset-individual h3 {
+    font-size: 20px;
+  }
+  .projectfund-cardset-individual p {
+    font-size: 17px;
+  }
+
+  .projectfund-cardset-content-wrapper {
+
+    width: 540px;
+  }
+  .projectfund-cardset-individual {
+    gap: 12px;
+    width: 270px;
+  }
+
+  .projectfund-cardset-content-wrapper div:nth-child(2) {
+    border-right: none;
+  }
+  .projectfund-cardset-content-wrapper div:nth-child(3) {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: none;
+  }
+  .projectfund-cardset-content-wrapper div:nth-child(4) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: none;
+  }
+  .projectfund-cardset-content-wrapper div:nth-child(5) {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: none;
+  }
+}
+@media screen and (max-width: 850px) {
+  .projectfund-cardset-wrapper h1 {
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .projectfund-cardset-individual svg {
+    width: 80px;
+    height: 80px;
+  }
+  .projectfund-cardset-individual h3 {
+    font-size: 19px;
+  }
+  .projectfund-cardset-individual p {
+    font-size: 15px;
+  }
+
+  .projectfund-cardset-content-wrapper {
+   
+    width: 250px;
+  }
+  .projectfund-cardset-individual {
+    gap: 12px;
+    width: 250px;
+  }
+
+  
+}
+@media screen and (max-width: 500px) {
+  .projectfund-cardset-wrapper h1 {
+    font-size: 6vw;
+  }
+}
