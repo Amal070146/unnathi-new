@@ -26,9 +26,9 @@ code {
   box-sizing: border-box;
 }
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 0px;
   height: 0px;
-  background-color: #c31616;
+  background-color: #ffffff;
 }
 .flex {
   display: flex;
