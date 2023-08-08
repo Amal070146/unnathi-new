@@ -12,6 +12,7 @@
   z-index: 9000;
   justify-content: center;
   top: 0;
+  font-size: 17px;
 }
 .nav-logo {
     transition: all .3s ease-in-out;
@@ -35,7 +36,7 @@
 @media screen and (max-width: 970px){
 .navbar-desk {
 
-  gap: 1vw;
+  gap: 1.5vw;
 }
 }
 @media screen and (max-width: 880px) {

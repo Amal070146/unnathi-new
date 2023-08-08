@@ -26,11 +26,11 @@ const Navbar = () => {
 
   const path = useReactPath();
   const navContent = [
-    t("about"),
+    // t("about"),
     t("governingBody"),
-    t("media"),
-    t("partners"),
-    t("donate"),
+    t("uas"),
+    t("internship"),
+    t("volunteering"),
     t("projects"),
   ];
   useEffect(() => {}, [path]);
@@ -56,7 +56,7 @@ const Navbar = () => {
         }}
       >
         <div className="navbar-desk">
-          {navContent.slice(0, 3).map((content, i) => (
+          {navContent.slice(0, 2).map((content, i) => (
             <a href={`/${content}`} key={i.toString() + content}>
               <p
                 style={{
@@ -79,7 +79,7 @@ const Navbar = () => {
               alt=""
             />
           </a>
-          {navContent.slice(3, 6).map((content, i) => (
+          {navContent.slice(2, 4).map((content, i) => (
             <a href={`/${content}`} key={i.toString() + content}>
               <p
                 style={{
