@@ -1,9 +1,8 @@
 {
-    "about": "ഞങ്ങളേക്കുറിച്ച്",
-    "governingBody": "ഭരണസമിതി",
-    "media": "മീഡിയ",
-    "partners": "പങ്കാളികൾ",
-    "donate": "സംഭാവന",
-    "projects": "പദ്ധതികൾ"
+  "governingBody": "ഭരണസമിതി",
+  "UAS": "യുഎഎസ്",
+  "internship": "ഇന്റേൺഷിപ്പ്",
+  "volunteering": "സന്നദ്ധപ്രവർത്തനം",
+  "projects": "പദ്ധതികൾ"
   }
   

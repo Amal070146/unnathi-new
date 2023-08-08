@@ -510,7 +510,8 @@ const Enterprenuership = () => {
               inspire, and endure.
             </p>
             <a href="">
-              <p>Apply for the Entrepreneurship Support Programme</p>
+              {/* <p>Apply for the Entrepreneurship Support Programme</p> */}
+              <p>Coming Soon</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"

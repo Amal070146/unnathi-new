@@ -38,7 +38,7 @@ const GoverningBody = () => {
   const path = useReactPath();
   const navContent = [
     t("governingBody"),
-    t("uas"),
+    t("UAS"),
     t("internship"),
     t("volunteering"),
   ];

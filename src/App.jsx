@@ -47,7 +47,15 @@ function App() {
       element: <Volunteering />,
     },
     {
+      path: "/സന്നദ്ധപ്രവർത്തനം",
+      element: <Volunteering />,
+    },
+    {
       path: "/internship",
+      element: <Internship />,
+    },
+    {
+      path: "/ഇന്റേൺഷിപ്പ്",
       element: <Internship />,
     },
     {
@@ -71,7 +79,15 @@ function App() {
       element: <UAS />,
     },
     {
+      path: "/യുഎഎസ്",
+      element: <UAS />,
+    },
+    {
       path: "/governing-body",
+      element: <GoverningBody />,
+    },
+    {
+      path: "/ഭരണസമിതി",
       element: <GoverningBody />,
     },
   ]);

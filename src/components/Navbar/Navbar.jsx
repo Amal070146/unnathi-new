@@ -28,11 +28,20 @@ const Navbar = () => {
   const navContent = [
     // t("about"),
     t("governingBody"),
-    t("uas"),
+    t("UAS"),
     t("internship"),
     t("volunteering"),
     t("projects"),
   ];
+
+  const links = {
+    governingBody: "Governing-Body",
+    UAS: "UAS",
+    internship: "Internship",
+    volunteering: "Volunteering",
+    projects: "Projects",
+  };
+
   useEffect(() => {}, [path]);
   const changenavlogo = () => {
     window.scrollY >= 250 ? setnavlogo(true) : setnavlogo(false);
@@ -57,6 +66,7 @@ const Navbar = () => {
       >
         <div className="navbar-desk">
           {navContent.slice(0, 2).map((content, i) => (
+            //find the value of teh link using content from links object
             <a href={`/${content}`} key={i.toString() + content}>
               <p
                 style={{

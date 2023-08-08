@@ -645,7 +645,8 @@ const NGOCollaboration = () => {
             </h1>
             <p>{t("togetherText")}</p>
             <a href="">
-              <p>{t("initiateCollaboration")}</p>
+              {/* <p>{t("initiateCollaboration")}</p> */}
+              <p>Coming Soon</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"

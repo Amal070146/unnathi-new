@@ -4,12 +4,9 @@ import timeline from "../../../assets/JoinUspage/timelinebg.png";
 
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
-import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
-import { useTranslation } from "react-i18next";
 import "./UAS.css";
 
 const UAS = () => {
-  const { t } = useTranslation(["NGOCollaboration"]);
   return (
     <>
       <Navbar />
@@ -568,7 +565,8 @@ const UAS = () => {
         <div className="volunteering-apply-button-wrapper" style={{background:"transparent"}}>
          
           <a href="">
-            <p>Apply</p>
+            {/* <p>Apply</p> */}
+            <p>Coming Soon</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
