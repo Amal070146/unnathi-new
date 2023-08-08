@@ -365,7 +365,7 @@ const SubmitIdea = () => {
               <img src={timeline} alt="" />
             </div>
             <div className="submitidea-timeline-content">
-              <div className="submitidea-timeline-content-individual">
+              <div className="submitidea-timeline-content-individual timeline1">
                 <div>
                   <h2>1</h2>
                 </div>
@@ -373,9 +373,41 @@ const SubmitIdea = () => {
                   <p>Click on the 'Submit your idea' button below.</p>
                 </div>
               </div>
+
+              <div className="submitidea-timeline-content-individual timeline2">
+                <div>
+                  <p>Fill in the necessary details in the provided form.</p>
+                </div>
+                <div>
+                  <h2>2</h2>
+                </div>
+              </div>
+
+              <div className="submitidea-timeline-content-individual timeline3">
+                <div>
+                  <h2>3</h2>
+                </div>
+                <div>
+                  <p>
+                    Describe your idea, its potential impact, and any other
+                    relevant details.
+                  </p>
+                </div>
+              </div>
+
+              <div className="submitidea-timeline-content-individual timeline4">
+                <div>
+                  <p>
+                    Submit the form, and our team will review your submission.
+                  </p>
+                </div>{" "}
+                <div>
+                  <h2>4</h2>
+                </div>
+              </div>
             </div>
           </div>
-          <p>
+          <p style={{ textAlign: "center" }}>
             Note: All ideas will undergo a thorough review process. While we
             appreciate every submission, due to the volume of ideas we receive,
             only those selected for further exploration will be contacted.
