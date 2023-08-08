@@ -8,6 +8,7 @@ import Internship from "./pages/JoinUs-pages/Internship/Internships";
 import SubmitIdea from "./pages/JoinUs-pages/SubmitIdea/SubmitIdea";
 import NGOCollaboration from "./pages/JoinUs-pages/NGOCollaboration/NGOCollaboration";
 import i18next from "i18next";
+import Enterprenuership from './pages/JoinUs-pages/Enterprenuership/Enterprenuership'
 import ProjectsFund from "./pages/JoinUs-pages/ProjectFunds/ProjectsFund";
 function App() {
   //Check whether the path contains the query parameter lang and if it does, set the language to the value of the query parameter
@@ -58,6 +59,10 @@ function App() {
     {
       path: "/projectfunds",
       element: <ProjectsFund />,
+    },
+    {
+      path: "/enterprenuership",
+      element: <Enterprenuership />,
     },
   ]);
   return <RouterProvider router={router} />;
