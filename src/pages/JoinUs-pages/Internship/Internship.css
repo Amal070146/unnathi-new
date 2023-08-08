@@ -189,22 +189,65 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0vh 5vw 3vh;
+  padding: 0vh 15vw 3vh;
+  gap: 20px;
 }
 .internship-numbered-descriptions-wrapper h1 {
   font-size: 3vw;
   font-weight: 500;
   line-height: 1;
 }
+.internship-numbered-descriptions-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.internship-numbered-descriptions-content-wrapper > div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
 
+.internship-numbered-descriptions-content-wrapper h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  color: #fbba16;
+  font-weight: 900;
+}
+
+.internship-numbered-descriptions-content-wrapper h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.internship-numbered-descriptions-content-wrapper p {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
 @media screen and (max-width: 1350px) {
   .internship-numbered-descriptions-wrapper h1 {
     font-size: 3.5vw;
+  }
+  .internship-numbered-descriptions-wrapper {
+    padding: 0vh 8vw 3vh;
   }
 }
 @media screen and (max-width: 850px) {
   .internship-numbered-descriptions-wrapper h1 {
     font-size: 4vw;
+  }
+  .internship-numbered-descriptions-wrapper {
+    padding: 0vh 5vw 3vh;
+  }
+  .internship-numbered-descriptions-content-wrapper h3 {
+    font-size: 20px;
+  }
+  .internship-numbered-descriptions-content-wrapper p {
+    font-size: 17px;
   }
 }
 
@@ -213,4 +256,96 @@
     font-size: 6vw;
     line-height: 1.1;
   }
+
+  .internship-numbered-descriptions-content-wrapper h3 {
+    font-size: 17px;
+  }
+  .internship-numbered-descriptions-content-wrapper p {
+    font-size: 14px;
+  }
 }
+
+/* yellow banner start */
+.internship-yellow-banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 5vw;
+  gap: 5vw;
+  width: 100%;
+  height: fit-content;
+  background-color: #fbba16;
+  color: white;
+}
+.internship-yellow-banner-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 300px;
+}
+.internship-yellow-banner-content-wrapper h1 {
+  font-size: 55px;
+  line-height: 1;
+  font-weight: 500;
+}
+.internship-yellow-banner-content-wrapper p {
+  font-size: 20px;
+}
+.internship-yellow-banner-content-wrapper a {
+  color: black;
+  display: flex;
+  gap: 10px;
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+  align-items: center;
+}
+.internship-yellow-banner-content-wrapper a p {
+  font-size: 16px;
+}
+.internship-yellow-banner-image-wrapper {
+  width: 45vw;
+  height: 300px;
+}
+.internship-yellow-banner-image-wrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media screen and (max-width: 1350px) {
+  .internship-yellow-banner-image-wrapper {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 850px) {
+  .internship-yellow-banner-wrapper {
+    flex-direction: column-reverse;
+  }
+  .internship-yellow-banner-image-wrapper {
+    width: 80vw;
+    height: 200px;
+  }
+  .internship-yellow-banner-content-wrapper {
+    height: fit-content;
+    gap: 15px;
+  }
+  .internship-yellow-banner-content-wrapper h1 {
+    font-size: 45px;
+  }
+  .internship-yellow-banner-content-wrapper p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .internship-yellow-banner-content-wrapper h1 {
+    font-size: 8.4vw;
+  }
+  .internship-yellow-banner-content-wrapper p {
+    font-size: 14px;
+  }
+  .internship-yellow-banner-content-wrapper a p {
+  font-size: 14px;
+}
+}
+/* yellow banner ends */
