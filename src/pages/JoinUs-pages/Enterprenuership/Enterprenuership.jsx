@@ -8,7 +8,7 @@ import Footer from "../../../components/Footer/Footer";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 const Enterprenuership = () => {
-    const { t } = useTranslation(["NGOCollaboration"]);
+    const { t } = useTranslation(["Enterprenuership"]);
   return (
     <>
       <Navbar />

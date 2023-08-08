@@ -10,7 +10,7 @@ import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitc
 import { useTranslation } from "react-i18next";
 
 const ProjectsFund = () => {
-  const { t } = useTranslation(["NGOCollaboration"]);
+  const { t } = useTranslation(["ProjectsFund"]);
   return (
     <>
       <Navbar />
@@ -31,7 +31,7 @@ const ProjectsFund = () => {
 
         <div className="submitidea-timeline-wrapper">
           <h1>
-            <span>{t("howTo")}</span> {t("projectToFund")}
+            <span>{t("howTo")}</span> {t("initiateCollaboration")}
           </h1>
           <div className="submitidea-timeline-content-wrapper">
             <div>
@@ -95,7 +95,7 @@ const ProjectsFund = () => {
             {t("yourVisionTheirDreamsOurSharedMissionText")}
             </p>
             <a href="">
-              <p>{t("pexploreCollaborateProjects")}</p>
+              <p>{t("exploreCollaborateProjects")}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"

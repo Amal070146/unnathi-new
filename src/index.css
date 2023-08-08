@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@100;200;300;400;500;600;800;900&display=swap");
+
 body {
   margin: 0;
-  font-family:  "Red Hat Text","MyFont";
+  font-family: "Red Hat Text", "MyFont", "Noto Sans Malayalam";
   src: local("MyFont"), url("./fonts/rage.TTF") format("woff");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,8 +12,7 @@ body {
 
 @font-face {
   font-family: "Rage";
-  src: local("GoldmanBold"),
-    url("./fonts/rage.TTF") format("truetype");
+  src: local("GoldmanBold"), url("./fonts/rage.TTF") format("truetype");
   font-weight: 500;
 }
 
