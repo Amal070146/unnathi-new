@@ -17,7 +17,7 @@ const Enterprenuership = () => {
       </div>
       <div className="enterprenuership-wrapper">
         <div className="volunteering-header-sect enterprenuership-header-sect">
-          <h1>Projects to Fund</h1>
+          <h1>Entrepreneurship</h1>
           <a href="#about-submitidea" className="volunteering-arrow">
             <span class="m_scroll_arrows unu"></span>
             <span class="m_scroll_arrows doi"></span>
