@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ProjectsFunds.css";
 
 import banner from "../../../assets/JoinUspage/yellow-banner-img/projectfund.png";
@@ -8,15 +8,17 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const ProjectsFund = () => {
   const { t } = useTranslation(["ProjectsFund"]);
+  useEffect(() => {
+    i18next.changeLanguage("en");
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="home-language-switcher">
-        <LanguageSwitcher />
-      </div>
+
       <div className="projectfund-wrapper">
         <div className="volunteering-header-sect projectfunds-header-sect">
           <h1>{t("projectToFund")}</h1>
@@ -389,10 +391,8 @@ const ProjectsFund = () => {
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
             <h1>{t("yourVisionTheirDreamsOurSharedMission")}</h1>
-            <p>
-            {t("yourVisionTheirDreamsOurSharedMissionText")}
-            </p>
-            <a href="">
+            <p>{t("yourVisionTheirDreamsOurSharedMissionText")}</p>
+            {/* <a href="">
               <p>{t("exploreCollaborateProjects")}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -408,7 +408,7 @@ const ProjectsFund = () => {
                   stroke-width="1.2"
                 />
               </svg>
-            </a>
+            </a> */}
           </div>
           <div className="internship-yellow-banner-image-wrapper">
             <img src={banner} alt="" />

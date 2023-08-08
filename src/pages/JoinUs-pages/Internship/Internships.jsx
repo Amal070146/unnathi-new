@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Internship.css";
 import banner from "../../../assets/JoinUspage/yellow-banner-img/internship.png";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
+import i18next from "i18next";
 const Internship = () => {
   const { t } = useTranslation(["Internship"]);
+  useEffect(() => {
+    i18next.changeLanguage("en");
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="home-language-switcher">
-        <LanguageSwitcher />
-      </div>
+
       <div className="internship-wrapper">
         <div className="volunteering-header-sect internship-header-sect">
           <h1>{t("internships")}</h1>
@@ -367,18 +369,14 @@ const Internship = () => {
               <h2>2</h2>
               <div>
                 <h3>{t("collaborativeTeamPlayers")}</h3>
-                <p>
-                {t("collaborativeTeamPlayersText")}
-                </p>
+                <p>{t("collaborativeTeamPlayersText")}</p>
               </div>
             </div>
             <div>
               <h2>3</h2>
               <div>
                 <h3>{t("quickLearners")}</h3>
-                <p>
-                {t("quickLearnersText")}
-                </p>
+                <p>{t("quickLearnersText")}</p>
               </div>
             </div>
           </div>
@@ -388,11 +386,9 @@ const Internship = () => {
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
             <h1>
-            {t("theUnnathi")} <span>{t("promise")}</span>
+              {t("theUnnathi")} <span>{t("promise")}</span>
             </h1>
-            <p>
-            {t("promiseText")}
-            </p>
+            <p>{t("promiseText")}</p>
             {/* <a href="">
               <p>Submit</p>
               <svg

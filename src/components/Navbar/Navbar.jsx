@@ -26,12 +26,12 @@ const Navbar = () => {
 
   const path = useReactPath();
   const navContent = [
-    t("about"),
-    t("governingBody"),
-    t("media"),
-    t("partners"),
-    t("donate"),
-    t("projects"),
+    // t("about"),
+    // t("governingBody"),
+    // t("media"),
+    // t("partners"),
+    // t("donate"),
+    // t("projects"),
   ];
   useEffect(() => {}, [path]);
   const changenavlogo = () => {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import "./Enterprenuership.css";
 import banner from "../../../assets/JoinUspage/yellow-banner-img/projectfund.png";
 import timeline from "../../../assets/JoinUspage/timelinebg.png";
@@ -7,14 +7,16 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 const Enterprenuership = () => {
-    const { t } = useTranslation(["Enterprenuership"]);
+  const { t } = useTranslation(["Enterprenuership"]);
+  useEffect(() => {
+    i18next.changeLanguage("en");
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="home-language-switcher">
-        <LanguageSwitcher />
-      </div>
+
       <div className="enterprenuership-wrapper">
         <div className="volunteering-header-sect enterprenuership-header-sect">
           <h1>Entrepreneurship</h1>
@@ -507,7 +509,7 @@ const Enterprenuership = () => {
               Join us, and let's co-create entrepreneurial tales that resonate,
               inspire, and endure.
             </p>
-            <a href="">
+            {/* <a href="">
               <p>Apply for the Entrepreneurship Support Programme</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -523,7 +525,7 @@ const Enterprenuership = () => {
                   stroke-width="1.2"
                 />
               </svg>
-            </a>
+            </a> */}
           </div>
           <div className="internship-yellow-banner-image-wrapper">
             <img src={banner} alt="" />
@@ -534,6 +536,6 @@ const Enterprenuership = () => {
       <Footer />
     </>
   );
-}
+};
 
-export default Enterprenuership
+export default Enterprenuership;

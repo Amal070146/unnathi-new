@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./NGOCollaboration.css";
 import banner from "../../../assets/JoinUspage/yellow-banner-img/NGO.png";
 import timeline from "../../../assets/JoinUspage/timelinebg.png";
@@ -7,14 +7,16 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 const NGOCollaboration = () => {
   const { t } = useTranslation(["NGOCollaboration"]);
+  useEffect(() => {
+    i18next.changeLanguage("en");
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="home-language-switcher">
-        <LanguageSwitcher />
-      </div>
+
       <div className="ngocollaboration-wrapper">
         <div className="volunteering-header-sect ngocollobaration-header-sect">
           <h1> {t("collaboration")}</h1>
@@ -642,7 +644,7 @@ const NGOCollaboration = () => {
               <span>{t("together")},</span> {t("weCanAchieveMonumentalChange")}
             </h1>
             <p>{t("togetherText")}</p>
-            <a href="">
+            {/* <a href="">
               <p>{t("initiateCollaboration")}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -658,7 +660,7 @@ const NGOCollaboration = () => {
                   stroke-width="1.2"
                 />
               </svg>
-            </a>
+            </a> */}
           </div>
           <div className="internship-yellow-banner-image-wrapper">
             <img src={banner} alt="" />

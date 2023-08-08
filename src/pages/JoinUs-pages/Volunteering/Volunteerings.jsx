@@ -1,19 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Volunteering.css";
 
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
+import i18next from "i18next";
 
 const Volunteering = () => {
   const { t } = useTranslation(["Volunteering"]);
+  useEffect(() => {
+    i18next.changeLanguage("en");
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="home-language-switcher">
-        <LanguageSwitcher />
-      </div>
+
       <div className="volunteering-wrapper">
         <div className="volunteering-header-sect">
           <h1>{t("volunteering")}</h1>
@@ -309,7 +311,7 @@ const Volunteering = () => {
             <span style={{ color: "#F37020" }}>{t("difference")}</span>.{" "}
             {t("volunteerWithUnnathi")}
           </p>
-          <a href="">
+          {/* <a href="">
             <p>Apply</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -325,7 +327,7 @@ const Volunteering = () => {
                 stroke-width="1.2"
               />
             </svg>
-          </a>
+          </a> */}
         </div>
       </div>
 

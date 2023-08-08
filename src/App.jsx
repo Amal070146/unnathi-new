@@ -19,17 +19,17 @@ function App() {
     i18next.changeLanguage(lang);
   }
 
-  //Add the value of the language to the query parameter lang in the URL
-  urlParams.set("lang", i18next.language);
-  const newUrlParams = urlParams.toString();
-  const newUrl =
-    window.location.protocol +
-    "//" +
-    window.location.host +
-    window.location.pathname +
-    "?" +
-    newUrlParams;
-  window.history.pushState({ path: newUrl }, "", newUrl);
+  // //Add the value of the language to the query parameter lang in the URL
+  // urlParams.set("lang", i18next.language);
+  // const newUrlParams = urlParams.toString();
+  // const newUrl =
+  //   window.location.protocol +
+  //   "//" +
+  //   window.location.host +
+  //   window.location.pathname +
+  //   "?" +
+  //   newUrlParams;
+  // window.history.pushState({ path: newUrl }, "", newUrl);
 
   const router = createBrowserRouter([
     {

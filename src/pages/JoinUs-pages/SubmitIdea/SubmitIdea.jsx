@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./SubmitIdea.css";
 import banner from "../../../assets/JoinUspage/yellow-banner-img/submitidea.png";
 import timeline from "../../../assets/JoinUspage/timelinebg.png";
@@ -6,14 +6,16 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
+import i18next from "i18next";
 const SubmitIdea = () => {
   const { t } = useTranslation(["SubmitIdea"]);
+  useEffect(() => {
+    i18next.changeLanguage("en");
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="home-language-switcher">
-        <LanguageSwitcher />
-      </div>
+
       <div className="submitidea-wrapper">
         <div className="volunteering-header-sect submitidea-header-sect">
           <h1>{t("submitIdea")}</h1>
@@ -398,7 +400,7 @@ const SubmitIdea = () => {
               <span>{t("beTheSpark")}</span> {t("ofTransformation")}
             </h1>
             <p>{t("transformationText")}</p>
-            <a href="">
+            {/* <a href="">
               <p>{t("submitYourIdea")}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -414,7 +416,7 @@ const SubmitIdea = () => {
                   stroke-width="1.2"
                 />
               </svg>
-            </a>
+            </a> */}
           </div>
           <div className="internship-yellow-banner-image-wrapper">
             <img src={banner} alt="" />
