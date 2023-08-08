@@ -25,6 +25,55 @@ const Enterprenuership = () => {
             <span class="m_scroll_arrows quad"></span>
           </a>
         </div>
+        {/* guidelines start */}
+        <div className="submitidea-guidelines-wrapper">
+          <h1>
+            <span>Eligibility</span> Criteria
+          </h1>
+          <div className="submitidea-guidelines-content-wrapper">
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Entities That Can Apply:</h3>
+                <p>
+                  Societies, cooperatives, proprietorships, companies, and other
+                  formal business structures are welcome to apply.
+                </p>
+              </div>
+            </div>
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>SC/ST Ownership:</h3>
+                <p>
+                  The entity should have substantial ownership by individuals
+                  from the SC/ST community.
+                </p>
+              </div>
+            </div>{" "}
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Aligned Vision:</h3>
+                <p>
+                  Your venture should align with empowerment, development, or
+                  solutions that significantly benefit the SC/ST community.
+                </p>
+              </div>
+            </div>{" "}
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Commitment:</h3>
+                <p>
+                  An unwavering dedication to navigating the entrepreneurial
+                  journey, through its challenges and triumphs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* guidelines end */}
         {/*  timeline start */}
 
         <div className="submitidea-timeline-wrapper">
