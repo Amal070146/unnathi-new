@@ -509,7 +509,7 @@ const Enterprenuership = () => {
               Join us, and let's co-create entrepreneurial tales that resonate,
               inspire, and endure.
             </p>
-            {/* <a href="">
+            <a href="">
               <p>Apply for the Entrepreneurship Support Programme</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -525,7 +525,7 @@ const Enterprenuership = () => {
                   stroke-width="1.2"
                 />
               </svg>
-            </a> */}
+            </a>
           </div>
           <div className="internship-yellow-banner-image-wrapper">
             <img src={banner} alt="" />

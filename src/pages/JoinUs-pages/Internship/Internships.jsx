@@ -389,7 +389,7 @@ const Internship = () => {
               {t("theUnnathi")} <span>{t("promise")}</span>
             </h1>
             <p>{t("promiseText")}</p>
-            {/* <a href="">
+            <a href="">
               <p>Submit</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -405,7 +405,7 @@ const Internship = () => {
                   stroke-width="1.2"
                 />
               </svg>
-            </a> */}
+            </a>
           </div>
           <div className="internship-yellow-banner-image-wrapper">
             <img src={banner} alt="" />
@@ -459,7 +459,7 @@ const Internship = () => {
             <span style={{ color: "#F37020" }}> {t("passion")}</span>{" "}
             {t("professionalGrowth")}
           </p>
-          {/* <a href="">
+          <a href="https://forms.gle/tJAWR74YvRrNkKBB6">
             <p>{t("apply")}</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -475,7 +475,7 @@ const Internship = () => {
                 stroke-width="1.2"
               />
             </svg>
-          </a> */}
+          </a>
         </div>
       </div>
       <Footer />

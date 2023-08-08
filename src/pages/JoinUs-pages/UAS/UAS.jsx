@@ -565,7 +565,7 @@ const UAS = () => {
         </div>
 
         {/* apply */}
-        {/* <div className="volunteering-apply-button-wrapper" style={{background:"transparent"}}>
+        <div className="volunteering-apply-button-wrapper" style={{background:"transparent"}}>
          
           <a href="">
             <p>Apply</p>
@@ -584,7 +584,7 @@ const UAS = () => {
               />
             </svg>
           </a>
-        </div> */}
+        </div>
       </div>
       <Footer />
     </>

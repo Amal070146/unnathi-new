@@ -10,7 +10,7 @@ const About = () => {
       <div className="about-home-content-wrap">
         <h1>
           <span className="about-header-bottonline">{t("what_is")}</span>
-          {t("unnathi")} ?
+          {t("unnathi")}
         </h1>
         <p>
           {t("unnathi_description_para1")} <br />

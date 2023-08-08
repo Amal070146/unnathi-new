@@ -392,7 +392,7 @@ const ProjectsFund = () => {
           <div className="internship-yellow-banner-content-wrapper">
             <h1>{t("yourVisionTheirDreamsOurSharedMission")}</h1>
             <p>{t("yourVisionTheirDreamsOurSharedMissionText")}</p>
-            {/* <a href="">
+            <a href="">
               <p>{t("exploreCollaborateProjects")}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -408,7 +408,7 @@ const ProjectsFund = () => {
                   stroke-width="1.2"
                 />
               </svg>
-            </a> */}
+            </a>
           </div>
           <div className="internship-yellow-banner-image-wrapper">
             <img src={banner} alt="" />

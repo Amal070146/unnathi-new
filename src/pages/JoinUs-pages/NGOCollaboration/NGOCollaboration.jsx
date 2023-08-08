@@ -644,7 +644,7 @@ const NGOCollaboration = () => {
               <span>{t("together")},</span> {t("weCanAchieveMonumentalChange")}
             </h1>
             <p>{t("togetherText")}</p>
-            {/* <a href="">
+            <a href="">
               <p>{t("initiateCollaboration")}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -660,7 +660,7 @@ const NGOCollaboration = () => {
                   stroke-width="1.2"
                 />
               </svg>
-            </a> */}
+            </a>
           </div>
           <div className="internship-yellow-banner-image-wrapper">
             <img src={banner} alt="" />

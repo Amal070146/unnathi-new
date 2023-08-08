@@ -320,8 +320,8 @@ const SubmitIdea = () => {
             <div className="submitidea-guidelines-individual">
               <div className="yellow-circle"></div>
               <div>
-                <h3>{t("clriyty")}</h3>
-                <p>{t("clriytyText")}</p>
+                <h3>{t("clarity")}</h3>
+                <p>{t("clarityText")}</p>
               </div>
             </div>{" "}
             <div className="submitidea-guidelines-individual">
@@ -400,7 +400,7 @@ const SubmitIdea = () => {
               <span>{t("beTheSpark")}</span> {t("ofTransformation")}
             </h1>
             <p>{t("transformationText")}</p>
-            {/* <a href="">
+            <a href="">
               <p>{t("submitYourIdea")}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -416,7 +416,7 @@ const SubmitIdea = () => {
                   stroke-width="1.2"
                 />
               </svg>
-            </a> */}
+            </a>
           </div>
           <div className="internship-yellow-banner-image-wrapper">
             <img src={banner} alt="" />

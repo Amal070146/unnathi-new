@@ -117,7 +117,7 @@ const VM = () => {
           <p>{t("cccText")}</p>
         </div>
         <div className="colaborator-stages-wrapper">
-          <div className="colaborator-individual-content">
+          <div className="colaborator-individual-content spl-vm-container">
             <div className="colaborator-individual-content-top">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
