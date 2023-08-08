@@ -3,11 +3,13 @@ import "./SubmitIdea.css";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
+import LanguageSwitcher from '../../../components/LanguageSwitcher/LanguageSwitcher';
 const SubmitIdea = () => {
   const { t } = useTranslation(["SubmitIdea"]);
   return (
     <>
       <Navbar />
+      <LanguageSwitcher />
       <div className="submitidea-wrapper">
         <div className="volunteering-header-sect submitidea-header-sect">
           <h1>{t("submitIdea")}</h1>

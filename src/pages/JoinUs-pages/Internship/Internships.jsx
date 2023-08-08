@@ -3,11 +3,13 @@ import "./Internship.css";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 const Internship = () => {
   const { t } = useTranslation(["Internship"]);
   return (
     <>
       <Navbar />
+      <LanguageSwitcher />
       <div className="internship-wrapper">
         <div className="volunteering-header-sect internship-header-sect">
           <h1>{t("internships")}</h1>

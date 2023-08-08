@@ -4,12 +4,14 @@ import "./Volunteering.css";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 
 const Volunteering = () => {
   const { t } = useTranslation(["Volunteering"]);
   return (
     <>
       <Navbar />
+      <LanguageSwitcher />
       <div className="volunteering-wrapper">
         <div className="volunteering-header-sect">
           <h1>{t("volunteering")}</h1>
@@ -29,6 +31,7 @@ const Volunteering = () => {
           </h1>
           <p>{t("differentText")}</p>
         </div>
+        
         <div id="about-volunteering" className="about-volunteering">
           <div className="about-volunteering-heading">
             <h1>
