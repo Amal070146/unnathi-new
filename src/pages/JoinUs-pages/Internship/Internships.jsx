@@ -258,7 +258,7 @@ const Internship = () => {
                   <br></br>
                   {t("development")}
                 </h3>
-                <p>{t("holistiDevText")}</p>
+                <p>{t("holisticDevText")}</p>
               </div>
             </div>
             <div className="internship-individual-cards-wrapper">
@@ -366,21 +366,18 @@ const Internship = () => {
             <div>
               <h2>2</h2>
               <div>
-                <h3>Collaborative Team Players:</h3>
+                <h3>{t("collaborativeTeamPlayers")}</h3>
                 <p>
-                  At Unnathi, every voice matters. We seek individuals who can
-                  collaborate, communicate, and contribute to our collective
-                  vision.
+                {t("collaborativeTeamPlayersText")}
                 </p>
               </div>
             </div>
             <div>
               <h2>3</h2>
               <div>
-                <h3>Quick Learners:</h3>
+                <h3>{t("quickLearners")}</h3>
                 <p>
-                  The challenges are many and varied. An ability to adapt,
-                  learn, and apply knowledge swiftly is a valued trait.
+                {t("quickLearnersText")}
                 </p>
               </div>
             </div>
@@ -391,15 +388,10 @@ const Internship = () => {
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
             <h1>
-              The Unnathi <span>Promise</span>
+            {t("theUnnathi")} <span>{t("promise")}</span>
             </h1>
             <p>
-              Joining the Unnathi Internship Program is more than just a
-              professional stint. It's a commitment to growth, both personal and
-              professional. It's a journey where every day offers new learning,
-              new challenges, and countless moments of fulfillment. Here, you
-              won't just be working; you'll be evolving, influencing, and
-              inspiring.
+            {t("promiseText")}
             </p>
             {/* <a href="">
               <p>Submit</p>

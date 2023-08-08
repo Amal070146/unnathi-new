@@ -304,10 +304,10 @@ const Volunteering = () => {
         {/* apply */}
         <div className="volunteering-apply-button-wrapper">
           <p>
-            <span style={{ color: "#FBBA16" }}>lend</span> a hand,{" "}
-            <span style={{ color: "#EC1D25" }}>touch</span> a heart. make a{" "}
-            <span style={{ color: "#F37020" }}>difference</span>. volunteer with
-            unnathi
+            <span style={{ color: "#FBBA16" }}>{t("lend")}</span> {t("lAHand")}{" "}
+            <span style={{ color: "#EC1D25" }}>{t("touch")}</span> {t("aHeart")}{" "}
+            <span style={{ color: "#F37020" }}>{t("difference")}</span>.{" "}
+            {t("volunteerWithUnnathi")}
           </p>
           <a href="">
             <p>Apply</p>
