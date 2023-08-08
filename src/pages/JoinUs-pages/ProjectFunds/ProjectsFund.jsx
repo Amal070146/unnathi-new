@@ -30,35 +30,33 @@ const ProjectsFund = () => {
         <div className="projectfund-quotes-wrapper">
           <div>
             <h2>
-              Tailored{" "}
+              {t("tailored")}{" "}
               <span style={{ color: "#FBBA16", fontWeight: 600 }}>
-                Solutions
+                {t("solutions")}
               </span>{" "}
-              for Unique
+              {t("forUnique")}
             </h2>
-            <h1 style={{ color: "#EC1D25", fontWeight: 600 }}>Challenges</h1>
+            <h1 style={{ color: "#EC1D25", fontWeight: 600 }}>
+              {t("challenge")}
+            </h1>
           </div>
           <div>
             <h3>
-              Invest in Change<span style={{ color: "#F37020" }}>.</span> Shape
-              Tomorrow's Narratives<span style={{ color: "#F37020" }}>.</span>{" "}
-              Execute Transformative Solutions
+              {t("investInChange")}
+              <span style={{ color: "#F37020" }}>.</span>
+              {t("shapeTomorrowNarratives")}
+              <span style={{ color: "#F37020" }}>.</span>{" "}
+              {t("executeTransformativeSolutions")}
               <span style={{ color: "#F37020" }}>.</span>
             </h3>
-            <p>
-              Unnathi's spectrum of projects is designed to address the unique
-              challenges faced by the SC/ST community—challenges that often
-              require customized, flexible, and one-time solutions that the
-              traditional government system may find challenging to address
-              efficiently.
-            </p>
+            <p>{t("executeTransformativeSolutionsText")}</p>
           </div>
         </div>
 
         {/* card section starts */}
         <div id="about-projectfund" className="projectfund-cardset-wrapper">
           <h1>
-            <span>Why Collaborate</span> with Unnathi?
+            <span>{t("whyCollaborate")}</span> {t("withUnnathi")}
           </h1>
           <div className="projectfund-cardset-content-wrapper">
             <div className="projectfund-cardset-individual">
@@ -137,13 +135,11 @@ const ProjectsFund = () => {
                 />
               </svg>
               <h3>
-                Tangible<br></br>Impact
+                {t("tangible")}
+                <br></br>
+                {t("impact")}
               </h3>
-              <p>
-                Our projects are tailored for measurable impact. By funding or
-                directly executing, you contribute to transformative change in
-                areas that most need it.
-              </p>
+              <p>{t("tangibleImpactText")}</p>
             </div>{" "}
             <div className="projectfund-cardset-individual">
               <svg
@@ -184,14 +180,11 @@ const ProjectsFund = () => {
                 />
               </svg>
               <h3>
-                Direct Execution<br></br>Option
+                {t("directExecution")}
+                <br></br>
+                {t("option")}
               </h3>
-              <p>
-                Beyond mere funding, we provide an avenue for organizations and
-                philanthropists to directly execute projects. This hands-on
-                approach ensures the precise implementation of vision and
-                objectives without the need for fund transfers.
-              </p>
+              <p>{t("directExecutionOptionText")}</p>
             </div>{" "}
             <div className="projectfund-cardset-individual">
               <svg
@@ -216,13 +209,11 @@ const ProjectsFund = () => {
                 />
               </svg>
               <h3>
-                Diverse<br></br>Portfolio
+                {t("diverse")}
+                <br></br>
+                {t("portfolio")}
               </h3>
-              <p>
-                Our projects range from education to infrastructure, health to
-                skill development, offering multiple avenues for collaboration
-                based on your interests and alignment.
-              </p>
+              <p>{t("diversePortfolioText")}</p>
             </div>{" "}
             <div className="projectfund-cardset-individual">
               <svg
@@ -251,14 +242,11 @@ const ProjectsFund = () => {
                 />
               </svg>
               <h3>
-                Individual<br></br>Assistance
+                {t("individual")}
+                <br></br>
+                {t("assistance")}
               </h3>
-              <p>
-                Beyond broad projects, Unnathi also considers individual
-                assistance initiatives that might not be covered under
-                traditional government schemes, ensuring no individual in need
-                is left behind.
-              </p>
+              <p>{t("individualAssistanceText")}</p>
             </div>{" "}
             <div className="projectfund-cardset-individual">
               <svg
@@ -292,13 +280,11 @@ const ProjectsFund = () => {
                 </g>
               </svg>
               <h3>
-                CSR, Philanthropy &<br></br>Direct Engagement
+                {t("CSRPhilanthropy")}
+                <br></br>
+                {t("directEngagement")}
               </h3>
-              <p>
-                Our projects align with CSR goals, and philanthropists can be
-                assured of transparency and dedication. Direct execution allows
-                for an immersive experience in community development.
-              </p>
+              <p>{t("directEngagementText")}</p>
             </div>{" "}
             <div className="projectfund-cardset-individual">
               <svg
@@ -338,12 +324,11 @@ const ProjectsFund = () => {
                 />
               </svg>
               <h3>
-                Stewardship &<br></br>Reporting
+                {t("stewardship")}
+                <br></br>
+                {t("reporting")}
               </h3>
-              <p>
-                We champion transparency. Collaborators receive regular updates,
-                reports, and insights, ensuring clarity on progress and impact.
-              </p>
+              <p>{t("stewardshipReportingText")}</p>
             </div>
           </div>
         </div>
@@ -403,15 +388,12 @@ const ProjectsFund = () => {
         {/* yellow banner start */}
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
-            <h1>Embark on Your Entrepreneurial Odyssey with Unnathi</h1>
+            <h1>{t("embarkUnnathi")}</h1>
             <p>
-              If your venture holds the promise of innovation and societal
-              impact, the Entrepreneurship Support Programme is your launchpad.
-              Join us, and let's co-create entrepreneurial tales that resonate,
-              inspire, and endure.
+            {t("embarkUnnathiText")}
             </p>
             <a href="">
-              <p>Apply for the Entrepreneurship Support Programme</p>
+              <p>{t("apply")}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
