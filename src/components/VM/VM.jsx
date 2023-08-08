@@ -8,7 +8,7 @@ const VM = () => {
   return (
     <>
       <div className="vm-wrapper" data-aos="fade-right">
-        <div className="vm-individual">
+        <div className="vm-individual vision-wrap">
           <div className="vm-svg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,10 +35,10 @@ const VM = () => {
             <p>{t("visionText")}</p>
           </div>
         </div>
-        <div className="vm-individual">
+        <div className="vm-individual mission-wrap">
           <div
             className="vm-content-wrapper"
-            style={{ alignItems: "flex-end", textAlign: "right" }}
+           
           >
             <h2>{t("mission")}</h2>
             <p>{t("missionText")}</p>

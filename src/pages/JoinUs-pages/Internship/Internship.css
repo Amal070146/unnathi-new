@@ -1,6 +1,103 @@
 /* internship */
-
-.internship-header-sect{
-      background: url("../../../assets/JoinUspage/internshipbg.png") center
+.internship-wrapper {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Red Hat Text";
+}
+.internship-header-sect {
+  background: url("../../../assets/JoinUspage/internshipbg.png") center
     center/cover no-repeat;
 }
+
+.internship-quote-wrapper {
+  padding: 3vh 5.8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.internship-quote-wrapper > div {
+  text-transform: uppercase;
+}
+
+.internship-quote-wrapper h1 {
+  font-size: 4vw;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.internship-quote-wrapper h1 p {
+  font-size: 5vw;
+}
+
+.internship-quote-wrapper h2 {
+  font-size: 3vw;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.internship-quote-wrapper > p {
+  font-size: 24px;
+}
+@media screen and (max-width: 850px) {
+  .internship-quote-wrapper h1 {
+    font-size: 4.5vw;
+  }
+
+  .internship-quote-wrapper h1 p {
+    font-size: 5.5vw;
+  }
+
+  .internship-quote-wrapper h2 {
+    font-size: 3.5vw;
+  }
+
+  .internship-quote-wrapper > p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .internship-quote-wrapper {
+    gap: 8px;
+  }
+  .internship-quote-wrapper h1 {
+    font-size: 5vw;
+  }
+
+  .internship-quote-wrapper h1 p {
+    font-size: 6.2vw;
+  }
+
+  .internship-quote-wrapper h2 {
+    font-size: 4vw;
+  }
+
+  .internship-quote-wrapper > p {
+    font-size: 14px;
+  }
+}
+
+/* card section starts */
+.internship-page-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.internship-page-card-wrapper h1{
+  font-size: 3vw;
+  font-weight: 500;
+  line-height: 1;
+}
+/* card section ends */

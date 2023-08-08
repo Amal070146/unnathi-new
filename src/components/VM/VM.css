@@ -37,6 +37,10 @@
   text-align: left;
   gap: 15px;
 }
+.mission-wrap > .vm-content-wrapper {
+  align-items: flex-end;
+  text-align: right;
+}
 
 @media screen and (max-width: 1750px) {
   .vm-wrapper {
@@ -79,6 +83,29 @@
 @media screen and (max-width: 500px) {
   .vm-content-wrapper p {
     font-size: 14px;
+  }
+  .vm-individual {
+    align-items: center;
+  }
+  .vision-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .mission-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .vm-svg svg {
+    width: 90px;
+    height: 90px;
+  }
+  .vision-wrap > .vm-content-wrapper {
+    align-items: center;
+    text-align: center;
+  }
+  .mission-wrap > .vm-content-wrapper {
+    align-items: center;
+    text-align: center;
   }
 }
 
