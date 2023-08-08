@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 import "./SubmitIdea.css";
 import banner from "../../../assets/JoinUspage/yellow-banner-img/submitidea.png";
 
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from '../../../components/LanguageSwitcher/LanguageSwitcher';
+import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 const SubmitIdea = () => {
   const { t } = useTranslation(["SubmitIdea"]);
   return (
@@ -24,7 +24,28 @@ const SubmitIdea = () => {
             <span class="m_scroll_arrows quad"></span>
           </a>
         </div>
-
+        <div className="submitidea-quote-wrapper">
+          <div>
+            <h1>
+              Shape the{" "}
+              <span style={{ color: "#FBBA16", fontWeight: 600 }}>Future</span>{" "}
+              with{" "}
+              <span style={{ color: "#EC1D25", fontWeight: 600 }}>Unnathi</span>
+            </h1>
+            <h2>
+              Your Vision<span style={{ color: "#F37020" }}>.</span> Our
+              Platform<span style={{ color: "#F37020" }}>.</span> Collective
+              Impact
+              <span style={{ color: "#F37020" }}>.</span>
+            </h2>
+          </div>
+          <p>
+            Unnathi thrives on innovation, collaboration, and the power of
+            collective wisdom. We believe that every idea, big or small, has the
+            potential to create waves of change, especially when it aligns with
+            our mission of empowering the SC/ST community.
+          </p>
+        </div>
         {/* about of submitidea */}
         <div id="about-submitidea" className="about-volunteering">
           <div className="about-volunteering-heading">
@@ -280,6 +301,61 @@ const SubmitIdea = () => {
           </div>
         </div>
         {/* about of submitidea ends */}
+
+        {/* guidelines start */}
+        <div className="submitidea-guidelines-wrapper">
+          <h1>
+            <span>Guidelines</span> for Submission
+          </h1>
+          <div className="submitidea-guidelines-content-wrapper">
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Relevance:</h3>
+                <p>
+                  Ensure your idea aligns with Unnathi's core mission and
+                  objectives.
+                </p>
+              </div>
+            </div>
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Clarity:</h3>
+                <p>
+                  Be as detailed and clear as possible. The more we understand
+                  your vision, the better we can evaluate its potential.
+                </p>
+              </div>
+            </div>{" "}
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Originality:</h3>
+                <p>
+                  We value fresh, innovative perspectives. Make sure your idea
+                  is original and hasn't been replicated elsewhere. If it is not
+                  an original idea, but you feel it is good to replicate or
+                  adapt, give due credit and submit it.
+                </p>
+              </div>
+            </div>{" "}
+            <div className="submitidea-guidelines-individual">
+              <div className="yellow-circle"></div>
+              <div>
+                <h3>Feasibility:</h3>
+                <p>
+                  While we love groundbreaking ideas, consider the practicality
+                  and feasibility of implementation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* guidelines end */}
+
+        {/*  timeline start */}
+        {/*  timeline end */}
         {/* yellow banner start */}
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
@@ -319,6 +395,6 @@ const SubmitIdea = () => {
       <Footer />
     </>
   );
-}
+};
 
-export default SubmitIdea
+export default SubmitIdea;

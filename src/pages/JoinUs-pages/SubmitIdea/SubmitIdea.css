@@ -1,4 +1,158 @@
-.submitidea-header-sect{
-      background: url("../../../assets/JoinUspage/submitideabg.png") center
+.submitidea-wrapper {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Red Hat Text";
+}
+
+.submitidea-header-sect {
+  background: url("../../../assets/JoinUspage/submitideabg.png") center
     center/cover no-repeat;
 }
+
+.submitidea-quote-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4vh 5.8vw;
+  gap: 20px;
+}
+
+.submitidea-quote-wrapper h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 4vw;
+  line-height: 1;
+}
+
+.submitidea-quote-wrapper h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2.5vw;
+  line-height: 1;
+}
+
+.submitidea-quote-wrapper p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 850px) {
+  .submitidea-quote-wrapper {
+    gap: 15px;
+  }
+  .submitidea-quote-wrapper h1 {
+    font-size: 4.5vw;
+    line-height: 1.1;
+  }
+
+  .submitidea-quote-wrapper h2 {
+    font-size: 2.8vw;
+  }
+
+  .submitidea-quote-wrapper p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .submitidea-quote-wrapper {
+    gap: 10px;
+  }
+  .submitidea-quote-wrapper h1 {
+    font-size: 4.7vw;
+  }
+
+  .submitidea-quote-wrapper h2 {
+    font-size: 2.9vw;
+  }
+
+  .submitidea-quote-wrapper p {
+    font-size: 14px;
+  }
+  .submitidea-wrapper .about-volunteering-heading h1 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* guidelines start */
+.submitidea-guidelines-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.submitidea-guidelines-wrapper h1 {
+  font-size: 4vw;
+  line-height: 1;
+  font-weight: 600;
+}
+.submitidea-guidelines-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 60vw;
+}
+
+.submitidea-guidelines-individual {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 10px;
+}
+
+.submitidea-guidelines-individual h3 {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 1;
+}
+.submitidea-guidelines-individual p {
+  font-size: 20px;
+}
+@media screen and (max-width: 850px) {
+  .submitidea-guidelines-wrapper {
+    gap: 15px;
+  }
+  .submitidea-guidelines-wrapper h1 {
+    font-size: 4.5vw;
+  }
+
+  .submitidea-guidelines-content-wrapper {
+    gap: 12px;
+    max-width: 73vw;
+  }
+  .submitidea-guidelines-individual h3 {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .submitidea-guidelines-individual p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+   .submitidea-guidelines-wrapper h1 {
+    font-size: 6vw;
+  }
+  .submitidea-guidelines-content-wrapper {
+    gap: 10px;
+    max-width: 85vw;
+  }
+  .submitidea-guidelines-individual h3 {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .submitidea-guidelines-individual p {
+    font-size: 14px;
+  }
+}
+/* guidelines ends */
