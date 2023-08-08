@@ -95,9 +95,122 @@
   text-align: center;
 }
 
-.internship-page-card-wrapper h1{
+.internship-page-card-wrapper h1 {
   font-size: 3vw;
   font-weight: 500;
   line-height: 1;
 }
+.internship-cards-wrapper-div {
+  width: 100%;
+  padding: 3vh 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.internship-individual-cards-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+}
+
+.internship-hover-display-svg > svg {
+  width: 350px;
+  height: 370px;
+}
+
+.internship-individual-cards-wrapper:hover .internship-hover-display-svg > svg {
+  fill: #fff6e0;
+}
+.internship-individual-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 8px;
+  width: 300px;
+  position: absolute;
+  bottom: 2%;
+  gap: 10px;
+  height: 380px;
+}
+.internship-individual-card-content > svg {
+  width: 100px;
+  height: 100px;
+}
+.internship-individual-card-content h3 {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.internship-individual-card-content p {
+  font-size: 18.4px;
+  line-height: 1.2;
+}
+@media screen and (max-width: 1850px) {
+  .internship-cards-wrapper-div {
+    padding: 3vh 10vw;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .internship-cards-wrapper-div {
+    padding: 3vh 2vw;
+  }
+  .internship-page-card-wrapper h1 {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 850px) {
+  .internship-cards-wrapper-div {
+    padding: 3vh 0vw;
+  }
+  .internship-page-card-wrapper h1 {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .internship-cards-wrapper-div {
+    padding: 3vh 2vw;
+  }
+  .internship-page-card-wrapper h1 {
+    font-size: 6vw;
+    line-height: 1.1;
+  }
+}
 /* card section ends */
+
+.internship-numbered-descriptions-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0vh 5vw 3vh;
+}
+.internship-numbered-descriptions-wrapper h1 {
+  font-size: 3vw;
+  font-weight: 500;
+  line-height: 1;
+}
+
+@media screen and (max-width: 1350px) {
+  .internship-numbered-descriptions-wrapper h1 {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 850px) {
+  .internship-numbered-descriptions-wrapper h1 {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .internship-numbered-descriptions-wrapper h1 {
+    font-size: 6vw;
+    line-height: 1.1;
+  }
+}
