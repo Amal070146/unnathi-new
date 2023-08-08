@@ -22,7 +22,37 @@ const Internship = () => {
             <span class="m_scroll_arrows quad"></span>
           </a>
         </div>
-
+        <div className="internship-quote-wrapper">
+          <div>
+            <h1>
+              <span style={{ color: "#FBBA16", fontWeight: 600 }}>Ignite</span>{" "}
+              Your Potential,
+              <p>
+                Impact
+                <span style={{ color: "#EC1D25", fontWeight: 600 }}>
+                  Communities
+                </span>
+              </p>
+            </h1>
+            <h2>
+              Discover<span style={{ color: "#F37020" }}>.</span> Develop
+              <span style={{ color: "#F37020" }}>.</span>
+              Deliver<span style={{ color: "#F37020" }}>.</span>
+            </h2>
+          </div>
+          <p>
+            At the heart of Unnathi's success lies a unique blend of
+            professional acumen and passionate voluntarism. The Unnathi
+            Internship Program is a testament to this synergy, offering aspiring
+            change-makers an unparalleled opportunity to engage, learn, and make
+            a difference.
+          </p>
+        </div>
+        {/* card section starts*/}
+        <div className="internship-page-card-wrapper">
+          <h1><span>Why Choose</span> the Unnathi Internship?</h1>
+        </div>
+        {/* card section ends*/}
         {/* eligibility criteria */}
         <div className="volunteering-eligibility-selection">
           <div>

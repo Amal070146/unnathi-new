@@ -117,12 +117,12 @@
 }
 @media screen and (max-width: 430px) {
   .joinus-wrapper {
-    height: 105vh;
+    height: 870px;
     margin-top: 12%;
   }
 
   .joinus-bg-sect {
-    height: 97vh;
+    height: 800px;
   }
 
   .joinus-content-wrapper a {
