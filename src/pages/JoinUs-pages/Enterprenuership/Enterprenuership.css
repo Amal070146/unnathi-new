@@ -24,3 +24,61 @@
     gap: 90px !important;
   }
 }
+
+.enterprenuership-quote-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 4vh 5.8vw;
+}
+.enterprenuership-quote-wrapper h1 {
+  font-weight: 400;
+  line-height: 1;
+  font-size: 4vw;
+  text-transform: uppercase;
+}
+.enterprenuership-quote-wrapper h2 {
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+}
+.enterprenuership-quote-wrapper p {
+  font-size: 20px;
+  line-height: 1.2;
+}
+@media screen and (max-width: 850px) {
+  .enterprenuership-quote-wrapper {
+    gap: 15px;
+  }
+  .enterprenuership-quote-wrapper h1 {
+    font-size: 4.8vw;
+  }
+  .enterprenuership-quote-wrapper h2 {
+    font-size: 2vw;
+  }
+  .enterprenuership-quote-wrapper p {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .enterprenuership-quote-wrapper {
+    gap: 10px;
+  }
+  .enterprenuership-quote-wrapper h1 {
+    font-size: 5.7vw;
+    margin-bottom: 5px;
+  }
+  .enterprenuership-quote-wrapper h2 {
+    font-size: 3.4vw;
+  }
+  .enterprenuership-quote-wrapper p {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+}
