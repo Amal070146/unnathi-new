@@ -13,9 +13,9 @@ const UAS = () => {
   return (
     <>
       <Navbar />
-      <div className="home-language-switcher">
+      {/* <div className="home-language-switcher">
         <LanguageSwitcher />
-      </div>
+      </div> */}
       <div className="uas-wrapper">
         <div className="volunteering-header-sect projectfunds-header-sect">
           <h1>UAS</h1>
