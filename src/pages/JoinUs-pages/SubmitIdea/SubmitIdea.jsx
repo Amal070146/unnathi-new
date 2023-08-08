@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 import "./SubmitIdea.css";
 import banner from "../../../assets/JoinUspage/yellow-banner-img/submitidea.png";
 
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from '../../../components/LanguageSwitcher/LanguageSwitcher';
+import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 const SubmitIdea = () => {
   const { t } = useTranslation(["SubmitIdea"]);
   return (
@@ -284,16 +284,11 @@ const SubmitIdea = () => {
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
             <h1>
-              <span>Be the Spark</span> of Transformation
+              <span>{t("beTheSpark")}</span> {t("ofTransformation")}
             </h1>
-            <p>
-              Every revolution begins with a thought, an idea. Your idea could
-              be the next catalyst for change in the welfare of the SC/ST
-              communities. Share it with us, and let's shape the future
-              together.
-            </p>
+            <p>{t("transformationText")}</p>
             <a href="">
-              <p>Submit your idea</p>
+              <p>{t("submitYourIdea")}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
@@ -319,6 +314,6 @@ const SubmitIdea = () => {
       <Footer />
     </>
   );
-}
+};
 
-export default SubmitIdea
+export default SubmitIdea;
