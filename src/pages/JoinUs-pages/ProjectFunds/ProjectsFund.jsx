@@ -388,12 +388,12 @@ const ProjectsFund = () => {
         {/* yellow banner start */}
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
-            <h1>{t("embarkUnnathi")}</h1>
+            <h1>{t("yourVisionTheirDreamsOurSharedMission")}</h1>
             <p>
-            {t("embarkUnnathiText")}
+            {t("yourVisionTheirDreamsOurSharedMissionText")}
             </p>
             <a href="">
-              <p>{t("apply")}</p>
+              <p>{t("exploreCollaborateProjects")}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
