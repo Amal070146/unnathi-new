@@ -43,8 +43,7 @@ const Map = () => {
               />
             </svg>
             <div className="phone-no">
-              <a href="">91 00000 00000</a>
-              <a href="">0485 0000 000</a>
+              <a href="">0471 251 8274</a>
             </div>
           </div>
           <div>
@@ -65,7 +64,6 @@ const Map = () => {
                 office@unnathikerala.org
               </a>
               <a href="mailto:info@unnathikerala.org">info@unnathikerala.org</a>
-              <a href="mailto:ceo@unnathikerala.org">ceo@unnathikerala.org</a>
             </div>
           </div>
           <div>
