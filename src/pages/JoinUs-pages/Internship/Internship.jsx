@@ -2,14 +2,15 @@ import React from "react";
 import "./Internship.css";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
-
+import { useTranslation } from "react-i18next";
 const Internship = () => {
+  const { t } = useTranslation(["Internship"]);
   return (
     <>
       <Navbar />
       <div className="internship-wrapper">
         <div className="volunteering-header-sect internship-header-sect">
-          <h1>INTERNSHIPS</h1>
+          <h1>{t("internships")}</h1>
           <a href="#about-internship" className="volunteering-arrow">
             <span class="m_scroll_arrows unu"></span>
             <span class="m_scroll_arrows doi"></span>
@@ -22,47 +23,35 @@ const Internship = () => {
         <div className="volunteering-eligibility-selection">
           <div>
             <h1>
-              <span>Eligibility</span>&nbsp;Criteria
+              <span>{t("eligibility")}</span>&nbsp;{t("criteria")}
             </h1>
             <div className="volunteering-eligilibility-set">
               <div>
                 <div className="yellow-circle"></div>
-                <p>
-                  Post graduates and research students who able to assign 1
-                  month to 1 year of dedicated time
-                </p>
+                <p>{t("ec1")}</p>
               </div>{" "}
               <div>
                 <div className="yellow-circle"></div>
-                <p>Indian nationality</p>
+                <p>{t("ec2")}</p>
               </div>{" "}
               <div>
                 <div className="yellow-circle"></div>
-                <p>Graduates of exceptional caliber will also be considered</p>
+                <p>{t("ec3")}</p>
               </div>{" "}
               <div>
                 <div className="yellow-circle"></div>
-                <p>Proficiency in either English or Malayalam</p>
+                <p>{t("ec4")}</p>
               </div>{" "}
             </div>
           </div>
           <div>
             <h1>
-              <span>Selection</span>&nbsp;Process
+              <span>{t("selection")}</span>&nbsp;{t("process")}
             </h1>
             <p className="volunteering-selection-content">
-              Our comprehensive selection process involves the meticulous
-              evaluation of CV submissions, followed by a rigorous online
-              interview. This interview evaluates candidates on both their
-              adeptness in technical domains and the quality of their soft
-              skills.
+              {t("selectionProcessTextPara1")}
               <br></br> <br></br>
-              Internships are available in various departments and
-              sub-departments, where interns handle different tasks. They might
-              also be recruited for specific project works. The completion
-              certificate is awarded to ONLY those who substantially contribute
-              to the organization and have displayed exemplary teamwork and
-              professional competence.
+              {t("selectionProcessTextPara2")}
             </p>
           </div>
         </div>
@@ -70,12 +59,14 @@ const Internship = () => {
         {/* apply */}
         <div className="volunteering-apply-button-wrapper">
           <p>
-            Take the <span style={{ color: "#FBBA16" }}>leap</span>. Embark on a
-            journey of <span style={{ color: "#EC1D25" }}>purpose</span>, <span style={{ color: "#F37020" }}>passion</span>, and unparalleled
-            professional growth.
+            {t("takeThe")} <span style={{ color: "#FBBA16" }}> {t("leap")}</span>
+            .{t("embarkOn")}{" "}
+            <span style={{ color: "#EC1D25" }}> {t("purpose")}</span>,{" "}
+            <span style={{ color: "#F37020" }}> {t("passion")}</span>{" "}
+            {t("professionalGrowth")}
           </p>
           <a href="">
-            <p>Apply</p>
+            <p>{t("apply")}</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

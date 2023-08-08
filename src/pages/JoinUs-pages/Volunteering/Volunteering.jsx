@@ -12,7 +12,7 @@ const Volunteering = () => {
       <Navbar />
       <div className="volunteering-wrapper">
         <div className="volunteering-header-sect">
-          <h1>{t("volunteerng")}</h1>
+          <h1>{t("volunteering")}</h1>
           <a href="#about-volunteering" className="volunteering-arrow">
             <span class="m_scroll_arrows unu"></span>
             <span class="m_scroll_arrows doi"></span>
