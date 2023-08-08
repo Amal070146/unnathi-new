@@ -459,7 +459,7 @@ const Internship = () => {
             <span style={{ color: "#F37020" }}> {t("passion")}</span>{" "}
             {t("professionalGrowth")}
           </p>
-          <a href="">
+          {/* <a href="">
             <p>{t("apply")}</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -475,7 +475,7 @@ const Internship = () => {
                 stroke-width="1.2"
               />
             </svg>
-          </a>
+          </a> */}
         </div>
       </div>
       <Footer />
