@@ -11,7 +11,9 @@ const Volunteering = () => {
   return (
     <>
       <Navbar />
-      <LanguageSwitcher />
+      <div className="home-language-switcher">
+        <LanguageSwitcher />
+      </div>
       <div className="volunteering-wrapper">
         <div className="volunteering-header-sect">
           <h1>{t("volunteering")}</h1>
@@ -31,7 +33,7 @@ const Volunteering = () => {
           </h1>
           <p>{t("differentText")}</p>
         </div>
-        
+
         <div id="about-volunteering" className="about-volunteering">
           <div className="about-volunteering-heading">
             <h1>

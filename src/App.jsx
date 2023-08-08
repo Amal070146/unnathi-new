@@ -8,6 +8,7 @@ import Internship from "./pages/JoinUs-pages/Internship/Internships";
 import SubmitIdea from "./pages/JoinUs-pages/SubmitIdea/SubmitIdea";
 import NGOCollaboration from "./pages/JoinUs-pages/NGOCollaboration/NGOCollaboration";
 import i18next from "i18next";
+import ProjectsFund from "./pages/JoinUs-pages/ProjectFunds/ProjectsFund";
 function App() {
   //Check whether the path contains the query parameter lang and if it does, set the language to the value of the query parameter
   const urlParams = new URLSearchParams(window.location.search);
@@ -53,6 +54,10 @@ function App() {
     {
       path: "/ngocollaboration",
       element: <NGOCollaboration />,
+    },
+    {
+      path: "/projectfunds",
+      element: <ProjectsFund />,
     },
   ]);
   return <RouterProvider router={router} />;

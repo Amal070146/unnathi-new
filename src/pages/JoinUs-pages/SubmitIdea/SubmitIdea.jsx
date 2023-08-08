@@ -9,7 +9,9 @@ const SubmitIdea = () => {
   return (
     <>
       <Navbar />
-      <LanguageSwitcher />
+      <div className="home-language-switcher">
+        <LanguageSwitcher />
+      </div>
       <div className="submitidea-wrapper">
         <div className="volunteering-header-sect submitidea-header-sect">
           <h1>{t("submitIdea")}</h1>
@@ -67,9 +69,7 @@ const SubmitIdea = () => {
                 />
               </svg>
               <h4>{t("platformForChange")}</h4>
-              <p>
-              {t("platformForChangeText")}
-              </p>
+              <p>{t("platformForChangeText")}</p>
             </div>
             <div className="volunteer-card-individual">
               <svg
@@ -163,9 +163,7 @@ const SubmitIdea = () => {
                 />
               </svg>
               <h4>{t("collaborativeGrowth")}</h4>
-              <p>
-              {t("collaborativeGrowthText")}
-              </p>
+              <p>{t("collaborativeGrowthText")}</p>
             </div>
 
             <div className="volunteer-card-individual">
@@ -275,9 +273,7 @@ const SubmitIdea = () => {
                 />
               </svg>
               <h4>{t("recognition")}</h4>
-              <p>
-              {t("recognitionText")}
-              </p>
+              <p>{t("recognitionText")}</p>
             </div>
           </div>
         </div>
