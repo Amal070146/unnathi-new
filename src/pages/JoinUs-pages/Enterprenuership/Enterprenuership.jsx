@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Enterprenuership.css";
-import banner from "../../../assets/JoinUspage/yellow-banner-img/projectfund.png";
+import banner from "../../../assets/JoinUspage/yellow-banner-img/enterprenuership.png";
 import timeline from "../../../assets/JoinUspage/timelinebg.png";
 
 import Navbar from "../../../components/Navbar/Navbar";
