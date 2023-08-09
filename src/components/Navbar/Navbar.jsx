@@ -30,17 +30,8 @@ const Navbar = () => {
     t("governingBody"),
     t("UAS"),
     t("internship"),
-    t("volunteering"),
-    t("projects"),
+    t("volunteering")
   ];
-
-  const links = {
-    governingBody: "Governing-Body",
-    UAS: "UAS",
-    internship: "Internship",
-    volunteering: "Volunteering",
-    projects: "Projects",
-  };
 
   useEffect(() => {}, [path]);
   const changenavlogo = () => {

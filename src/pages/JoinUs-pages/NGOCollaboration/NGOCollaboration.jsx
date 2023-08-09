@@ -20,7 +20,7 @@ const NGOCollaboration = () => {
       <div className="ngocollaboration-wrapper">
         <div className="volunteering-header-sect ngocollobaration-header-sect">
           <h1> {t("collaboration")}</h1>
-          <a href="#about-submitidea" className="volunteering-arrow">
+          <a href="#about-ngocollaboration" className="volunteering-arrow">
             <span class="m_scroll_arrows unu"></span>
             <span class="m_scroll_arrows doi"></span>
             <span class="m_scroll_arrows trei"></span>
@@ -52,7 +52,7 @@ const NGOCollaboration = () => {
 
         {/* end of quote */}
         {/* card section starts*/}
-        <div className="internship-page-card-wrapper">
+        <div className="internship-page-card-wrapper" id="about-ngocollaboration">
           <h1>
             <span>{t("whyCollaborate")}</span> {t("withUnnathi")}
           </h1>

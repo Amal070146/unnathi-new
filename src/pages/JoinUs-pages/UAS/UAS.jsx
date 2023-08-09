@@ -299,11 +299,11 @@ const UAS = () => {
                 <h3>
                   INTERACTION WITH
                   <br></br>
-                  PROFFESIONALS
+                  PROFFESSIONALS
                 </h3>
                 <p>
                   Reporting directly to the CEO, a senior IAS officer and being
-                  part of an organisation that vouches for speed and efficacy.
+                  part of an organization that vouches for speed and efficacy.
                 </p>
               </div>
             </div>
