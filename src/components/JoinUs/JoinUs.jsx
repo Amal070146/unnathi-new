@@ -1,7 +1,7 @@
 import React from "react";
 import "./JoinUs.css";
 import kyyb from "../../assets/kayyy.png";
-import kyyy from "../../assets/kayyyy.png";
+import kyyy from "../../assets/kayyyy.webp";
 import { useTranslation } from "react-i18next";
 
 const Curious = () => {
@@ -12,8 +12,8 @@ const Curious = () => {
       <div className="joinus-content-wrapper">
         {/* href="https://forms.gle/GV56Vb5D7qP6ZhcR6" */}
         <a href="/internship" className="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="131"
@@ -106,7 +106,7 @@ const Curious = () => {
               </svg>
               <p>{t("internships")}</p>
             </div>
-            <div class="flip-card-back">
+            <div className="flip-card-back">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="131"
@@ -203,20 +203,20 @@ const Curious = () => {
         </a>
         {/* href="https://docs.google.com/forms/d/e/1FAIpQLSd5FgrM2Z72F0blVXNgx0Q1zNlR24_b0C7G4J5qAiOy7n_XUA/viewform" */}
         <a href="/volunteering" className="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
               <img src={kyyb} alt="" />
               <p>{t("volunteering")}</p>
             </div>
-            <div class="flip-card-back">
+            <div className="flip-card-back">
               <img src={kyyy} alt="" />
               <p style={{ color: "white" }}>{t("volunteering")}</p>
             </div>
           </div>
         </a>
         <a href="/uas" className="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="125"
@@ -241,7 +241,7 @@ const Curious = () => {
               </svg>
               <p>{t("uas")}</p>
             </div>
-            <div class="flip-card-back">
+            <div className="flip-card-back">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="125"

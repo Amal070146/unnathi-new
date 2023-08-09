@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Internship.css";
-import banner from "../../../assets/JoinUspage/yellow-banner-img/internship.png";
+import banner from "../../../assets/JoinUspage/yellow-banner-img/internship.webp";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
@@ -18,10 +18,10 @@ const Internship = () => {
         <div className="volunteering-header-sect internship-header-sect">
           <h1>{t("internships")}</h1>
           <a href="#about-internship" className="volunteering-arrow">
-            <span class="m_scroll_arrows unu"></span>
-            <span class="m_scroll_arrows doi"></span>
-            <span class="m_scroll_arrows trei"></span>
-            <span class="m_scroll_arrows quad"></span>
+            <span className="m_scroll_arrows unu"></span>
+            <span className="m_scroll_arrows doi"></span>
+            <span className="m_scroll_arrows trei"></span>
+            <span className="m_scroll_arrows quad"></span>
           </a>
         </div>
         <div className="internship-quote-wrapper">

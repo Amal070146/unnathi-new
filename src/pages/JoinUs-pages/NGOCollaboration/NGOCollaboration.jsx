@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./NGOCollaboration.css";
-import banner from "../../../assets/JoinUspage/yellow-banner-img/NGO.png";
-import timeline from "../../../assets/JoinUspage/timelinebg.png";
+import banner from "../../../assets/JoinUspage/yellow-banner-img/NGO.webp";
+import timeline from "../../../assets/JoinUspage/timelinebg.webp";
 
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
@@ -21,10 +21,10 @@ const NGOCollaboration = () => {
         <div className="volunteering-header-sect ngocollobaration-header-sect">
           <h1> {t("collaboration")}</h1>
           <a href="#about-ngocollaboration" className="volunteering-arrow">
-            <span class="m_scroll_arrows unu"></span>
-            <span class="m_scroll_arrows doi"></span>
-            <span class="m_scroll_arrows trei"></span>
-            <span class="m_scroll_arrows quad"></span>
+            <span className="m_scroll_arrows unu"></span>
+            <span className="m_scroll_arrows doi"></span>
+            <span className="m_scroll_arrows trei"></span>
+            <span className="m_scroll_arrows quad"></span>
           </a>
         </div>
         {/* quote of submitidea used */}

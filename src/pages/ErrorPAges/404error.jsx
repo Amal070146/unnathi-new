@@ -5,8 +5,8 @@ const error404 = () => {
   return (
     <div className="Error404-wrapper">
       <div>
-        <div class="row">
-          <div class="col-sm-12 col-md-12 mt-5 mb-5">
+        <div className="row">
+          <div className="col-sm-12 col-md-12 mt-5 mb-5">
             <svg
               width="100%"
               height="100vh"

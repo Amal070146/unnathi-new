@@ -19,10 +19,10 @@ const Volunteering = () => {
         <div className="volunteering-header-sect">
           <h1>{t("volunteering")}</h1>
           <a href="#about-volunteering" className="volunteering-arrow">
-            <span class="m_scroll_arrows unu"></span>
-            <span class="m_scroll_arrows doi"></span>
-            <span class="m_scroll_arrows trei"></span>
-            <span class="m_scroll_arrows quad"></span>
+            <span className="m_scroll_arrows unu"></span>
+            <span className="m_scroll_arrows doi"></span>
+            <span className="m_scroll_arrows trei"></span>
+            <span className="m_scroll_arrows quad"></span>
           </a>
         </div>
         <div className="volunteering-quote">

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./ProjectsFunds.css";
 
-import banner from "../../../assets/JoinUspage/yellow-banner-img/projectfund.png";
-import timeline from "../../../assets/JoinUspage/timelinebg.png";
+import banner from "../../../assets/JoinUspage/yellow-banner-img/projectfund.webp";
+import timeline from "../../../assets/JoinUspage/timelinebg.webp";
 
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
@@ -23,10 +23,10 @@ const ProjectsFund = () => {
         <div className="volunteering-header-sect projectfunds-header-sect">
           <h1>{t("projectToFund")}</h1>
           <a href="#about-projectfund" className="volunteering-arrow">
-            <span class="m_scroll_arrows unu"></span>
-            <span class="m_scroll_arrows doi"></span>
-            <span class="m_scroll_arrows trei"></span>
-            <span class="m_scroll_arrows quad"></span>
+            <span className="m_scroll_arrows unu"></span>
+            <span className="m_scroll_arrows doi"></span>
+            <span className="m_scroll_arrows trei"></span>
+            <span className="m_scroll_arrows quad"></span>
           </a>
         </div>
         <div className="projectfund-quotes-wrapper">

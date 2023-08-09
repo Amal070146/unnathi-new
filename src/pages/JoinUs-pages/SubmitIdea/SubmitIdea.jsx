@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./SubmitIdea.css";
-import banner from "../../../assets/JoinUspage/yellow-banner-img/submitidea.png";
-import timeline from "../../../assets/JoinUspage/timelinebg.png";
+import banner from "../../../assets/JoinUspage/yellow-banner-img/submitidea.webp";
+import timeline from "../../../assets/JoinUspage/timelinebg.webp";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
@@ -20,10 +20,10 @@ const SubmitIdea = () => {
         <div className="volunteering-header-sect submitidea-header-sect">
           <h1>{t("submitIdea")}</h1>
           <a href="#about-submitidea" className="volunteering-arrow">
-            <span class="m_scroll_arrows unu"></span>
-            <span class="m_scroll_arrows doi"></span>
-            <span class="m_scroll_arrows trei"></span>
-            <span class="m_scroll_arrows quad"></span>
+            <span className="m_scroll_arrows unu"></span>
+            <span className="m_scroll_arrows doi"></span>
+            <span className="m_scroll_arrows trei"></span>
+            <span className="m_scroll_arrows quad"></span>
           </a>
         </div>
         <div className="submitidea-quote-wrapper">
