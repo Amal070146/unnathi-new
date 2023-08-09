@@ -535,7 +535,7 @@ const UAS = () => {
                 <p>
                   Graduates from reputed institutions such as IIT, IIM, NIT,
                   IRMA, NLSIU, XLRI, BITS Pilani, NID, NIFT or other renowned
-                  centres of learning including those abroad with a work
+                  centers of learning including those abroad with a work
                   experience of at least 10 years.{" "}
                 </p>
               </div>{" "}

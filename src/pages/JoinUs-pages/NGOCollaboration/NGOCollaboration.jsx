@@ -644,9 +644,9 @@ const NGOCollaboration = () => {
               <span>{t("together")},</span> {t("weCanAchieveMonumentalChange")}
             </h1>
             <p>{t("togetherText")}</p>
-            <a href="">
-              {/* <p>{t("initiateCollaboration")}</p> */}
-              <p>Coming Soon</p>
+            <a target="_blank" rel="noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLScMwpIk_x7u-xuGFEUli1BkQzy0hvoDqz71HuJ96HfREHO9DA/viewform">
+              <p>{t("initiateCollaboration")}</p>
+             
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
