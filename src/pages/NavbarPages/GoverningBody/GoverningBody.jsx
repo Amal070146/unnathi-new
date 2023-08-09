@@ -4,8 +4,8 @@ import "./GoverningBody.css";
 import Footer from "../../../components/Footer/Footer";
 import headerimg from "../../../assets/NavbarPages/GoverningBody/header-img.webp";
 
-import logo from "../../../assets/logo.png";
-import logo_mal from "../../../assets/logo_mal.png";
+import logo from "../../../assets/logo.webp";
+import logo_mal from "../../../assets/logo_mal.webp";
 
 import { useEffect, useState } from "react";
 import { BiMenu } from "react-icons/bi";

@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../../assets/logo.png";
-import logo_mal from "../../assets/logo_mal.png";
+import logo from "../../assets/logo.webp";
+import logo_mal from "../../assets/logo_mal.webp";
 import "./Footer.css";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";

@@ -1,6 +1,6 @@
 import "./Navbar.css";
-import logo from "../../assets/logo.png";
-import logo_mal from "../../assets/logo_mal.png";
+import logo from "../../assets/logo.webp";
+import logo_mal from "../../assets/logo_mal.webp";
 
 import React, { useEffect, useState } from "react";
 import { BiMenu } from "react-icons/bi";
