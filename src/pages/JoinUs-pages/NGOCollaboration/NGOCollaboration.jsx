@@ -52,9 +52,12 @@ const NGOCollaboration = () => {
 
         {/* end of quote */}
         {/* card section starts*/}
-        <div className="internship-page-card-wrapper" id="about-ngocollaboration">
+        <div
+          className="internship-page-card-wrapper"
+          id="about-ngocollaboration"
+        >
           <h1>
-            <span>{t("whyCollaborate")}</span> {t("withUnnathi")}
+            <span>{t("whyCollaborate")}</span>&nbsp;{t("withUnnathi")}
           </h1>
           <div className="internship-cards-wrapper-div">
             <div className="internship-individual-cards-wrapper">
@@ -388,11 +391,7 @@ const NGOCollaboration = () => {
                     stroke="black"
                     strokeWidth="7"
                   />
-                  <path
-                    d="M77 66.5L89.5 69.5"
-                    stroke="black"
-                    strokeWidth="7"
-                  />
+                  <path d="M77 66.5L89.5 69.5" stroke="black" strokeWidth="7" />
                   <path d="M68 79L84.5 104.5" stroke="black" strokeWidth="7" />
                 </svg>
                 <h3>
@@ -550,7 +549,7 @@ const NGOCollaboration = () => {
         {/* guidelines start */}
         <div className="submitidea-guidelines-wrapper">
           <h1>
-            <span>{t("guidelines")}</span>
+            <span>{t("guidelines")}</span>&nbsp;
             {t("forSubmission")}
           </h1>
           <div className="submitidea-guidelines-content-wrapper">
@@ -644,9 +643,13 @@ const NGOCollaboration = () => {
               <span>{t("together")},</span> {t("weCanAchieveMonumentalChange")}
             </h1>
             <p>{t("togetherText")}</p>
-            <a target="_blank" rel="noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLScMwpIk_x7u-xuGFEUli1BkQzy0hvoDqz71HuJ96HfREHO9DA/viewform">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScMwpIk_x7u-xuGFEUli1BkQzy0hvoDqz71HuJ96HfREHO9DA/viewform"
+            >
               <p>{t("initiateCollaboration")}</p>
-             
+
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
