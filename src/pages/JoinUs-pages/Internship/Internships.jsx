@@ -4,7 +4,6 @@ import banner from "../../../assets/JoinUspage/yellow-banner-img/internship.png"
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 import i18next from "i18next";
 const Internship = () => {
   const { t } = useTranslation(["Internship"]);
@@ -389,9 +388,8 @@ const Internship = () => {
               {t("theUnnathi")} <span>{t("promise")}</span>
             </h1>
             <p>{t("promiseText")}</p>
-            <a href="">
-              {/* <p>Submit</p> */}
-              <p>Coming Soon</p>
+            <a rel="noreferrer" target="_blank" href="https://forms.gle/tJAWR74YvRrNkKBB6">
+              <p>Submit</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
@@ -460,7 +458,7 @@ const Internship = () => {
             <span style={{ color: "#F37020" }}> {t("passion")}</span>{" "}
             {t("professionalGrowth")}
           </p>
-          <a href="https://forms.gle/tJAWR74YvRrNkKBB6">
+          <a rel="noreferrer" target="_blank" href="https://forms.gle/tJAWR74YvRrNkKBB6">
             <p>{t("apply")}</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"

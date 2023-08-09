@@ -31,7 +31,9 @@ const Home = () => {
       <div className="home-language-switcher">
         <LanguageSwitcher />
       </div>
-      <About />
+      <div id="about">
+        <About />
+      </div>
 
       <VM />
 

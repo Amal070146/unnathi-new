@@ -4,7 +4,6 @@ import "./Volunteering.css";
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 import i18next from "i18next";
 
 const Volunteering = () => {
@@ -311,7 +310,11 @@ const Volunteering = () => {
             <span style={{ color: "#F37020" }}>{t("difference")}</span>.{" "}
             {t("volunteerWithUnnathi")}
           </p>
-          <a href="https://forms.gle/QgFZ6imrNh69nvzK7">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://forms.gle/QgFZ6imrNh69nvzK7"
+          >
             <p>Apply</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
