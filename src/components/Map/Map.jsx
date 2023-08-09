@@ -129,7 +129,7 @@ const Map = () => {
               </svg>
             </a>
           </div>
-          <a href="" className="contact-button-brousher">
+          {/* <a href="" className="contact-button-brousher">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="14"
@@ -146,7 +146,7 @@ const Map = () => {
               />
             </svg>
             <p>{t("brochure")}</p>
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
