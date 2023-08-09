@@ -36,6 +36,10 @@ function App() {
 
   const router = createBrowserRouter([
     {
+      path: "*",
+      element: <Error404 />,
+    },
+    {
       path: "/",
       element: <Home />,
     },
@@ -90,11 +94,7 @@ function App() {
     {
       path: "/ഭരണസമിതി",
       element: <GoverningBody />,
-    },
-    {
-      path: "/error404",
-      element: <Error404 />,
-    },
+    }
   ]);
   return <RouterProvider router={router} />;
 }
