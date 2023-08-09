@@ -21,7 +21,7 @@
   padding: 6vh 5vw;
   font-size: 16px;
   justify-content: space-between;
-  background: url("../../assets/bg-map.png") center center/cover no-repeat;
+  background: url("../../assets/bg-map.webp") center center/cover no-repeat;
 }
 
 .contact-first-sect {

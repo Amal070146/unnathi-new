@@ -24,7 +24,6 @@ const Home = () => {
           <span className="m_scroll_arrows unu"></span>
           <span className="m_scroll_arrows doi"></span>
           <span className="m_scroll_arrows trei"></span>
-          <span className="m_scroll_arrows quad"></span>
         </a>
       </div>
       <NGO />

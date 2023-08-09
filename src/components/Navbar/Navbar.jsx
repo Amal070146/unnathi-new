@@ -101,7 +101,7 @@ const Navbar = () => {
           <a href="/home">
             <img
               className="nav-logo"
-              style={{ width: navlogo ? "90px" : "150px" }}
+              style={{ width: navlogo ? "90px" : "120px" }}
               src={i18next.language === "en" ? logo : logo_mal}
               alt=""
             />

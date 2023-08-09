@@ -3,7 +3,6 @@ import "./GoverningBody.css";
 
 import Footer from "../../../components/Footer/Footer";
 import headerimg from "../../../assets/NavbarPages/GoverningBody/header-img.webp";
-import headerimg1 from "../../../assets/NavbarPages/GoverningBody/people.png";
 
 import logo from "../../../assets/logo.webp";
 import logo_mal from "../../../assets/logo_mal.webp";
@@ -116,7 +115,7 @@ const GoverningBody = () => {
             <a href="/home">
               <img
                 className="nav-logo"
-                style={{ width: navlogo ? "90px" : "150px" }}
+                style={{ width: navlogo ? "90px" : "100px" }}
                 src={i18next.language === "en" ? logo : logo_mal}
                 alt=""
               />
@@ -160,7 +159,6 @@ const GoverningBody = () => {
       <div className="governingbody-wrapper">
         <div className="governingbody-header-set-wrapper">
           <img src={headerimg} alt="" />
-          <img src={headerimg1} className="people-governing" alt="" />
           <div className="governingbody-header-set-cover"></div>
           <div className="governingbody-header-set-cover-text">
             <h2>GOVERNING</h2>

@@ -307,7 +307,7 @@ const SubmitIdea = () => {
         {/* guidelines start */}
         <div className="submitidea-guidelines-wrapper">
           <h1>
-            <span>{t("guidelines")}</span> {t("forSubmission")}
+            <span>{t("guidelines")}</span>&nbsp;{t("forSubmission")}
           </h1>
           <div className="submitidea-guidelines-content-wrapper">
             <div className="submitidea-guidelines-individual">
@@ -346,7 +346,7 @@ const SubmitIdea = () => {
 
         <div className="submitidea-timeline-wrapper">
           <h1>
-            <span>{t("howTo")}</span> {t("submitYourIdeas")}
+            <span>{t("howTo")}</span>&nbsp;{t("submitYourIdeas")}
           </h1>
           <div className="submitidea-timeline-content-wrapper">
             <div>

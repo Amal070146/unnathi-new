@@ -87,21 +87,27 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   width: 100%;
 }
 .submitidea-guidelines-wrapper h1 {
-  font-size: 4vw;
+  font-size: 3.5vw;
   line-height: 1;
   font-weight: 600;
   text-align: center;
+  display: flex;
+}
+
+.submitidea-guidelines-wrapper h1 span {
+  border-bottom: 1vw solid #fbba16;
+  height: 3.2vw;
 }
 .submitidea-guidelines-content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
   width: 100%;
-  max-width: 60vw;
+  max-width: 55vw;
 }
 
 .submitidea-guidelines-individual {
@@ -119,16 +125,24 @@
 .submitidea-guidelines-individual p {
   font-size: 20px;
 }
+@media screen and (max-width: 1350px) {
+  .submitidea-guidelines-content-wrapper {
+    max-width: 68vw;
+  }
+}
 @media screen and (max-width: 850px) {
   .submitidea-guidelines-wrapper {
-    gap: 15px;
+    gap: 35px;
   }
   .submitidea-guidelines-wrapper h1 {
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
-
+  .submitidea-guidelines-wrapper h1 span {
+    height: 4.6vw;
+    border-bottom: 1.6vw solid #fbba16;
+  }
   .submitidea-guidelines-content-wrapper {
-    gap: 12px;
+    gap: 23px;
     max-width: 73vw;
   }
   .submitidea-guidelines-individual h3 {
@@ -142,7 +156,10 @@
 
 @media screen and (max-width: 500px) {
   .submitidea-guidelines-wrapper h1 {
-    font-size: 6vw;
+    font-size: 5.8vw;
+  }
+  .submitidea-guidelines-wrapper h1 span {
+    height: 5.1vw;
   }
   .submitidea-guidelines-content-wrapper {
     gap: 10px;
@@ -171,11 +188,18 @@
 }
 
 .submitidea-timeline-wrapper h1 {
-  font-size: 4vw;
+  font-weight: 500;
+  font-size: 3.5vw;
   line-height: 1;
-  font-weight: 600;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
-
+.submitidea-timeline-wrapper h1 span {
+  border-bottom: 1vw solid #fbba16;
+  height: 3.2vw;
+}
 .submitidea-timeline-content-wrapper {
   position: relative;
   margin-bottom: 20px;
@@ -236,7 +260,7 @@
   background-color: white;
 }
 
-.submitidea-timeline-wrapper>p{
+.submitidea-timeline-wrapper > p {
   font-size: 20px;
 }
 @media screen and (max-width: 1850px) {
@@ -329,10 +353,14 @@
     width: 60vw;
     height: 600px;
   }
-  .submitidea-timeline-wrapper h1 {
-    font-size: 4.5vw;
-  }
 
+  .submitidea-timeline-wrapper h1 {
+    font-size: 5vw;
+  }
+  .submitidea-timeline-wrapper h1 span {
+    height: 4.6vw;
+    border-bottom: 1.6vw solid #fbba16;
+  }
   .submitidea-timeline-content-individual {
     width: 210px;
   }
@@ -340,9 +368,9 @@
   .submitidea-timeline-content-individual p {
     font-size: 18px;
   }
-  .submitidea-timeline-wrapper>p{
-  font-size: 18px;
-}
+  .submitidea-timeline-wrapper > p {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -381,7 +409,10 @@
 }
 @media screen and (max-width: 500px) {
   .submitidea-timeline-wrapper h1 {
-    font-size: 6vw;
+    font-size: 5.8vw;
+  }
+  .submitidea-timeline-wrapper h1 span {
+    height: 5.1vw;
   }
   .submitidea-timeline-content-individual p {
     width: 230px;
@@ -412,13 +443,12 @@
   .submitidea-timeline-content-individual p {
     font-size: 15px;
   }
-    .submitidea-timeline-wrapper>p{
-  font-size: 15px;
-}
+  .submitidea-timeline-wrapper > p {
+    font-size: 15px;
+  }
 }
 
-@media screen and (max-width: 415px){
-   
+@media screen and (max-width: 415px) {
   .submitidea-timeline-content .timeline2 {
     top: 10px;
     left: 2vw;
@@ -434,6 +464,5 @@
     width: 74vw;
     height: 540px;
   }
-
 }
 /* timeline ends */
