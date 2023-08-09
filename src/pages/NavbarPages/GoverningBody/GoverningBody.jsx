@@ -3,6 +3,7 @@ import "./GoverningBody.css";
 
 import Footer from "../../../components/Footer/Footer";
 import headerimg from "../../../assets/NavbarPages/GoverningBody/header-img.webp";
+import headerimg1 from "../../../assets/NavbarPages/GoverningBody/people.png";
 
 import logo from "../../../assets/logo.webp";
 import logo_mal from "../../../assets/logo_mal.webp";
@@ -159,30 +160,12 @@ const GoverningBody = () => {
       <div className="governingbody-wrapper">
         <div className="governingbody-header-set-wrapper">
           <img src={headerimg} alt="" />
+          <img src={headerimg1} className="people-governing" alt="" />
           <div className="governingbody-header-set-cover"></div>
           <div className="governingbody-header-set-cover-text">
             <h2>GOVERNING</h2>
             <h1>BODY</h1>
           </div>
-
-          <a href="#governingcontent" className="volunteering-arrow">
-            <span
-              style={{ borderColor: "black" }}
-              className="m_scroll_arrows unu"
-            ></span>
-            <span
-              style={{ borderColor: "black" }}
-              className="m_scroll_arrows doi"
-            ></span>
-            <span
-              style={{ borderColor: "black" }}
-              className="m_scroll_arrows trei"
-            ></span>
-            <span
-              style={{ borderColor: "black" }}
-              className="m_scroll_arrows quad"
-            ></span>
-          </a>
         </div>
 
         <div id="governingcontent" className="governingcontent-wrapper">
@@ -229,7 +212,7 @@ const GoverningBody = () => {
               Director, Scheduled Tribes Development Department, Govt of Kerala
             </p>
           </div>{" "}
-          <div className="governingcontent-individual-wrapper">
+          <div className="governingcontent-individual-wrapper" style={{border:"none"}}>
             <div>
               {" "}
               <h3>Member</h3>
@@ -244,7 +227,7 @@ const GoverningBody = () => {
                 background: "#fbba16",
                 width: "100%",
                 height: "4px",
-                margin: "10px 0px",
+                margin: "20px 0px",
               }}
             ></div>
             <div>
