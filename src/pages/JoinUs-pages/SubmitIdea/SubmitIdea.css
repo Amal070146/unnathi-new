@@ -9,7 +9,7 @@
 }
 
 .submitidea-header-sect {
-  background: url("../../../assets/JoinUspage/submitideabg.png") center
+  background: url("../../../assets/JoinUspage/submitideabg.webp") center
     center/cover no-repeat;
 }
 
@@ -87,21 +87,27 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   width: 100%;
 }
 .submitidea-guidelines-wrapper h1 {
-  font-size: 4vw;
+  font-size: 3.5vw;
   line-height: 1;
   font-weight: 600;
   text-align: center;
+  display: flex;
+}
+
+.submitidea-guidelines-wrapper h1 span {
+  border-bottom: 1vw solid #fbba16;
+  height: 3.2vw;
 }
 .submitidea-guidelines-content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
   width: 100%;
-  max-width: 60vw;
+  max-width: 55vw;
 }
 
 .submitidea-guidelines-individual {
@@ -119,16 +125,24 @@
 .submitidea-guidelines-individual p {
   font-size: 20px;
 }
+@media screen and (max-width: 1350px) {
+  .submitidea-guidelines-content-wrapper {
+    max-width: 68vw;
+  }
+}
 @media screen and (max-width: 850px) {
   .submitidea-guidelines-wrapper {
-    gap: 15px;
+    gap: 35px;
   }
   .submitidea-guidelines-wrapper h1 {
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
-
+  .submitidea-guidelines-wrapper h1 span {
+    height: 4.6vw;
+    border-bottom: 1.6vw solid #fbba16;
+  }
   .submitidea-guidelines-content-wrapper {
-    gap: 12px;
+    gap: 23px;
     max-width: 73vw;
   }
   .submitidea-guidelines-individual h3 {
@@ -142,7 +156,10 @@
 
 @media screen and (max-width: 500px) {
   .submitidea-guidelines-wrapper h1 {
-    font-size: 6vw;
+    font-size: 5.8vw;
+  }
+  .submitidea-guidelines-wrapper h1 span {
+    height: 5.1vw;
   }
   .submitidea-guidelines-content-wrapper {
     gap: 10px;
@@ -171,11 +188,18 @@
 }
 
 .submitidea-timeline-wrapper h1 {
-  font-size: 4vw;
+  font-weight: 500;
+  font-size: 3.5vw;
   line-height: 1;
-  font-weight: 600;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
-
+.submitidea-timeline-wrapper h1 span {
+  border-bottom: 1vw solid #fbba16;
+  height: 3.2vw;
+}
 .submitidea-timeline-content-wrapper {
   position: relative;
   margin-bottom: 20px;
@@ -183,7 +207,7 @@
 
 .submitidea-timeline-content-wrapper img {
   width: 45vw;
-  height: 700px;
+  height: 660px;
 }
 .submitidea-timeline-content {
   position: absolute;
@@ -203,7 +227,7 @@
   gap: 20px;
 }
 .submitidea-timeline-content .timeline2 {
-  left: 25vw;
+  left: 23vw;
   position: relative;
   gap: 20px;
   top: 60px;
@@ -214,14 +238,14 @@
   left: 9vw;
   position: relative;
   gap: 20px;
-  top: 160px;
+  top: 140px;
 }
 
 .submitidea-timeline-content .timeline4 {
   left: 20vw;
   position: relative;
   gap: 20px;
-  top: 270px;
+  top: 250px;
   text-align: right;
 }
 
@@ -236,8 +260,10 @@
   background-color: white;
 }
 
-.submitidea-timeline-wrapper>p{
-  font-size: 20px;
+.submitidea-timeline-wrapper > p {
+  font-size: 18px;
+  color: #888888;
+  width: 62%;
 }
 @media screen and (max-width: 1850px) {
   .submitidea-timeline-content .timeline2 {
@@ -266,6 +292,9 @@
   .submitidea-timeline-content .timeline4 {
     top: 250px;
   }
+  .submitidea-timeline-wrapper > p {
+    width: 72%;
+  }
 }
 @media screen and (max-width: 1130px) {
   .submitidea-timeline-content .timeline2 {
@@ -293,15 +322,19 @@
     left: 9vw;
     top: 200px;
   }
+  .submitidea-timeline-wrapper > p {
+    font-size: 17px;
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 915px) {
   .submitidea-timeline-content .timeline2 {
-    left: 11vw;
+    left: 5vw;
   }
 
   .submitidea-timeline-content .timeline4 {
-    left: 5vw;
+    left: 0vw;
   }
 }
 @media screen and (max-width: 850px) {
@@ -313,7 +346,7 @@
     left: 13vw;
   }
   .submitidea-timeline-content .timeline2 {
-    left: 17vw;
+    left: 12vw;
     top: 30px;
   }
   .submitidea-timeline-content .timeline3 {
@@ -321,7 +354,7 @@
     top: 100px;
   }
   .submitidea-timeline-content .timeline4 {
-    left: 9vw;
+    left: 7vw;
     top: 170px;
   }
 
@@ -329,10 +362,14 @@
     width: 60vw;
     height: 600px;
   }
-  .submitidea-timeline-wrapper h1 {
-    font-size: 4.5vw;
-  }
 
+  .submitidea-timeline-wrapper h1 {
+    font-size: 5vw;
+  }
+  .submitidea-timeline-wrapper h1 span {
+    height: 4.6vw;
+    border-bottom: 1.6vw solid #fbba16;
+  }
   .submitidea-timeline-content-individual {
     width: 210px;
   }
@@ -340,9 +377,9 @@
   .submitidea-timeline-content-individual p {
     font-size: 18px;
   }
-  .submitidea-timeline-wrapper>p{
-  font-size: 18px;
-}
+  .submitidea-timeline-wrapper > p {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -350,15 +387,19 @@
     left: 14vw;
   }
   .submitidea-timeline-content .timeline2 {
-    left: 12vw;
+    left: 7vw;
   }
   .submitidea-timeline-content .timeline3 {
     left: 13vw;
     top: 100px;
   }
   .submitidea-timeline-content .timeline4 {
-    left: 5vw;
+    left: 2vw;
     top: 170px;
+  }
+  .submitidea-timeline-wrapper > p {
+    font-size: 16px;
+    
   }
 }
 @media screen and (max-width: 680px) {
@@ -378,10 +419,17 @@
   .submitidea-timeline-content .timeline4 {
     left: -4vw;
   }
+  .submitidea-timeline-wrapper > p {
+    font-size: 15px;
+    width: 90%;
+  }
 }
 @media screen and (max-width: 500px) {
   .submitidea-timeline-wrapper h1 {
-    font-size: 6vw;
+    font-size: 5.8vw;
+  }
+  .submitidea-timeline-wrapper h1 span {
+    height: 5.1vw;
   }
   .submitidea-timeline-content-individual p {
     width: 230px;
@@ -412,16 +460,15 @@
   .submitidea-timeline-content-individual p {
     font-size: 15px;
   }
-    .submitidea-timeline-wrapper>p{
-  font-size: 15px;
-}
+  .submitidea-timeline-wrapper > p {
+    font-size: 15px;
+  }
 }
 
-@media screen and (max-width: 415px){
-   
+@media screen and (max-width: 415px) {
   .submitidea-timeline-content .timeline2 {
     top: 10px;
-    left: 2vw;
+    left: -3.5vw;
   }
   .submitidea-timeline-content .timeline3 {
     top: 70px;
@@ -434,6 +481,5 @@
     width: 74vw;
     height: 540px;
   }
-
 }
 /* timeline ends */

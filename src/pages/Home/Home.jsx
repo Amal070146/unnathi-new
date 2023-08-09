@@ -21,10 +21,9 @@ const Home = () => {
       <Navbar />
       <div className="home-screen-wrapper" id="home">
         <a href="#ABOUT" className="home-button-nav">
-          <span class="m_scroll_arrows unu"></span>
-          <span class="m_scroll_arrows doi"></span>
-          <span class="m_scroll_arrows trei"></span>
-          <span class="m_scroll_arrows quad"></span>
+          <span className="m_scroll_arrows unu"></span>
+          <span className="m_scroll_arrows doi"></span>
+          <span className="m_scroll_arrows trei"></span>
         </a>
       </div>
       <NGO />

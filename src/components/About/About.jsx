@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import img from "../../assets/about-img.png";
+import img from "../../assets/about-img.webp";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
@@ -10,7 +10,7 @@ const About = () => {
       <div className="about-home-content-wrap">
         <h1>
           <span className="about-header-bottonline">{t("what_is")}</span>
-          {t("unnathi")}
+          {t("unnathi")}?
         </h1>
         <p>
           {t("unnathi_description_para1")} <br />
@@ -18,7 +18,7 @@ const About = () => {
         </p>
       </div>
       <div className="about-home-img-wrap">
-        <img src={img} alt="" />
+        <img src={img} alt="" loading="lazy"/>
       </div>
     </div>
   );

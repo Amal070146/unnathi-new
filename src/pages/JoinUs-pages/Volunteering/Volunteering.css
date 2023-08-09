@@ -10,7 +10,7 @@
   font-family: "Red Hat Text";
 }
 .volunteering-header-sect {
-  background: url("../../../assets/JoinUspage/volunteeringbg.png") center
+  background: url("../../../assets/JoinUspage/volunteeringbg.webp") center
     center/cover no-repeat;
   width: 100vw;
   height: 70vh;
@@ -115,8 +115,8 @@
   line-height: 1;
   margin-bottom: 15px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .about-volunteering-heading h1 span {
   border-bottom: 1vw solid #fbba16;
@@ -152,6 +152,7 @@
 .volunteer-card-individual h4 {
   font-weight: 500;
   font-size: 25px;
+  line-height: 1.1;
   text-transform: uppercase;
 }
 .volunteer-card-individual p {
@@ -163,6 +164,7 @@
   }
   .about-volunteering-heading h1 span {
     height: 4.6vw;
+     border-bottom: 1.6vw solid #fbba16;
   }
   .about-volunteering-heading > p {
     font-size: 16px;
@@ -197,9 +199,9 @@
 
 .yellow-circle {
   max-width: 20px !important;
-  max-height: 20px;
+  max-height: 20px !important;
   min-width: 20px !important;
-  min-height: 20px;
+  min-height: 20px !important;
   border-radius: 50%;
   background-color: #fbba16;
 }
@@ -279,8 +281,8 @@
   }
 
   .yellow-circle {
-    min-width: 14px;
-    min-height: 14px;
+    min-width: 15px !important;
+    min-height: 15px !important;
   }
   .volunteering-eligilibility-set > div {
     gap: 10px;

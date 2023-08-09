@@ -7,7 +7,10 @@
   justify-content: center;
   font-family: "Red Hat Text";
 }
-
+.uas-header-sect {
+  background: url("../../../assets/JoinUspage/uas.webp") center
+    center/cover no-repeat;
+}
 .uas-wrapper .internship-individual-cards-wrapper {
   position: relative;
   display: flex;
