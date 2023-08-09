@@ -35,6 +35,10 @@ const GoverningBody = () => {
     setopenmenu(false);
   }
 
+  useEffect(() => {
+    i18next.changeLanguage("en");
+  }, []);
+
   const path = useReactPath();
   const navContent = [
     t("governingBody"),

@@ -1,22 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import banner from "../../../assets/JoinUspage/yellow-banner-img/projectfund.png";
 import timeline from "../../../assets/JoinUspage/timelinebg.png";
 
 import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import "./UAS.css";
+import i18next from "i18next";
 
 const UAS = () => {
+  useEffect(() => {
+    i18next.changeLanguage("en");
+  }, []);
   return (
     <>
       <Navbar />
-      {/* <div className="home-language-switcher">
-        <LanguageSwitcher />
-      </div> */}
       <div className="uas-wrapper">
         <div className="volunteering-header-sect projectfunds-header-sect">
           <h1>UAS</h1>
-          <a href="#about-projectfund" className="volunteering-arrow">
+          <a href="#about-internship" className="volunteering-arrow">
             <span class="m_scroll_arrows unu"></span>
             <span class="m_scroll_arrows doi"></span>
             <span class="m_scroll_arrows trei"></span>
