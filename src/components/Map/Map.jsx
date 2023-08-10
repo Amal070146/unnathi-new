@@ -14,8 +14,8 @@ const Map = () => {
 
             borderRadius: "0px",
           }}
-          allowfullscreen=""
-          referrerpolicy="no-referrer-when-downgrade"
+          allowFullScreen=""
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
       <div className="map-section-right-wrapper">
@@ -140,9 +140,9 @@ const Map = () => {
               <path
                 d="M1.71875 17.8728H12.8537M7.28622 1.17041V14.1612M7.28622 14.1612L11.9258 9.52162M7.28622 14.1612L2.64666 9.52162"
                 stroke="white"
-                stroke-width="1.85582"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.85582"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
             <p>{t("brochure")}</p>

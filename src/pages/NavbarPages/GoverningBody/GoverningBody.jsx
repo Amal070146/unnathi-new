@@ -1,11 +1,11 @@
 import React from "react";
 import "./GoverningBody.css";
-import Navbar from "../../../components/Navbar/Navbar";
-import Footer from "../../../components/Footer/Footer";
-import headerimg from "../../../assets/NavbarPages/GoverningBody/header-img.png";
 
-import logo from "../../../assets/logo.png";
-import logo_mal from "../../../assets/logo_mal.png";
+import Footer from "../../../components/Footer/Footer";
+import headerimg from "../../../assets/NavbarPages/GoverningBody/header-img.webp";
+
+import logo from "../../../assets/logo.webp";
+import logo_mal from "../../../assets/logo_mal.webp";
 
 import { useEffect, useState } from "react";
 import { BiMenu } from "react-icons/bi";
@@ -17,11 +17,11 @@ import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitc
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
-import img1 from "../../../assets/NavbarPages/GoverningBody/img1.png";
-import img2 from "../../../assets/NavbarPages/GoverningBody/img2.png";
-import img3 from "../../../assets/NavbarPages/GoverningBody/img3.png";
-import img4 from "../../../assets/NavbarPages/GoverningBody/img4.png";
-import img5 from "../../../assets/NavbarPages/GoverningBody/img5.png";
+import img1 from "../../../assets/NavbarPages/GoverningBody/img1.webp";
+import img2 from "../../../assets/NavbarPages/GoverningBody/img2.webp";
+import img3 from "../../../assets/NavbarPages/GoverningBody/img3.webp";
+import img4 from "../../../assets/NavbarPages/GoverningBody/img4.webp";
+import img5 from "../../../assets/NavbarPages/GoverningBody/img5.webp";
 
 const GoverningBody = () => {
   const { t } = useTranslation(["Navbar"]);
@@ -115,7 +115,7 @@ const GoverningBody = () => {
             <a href="/home">
               <img
                 className="nav-logo"
-                style={{ width: navlogo ? "90px" : "150px" }}
+                style={{ width: navlogo ? "90px" : "100px" }}
                 src={i18next.language === "en" ? logo : logo_mal}
                 alt=""
               />
@@ -164,30 +164,11 @@ const GoverningBody = () => {
             <h2>GOVERNING</h2>
             <h1>BODY</h1>
           </div>
-
-          <a href="#governingcontent" className="volunteering-arrow">
-            <span
-              style={{ borderColor: "black" }}
-              class="m_scroll_arrows unu"
-            ></span>
-            <span
-              style={{ borderColor: "black" }}
-              class="m_scroll_arrows doi"
-            ></span>
-            <span
-              style={{ borderColor: "black" }}
-              class="m_scroll_arrows trei"
-            ></span>
-            <span
-              style={{ borderColor: "black" }}
-              class="m_scroll_arrows quad"
-            ></span>
-          </a>
         </div>
 
         <div id="governingcontent" className="governingcontent-wrapper">
           <div className="governingcontent-individual-wrapper">
-            <img src={img1} alt="" />
+            <img src={img1} alt="img" loading="lazy" />
             <h3>CHAIRMAN</h3>
             <h2>Sri. K. Radhakrishnan</h2>
             <p>
@@ -196,7 +177,7 @@ const GoverningBody = () => {
             </p>
           </div>{" "}
           <div className="governingcontent-individual-wrapper">
-            <img src={img2} alt="" />
+            <img src={img2} alt="img" loading="lazy" />
             <h3>Vice Chairman</h3>
             <h2>Dr A. Jayatilak IAS</h2>
             <p>
@@ -205,7 +186,7 @@ const GoverningBody = () => {
             </p>
           </div>{" "}
           <div className="governingcontent-individual-wrapper">
-            <img src={img3} alt="" />
+            <img src={img3} alt="img" loading="lazy" />
             <h3>Convenor/CEO</h3>
             <h2>Sri. Prasanth N. IAS</h2>
             <p>
@@ -214,7 +195,7 @@ const GoverningBody = () => {
             </p>
           </div>{" "}
           <div className="governingcontent-individual-wrapper">
-            <img src={img4} alt="" />
+            <img src={img4} alt="img" loading="lazy" />
             <h3>Member</h3>
             <h2>Sri. K Gopalakrishnan IAS</h2>
             <p>
@@ -222,14 +203,14 @@ const GoverningBody = () => {
             </p>
           </div>{" "}
           <div className="governingcontent-individual-wrapper">
-            <img src={img5} alt="" />
+            <img src={img5} alt="img" loading="lazy" />
             <h3>Member</h3>
             <h2>Smt. Meghashree D.R. IAS</h2>
             <p>
               Director, Scheduled Tribes Development Department, Govt of Kerala
             </p>
           </div>{" "}
-          <div className="governingcontent-individual-wrapper">
+          <div className="governingcontent-individual-wrapper" style={{border:"none"}}>
             <div>
               {" "}
               <h3>Member</h3>
@@ -239,7 +220,14 @@ const GoverningBody = () => {
                 Development Department, Govt of Kerala
               </p>
             </div>
-            <div style={{ background: "#fbba16",width:"100%",height:"4px",margin:"10px 0px" }}></div>
+            <div
+              style={{
+                background: "#fbba16",
+                width: "100%",
+                height: "4px",
+                margin: "20px 0px",
+              }}
+            ></div>
             <div>
               {" "}
               <h3>Member</h3>

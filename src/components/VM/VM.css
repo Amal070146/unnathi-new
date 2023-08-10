@@ -1,8 +1,8 @@
 .vm-wrapper {
-  padding: 5vh 10vw;
+  padding: 1vh 17vw;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 30px;
 }
 
 .vm-individual {
@@ -17,8 +17,9 @@
   height: 40px;
 }
 .vm-content-wrapper p {
-  font-size: 25px;
-  line-height: 1.6;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 300;
 }
 .vm-svg {
   height: fit-content;
@@ -27,8 +28,8 @@
 }
 
 .vm-svg svg {
-  width: 220px;
-  height: 220px;
+  width: 180px;
+  height: 180px;
 }
 .vm-content-wrapper {
   display: flex;
@@ -113,7 +114,7 @@
 }
 
 .collaborate-wrap {
-  padding: 3vh 10vw;
+  padding: 7vh 10vw 3vh;
   display: flex;
   flex-direction: column;
   gap: 50px;

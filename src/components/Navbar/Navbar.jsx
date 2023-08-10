@@ -1,6 +1,6 @@
 import "./Navbar.css";
-import logo from "../../assets/logo.png";
-import logo_mal from "../../assets/logo_mal.png";
+import logo from "../../assets/logo.webp";
+import logo_mal from "../../assets/logo_mal.webp";
 
 import React, { useEffect, useState } from "react";
 import { BiMenu } from "react-icons/bi";
@@ -101,7 +101,7 @@ const Navbar = () => {
           <a href="/home">
             <img
               className="nav-logo"
-              style={{ width: navlogo ? "90px" : "150px" }}
+              style={{ width: navlogo ? "90px" : "120px" }}
               src={i18next.language === "en" ? logo : logo_mal}
               alt=""
             />

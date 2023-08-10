@@ -6,15 +6,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./Slider.css";
-import img1 from "../../assets/testimonial/img1.png";
-import img2 from "../../assets/testimonial/img2.png";
-import img3 from "../../assets/testimonial/img3.png";
-import img4 from "../../assets/testimonial/img4.png";
-import img5 from "../../assets/testimonial/img5.png";
+import img1 from "../../assets/testimonial/img1.webp";
+import img2 from "../../assets/testimonial/img2.webp";
+import img3 from "../../assets/testimonial/img3.webp";
+import img4 from "../../assets/testimonial/img4.webp";
+import img5 from "../../assets/testimonial/img5.webp";
 
 const Slider = () => {
   const { t } = useTranslation(["Slider"]);
-  
+
   const data = [
     {
       content: t("testimonial1_content"),
@@ -68,7 +68,7 @@ const Slider = () => {
                   <p>{designation}</p>
                 </div>
                 <div>
-                  <img src={image} alt={name} />
+                  <img src={image} alt={name} loading="lazy" />
                 </div>
               </div>
             </div>
