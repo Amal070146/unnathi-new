@@ -151,7 +151,7 @@ const Internship = () => {
                 <h3>
                   {t("mentorship")}
                   <br></br>
-                  {t("formTheBest")}
+                  {t("fromTheBest")}
                 </h3>
                 <p>{t("mentorshipText")}</p>
               </div>
