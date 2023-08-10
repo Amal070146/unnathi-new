@@ -96,10 +96,10 @@ function App() {
       path: "/ഭരണസമിതി",
       element: <GoverningBody />,
     },
-    {
-      path: "/eligibilitycheck",
-      element: <Eligibility />,
-    },
+    // {
+    //   path: "/eligibilitycheck",
+    //   element: <Eligibility />,
+    // },
   ]);
   return <RouterProvider router={router} />;
 }
