@@ -21,7 +21,7 @@ const Enterprenuership = () => {
       </div>
       <div className="enterprenuership-wrapper">
         <div className="volunteering-header-sect enterprenuership-header-sect">
-          <h1>Entrepreneurship</h1>
+          <h1>{t("entrepreneurship")}</h1>
           <a href="#about-enterprenuership" className="volunteering-arrow">
             <span className="m_scroll_arrows unu"></span>
             <span className="m_scroll_arrows doi"></span>
@@ -33,31 +33,24 @@ const Enterprenuership = () => {
           <div>
             <h1>
               <span style={{ color: "#FBBA16", fontWeight: 600 }}>
-                Nurturing Dreams
+                {t("nurturingDreams")}
               </span>{" "}
-              with<br></br>Unnathi &{" "}
+              {t("with")}
+              <br></br>
+              {t("unnathi")}{" "}
               <span style={{ color: "#EC1D25", fontWeight: 600 }}>
-                Startup Mission
+                {t("startupMission")}
               </span>
             </h1>
             <h2>
-              Cultivate Your Idea<span style={{ color: "#F37020" }}>.</span>
-              Unify Under One Banner<span style={{ color: "#F37020" }}>
-                .
-              </span>{" "}
-              Craft Your Legacy
+              {t("cultivateYourIdeas")}
+              <span style={{ color: "#F37020" }}>.</span>
+              {t("unifyUnderOneBanner")}
+              <span style={{ color: "#F37020" }}>.</span> {t("craftYourLegacy")}
               <span style={{ color: "#F37020" }}>.</span>
             </h2>
           </div>
-          <p>
-            Entrepreneurship is a beacon of change, driving innovation and
-            creating transformative narratives. Unnathi, in a pioneering
-            collaboration with Startup Mission, presents the Entrepreneurship
-            Support Programme. This initiative is not just about mentorship;
-            it's about adopting an aggregator model approach. By onboarding
-            ventures through a meticulous process, we unify them under a common
-            brand, amplifying their reach and impact.
-          </p>
+          <p>{t("craftYourLegacyText")}</p>
         </div>
         {/* card section starts */}
         <div
@@ -65,7 +58,7 @@ const Enterprenuership = () => {
           className="projectfund-cardset-wrapper"
         >
           <h1>
-            <span>Why Join</span> the Support Programme?
+            <span>{t("whyJoin")}</span> {t("theSupportProgramme")}
           </h1>
           <div className="projectfund-cardset-content-wrapper">
             <div className="projectfund-cardset-individual">
@@ -115,12 +108,11 @@ const Enterprenuership = () => {
                 />
               </svg>
               <h3>
-                Tailored<br></br>Mentorship
+                {t("tailored")}
+                <br></br>
+                {t("mentorship")}
               </h3>
-              <p>
-                Personalized guidance from seasoned entrepreneurs and industry
-                stalwarts, ensuring your venture scales new heights.
-              </p>
+              <p>{t("tailoredMentorshipText")}</p>
             </div>{" "}
             <div className="projectfund-cardset-individual">
               <svg
@@ -151,13 +143,11 @@ const Enterprenuership = () => {
                 />
               </svg>
               <h3>
-                Unified<br></br>Branding
+                {t("unified")}
+                <br></br>
+                {t("branding")}
               </h3>
-              <p>
-                As part of the Unnathi aggregator model, your product or service
-                will be brought under a unified branding, enhancing recognition
-                and trust.
-              </p>
+              <p>{t("unifiedBrandingText")}</p>
             </div>{" "}
             <div className="projectfund-cardset-individual">
               <svg
@@ -200,12 +190,11 @@ const Enterprenuership = () => {
                 />
               </svg>
               <h3>
-                Resource<br></br>Access
+                {t("resource")}
+                <br></br>
+                {t("access")}
               </h3>
-              <p>
-                Be it seed funding or technology tools, we've got you covered.
-                Transform your entrepreneurial vision into a tangible reality.
-              </p>
+              <p>{t("resourceAccessText")}</p>
             </div>{" "}
             <div className="projectfund-cardset-individual">
               <svg
@@ -234,13 +223,11 @@ const Enterprenuership = () => {
                 />
               </svg>
               <h3>
-                Marketing &<br></br>Sales Support
+                {t("marketing")}
+                <br></br>
+                {t("salesSupport")}
               </h3>
-              <p>
-                With the aggregator model, benefit from consolidated marketing
-                efforts and sales strategies, pushing your venture to the
-                forefront on a common platform.
-              </p>
+              <p>{t("marketingSalesSupportText")}</p>
             </div>{" "}
             <div className="projectfund-cardset-individual">
               <svg
@@ -309,20 +296,15 @@ const Enterprenuership = () => {
                   stroke="black"
                   strokeWidth="7.5"
                 />
-                <path
-                  d="M77 66.5L89.5 69.5"
-                  stroke="black"
-                  strokeWidth="7.5"
-                />
+                <path d="M77 66.5L89.5 69.5" stroke="black" strokeWidth="7.5" />
                 <path d="M68 79L84.5 104.5" stroke="black" strokeWidth="7.5" />
               </svg>
               <h3>
-                Networking<br></br>Opportunities
+                {t("tnetworking")}
+                <br></br>
+                {t("oppourtunities")}
               </h3>
-              <p>
-                Dive into a rich ecosystem of fellow entrepreneurs, investors,
-                and industry experts.
-              </p>
+              <p>{t("networkingOppourtunitiesText")}</p>
             </div>{" "}
             <div className="projectfund-cardset-individual">
               <svg
@@ -374,13 +356,11 @@ const Enterprenuership = () => {
                 />
               </svg>
               <h3>
-                Skill Workshops<br></br>& Training
+                {t("skillWorkshops")}
+                <br></br>
+                {t("training")}
               </h3>
-              <p>
-                Immerse yourself in workshops that hone essential
-                entrepreneurial skills, from financial acumen to marketing
-                finesse.
-              </p>
+              <p>{t("skillWorkshopsTrainingText")}</p>
             </div>
           </div>
         </div>
@@ -388,47 +368,35 @@ const Enterprenuership = () => {
         {/* guidelines start */}
         <div className="submitidea-guidelines-wrapper">
           <h1>
-            <span>Eligibility</span> Criteria
+            <span>{t("eligibility")}</span> {t("criteria")}
           </h1>
           <div className="submitidea-guidelines-content-wrapper">
             <div className="submitidea-guidelines-individual">
               <div className="yellow-circle"></div>
               <div>
-                <h3>Entities That Can Apply:</h3>
-                <p>
-                  Societies, cooperatives, proprietorships, companies, and other
-                  formal business structures are welcome to apply.
-                </p>
+                <h3>{t("entitiesThatCanApply")}</h3>
+                <p>{t("entitiesThatCanApply")}</p>
               </div>
             </div>
             <div className="submitidea-guidelines-individual">
               <div className="yellow-circle"></div>
               <div>
-                <h3>SC/ST Ownership:</h3>
-                <p>
-                  The entity should have substantial ownership by individuals
-                  from the SC/ST community.
-                </p>
+                <h3>{t("scstOwnership")}</h3>
+                <p>{t("scstOwnershipText")}</p>
               </div>
             </div>{" "}
             <div className="submitidea-guidelines-individual">
               <div className="yellow-circle"></div>
               <div>
-                <h3>Aligned Vision:</h3>
-                <p>
-                  Your venture should align with empowerment, development, or
-                  solutions that significantly benefit the SC/ST community.
-                </p>
+                <h3>{t("alignedVision")}</h3>
+                <p>{t("alignedVisionText")}</p>
               </div>
             </div>{" "}
             <div className="submitidea-guidelines-individual">
               <div className="yellow-circle"></div>
               <div>
-                <h3>Commitment:</h3>
-                <p>
-                  An unwavering dedication to navigating the entrepreneurial
-                  journey, through its challenges and triumphs.
-                </p>
+                <h3>{t("commitment")}</h3>
+                <p>{t("commitmentText")}</p>
               </div>
             </div>
           </div>
@@ -438,7 +406,7 @@ const Enterprenuership = () => {
 
         <div className="submitidea-timeline-wrapper">
           <h1>
-            <span>{t("howTo")}</span> Initiate Collaboration?
+            <span>{t("howTo")}</span> {t("initiateCollaboration")}
           </h1>
           <div className="submitidea-timeline-content-wrapper">
             <div>
@@ -450,19 +418,13 @@ const Enterprenuership = () => {
                   <h2>1</h2>
                 </div>
                 <div>
-                  <p>
-                    Click on the 'Apply for the Entrepreneurship Support
-                    Programme' button below.
-                  </p>
+                  <p>{t("step1")}</p>
                 </div>
               </div>
 
               <div className="submitidea-timeline-content-individual timeline2">
                 <div>
-                  <p>
-                    Detail your startup idea, vision, and potential impact in
-                    the application form.
-                  </p>
+                  <p>{t("step2")}</p>
                 </div>
                 <div>
                   <h2>2</h2>
@@ -474,18 +436,13 @@ const Enterprenuership = () => {
                   <h2>3</h2>
                 </div>
                 <div>
-                  <p>
-                    Attach pertinent documents, business plans, or prototypes.
-                  </p>
+                  <p>{t("step3")}</p>
                 </div>
               </div>
 
               <div className="submitidea-timeline-content-individual timeline4">
                 <div>
-                  <p>
-                    Post submission, our collaborative team from Unnathi and
-                    Startup Mission will evaluate your application.
-                  </p>
+                  <p>{t("step4")}</p>
                 </div>{" "}
                 <div>
                   <h2>4</h2>
@@ -493,24 +450,15 @@ const Enterprenuership = () => {
               </div>
             </div>
           </div>
-          <p style={{ textAlign: "center" }}>
-            Note: The selection follows a rigorous criterion, ensuring ventures
-            with the most promise and alignment gain access to our aggregator
-            model and the myriad benefits it offers.
-          </p>
+          <p style={{ textAlign: "center" }}>{t("note")}</p>
         </div>
         {/*  timeline end */}
 
         {/* yellow banner start */}
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
-            <h1>Embark on Your Entrepreneurial Odyssey with Unnathi</h1>
-            <p>
-              If your venture holds the promise of innovation and societal
-              impact, the Entrepreneurship Support Programme is your launchpad.
-              Join us, and let's co-create entrepreneurial tales that resonate,
-              inspire, and endure.
-            </p>
+            <h1>{t("embarkUnnathi")}</h1>
+            <p>{t("embarkUnnathiText")}</p>
             <a href="">
               {/* <p>Apply for the Entrepreneurship Support Programme</p> */}
               <p>Coming Soon</p>
