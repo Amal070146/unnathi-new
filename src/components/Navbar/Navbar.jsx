@@ -17,7 +17,6 @@ const Navbar = () => {
   const [openmenu, setopenmenu] = useState(false);
   const [navlogo, setnavlogo] = useState(false);
   function openMenu() {
-    console.log("true");
     setopenmenu(!openmenu);
   }
   function closeMenu() {
