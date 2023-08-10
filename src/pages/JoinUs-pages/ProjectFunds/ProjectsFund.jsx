@@ -26,7 +26,6 @@ const ProjectsFund = () => {
             <span className="m_scroll_arrows unu"></span>
             <span className="m_scroll_arrows doi"></span>
             <span className="m_scroll_arrows trei"></span>
-            <span className="m_scroll_arrows quad"></span>
           </a>
         </div>
         <div className="projectfund-quotes-wrapper">
@@ -339,7 +338,7 @@ const ProjectsFund = () => {
 
         <div className="submitidea-timeline-wrapper">
           <h1>
-            <span>{t("howTo")}</span> {t("initiateCollaboration")}
+            <span>{t("howTo")}</span>&nbsp;{t("initiateCollaboration")}
           </h1>
           <div className="submitidea-timeline-content-wrapper">
             <div>

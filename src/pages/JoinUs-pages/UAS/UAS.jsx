@@ -25,7 +25,6 @@ const UAS = () => {
             <span className="m_scroll_arrows unu"></span>
             <span className="m_scroll_arrows doi"></span>
             <span className="m_scroll_arrows trei"></span>
-            <span className="m_scroll_arrows quad"></span>
           </a>
         </div>
         <div className="projectfund-quotes-wrapper">
@@ -36,7 +35,10 @@ const UAS = () => {
               </span>{" "}
               {t("administrative")}
             </h2>
-            <h1 style={{ color: "#EC1D25", fontWeight: 600 }}> {t("service")}</h1>
+            <h1 style={{ color: "#EC1D25", fontWeight: 600 }}>
+              {" "}
+              {t("service")}
+            </h1>
           </div>
           <div>
             <p>{t("administrativeServiceText")}</p>
@@ -45,7 +47,7 @@ const UAS = () => {
         {/* card section starts*/}
         <div className="internship-page-card-wrapper" id="about-internship">
           <h1>
-            <span> {t("why")}</span> {t("uas")}
+            <span> {t("why")}</span>&nbsp;{t("uas")}
           </h1>
           <div className="internship-cards-wrapper-div uas-cards">
             <div className="internship-individual-cards-wrapper">
@@ -466,7 +468,7 @@ const UAS = () => {
         {/* card section ends*/}
         <div className="uas-description-for-eligibility">
           <h1>
-            <span className=""> {t("who")}</span> {t("areWeLookingFor")}
+            <span className=""> {t("who")}</span>&nbsp;{t("areWeLookingFor")}
           </h1>
           <div className="uas-description-for-eligibility-content">
             <div className="uas-description-for-eligibility-content-one">
@@ -517,7 +519,9 @@ const UAS = () => {
             <h1>
               <span> {t("selection")}</span>&nbsp; {t("process")}
             </h1>
-            <p className="volunteering-selection-content">{t("selectionProcessText")}</p>
+            <p className="volunteering-selection-content">
+              {t("selectionProcessText")}
+            </p>
           </div>
         </div>
 
@@ -526,9 +530,9 @@ const UAS = () => {
           className="volunteering-apply-button-wrapper"
           style={{ background: "transparent" }}
         >
-          <a href="">
+          <a href="" style={{ background: "#FBBA16" }}>
             {/* <p>Apply</p> */}
-            <p>Coming Soon</p>
+            <p>Apply for UAS</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

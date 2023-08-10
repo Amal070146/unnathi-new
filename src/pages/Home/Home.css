@@ -1,7 +1,7 @@
 .home-wrapper {
   width: 100vw;
   height: 100vh;
-  background: url("../../assets/home-bg.png") center center/cover no-repeat;
+  background: url("../../assets/home-bg.webp") center center/cover no-repeat;
 }
 .home-screen-wrapper {
   width: 100vw;
