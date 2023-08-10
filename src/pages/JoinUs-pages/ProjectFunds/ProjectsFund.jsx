@@ -12,13 +12,15 @@ import i18next from "i18next";
 
 const ProjectsFund = () => {
   const { t } = useTranslation(["ProjectsFund"]);
-  useEffect(() => {
-    i18next.changeLanguage("en");
-  }, []);
+  // useEffect(() => {
+  //   i18next.changeLanguage("en");
+  // }, []);
   return (
     <>
       <Navbar />
-
+      <div className="home-language-switcher">
+        <LanguageSwitcher />
+      </div>
       <div className="projectfund-wrapper">
         <div className="volunteering-header-sect projectfunds-header-sect">
           <h1>{t("projectToFund")}</h1>

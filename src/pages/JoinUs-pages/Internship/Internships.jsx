@@ -5,15 +5,18 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
+import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 const Internship = () => {
   const { t } = useTranslation(["Internship"]);
-  useEffect(() => {
-    i18next.changeLanguage("en");
-  }, []);
+  // useEffect(() => {
+  //   i18next.changeLanguage("en");
+  // }, []);
   return (
     <>
       <Navbar />
-
+      <div className="home-language-switcher">
+        <LanguageSwitcher />
+      </div>
       <div className="internship-wrapper">
         <div className="volunteering-header-sect internship-header-sect">
           <h1>{t("internships")}</h1>

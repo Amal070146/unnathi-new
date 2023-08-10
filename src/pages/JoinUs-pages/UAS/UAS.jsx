@@ -6,14 +6,18 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import "./UAS.css";
 import i18next from "i18next";
+import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 
 const UAS = () => {
-  useEffect(() => {
-    i18next.changeLanguage("en");
-  }, []);
+  // useEffect(() => {
+  //   i18next.changeLanguage("en");
+  // }, []);
   return (
     <>
       <Navbar />
+      <div className="home-language-switcher">
+        <LanguageSwitcher />
+      </div>
       <div className="uas-wrapper">
         <div className="volunteering-header-sect projectfunds-header-sect">
           <h1>UAS</h1>

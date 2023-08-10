@@ -9,13 +9,15 @@ import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitc
 import i18next from "i18next";
 const SubmitIdea = () => {
   const { t } = useTranslation(["SubmitIdea"]);
-  useEffect(() => {
-    i18next.changeLanguage("en");
-  }, []);
+  // useEffect(() => {
+  //   i18next.changeLanguage("en");
+  // }, []);
   return (
     <>
       <Navbar />
-
+      <div className="home-language-switcher">
+        <LanguageSwitcher />
+      </div>
       <div className="submitidea-wrapper">
         <div className="volunteering-header-sect submitidea-header-sect">
           <h1>{t("submitIdea")}</h1>
