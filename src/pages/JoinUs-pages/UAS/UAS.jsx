@@ -5,19 +5,19 @@ import Footer from "../../../components/Footer/Footer";
 import "./UAS.css";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
-// import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
+import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 
 const UAS = () => {
   const { t } = useTranslation(["UAS"]);
-  useEffect(() => {
-    i18next.changeLanguage("en");
-  }, []);
+  // useEffect(() => {
+  //   i18next.changeLanguage("en");
+  // }, []);
   return (
     <>
       <Navbar />
-      {/* <div className="home-language-switcher">
+      <div className="home-language-switcher">
         <LanguageSwitcher />
-      </div> */}
+      </div>
       <div className="uas-wrapper">
         <div className="volunteering-header-sect uas-header-sect">
           <h1> {t("uas")}</h1>
