@@ -43,7 +43,7 @@ const Internship = () => {
             <h2>
               {t("discover")}
               <span style={{ color: "#F37020" }}>.</span> {t("develop")}
-              <span style={{ color: "#F37020" }}>.</span>
+              <span style={{ color: "#F37020" }}>. </span>
               {t("deliver")}
               <span style={{ color: "#F37020" }}>.</span>
             </h2>
