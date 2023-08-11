@@ -24,7 +24,6 @@ const Internship = () => {
             <span className="m_scroll_arrows unu"></span>
             <span className="m_scroll_arrows doi"></span>
             <span className="m_scroll_arrows trei"></span>
-            <span className="m_scroll_arrows quad"></span>
           </a>
         </div>
         <div className="internship-quote-wrapper">
@@ -54,7 +53,7 @@ const Internship = () => {
         {/* card section starts*/}
         <div className="internship-page-card-wrapper" id="about-internship">
           <h1>
-            <span> {t("whyChoose")}</span> {t("unnathiInternship")}
+            <span> {t("whyChoose")}</span>&nbsp;{t("unnathiInternship")}
           </h1>
           <div className="internship-cards-wrapper-div">
             <div className="internship-individual-cards-wrapper">
@@ -336,11 +335,7 @@ const Internship = () => {
                   />
                   <path d="M21 37L43.5 54" stroke="black" strokeWidth="5" />
                   <path d="M88 25.5L71 49.5" stroke="black" strokeWidth="5" />
-                  <path
-                    d="M77.5 66.5L90 69.5"
-                    stroke="black"
-                    strokeWidth="5"
-                  />
+                  <path d="M77.5 66.5L90 69.5" stroke="black" strokeWidth="5" />
                   <path d="M68.5 79L85 104.5" stroke="black" strokeWidth="5" />
                 </svg>
                 <h3>
@@ -357,7 +352,7 @@ const Internship = () => {
 
         <div className="internship-numbered-descriptions-wrapper">
           <h1>
-            <span>{t("who")}</span> {t("lookingFor")}
+            <span>{t("who")}</span>&nbsp;{t("lookingFor")}
           </h1>
           <div className="internship-numbered-descriptions-content-wrapper">
             <div>
@@ -452,29 +447,37 @@ const Internship = () => {
         </div>
 
         {/* apply */}
-        <div className="volunteering-apply-button-wrapper">
+        <div
+          className="volunteering-apply-button-wrapper"
+          style={{ background: "transparent", color: "black" }}
+        >
           <p>
             {t("takeThe")}{" "}
-            <span style={{ color: "#FBBA16" }}> {t("leap")}</span>.
+            <span style={{ color: "#FBBA16" }}> {t("leap")}</span>.&nbsp;
             {t("embarkOn")}{" "}
             <span style={{ color: "#EC1D25" }}> {t("purpose")}</span>,{" "}
             <span style={{ color: "#F37020" }}> {t("passion")}</span>{" "}
             {t("professionalGrowth")}
           </p>
-          <a rel="noreferrer" target="_blank" href="https://forms.gle/tJAWR74YvRrNkKBB6">
-            <p>{t("apply")}</p>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://forms.gle/tJAWR74YvRrNkKBB6"
+            style={{ background: "#FBBA16", color: "white" }}
+          >
+            <p>Apply for internship</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
+              width="29"
               height="22"
               viewBox="0 0 29 22"
               fill="none"
             >
               <path
                 d="M27.2189 12.0805C27.5005 11.7988 27.6587 11.4168 27.6587 11.0185C27.6587 10.6201 27.5005 10.2381 27.2189 9.95642L18.7211 1.4586C18.5825 1.31512 18.4167 1.20068 18.2335 1.12196C18.0502 1.04323 17.8531 1.00179 17.6536 1.00006C17.4541 0.998323 17.2563 1.03633 17.0717 1.11186C16.8871 1.18739 16.7194 1.29893 16.5784 1.43998C16.4373 1.58102 16.3258 1.74874 16.2502 1.93335C16.1747 2.11797 16.1367 2.31577 16.1384 2.51523C16.1402 2.71469 16.1816 2.91181 16.2603 3.09508C16.3391 3.27835 16.4535 3.44411 16.597 3.58268L22.5306 9.51628L2.63723 9.51628C2.23883 9.51628 1.85674 9.67455 1.57503 9.95626C1.29332 10.238 1.13505 10.6201 1.13505 11.0185C1.13505 11.4169 1.29332 11.7989 1.57503 12.0807C1.85674 12.3624 2.23883 12.5206 2.63723 12.5206L22.5306 12.5206L16.597 18.4542C16.3233 18.7376 16.1719 19.117 16.1754 19.5109C16.1788 19.9047 16.3368 20.2815 16.6153 20.56C16.8938 20.8385 17.2706 20.9965 17.6644 20.9999C18.0583 21.0034 18.4377 20.852 18.7211 20.5783L27.2189 12.0805Z"
-                fill="black"
+                fill="white"
                 stroke="#FBBA16"
-                strokeWidth="1.2"
+                stroke-width="1.2"
               />
             </svg>
           </a>
