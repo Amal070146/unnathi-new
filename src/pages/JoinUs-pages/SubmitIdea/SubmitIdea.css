@@ -110,14 +110,12 @@
   height: 110px;
 }
 .submitidea-card-wrapper .card1 {
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-right:  0.2px solid rgba(0, 0, 0, 0.3);
 }
 .submitidea-card-wrapper .card2 {
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
 .submitidea-card-wrapper .card3 {
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-left:  0.5px solid rgba(0, 0, 0, 0.3);
 }
 
 .submitidea-card-individual p {
@@ -140,18 +138,19 @@
     height: 90px;
   }
   .submitidea-card-wrapper .card1 {
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 0.2px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.2px solid rgba(0, 0, 0, 0.2);
   }
   .submitidea-card-wrapper .card2 {
     border-right: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-top:none;
+    border-left:  0.2px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.2px solid rgba(0, 0, 0, 0.2);
   }
   .submitidea-card-wrapper .card3 {
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-top:  none;
 
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-right:0.2px solid rgba(0, 0, 0, 0.2);
     border-left: none;
   }
 

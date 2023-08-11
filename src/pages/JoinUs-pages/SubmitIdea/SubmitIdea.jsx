@@ -62,9 +62,10 @@ const SubmitIdea = () => {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="108"
-                height="132"
-                viewBox="0 0 108 132"
+                height="122"
+                viewBox="0 0 108 162"
                 fill="none"
+                style={{marginBottom:"-10px"}}
               >
                 <path
                   opacity="0.913"
