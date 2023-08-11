@@ -96,9 +96,17 @@
 }
 
 .internship-page-card-wrapper h1 {
-  font-size: 3vw;
   font-weight: 500;
+  font-size: 3.5vw;
   line-height: 1;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.internship-page-card-wrapper h1 span {
+  border-bottom: 1vw solid #fbba16;
+  height: 3.2vw;
 }
 .internship-cards-wrapper-div {
   width: 100%;
@@ -170,7 +178,11 @@
     padding: 3vh 0vw;
   }
   .internship-page-card-wrapper h1 {
-    font-size: 4vw;
+    font-size: 5vw;
+  }
+  .internship-page-card-wrapper h1 span {
+    height: 4.6vw;
+    border-bottom: 1.6vw solid #fbba16;
   }
 }
 @media screen and (max-width: 500px) {
@@ -178,8 +190,15 @@
     padding: 3vh 2vw;
   }
   .internship-page-card-wrapper h1 {
-    font-size: 6vw;
+    font-size: 5.8vw;
     line-height: 1.1;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .internship-page-card-wrapper h1 span {
+    height: 5.1vw;
+    width: fit-content;
   }
 }
 /* card section ends */
@@ -193,9 +212,17 @@
   gap: 20px;
 }
 .internship-numbered-descriptions-wrapper h1 {
-  font-size: 3vw;
   font-weight: 500;
+  font-size: 3.5vw;
   line-height: 1;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.internship-numbered-descriptions-wrapper h1 span {
+  border-bottom: 1vw solid #fbba16;
+  height: 3.2vw;
 }
 .internship-numbered-descriptions-content-wrapper {
   display: flex;
@@ -238,7 +265,11 @@
 }
 @media screen and (max-width: 850px) {
   .internship-numbered-descriptions-wrapper h1 {
-    font-size: 4vw;
+    font-size: 5vw;
+  }
+  .internship-numbered-descriptions-wrapper h1 span {
+    height: 4.6vw;
+    border-bottom: 1.6vw solid #fbba16;
   }
   .internship-numbered-descriptions-wrapper {
     padding: 0vh 5vw 3vh;
@@ -253,10 +284,12 @@
 
 @media screen and (max-width: 500px) {
   .internship-numbered-descriptions-wrapper h1 {
-    font-size: 6vw;
+    font-size: 5.8vw;
     line-height: 1.1;
   }
-
+  .internship-numbered-descriptions-wrapper h1 span {
+    height: 5.1vw;
+  }
   .internship-numbered-descriptions-content-wrapper h3 {
     font-size: 17px;
   }
@@ -281,8 +314,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
-    justify-content: center;
+
+  justify-content: center;
   gap: 20px;
 }
 
@@ -339,7 +372,7 @@
   .internship-yellow-banner-content-wrapper p {
     font-size: 16px;
   }
- .internship-yellow-banner-content-wrapper {
+  .internship-yellow-banner-content-wrapper {
     gap: 15px;
   }
 }

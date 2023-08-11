@@ -8,8 +8,8 @@
   font-family: "Red Hat Text";
 }
 .uas-header-sect {
-  background: url("../../../assets/JoinUspage/uas.webp") center
-    center/cover no-repeat;
+  background: url("../../../assets/JoinUspage/uas.webp") center center/cover
+    no-repeat;
 }
 .uas-wrapper .internship-individual-cards-wrapper {
   position: relative;
@@ -34,7 +34,20 @@
   justify-content: center;
   gap: 30px;
 }
+.uas-description-for-eligibility > h1 {
+  font-weight: 500;
+  font-size: 3.5vw;
+  line-height: 1;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
+.uas-description-for-eligibility > h1 span {
+  border-bottom: 1vw solid #fbba16;
+  height: 3.2vw;
+}
 .uas-description-for-eligibility-content {
   display: flex;
   flex-wrap: wrap;
@@ -90,11 +103,27 @@
     width: 450px;
   }
 }
-@media screen and (max-width: 600px){
- .uas-description-for-eligibility-content-one > div {
+@media screen and (max-width: 850px) {
+  .uas-description-for-eligibility > h1 {
+    font-size: 5vw;
+  }
+  .uas-description-for-eligibility > h1 span {
+    height: 4.6vw;
+    border-bottom: 1.6vw solid #fbba16;
+  }
+}
+@media screen and (max-width: 600px) {
+  .uas-description-for-eligibility-content-one > div {
     width: 350px;
   }
   .uas-description-for-eligibility-content p {
     font-size: 15px;
+  }
+
+    .uas-description-for-eligibility > h1 {
+    font-size: 5.8vw;
+  }
+  .uas-description-for-eligibility > h1 span {
+    height: 5.1vw;
   }
 }

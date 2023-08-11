@@ -1,24 +1,22 @@
 .LanguageSwitcher-wrapper {
   position: fixed;
   z-index: 9000;
-  top: 25px;
+  top: 28px;
   right: 2%;
 }
 
-.LanguageSwitcher-wrapper > select {
+.LanguageSwitcher-wrapper > button {
   background-color: #fbba16;
   color: white;
   border-radius: 50%;
-  padding: 1px;
-  height: 60px;
-  width: 60px;
+  padding: 0px;
+  height: 50px;
+  width: 50px;
   text-align: center;
   font-weight: 600;
   font-size: 22px;
   border: none;
-  appearance: none !important;
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
+  transition: all 10s ease-in-out;
 }
 
 @media screen and (max-width: 880px) {

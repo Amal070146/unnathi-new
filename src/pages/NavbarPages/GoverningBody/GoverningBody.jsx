@@ -19,7 +19,7 @@ import i18next from "i18next";
 
 import img1 from "../../../assets/NavbarPages/GoverningBody/img1.webp";
 import img2 from "../../../assets/NavbarPages/GoverningBody/img2.webp";
-import img3 from "../../../assets/NavbarPages/GoverningBody/img3.webp";
+import img3 from "../../../assets/NavbarPages/GoverningBody/image1.webp";
 import img4 from "../../../assets/NavbarPages/GoverningBody/img4.webp";
 import img5 from "../../../assets/NavbarPages/GoverningBody/img5.webp";
 
