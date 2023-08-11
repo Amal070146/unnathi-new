@@ -398,7 +398,7 @@ const SubmitIdea = () => {
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
             <h1>
-              <span>{t("beTheSpark")}</span> {t("ofTransformation")}
+              <span>{t("beTheSpark")}</span>{t("ofTransformation")}
             </h1>
             <p>{t("transformationText")}</p>
             <a href="">
