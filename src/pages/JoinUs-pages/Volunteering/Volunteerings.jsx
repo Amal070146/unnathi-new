@@ -303,10 +303,7 @@ const Volunteering = () => {
 
         {/* apply */}
         <div className="volunteering-apply-button-wrapper">
-          <p>
-            LEND A HAND. TOUCH A HEART. MAKE A DIFFERENCE. DIFFERENCE. VOLUNTEER
-            WITH UNNATHI.
-          </p>
+          <p>{t("lAHand")}{t("touch")}{t("aHeart")}{t("volunteerWithUnnathi")}</p>
           <a
             target="_blank"
             rel="noreferrer"
