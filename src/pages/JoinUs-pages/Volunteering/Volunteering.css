@@ -25,7 +25,7 @@
   font-family: "Red Hat Text";
   font-size: 6vw;
   color: transparent;
-  -webkit-text-stroke: 3px rgba(255, 255, 255, 1);
+  -webkit-text-stroke: 1.8px rgba(255, 255, 255, 1);
   background-clip: text;
   font-weight: 900;
 
@@ -94,6 +94,9 @@
 
   .volunteering-quote h1 p {
     font-size: 8.7vw;
+  }
+  .volunteering-header-sect h1{
+      -webkit-text-stroke: 0.7px rgba(255, 255, 255, 1);
   }
 }
 
@@ -341,11 +344,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 16px;
   gap: 5px;
   background-color: #ffffff;
-  padding: 8px 20px;
-  border-radius: 10px;
+  padding: 12px 25px;
+  border-radius: 7px;
 }
 @media screen and (max-width: 850px) {
   .volunteering-apply-button-wrapper > p {

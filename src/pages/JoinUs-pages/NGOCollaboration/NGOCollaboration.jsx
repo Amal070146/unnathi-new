@@ -589,7 +589,7 @@ const NGOCollaboration = () => {
 
         <div className="submitidea-timeline-wrapper">
           <h1>
-            <span>{t("howTo")}</span> Initiate Collaboration?
+            <span>{t("howTo")}</span>&nbsp;Initiate Collaboration?
           </h1>
           <div className="submitidea-timeline-content-wrapper">
             <div>
@@ -641,7 +641,10 @@ const NGOCollaboration = () => {
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
             <h1>
-              <span>{t("together")},</span> {t("weCanAchieveMonumentalChange")}
+              {/* <span>{t("together")}</span>{t("weCanAchieveMonumentalChange")} */}
+            </h1>{" "}
+            <h1 className="yellow-banner-h1-tag">
+              Together, We Can Achieve A <span>Monumental Change</span>
             </h1>
             <p>{t("togetherText")}</p>
             <a
