@@ -329,7 +329,7 @@
 }
 .internship-yellow-banner-content-wrapper h1 span {
   border-bottom: 1vw solid #ffd15e;
-  height: 3.2vw;
+  height: 2.8vw;
   width: fit-content;
 }
 .internship-yellow-banner-content-wrapper p {
@@ -356,7 +356,22 @@
   height: 100%;
   object-fit: contain;
 }
+@media screen and (max-width: 1770px) {
+  .internship-yellow-banner-image-wrapper {
+    width: 500px;
+    height: 300px !important;
+  }
+  .internship-yellow-banner-content-wrapper h1 {
+    font-size:3.5vw;
 
+    display: flex;
+    gap: 14px;
+  }
+  .internship-yellow-banner-content-wrapper h1 span {
+    border-bottom: 1.6vw solid #ffd15e;
+    height: 3.5vw;
+  }
+}
 @media screen and (max-width: 1370px) {
   .internship-yellow-banner-image-wrapper {
     width: 500px;

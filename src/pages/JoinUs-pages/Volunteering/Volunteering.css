@@ -117,10 +117,12 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 .about-volunteering-heading h1 span {
   border-bottom: 1vw solid #fbba16;
   height: 3.2vw;
+  width: fit-content;
 }
 .about-volunteering-heading > p {
   font-size: 20px;
