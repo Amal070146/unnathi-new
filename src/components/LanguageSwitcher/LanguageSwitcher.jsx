@@ -6,15 +6,17 @@ import { event } from "jquery";
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
   const [change, setchange] = useState(true);
-  const changeLanguage = (event) => {
-    i18n.changeLanguage(event.target.value);
-    console.log(event, "vazha");
-  };
-  function changelanguages(events) {
+  // const changeLanguage = (event) => {
+  //   i18n.changeLanguage(event.target.value);
+  // };
+  const changelanguages = () => {
     setchange(!change);
-
-    i18n.changeLanguage(events.target.value);
-  }
+    if (change) {
+      i18n.changeLanguage("mal");
+    } else {
+      i18n.changeLanguage("en");
+    }
+  };
   // const urlParams = new URLSearchParams(window.location.search);
   // urlParams.set("lang", i18n.language);
   // const newUrlParams = urlParams.toString();
@@ -34,7 +36,7 @@ function LanguageSwitcher() {
         <option value="mal">അ</option>
       </select>{" "} */}
       {change ? (
-        <button onClick={changelanguages} value={"mal"}>
+        <button onClick={changelanguages} value={true}>
           <p>അ</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"

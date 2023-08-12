@@ -16,10 +16,11 @@
   font-weight: 500;
   font-size: 13px;
   border: none;
-  transition: all 10s ease-in-out;
+
   display: flex;
   align-items: center;
-  justify-content: center;gap: 1px;
+  justify-content: center;
+  gap: 1px;
 }
 
 @media screen and (max-width: 880px) {
