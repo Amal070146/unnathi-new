@@ -109,15 +109,25 @@
   gap: 30px;
 }
 .projectfund-cardset-wrapper h1 {
-  font-size: 4vw;
-  line-height: 1;
   font-weight: 600;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5vw;
+  margin-bottom: 20px;
+  line-height: 1;
+  gap: 0.7vw;
+}
+.projectfund-cardset-wrapper h1 span {
+  border-bottom: 1vw solid #fbba16;
+  height: 3.2vw;
 }
 .projectfund-cardset-content-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 960px;
+  width: 1100px;
+  align-items: center;
+  justify-content: center;
 }
 .projectfund-cardset-individual {
   display: flex;
@@ -126,8 +136,9 @@
   justify-content: center;
   gap: 15px;
   text-align: center;
-  width: 320px;
-  padding: 20px;
+  width: 340px;
+  height: 380px;
+  padding: 25px 35px;
 }
 .projectfund-cardset-individual svg {
   width: 100px;
@@ -141,36 +152,24 @@
 }
 .projectfund-cardset-individual p {
   line-height: 1.2;
-  font-size: 20px;
+  font-size: 18px;
 }
 
-.projectfund-cardset-content-wrapper div:nth-child(1) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
-}
+.projectfund-cardset-content-wrapper div:nth-child(1),
 .projectfund-cardset-content-wrapper div:nth-child(2) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 0.25px solid rgba(0, 0, 0, 0.2);
+  border-right: 0.25px solid rgba(0, 0, 0, 0.2);
 }
+
 .projectfund-cardset-content-wrapper div:nth-child(3) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 0.25px solid rgba(0, 0, 0, 0.2);
 }
-.projectfund-cardset-content-wrapper div:nth-child(4) {
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
-}
+.projectfund-cardset-content-wrapper div:nth-child(4),
 .projectfund-cardset-content-wrapper div:nth-child(5) {
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 0.25px solid rgba(0, 0, 0, 0.2);
 }
-.projectfund-cardset-content-wrapper div:nth-child(6) {
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
-}
-@media screen and (max-width: 970px) {
+
+@media screen and (max-width: 1100px) {
   .projectfund-cardset-individual svg {
     width: 90px;
     height: 90px;
@@ -179,44 +178,46 @@
     font-size: 20px;
   }
   .projectfund-cardset-individual p {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .projectfund-cardset-content-wrapper {
-
-    width: 540px;
+    width: 600px;
   }
   .projectfund-cardset-individual {
     gap: 12px;
-    width: 270px;
+    width: 300px;
   }
 
   .projectfund-cardset-content-wrapper div:nth-child(2) {
+    border-bottom: 0.25px solid rgba(0, 0, 0, 0.2);
     border-right: none;
   }
   .projectfund-cardset-content-wrapper div:nth-child(3) {
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-    border-left: none;
+    border-bottom: 0.25px solid rgba(0, 0, 0, 0.2);
+    border-right: 0.25px solid rgba(0, 0, 0, 0.2);
   }
   .projectfund-cardset-content-wrapper div:nth-child(4) {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
     border-right: none;
+
+    border-bottom: 0.25px solid rgba(0, 0, 0, 0.2);
   }
   .projectfund-cardset-content-wrapper div:nth-child(5) {
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
-    border-left: none;
+    border-right: 0.25px solid rgba(0, 0, 0, 0.2);
   }
 }
 @media screen and (max-width: 850px) {
   .projectfund-cardset-wrapper h1 {
-    font-size: 4.5vw;
+    font-size: 5vw;
+    gap: 0.7vw;
+  }
+  .projectfund-cardset-wrapper h1 span {
+    border-bottom: 1.6vw solid #fbba16;
+    height: 4.6vw;
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
   .projectfund-cardset-individual svg {
     width: 80px;
     height: 80px;
@@ -229,18 +230,20 @@
   }
 
   .projectfund-cardset-content-wrapper {
-   
-    width: 250px;
+    width: 300px;
   }
   .projectfund-cardset-individual {
     gap: 12px;
     width: 250px;
   }
-
-  
 }
 @media screen and (max-width: 500px) {
   .projectfund-cardset-wrapper h1 {
-    font-size: 6vw;
+    font-size: 5.8vw;
+    gap: 0.8vw;
+  }
+  .projectfund-cardset-wrapper h1 span {
+    border-bottom: 1.6vw solid #fbba16;
+    height: 5.1vw;
   }
 }

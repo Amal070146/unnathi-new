@@ -7,8 +7,6 @@
 .swiper {
   width: 70%;
   height: 100%;
-
-
 }
 
 .swiper-slide {
@@ -31,14 +29,14 @@
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: #bdbbbb; 
-  font-size: 25px; 
+  color: #bdbbbb;
+  font-size: 25px;
   line-height: 1;
-  width: 10px !important; 
+  width: 10px !important;
   height: 25px !important;
 }
 .swiper-pagination-bullet {
-  background-color: #FBBA16; /* Your desired dot color */
+  background-color: #fbba16; /* Your desired dot color */
 }
 
 @media screen and (max-width: 780px) {
@@ -54,5 +52,51 @@
 @media screen and (max-width: 500px) {
   .swiper {
     width: 100%;
+  }
+}
+.testimonialnewCardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  margin-bottom: 9vh;
+  padding: 0px 3vw;
+}
+
+.testimonialnewCardWrapper .testimonialIndividualCard {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  justify-content: center;
+  gap: 10px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: #FEF7E5;
+}
+
+.testimonialIndividualCard img {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+}
+.testimonialnewCardWrapper .testimonialIndividualCard:hover {
+  border: 2px solid #fbba16;
+}
+.testimonialIndividualCard p{
+  font-size: 17px;
+}
+.testimonialIndividualCard h3{
+  font-weight: 500;
+  font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+  .testimonialnewCardWrapper {
+    margin-top: 7vh;
   }
 }

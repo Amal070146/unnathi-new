@@ -50,20 +50,22 @@ const SubmitIdea = () => {
           <p>{t("collectiveImpactText")}</p>
         </div>
         {/* about of submitidea */}
+        {/* submit idea card */}
         <div id="about-submitidea" className="about-volunteering">
           <div className="about-volunteering-heading">
             <h1>
               <span>{t("whyShare")}</span>&nbsp;{t("withUnnathi")}
             </h1>
           </div>
-          <div className="volunteer-card-wrapper">
-            <div className="volunteer-card-individual">
+          <div className="submitidea-card-wrapper">
+            <div className="submitidea-card-individual card1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="108"
-                height="132"
-                viewBox="0 0 108 132"
+                height="122"
+                viewBox="0 0 108 162"
                 fill="none"
+                style={{marginBottom:"-10px"}}
               >
                 <path
                   opacity="0.913"
@@ -97,7 +99,7 @@ const SubmitIdea = () => {
               <h4>{t("platformForChange")}</h4>
               <p>{t("platformForChangeText")}</p>
             </div>
-            <div className="volunteer-card-individual">
+            <div className="submitidea-card-individual card2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="141"
@@ -192,7 +194,7 @@ const SubmitIdea = () => {
               <p>{t("collaborativeGrowthText")}</p>
             </div>
 
-            <div className="volunteer-card-individual">
+            <div className="submitidea-card-individual card3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="191"
@@ -398,7 +400,8 @@ const SubmitIdea = () => {
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
             <h1>
-              <span>{t("beTheSpark")}</span> {t("ofTransformation")}
+              <span>{t("beTheSpark")}</span>
+              {t("ofTransformation")}
             </h1>
             <p>{t("transformationText")}</p>
             <a href="">
