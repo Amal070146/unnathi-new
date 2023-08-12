@@ -194,6 +194,9 @@
   .about-volunteering-heading h1 {
     font-size: 5.8vw;
   }
+  #about-volunteering .about-volunteering-heading h1{
+    font-size: 5.15vw;
+  }
   .about-volunteering-heading h1 span {
     height: 5.1vw;
   }

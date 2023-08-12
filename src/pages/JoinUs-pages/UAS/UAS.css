@@ -19,14 +19,7 @@
   width: 300px;
 }
 
-.uas-wrapper .uas-cards .internship-hover-display-svg svg {
-  width: 350px;
-  height: 300px;
-}
-.uas-wrapper .uas-cards .internship-individual-card-content {
-  bottom: 1%;
-  height: 300px;
-}
+
 .uas-description-for-eligibility {
   display: flex;
   flex-direction: column;

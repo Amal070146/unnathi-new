@@ -39,7 +39,7 @@ const Volunteering = () => {
 
         <div id="about-volunteering" className="about-volunteering">
           <div className="about-volunteering-heading">
-            <h1>
+            <h1 style={{display:"flex",flexDirection:"column",gap:"1vw"}}>
               <span>{t("whyVolunteer")}</span>&nbsp;{t("withUnnathi")}
             </h1>
             <p>{t("whyVolunteerText")}</p>
