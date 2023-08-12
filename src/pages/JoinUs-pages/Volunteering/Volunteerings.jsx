@@ -44,8 +44,8 @@ const Volunteering = () => {
             </h1>
             <p>{t("whyVolunteerText")}</p>
           </div>
-          <div className="volunteer-card-wrapper">
-            <div className="volunteer-card-individual">
+          <div className="submitidea-card-wrapper">
+            <div className="submitidea-card-individual card1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 102 143"
@@ -85,7 +85,7 @@ const Volunteering = () => {
               <h4>{t("personalGrowth")}</h4>
               <p>{t("personalGrowthText")}</p>
             </div>
-            <div className="volunteer-card-individual">
+            <div className="submitidea-card-individual card2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="142"
@@ -180,7 +180,7 @@ const Volunteering = () => {
               <p>{t("communityImpactText")}</p>
             </div>
 
-            <div className="volunteer-card-individual">
+            <div className="submitidea-card-individual card3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 118 133"
@@ -306,7 +306,12 @@ const Volunteering = () => {
 
         {/* apply */}
         <div className="volunteering-apply-button-wrapper">
-          <p>{t("lAHand")}{t("touch")}{t("aHeart")}{t("volunteerWithUnnathi")}</p>
+          <p>
+            {t("lAHand")}
+            {t("touch")}
+            {t("aHeart")}
+            {t("volunteerWithUnnathi")}
+          </p>
           <a
             target="_blank"
             rel="noreferrer"
