@@ -3,6 +3,7 @@
   z-index: 9000;
   top: 28px;
   right: 2%;
+   font-family: "Red Hat Text","Noto Sans Malayalam";
 }
 
 .LanguageSwitcher-wrapper > button {

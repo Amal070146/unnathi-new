@@ -383,7 +383,6 @@ const NGOCollaboration = () => {
               </div>
             </div>{" "}
             <div className="internship-individual-cards-wrapper card4">
-             
               <div className="internship-individual-card-content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -473,7 +472,6 @@ const NGOCollaboration = () => {
               </div>
             </div>
             <div className="internship-individual-cards-wrapper card5">
-           
               <div className="internship-individual-card-content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -553,7 +551,7 @@ const NGOCollaboration = () => {
 
         <div className="submitidea-timeline-wrapper">
           <h1>
-            <span>{t("howTo")}</span>&nbsp;Initiate Collaboration?
+            <span>{t("howTo")}</span>&nbsp;{t("submitYourIdeas")}
           </h1>
           <div className="submitidea-timeline-content-wrapper">
             <div>

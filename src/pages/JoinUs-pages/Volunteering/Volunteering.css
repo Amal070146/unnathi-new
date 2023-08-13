@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Red Hat Text";
+ font-family: "Red Hat Text","Noto Sans Malayalam";
 }
 .volunteering-header-sect {
   background: url("../../../assets/JoinUspage/volunteeringbg.webp") center
@@ -22,7 +22,7 @@
 
 .volunteering-header-sect h1 {
   text-align: center;
-  font-family: "Red Hat Text";
+ 
   font-size: 6vw;
   color: transparent;
   -webkit-text-stroke: 1.8px rgba(255, 255, 255, 1);
@@ -49,7 +49,7 @@
 }
 
 .volunteering-quote h1 {
-  font-family: "Red Hat Text";
+ 
   font-size: 4vw;
   font-weight: 400;
 
@@ -194,6 +194,9 @@
   .about-volunteering-heading h1 {
     font-size: 5.8vw;
   }
+  #about-volunteering .about-volunteering-heading h1{
+    font-size: 5.15vw;
+  }
   .about-volunteering-heading h1 span {
     height: 5.1vw;
   }
@@ -218,7 +221,7 @@
   justify-content: center;
   gap: 40px;
   text-align: center;
-  font-family: "Red Hat Text";
+
   padding: 2vh 5.8vw;
 }
 

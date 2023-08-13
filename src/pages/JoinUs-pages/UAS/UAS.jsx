@@ -49,18 +49,9 @@ const UAS = () => {
           <h1>
             <span> {t("why")}</span>&nbsp;{t("uas")}
           </h1>
-          <div className="internship-cards-wrapper-div uas-cards">
-            <div className="internship-individual-cards-wrapper">
-              <div className="internship-hover-display-svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 533 210"
-                  fill="none"
-                >
-                  <path d="M0.525265 319.954C159.057 122.433 486.814 -187.932 529.58 150.771C572.346 489.475 194.696 404.686 0.525265 319.954Z" />
-                </svg>
-              </div>
-              <div className="internship-individual-card-content">
+          <div className="internship-cards-wrapper-div">
+            <div className="internship-individual-cards-wrapper card1">
+              <div className="internship-individual-card-content ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="151"
@@ -103,16 +94,8 @@ const UAS = () => {
                 <p>{t("fullfillmentAndGrowthText")}</p>
               </div>
             </div>{" "}
-            <div className="internship-individual-cards-wrapper">
-              <div className="internship-hover-display-svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 533 210"
-                  fill="none"
-                >
-                  <path d="M0.525265 319.954C159.057 122.433 486.814 -187.932 529.58 150.771C572.346 489.475 194.696 404.686 0.525265 319.954Z" />
-                </svg>
-              </div>
+            <div className="internship-individual-cards-wrapper card2">
+            
               <div className="internship-individual-card-content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -149,16 +132,8 @@ const UAS = () => {
                 <p>{t("pricelessExposureText")}</p>
               </div>
             </div>{" "}
-            <div className="internship-individual-cards-wrapper">
-              <div className="internship-hover-display-svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 533 210"
-                  fill="none"
-                >
-                  <path d="M0.525265 319.954C159.057 122.433 486.814 -187.932 529.58 150.771C572.346 489.475 194.696 404.686 0.525265 319.954Z" />
-                </svg>
-              </div>
+            <div className="internship-individual-cards-wrapper card3">
+             
               <div className="internship-individual-card-content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -259,16 +234,8 @@ const UAS = () => {
                 <p>{t("lastingImpactText")}</p>
               </div>
             </div>{" "}
-            <div className="internship-individual-cards-wrapper">
-              <div className="internship-hover-display-svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 533 210"
-                  fill="none"
-                >
-                  <path d="M0.525265 319.954C159.057 122.433 486.814 -187.932 529.58 150.771C572.346 489.475 194.696 404.686 0.525265 319.954Z" />
-                </svg>
-              </div>
+            <div className="internship-individual-cards-wrapper card4">
+              
               <div className="internship-individual-card-content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -298,16 +265,8 @@ const UAS = () => {
                 <p>{t("interactionWithProfessionalsText")}</p>
               </div>
             </div>
-            <div className="internship-individual-cards-wrapper">
-              <div className="internship-hover-display-svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 533 210"
-                  fill="none"
-                >
-                  <path d="M0.525265 319.954C159.057 122.433 486.814 -187.932 529.58 150.771C572.346 489.475 194.696 404.686 0.525265 319.954Z" />
-                </svg>
-              </div>
+            <div className="internship-individual-cards-wrapper card5">
+             
               <div className="internship-individual-card-content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

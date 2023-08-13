@@ -402,7 +402,7 @@ const Internship = () => {
               {" "}
               {t("purpose")}
             </span>
-            ,{" "}
+            
             <span style={{ color: "#F37020", fontWeight: 500 }}>
               {" "}
               {t("passion")}

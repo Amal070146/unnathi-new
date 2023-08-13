@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+   font-family: "Red Hat Text","Noto Sans Malayalam";
 }
 
 .ngo-wrapper a {
