@@ -10,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Red Hat Text";
+ font-family: "Red Hat Text","Noto Sans Malayalam";
 }
 
 .projectfund-wrapper .submitidea-timeline-content {

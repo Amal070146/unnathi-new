@@ -405,7 +405,7 @@ const Enterprenuership = () => {
 
         <div className="submitidea-timeline-wrapper">
           <h1>
-            <span>{t("howTo")}</span> {t("initiateCollaboration")}
+            <span>{t("howTo")}</span>&nbsp;{t("initiateCollaboration")}
           </h1>
           <div className="submitidea-timeline-content-wrapper">
             <div>

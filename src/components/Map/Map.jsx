@@ -43,7 +43,7 @@ const Map = () => {
               />
             </svg>
             <div className="phone-no">
-              <a href="">0471 251 8274</a>
+              <a href="tel:0471 251 8274">0471 251 8274</a>
             </div>
           </div>
           <div>
@@ -80,7 +80,8 @@ const Map = () => {
               />
             </svg>
             <p className="phone-no" style={{ textAlign: "left" }}>
-            {t("address1")}<br></br> {t("address2")}
+              {t("address1")}
+              <br></br> {t("address2")}
             </p>
           </div>
         </div>

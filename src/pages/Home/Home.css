@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  font-family: "Red Hat Text", "Noto Sans Malayalam";
 }
 
 .home-screen-wrapper div {
@@ -38,7 +39,8 @@
 }
 @media screen and (max-width: 490px) {
   .home-wrapper {
-    background: url("../../assets/mobhome-bg.webp") center center/cover no-repeat;
+    background: url("../../assets/mobhome-bg.webp") center center/cover
+      no-repeat;
   }
 }
 

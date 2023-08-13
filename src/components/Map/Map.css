@@ -3,6 +3,7 @@
   height: fit-content;
   display: flex;
   height: 50vh;
+   font-family: "Red Hat Text","Noto Sans Malayalam";
 }
 .map-wrap {
   width: 60%;
