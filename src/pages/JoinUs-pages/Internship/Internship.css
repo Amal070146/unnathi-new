@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
- font-family: "Red Hat Text","Noto Sans Malayalam";
+  font-family: "Red Hat Text", "Noto Sans Malayalam";
 }
 .internship-header-sect {
   background: url("../../../assets/JoinUspage/internshipbg.webp") center
@@ -193,7 +193,7 @@
   .internship-cards-wrapper-div .card4 {
     border-left: 0.2px solid rgba(0, 0, 0, 0.3);
   }
-  .internship-cards-wrapper-div .card3,  .internship-cards-wrapper-div .card5 {
+  .internship-cards-wrapper-div .card3 {
     border-right: 0.2px solid rgba(0, 0, 0, 0.3);
   }
 }
@@ -207,6 +207,11 @@
   .internship-page-card-wrapper h1 span {
     height: 4.6vw;
     border-bottom: 1.6vw solid #fbba16;
+  }
+}
+@media screen and (max-width: 600px){
+.internship-cards-wrapper-div .card5 {
+    border-right: 0.2px solid rgba(0, 0, 0, 0.3);
   }
 }
 @media screen and (max-width: 500px) {
@@ -223,7 +228,7 @@
   .internship-page-card-wrapper h1 span {
     height: 5.1vw;
     width: fit-content;
-  }
+  }  
 }
 /* card section ends */
 
