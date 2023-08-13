@@ -367,7 +367,7 @@ const Enterprenuership = () => {
         {/* guidelines start */}
         <div className="submitidea-guidelines-wrapper">
           <h1>
-            <span>{t("eligibility")}</span> {t("criteria")}
+            <span>{t("eligibility")}</span>&nbsp;{t("criteria")}
           </h1>
           <div className="submitidea-guidelines-content-wrapper">
             <div className="submitidea-guidelines-individual">
