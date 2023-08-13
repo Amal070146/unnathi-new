@@ -22,7 +22,7 @@
 
 .volunteering-header-sect h1 {
   text-align: center;
-  font-family: "Red Hat Text";
+ 
   font-size: 6vw;
   color: transparent;
   -webkit-text-stroke: 1.8px rgba(255, 255, 255, 1);
@@ -49,7 +49,7 @@
 }
 
 .volunteering-quote h1 {
-  font-family: "Red Hat Text";
+ 
   font-size: 4vw;
   font-weight: 400;
 
@@ -221,7 +221,7 @@
   justify-content: center;
   gap: 40px;
   text-align: center;
-  font-family: "Red Hat Text";
+
   padding: 2vh 5.8vw;
 }
 

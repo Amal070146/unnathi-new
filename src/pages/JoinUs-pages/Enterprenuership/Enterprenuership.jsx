@@ -56,7 +56,7 @@ const Enterprenuership = () => {
           id="about-enterprenuership"
           className="projectfund-cardset-wrapper"
         >
-          <h1>
+          <h1 style={{ display: "flex", flexDirection: "column" }}>
             <span>{t("whyJoin")}</span> {t("theSupportProgramme")}
           </h1>
           <div className="projectfund-cardset-content-wrapper">
@@ -299,7 +299,7 @@ const Enterprenuership = () => {
                 <path d="M68 79L84.5 104.5" stroke="black" strokeWidth="7.5" />
               </svg>
               <h3>
-                {t("tnetworking")}
+                {t("networking")}
                 <br></br>
                 {t("oppourtunities")}
               </h3>
