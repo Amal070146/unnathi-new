@@ -4,46 +4,50 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import "./UAS.css";
 import i18next from "i18next";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 
 const UAS = () => {
-  useEffect(() => {
-    i18next.changeLanguage("en");
-  }, []);
+  const { t } = useTranslation(["UAS"]);
+  // useEffect(() => {
+  //   i18next.changeLanguage("en");
+  // }, []);
   return (
     <>
       <Navbar />
+      <div className="home-language-switcher">
+        <LanguageSwitcher />
+      </div>
       <div className="uas-wrapper">
         <div className="volunteering-header-sect uas-header-sect">
-          <h1>UAS</h1>
+          <h1> {t("uas")}</h1>
           <a href="#about-internship" className="volunteering-arrow">
             <span className="m_scroll_arrows unu"></span>
             <span className="m_scroll_arrows doi"></span>
             <span className="m_scroll_arrows trei"></span>
-            <span className="m_scroll_arrows quad"></span>
           </a>
         </div>
         <div className="projectfund-quotes-wrapper">
           <div>
             <h2>
               <span style={{ color: "#FBBA16", fontWeight: 600 }}>
-                UNNATHI{" "}
+                {t("unnathi")}{" "}
               </span>{" "}
-              ADMINISTRATIVE
+              {t("administrative")}
             </h2>
-            <h1 style={{ color: "#EC1D25", fontWeight: 600 }}>SERVICE</h1>
+            <h1 style={{ color: "#EC1D25", fontWeight: 600 }}>
+              {" "}
+              {t("service")}
+            </h1>
           </div>
           <div>
-            <p>
-              The Unnathi Administrative Services is where your expertise
-              collaborates with Unnathi’s vision of empowering targeted
-              communities.
-            </p>
+            <p>{t("administrativeServiceText")}</p>
           </div>
         </div>
         {/* card section starts*/}
         <div className="internship-page-card-wrapper" id="about-internship">
           <h1>
-            <span>Why</span> UAS?
+            <span> {t("why")}</span>&nbsp;{t("uas")}
           </h1>
           <div className="internship-cards-wrapper-div uas-cards">
             <div className="internship-individual-cards-wrapper">
@@ -93,13 +97,10 @@ const UAS = () => {
                   />
                 </svg>
                 <h3>
-                  Fullfillment
-                  <br></br>& Growth
+                  {t("fullfillment")}
+                  <br></br> {t("andGrowth")}
                 </h3>
-                <p>
-                  UAS officers receive unparalleled experience and job
-                  satisfaction.
-                </p>
+                <p>{t("fullfillmentAndGrowthText")}</p>
               </div>
             </div>{" "}
             <div className="internship-individual-cards-wrapper">
@@ -141,14 +142,11 @@ const UAS = () => {
                   />
                 </svg>
                 <h3>
-                  Priceless
+                  {t("priceless")}
                   <br></br>
-                  exposure
+                  {t("exposure")}
                 </h3>
-                <p>
-                  Gets an opportunity to come across people from different walks
-                  of life thereby opening boundless era of opportunities.
-                </p>
+                <p>{t("pricelessExposureText")}</p>
               </div>
             </div>{" "}
             <div className="internship-individual-cards-wrapper">
@@ -254,13 +252,11 @@ const UAS = () => {
                   />
                 </svg>
                 <h3>
-                  Lasting
+                  {t("lasting")}
                   <br></br>
-                  impact
+                  {t("impact")}
                 </h3>
-                <p>
-                  Create monumental changes in the lives of countless citizens.
-                </p>
+                <p>{t("lastingImpactText")}</p>
               </div>
             </div>{" "}
             <div className="internship-individual-cards-wrapper">
@@ -295,14 +291,11 @@ const UAS = () => {
                   />
                 </svg>
                 <h3>
-                  INTERACTION WITH
+                  {t("interactionWith")}
                   <br></br>
-                  PROFFESSIONALS
+                  {t("professionals")}
                 </h3>
-                <p>
-                  Reporting directly to the CEO, a senior IAS officer and being
-                  part of an organization that vouches for speed and efficacy.
-                </p>
+                <p>{t("interactionWithProfessionalsText")}</p>
               </div>
             </div>
             <div className="internship-individual-cards-wrapper">
@@ -463,14 +456,11 @@ const UAS = () => {
                   />
                 </svg>
                 <h3>
-                  OPEN TO
+                  {t("openTo")}
                   <br></br>
-                  IDEAS
+                  {t("ideas")}
                 </h3>
-                <p>
-                  Operational freedom and opportunity to execute new ideas and
-                  to be part of the transformational process.
-                </p>
+                <p>{t("openToIdeasText")}</p>
               </div>
             </div>
           </div>
@@ -478,44 +468,31 @@ const UAS = () => {
         {/* card section ends*/}
         <div className="uas-description-for-eligibility">
           <h1>
-            <span className="">Who</span> Are We Looking For?
+            <span className=""> {t("who")}</span>&nbsp;{t("areWeLookingFor")}
           </h1>
           <div className="uas-description-for-eligibility-content">
             <div className="uas-description-for-eligibility-content-one">
               <div>
                 <h1>1</h1>
-                <p>Generalist administrators or specialists are welcome.</p>
+                <p> {t("lookingFor1")}</p>
               </div>{" "}
               <div>
                 <h1>2</h1>
-                <p>
-                  Experience in establishing institutions and handling
-                  challenges preferred.{" "}
-                </p>
+                <p>{t("lookingFor2")}</p>
               </div>{" "}
               <div>
                 <h1>3</h1>
-                <p>
-                  High ethical standards and a clean professional track-record.
-                </p>
+                <p>{t("lookingFor3")}</p>
               </div>{" "}
             </div>
             <div className="uas-description-for-eligibility-content-one">
               <div>
                 <h1>4</h1>
-                <p>
-                  HR, Procurement, Outreach, Marketing & Branding, Project
-                  Management, Technology &
-                  Innovation,Legal/Documentation/Compliances, Finance, and CSR
-                  specialists.
-                </p>
+                <p>{t("lookingFor4")}</p>
               </div>{" "}
               <div>
                 <h1>5</h1>
-                <p>
-                  Individuals with commitment to social change, welfare of all
-                  communities and deep adherence to the Constitution of India.
-                </p>
+                <p>{t("lookingFor5")}</p>
               </div>{" "}
             </div>
           </div>
@@ -525,47 +502,37 @@ const UAS = () => {
         <div className="volunteering-eligibility-selection">
           <div>
             <h1>
-              <span>Eligibility </span>&nbsp;Criteria
+              <span> {t("eligibility")} </span>&nbsp; {t("criteria")}
             </h1>
             <div className="volunteering-eligilibility-set">
               <div>
                 <div className="yellow-circle"></div>
-                <p>
-                  Graduates from reputed institutions such as IIT, IIM, NIT,
-                  IRMA, NLSIU, XLRI, BITS Pilani, NID, NIFT or other renowned
-                  centers of learning including those abroad with a work
-                  experience of at least 10 years.{" "}
-                </p>
+                <p>{t("ec1")}</p>
               </div>{" "}
               <div>
                 <div className="yellow-circle"></div>
-                <p>
-                  Can be individuals who have led or had been part of
-                  established institutions and have contributed to its growth.
-                </p>
+                <p>{t("ec2")}</p>
               </div>{" "}
             </div>
           </div>
           <div>
             <h1>
-              <span>Selection</span>&nbsp;Process
+              <span> {t("selection")}</span>&nbsp; {t("process")}
             </h1>
             <p className="volunteering-selection-content">
-              Candidates undergo an intense competitive evaluation to assume
-              leadership roles across various initiatives and departments at
-              Unnathi. Shortlisted candidates are invited for a online
-              interviews, team interactions and a 360 degree evaluation is
-              conducted before selection.
+              {t("selectionProcessText")}
             </p>
           </div>
         </div>
 
         {/* apply */}
-        <div className="volunteering-apply-button-wrapper" style={{background:"transparent"}}>
-         
-          <a href="">
+        <div
+          className="volunteering-apply-button-wrapper"
+          style={{ background: "transparent" }}
+        >
+          <a href="" style={{ background: "#FBBA16" }}>
             {/* <p>Apply</p> */}
-            <p>Coming Soon</p>
+            <p>Apply for UAS</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

@@ -19,12 +19,12 @@ import i18next from "i18next";
 
 import img1 from "../../../assets/NavbarPages/GoverningBody/img1.webp";
 import img2 from "../../../assets/NavbarPages/GoverningBody/img2.webp";
-import img3 from "../../../assets/NavbarPages/GoverningBody/img3.webp";
+import img3 from "../../../assets/NavbarPages/GoverningBody/image1.webp";
 import img4 from "../../../assets/NavbarPages/GoverningBody/img4.webp";
 import img5 from "../../../assets/NavbarPages/GoverningBody/img5.webp";
 
 const GoverningBody = () => {
-  const { t } = useTranslation(["Navbar"]);
+  const { t } = useTranslation(["GoverningBody"]);
   const [openmenu, setopenmenu] = useState(false);
   const [navlogo, setnavlogo] = useState(false);
   function openMenu() {
@@ -109,6 +109,7 @@ const GoverningBody = () => {
                 </p>
               </a>
             ))}
+            <LanguageSwitcher />
           </div>
 
           <div className="navbar-mob">
@@ -161,64 +162,52 @@ const GoverningBody = () => {
           <img src={headerimg} alt="" />
           <div className="governingbody-header-set-cover"></div>
           <div className="governingbody-header-set-cover-text">
-            <h2>GOVERNING</h2>
-            <h1>BODY</h1>
+            <h2>{t("governing")}</h2>
+            <h1>{t("body")}</h1>
           </div>
         </div>
 
         <div id="governingcontent" className="governingcontent-wrapper">
           <div className="governingcontent-individual-wrapper">
             <img src={img1} alt="img" loading="lazy" />
-            <h3>CHAIRMAN</h3>
-            <h2>Sri. K. Radhakrishnan</h2>
-            <p>
-              Hon Minister for Welfare of Scheduled Castes, Scheduled Tribes &
-              Backward Classes, Kerala
-            </p>
+            <h3>{t("chairman")}</h3>
+            <h2>{t("radhakrishnan")}</h2>
+            <p>{t("radhakrishnanRole"
+            )}</p>
           </div>{" "}
           <div className="governingcontent-individual-wrapper">
             <img src={img2} alt="img" loading="lazy" />
-            <h3>Vice Chairman</h3>
-            <h2>Dr A. Jayatilak IAS</h2>
-            <p>
-              Additional Chief Secretary, Scheduled Castes & Scheduled Tribes
-              Development Department, Govt of Kerala
-            </p>
+            <h3>{t("viceChairman")}</h3>
+            <h2>{t("jayatilak")}</h2>
+            <p>{t("jayatilakRole")}</p>
           </div>{" "}
           <div className="governingcontent-individual-wrapper">
             <img src={img3} alt="img" loading="lazy" />
-            <h3>Convenor/CEO</h3>
-            <h2>Sri. Prasanth N. IAS</h2>
-            <p>
-              Special Secretary, Scheduled Castes & Scheduled Tribes Development
-              Department, Govt of Kerala
-            </p>
+            <h3>{t("convenorCeo")}</h3>
+            <h2>{t("prasanth")}</h2>
+            <p>{t("prasnathRole")}</p>
           </div>{" "}
           <div className="governingcontent-individual-wrapper">
             <img src={img4} alt="img" loading="lazy" />
-            <h3>Member</h3>
-            <h2>Sri. K Gopalakrishnan IAS</h2>
-            <p>
-              Director, Scheduled Castes Development Department, Govt of Kerala
-            </p>
+            <h3>{t("member")}r</h3>
+            <h2>{t("gopalakrishnan")}</h2>
+            <p>{t("gopalakrishnanRole")}</p>
           </div>{" "}
           <div className="governingcontent-individual-wrapper">
             <img src={img5} alt="img" loading="lazy" />
-            <h3>Member</h3>
-            <h2>Smt. Meghashree D.R. IAS</h2>
-            <p>
-              Director, Scheduled Tribes Development Department, Govt of Kerala
-            </p>
+            <h3>{t("member")}</h3>
+            <h2>{t("meghashree")}</h2>
+            <p>{t("meghashreeRole")}</p>
           </div>{" "}
-          <div className="governingcontent-individual-wrapper" style={{border:"none"}}>
+          <div
+            className="governingcontent-individual-wrapper"
+            style={{ border: "none" }}
+          >
             <div>
               {" "}
-              <h3>Member</h3>
-              <h2>Smt. Minimol V. G.</h2>
-              <p>
-                Additional Secretary, Scheduled Castes & Scheduled Tribes
-                Development Department, Govt of Kerala
-              </p>
+              <h3>{t("member")}</h3>
+              <h2>{t("minimol")}.</h2>
+              <p>{t("minimolRole")}</p>
             </div>
             <div
               style={{
@@ -230,12 +219,9 @@ const GoverningBody = () => {
             ></div>
             <div>
               {" "}
-              <h3>Member</h3>
-              <h2>Sri. V. Sajeev</h2>
-              <p>
-                Additional Director, Scheduled Castes Development Department,
-                Govt of Kerala
-              </p>
+              <h3>{t("member")}</h3>
+              <h2>{t("sajeev")}</h2>
+              <p>{t("sajeevRole")}</p>
             </div>
           </div>
         </div>

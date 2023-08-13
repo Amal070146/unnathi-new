@@ -10,13 +10,15 @@ import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 const NGOCollaboration = () => {
   const { t } = useTranslation(["NGOCollaboration"]);
-  useEffect(() => {
-    i18next.changeLanguage("en");
-  }, []);
+  // useEffect(() => {
+  //   i18next.changeLanguage("en");
+  // }, []);
   return (
     <>
       <Navbar />
-
+      <div className="home-language-switcher">
+        <LanguageSwitcher />
+      </div>
       <div className="ngocollaboration-wrapper">
         <div className="volunteering-header-sect ngocollobaration-header-sect">
           <h1> {t("collaboration")}</h1>
@@ -24,7 +26,6 @@ const NGOCollaboration = () => {
             <span className="m_scroll_arrows unu"></span>
             <span className="m_scroll_arrows doi"></span>
             <span className="m_scroll_arrows trei"></span>
-            <span className="m_scroll_arrows quad"></span>
           </a>
         </div>
         {/* quote of submitidea used */}
@@ -60,16 +61,7 @@ const NGOCollaboration = () => {
             <span>{t("whyCollaborate")}</span>&nbsp;{t("withUnnathi")}
           </h1>
           <div className="internship-cards-wrapper-div">
-            <div className="internship-individual-cards-wrapper">
-              <div className="internship-hover-display-svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 533 210"
-                  fill="none"
-                >
-                  <path d="M0.525265 319.954C159.057 122.433 486.814 -187.932 529.58 150.771C572.346 489.475 194.696 404.686 0.525265 319.954Z" />
-                </svg>
-              </div>
+            <div className="internship-individual-cards-wrapper card1">
               <div className="internship-individual-card-content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -117,16 +109,7 @@ const NGOCollaboration = () => {
                 <p>{t("resourceSourcingText")}</p>
               </div>
             </div>{" "}
-            <div className="internship-individual-cards-wrapper">
-              <div className="internship-hover-display-svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 533 210"
-                  fill="none"
-                >
-                  <path d="M0.525265 319.954C159.057 122.433 486.814 -187.932 529.58 150.771C572.346 489.475 194.696 404.686 0.525265 319.954Z" />
-                </svg>
-              </div>
+            <div className="internship-individual-cards-wrapper card2">
               <div className="internship-individual-card-content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -313,19 +296,17 @@ const NGOCollaboration = () => {
                   {t("technology")}
                   <br></br> {t("integration")}
                 </h3>
-                <p>{t("technologyIntegrationText")}</p>
+                <p>
+                  Unnathi aspires to build and accelerate community development
+                  activities in the digital age by utilising cutting-edge
+                  technology from our partners, allowing the introduction of
+                  CSR/sponsored activities for community welfare and the
+                  branding of technologies.
+                </p>
+                {/* <p>{t("technologyIntegrationText")}</p> */}
               </div>
             </div>{" "}
-            <div className="internship-individual-cards-wrapper">
-              <div className="internship-hover-display-svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 533 210"
-                  fill="none"
-                >
-                  <path d="M0.525265 319.954C159.057 122.433 486.814 -187.932 529.58 150.771C572.346 489.475 194.696 404.686 0.525265 319.954Z" />
-                </svg>
-              </div>
+            <div className="internship-individual-cards-wrapper card3">
               <div className="internship-individual-card-content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -401,16 +382,8 @@ const NGOCollaboration = () => {
                 <p>{t("networkExpanisionText")}</p>
               </div>
             </div>{" "}
-            <div className="internship-individual-cards-wrapper">
-              <div className="internship-hover-display-svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 533 210"
-                  fill="none"
-                >
-                  <path d="M0.525265 319.954C159.057 122.433 486.814 -187.932 529.58 150.771C572.346 489.475 194.696 404.686 0.525265 319.954Z" />
-                </svg>
-              </div>
+            <div className="internship-individual-cards-wrapper card4">
+             
               <div className="internship-individual-card-content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -499,20 +472,12 @@ const NGOCollaboration = () => {
                 <p>{t("sharedVisionText")}</p>
               </div>
             </div>
-            <div className="internship-individual-cards-wrapper">
-              <div className="internship-hover-display-svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 533 210"
-                  fill="none"
-                >
-                  <path d="M0.525265 319.954C159.057 122.433 486.814 -187.932 529.58 150.771C572.346 489.475 194.696 404.686 0.525265 319.954Z" />
-                </svg>
-              </div>
+            <div className="internship-individual-cards-wrapper card5">
+           
               <div className="internship-individual-card-content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 126 130"
+                  viewBox="0 0 126 160"
                   fill="none"
                 >
                   <circle
@@ -588,7 +553,7 @@ const NGOCollaboration = () => {
 
         <div className="submitidea-timeline-wrapper">
           <h1>
-            <span>{t("howTo")}</span> Initiate Collaboration?
+            <span>{t("howTo")}</span>&nbsp;Initiate Collaboration?
           </h1>
           <div className="submitidea-timeline-content-wrapper">
             <div>
@@ -640,7 +605,10 @@ const NGOCollaboration = () => {
         <div className="internship-yellow-banner-wrapper">
           <div className="internship-yellow-banner-content-wrapper">
             <h1>
-              <span>{t("together")},</span> {t("weCanAchieveMonumentalChange")}
+              {/* <span>{t("together")}</span>{t("weCanAchieveMonumentalChange")} */}
+            </h1>{" "}
+            <h1 className="yellow-banner-h1-tag">
+              Together, We Can Achieve A <span>Monumental Change</span>
             </h1>
             <p>{t("togetherText")}</p>
             <a

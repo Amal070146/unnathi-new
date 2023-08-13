@@ -21,6 +21,7 @@
   justify-content: center;
   text-align: center;
   gap: 15px;
+  margin: 0vh 0vw 2vh;
 }
 
 .internship-quote-wrapper > div {
@@ -96,47 +97,57 @@
 }
 
 .internship-page-card-wrapper h1 {
-  font-size: 3vw;
   font-weight: 500;
+  font-size: 3.5vw;
   line-height: 1;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.internship-page-card-wrapper h1 span {
+  border-bottom: 1vw solid #fbba16;
+  height: 3.2vw;
 }
 .internship-cards-wrapper-div {
   width: 100%;
+  max-width: 1200px;
   padding: 3vh 2vw;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+
   align-items: center;
   justify-content: center;
 }
 
 .internship-individual-cards-wrapper {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 350px;
 }
-
-.internship-hover-display-svg > svg {
-  width: 350px;
-  height: 370px;
+.internship-cards-wrapper-div .card1,
+.internship-cards-wrapper-div .card2 {
+  border-right: 0.2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 0.2px solid rgba(0, 0, 0, 0.3);
 }
 
-.internship-individual-cards-wrapper:hover .internship-hover-display-svg > svg {
-  fill: #fff6e0;
+.internship-cards-wrapper-div .card3 {
+  border-bottom: 0.2px solid rgba(0, 0, 0, 0.3);
+}
+.internship-cards-wrapper-div .card4 {
+  border-right: 0.2px solid rgba(0, 0, 0, 0.3);
 }
 .internship-individual-card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px 8px;
+  padding: 25px 20px;
   width: 300px;
-  position: absolute;
-  bottom: 2%;
+
   gap: 10px;
-  height: 380px;
+  height: 400px;
 }
 .internship-individual-card-content > svg {
   width: 100px;
@@ -165,12 +176,37 @@
     font-size: 3.5vw;
   }
 }
+@media screen and (max-width: 1093px) {
+  .internship-cards-wrapper-div .card2 {
+    border-right: none;
+  }
+  .internship-cards-wrapper-div .card3 {
+    border-right: 0.2px solid rgba(0, 0, 0, 0.3);
+  }
+  .internship-cards-wrapper-div .card4 {
+    border-right: none;
+    border-bottom: 0.2px solid rgba(0, 0, 0, 0.3);
+  }
+}
+@media screen and (max-width: 703px) {
+  .internship-cards-wrapper-div .card2,
+  .internship-cards-wrapper-div .card4 {
+    border-left: 0.2px solid rgba(0, 0, 0, 0.3);
+  }
+  .internship-cards-wrapper-div .card3,  .internship-cards-wrapper-div .card5 {
+    border-right: 0.2px solid rgba(0, 0, 0, 0.3);
+  }
+}
 @media screen and (max-width: 850px) {
   .internship-cards-wrapper-div {
     padding: 3vh 0vw;
   }
   .internship-page-card-wrapper h1 {
-    font-size: 4vw;
+    font-size: 5vw;
+  }
+  .internship-page-card-wrapper h1 span {
+    height: 4.6vw;
+    border-bottom: 1.6vw solid #fbba16;
   }
 }
 @media screen and (max-width: 500px) {
@@ -178,8 +214,15 @@
     padding: 3vh 2vw;
   }
   .internship-page-card-wrapper h1 {
-    font-size: 6vw;
+    font-size: 5vw;
     line-height: 1.1;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .internship-page-card-wrapper h1 span {
+    height: 5.1vw;
+    width: fit-content;
   }
 }
 /* card section ends */
@@ -189,19 +232,27 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0vh 15vw 3vh;
+  padding: 2vh 15vw 3vh;
   gap: 20px;
 }
 .internship-numbered-descriptions-wrapper h1 {
-  font-size: 3vw;
   font-weight: 500;
+  font-size: 3.5vw;
   line-height: 1;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.internship-numbered-descriptions-wrapper h1 span {
+  border-bottom: 1vw solid #fbba16;
+  height: 3.2vw;
 }
 .internship-numbered-descriptions-content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 15px;
 }
 .internship-numbered-descriptions-content-wrapper > div {
   display: flex;
@@ -238,7 +289,11 @@
 }
 @media screen and (max-width: 850px) {
   .internship-numbered-descriptions-wrapper h1 {
-    font-size: 4vw;
+    font-size: 5vw;
+  }
+  .internship-numbered-descriptions-wrapper h1 span {
+    height: 4.6vw;
+    border-bottom: 1.6vw solid #fbba16;
   }
   .internship-numbered-descriptions-wrapper {
     padding: 0vh 5vw 3vh;
@@ -253,10 +308,12 @@
 
 @media screen and (max-width: 500px) {
   .internship-numbered-descriptions-wrapper h1 {
-    font-size: 6vw;
+    font-size: 5.8vw;
     line-height: 1.1;
   }
-
+  .internship-numbered-descriptions-wrapper h1 span {
+    height: 5.1vw;
+  }
   .internship-numbered-descriptions-content-wrapper h3 {
     font-size: 17px;
   }
@@ -267,11 +324,12 @@
 
 /* yellow banner start */
 .internship-yellow-banner-wrapper {
+  margin: 2vh 0vw 3vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5vh 5vw;
-  gap: 5vw;
+  padding: 5vh 12vw;
+  gap: 6vw;
   width: 100%;
   height: fit-content;
   background-color: #fbba16;
@@ -281,8 +339,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
-    justify-content: center;
+  max-width: 850px;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -290,6 +348,14 @@
   font-size: 55px;
   line-height: 1;
   font-weight: 500;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+}
+.internship-yellow-banner-content-wrapper h1 span {
+  border-bottom: 1vw solid #ffd15e;
+  height: 2.8vw;
+  width: fit-content;
 }
 .internship-yellow-banner-content-wrapper p {
   font-size: 20px;
@@ -300,25 +366,52 @@
   gap: 10px;
   background-color: white;
   padding: 12px 20px;
-  border-radius: 10px;
+  border-radius: 7px;
   align-items: center;
 }
 .internship-yellow-banner-content-wrapper a p {
   font-size: 16px;
 }
 .internship-yellow-banner-image-wrapper {
-  width: 45vw;
-  height: 300px;
+  width: 300px;
+  height: 300px !important;
 }
 .internship-yellow-banner-image-wrapper > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1770px) {
   .internship-yellow-banner-image-wrapper {
-    width: 100vw;
+    width: 500px;
+    height: 300px !important;
+  }
+  .internship-yellow-banner-content-wrapper h1 {
+    font-size: 3.5vw;
+
+    display: flex;
+    gap: 14px;
+  }
+  .internship-yellow-banner-content-wrapper h1 span {
+    border-bottom: 1.6vw solid #ffd15e;
+    height: 3.5vw;
+  }
+}
+@media screen and (max-width: 1370px) {
+  .internship-yellow-banner-image-wrapper {
+    width: 500px;
+    height: 300px !important;
+  }
+  .internship-yellow-banner-content-wrapper h1 {
+    font-size: 4vw;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .internship-yellow-banner-content-wrapper h1 span {
+    border-bottom: 1.6vw solid #ffd15e;
+    height: 4vw;
   }
 }
 @media screen and (max-width: 850px) {
@@ -329,23 +422,32 @@
     width: 80vw;
     height: 200px;
   }
+  .internship-yellow-banner-content-wrapper h1 span {
+    border-bottom: 2.2vw solid #ffd15e;
+    height: 6vw;
+  }
   .internship-yellow-banner-content-wrapper {
     height: fit-content;
     gap: 15px;
   }
   .internship-yellow-banner-content-wrapper h1 {
-    font-size: 45px;
+    font-size: 7vw;
+    gap: 2vw;
   }
   .internship-yellow-banner-content-wrapper p {
     font-size: 16px;
   }
- .internship-yellow-banner-content-wrapper {
+  .internship-yellow-banner-content-wrapper {
     gap: 15px;
   }
 }
 @media screen and (max-width: 500px) {
   .internship-yellow-banner-content-wrapper h1 {
-    font-size: 8.4vw;
+    font-size: 7vw;
+  }
+  .internship-yellow-banner-content-wrapper h1 span {
+    border-bottom: 2.5vw solid #ffd15e;
+    height: 7vw;
   }
   .internship-yellow-banner-content-wrapper p {
     font-size: 14px;

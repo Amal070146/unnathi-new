@@ -46,35 +46,18 @@ const Slider = () => {
       designation: t("testimonial5_designation"),
       image: img5,
     },
+   
   ];
 
   return (
-    <div className="slider">
-      <Swiper
-        navigation={true}
-        pagination={{
-          dynamicBullets: true,
-        }}
-        modules={[Navigation, Pagination]}
-        className="mySwiper"
-      >
-        {data.map(({ image, designation, name, content }, i) => (
-          <SwiperSlide key={i}>
-            <div className="card">
-              <p>"{content}"</p>
-              <div className="card-name-img">
-                <div className="person-name">
-                  <h2>{name}</h2>
-                  <p>{designation}</p>
-                </div>
-                <div>
-                  <img src={image} alt={name} loading="lazy" />
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <div className="testimonialnewCardWrapper">
+      {data.map(({ image, designation, name, content }, i) => (
+        <div className="testimonialIndividualCard">
+          <img src={image} alt="" />
+          <p>"{content}"</p>
+          <h3>{name}</h3>
+        </div>
+      ))}
     </div>
   );
 };

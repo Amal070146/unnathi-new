@@ -17,7 +17,6 @@ const Navbar = () => {
   const [openmenu, setopenmenu] = useState(false);
   const [navlogo, setnavlogo] = useState(false);
   function openMenu() {
-    console.log("true");
     setopenmenu(!openmenu);
   }
   function closeMenu() {
@@ -102,7 +101,7 @@ const Navbar = () => {
             <img
               className="nav-logo"
               style={{ width: navlogo ? "90px" : "120px" }}
-              src={i18next.language === "en" ? logo : logo_mal}
+              src={i18next.language === "mal" ? logo_mal : logo}
               alt=""
             />
           </a>

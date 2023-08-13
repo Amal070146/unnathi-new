@@ -12,13 +12,15 @@ import i18next from "i18next";
 
 const ProjectsFund = () => {
   const { t } = useTranslation(["ProjectsFund"]);
-  useEffect(() => {
-    i18next.changeLanguage("en");
-  }, []);
+  // useEffect(() => {
+  //   i18next.changeLanguage("en");
+  // }, []);
   return (
     <>
       <Navbar />
-
+      <div className="home-language-switcher">
+        <LanguageSwitcher />
+      </div>
       <div className="projectfund-wrapper">
         <div className="volunteering-header-sect projectfunds-header-sect">
           <h1>{t("projectToFund")}</h1>
@@ -26,7 +28,6 @@ const ProjectsFund = () => {
             <span className="m_scroll_arrows unu"></span>
             <span className="m_scroll_arrows doi"></span>
             <span className="m_scroll_arrows trei"></span>
-            <span className="m_scroll_arrows quad"></span>
           </a>
         </div>
         <div className="projectfund-quotes-wrapper">
@@ -339,7 +340,7 @@ const ProjectsFund = () => {
 
         <div className="submitidea-timeline-wrapper">
           <h1>
-            <span>{t("howTo")}</span> {t("initiateCollaboration")}
+            <span>{t("howTo")}</span>&nbsp;{t("initiateCollaboration")}
           </h1>
           <div className="submitidea-timeline-content-wrapper">
             <div>
@@ -394,7 +395,7 @@ const ProjectsFund = () => {
             <p>{t("yourVisionTheirDreamsOurSharedMissionText")}</p>
             <a href="">
               {/* <p>{t("exploreCollaborateProjects")}</p> */}
-              <p>Coming Soon</p>
+              <p>Explore & Collaborate on Projects</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
