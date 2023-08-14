@@ -266,7 +266,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  /* gap: 100px; */
   width: 100%;
   padding: 4vh 5vw 6vh;
 }
@@ -423,7 +423,7 @@
 }
 @media screen and (max-width: 850px) {
   .submitidea-timeline-wrapper {
-    gap: 100px;
+
   }
 
   .submitidea-timeline-content .timeline1 {
