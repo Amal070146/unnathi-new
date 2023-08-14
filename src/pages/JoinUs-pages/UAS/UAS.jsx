@@ -47,7 +47,7 @@ const UAS = () => {
         {/* card section starts*/}
         <div className="internship-page-card-wrapper" id="about-internship">
           <h1>
-            <span> {t("why")}</span>&nbsp;{t("uas")}
+            <span> {t("why")}</span>&nbsp;{t("uas")}?
           </h1>
           <div className="internship-cards-wrapper-div">
             <div className="internship-individual-cards-wrapper card1">
@@ -485,9 +485,9 @@ const UAS = () => {
           className="volunteering-apply-button-wrapper"
           style={{ background: "transparent" }}
         >
-          <a href="/uaseligibility" style={{ background: "#FBBA16" }}>
+          <a href="/#" style={{ background: "#FBBA16" }}>
             {/* <p>Apply</p> */}
-            <p>Apply for UAS</p>
+            <p>Coming Soon</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

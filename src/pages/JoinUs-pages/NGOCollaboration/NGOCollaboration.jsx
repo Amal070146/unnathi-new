@@ -43,9 +43,9 @@ const NGOCollaboration = () => {
             </h1>
             <h2>
               {t("synergyInPurpose")}
-              <span style={{ color: "#F37020" }}>.</span>{" "}
+              <span style={{ color: "#F37020" }}></span>{" "}
               {t("excellenceInExecution")}
-              <span style={{ color: "#F37020" }}>.</span>
+              <span style={{ color: "#F37020" }}></span>
             </h2>
           </div>
           <p>{t("excellenceInExecutionText")}</p>
@@ -296,14 +296,8 @@ const NGOCollaboration = () => {
                   {t("technology")}
                   <br></br> {t("integration")}
                 </h3>
-                <p>
-                  Unnathi aspires to build and accelerate community development
-                  activities in the digital age by utilising cutting-edge
-                  technology from our partners, allowing the introduction of
-                  CSR/sponsored activities for community welfare and the
-                  branding of technologies.
-                </p>
-                {/* <p>{t("technologyIntegrationText")}</p> */}
+
+                <p>{t("technologyIntegrationText")}</p>
               </div>
             </div>{" "}
             <div className="internship-individual-cards-wrapper card3">
@@ -726,7 +720,7 @@ const NGOCollaboration = () => {
               {/* <span>{t("together")}</span>{t("weCanAchieveMonumentalChange")} */}
             </h1>{" "}
             <h1 className="yellow-banner-h1-tag">
-              Together, We Can Achieve A <span>Monumental Change</span>
+              {t("together")} <span>{t("weCanAchieveMonumentalChange")}</span>
             </h1>
             <p>{t("togetherText")}</p>
             <a
