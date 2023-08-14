@@ -46,7 +46,7 @@ const ProjectsFund = () => {
           <div>
             <h3>
               {t("investInChange")}
-              <span style={{ color: "#F37020" }}>.</span>
+              <span style={{ color: "#F37020" }}>. </span>
               {t("shapeTomorrowNarratives")}
               <span style={{ color: "#F37020" }}>.</span>{" "}
               {t("executeTransformativeSolutions")}
