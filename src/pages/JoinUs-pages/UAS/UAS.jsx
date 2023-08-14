@@ -485,9 +485,9 @@ const UAS = () => {
           className="volunteering-apply-button-wrapper"
           style={{ background: "transparent" }}
         >
-          <a href="/#" style={{ background: "#FBBA16" }}>
-            {/* <p>Apply</p> */}
-            <p>Coming Soon</p>
+          <a href="/uaseligibility" style={{ background: "#FBBA16" }}>
+            <p>Apply</p>
+            {/* <p>Coming Soon</p> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

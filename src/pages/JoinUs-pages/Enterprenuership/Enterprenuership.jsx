@@ -374,7 +374,7 @@ const Enterprenuership = () => {
               <div className="yellow-circle"></div>
               <div>
                 <h3>{t("entitiesThatCanApply")}</h3>
-                <p>{t("entitiesThatCanApply")}</p>
+                <p>{t("entitiesThatCanApplyText")}</p>
               </div>
             </div>
             <div className="submitidea-guidelines-individual">
