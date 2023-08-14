@@ -282,15 +282,14 @@ const UasEligibility = (props) => {
                   </p>
 
                   <div className="btn">
-                    <button style={{ background: "#FBBA16", color: "white" }}>
-                      <a
-                        target="_blank"
-                        href="https://apply.teachforindia.org/signup"
-                        style={{ color: "white" }}
-                      >
-                        Apply
-                      </a>
-                    </button>
+                    <a
+                      className="applybutton"
+                      target="_blank"
+                      href="https://apply.teachforindia.org/signup"
+                      style={{ background: "#FBBA16", color: "white" }}
+                    >
+                      <a style={{ color: "white" }}>Apply</a>
+                    </a>
                   </div>
                 </div>
               </div>

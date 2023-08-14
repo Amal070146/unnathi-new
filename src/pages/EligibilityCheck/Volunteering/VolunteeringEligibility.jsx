@@ -282,15 +282,16 @@ const VolunteeringEligibility = (props) => {
                   </p>
 
                   <div className="btn">
-                    <button style={{ background: "#FBBA16", color: "white" }}>
-                      <a
-                        target="_blank"
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSd5FgrM2Z72F0blVXNgx0Q1zNlR24_b0C7G4J5qAiOy7n_XUA/viewform"
-                        style={{ color: "white" }}
-                      >
+                    <a
+                      className="applybutton"
+                      target="_blank"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSd5FgrM2Z72F0blVXNgx0Q1zNlR24_b0C7G4J5qAiOy7n_XUA/viewform"
+                      style={{ background: "#FBBA16", color: "white" }}
+                    >
+                      <a target="_blank" style={{ color: "white" }}>
                         Apply
                       </a>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

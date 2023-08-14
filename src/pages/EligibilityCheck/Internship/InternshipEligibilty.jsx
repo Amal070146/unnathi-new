@@ -282,15 +282,14 @@ const InternshipEligibility = (props) => {
                   </p>
 
                   <div className="btn">
-                    <button style={{ background: "#FBBA16", color: "white" }}>
-                      <a
-                        target="_blank"
-                        href="https://forms.gle/GV56Vb5D7qP6ZhcR6"
-                        style={{ color: "white" }}
-                      >
-                        Apply
-                      </a>
-                    </button>
+                    <a
+                      className="applybutton"
+                      target="_blank"
+                      href="https://forms.gle/GV56Vb5D7qP6ZhcR6"
+                      style={{ background: "#FBBA16", color: "white" }}
+                    >
+                      <a style={{ color: "white" }}>Apply</a>
+                    </a>
                   </div>
                 </div>
               </div>
