@@ -1,14 +1,14 @@
 {
   "volunteering": "Volunteering",
   "lend": "Lend",
-  "aHand": "a Hand, Make a",
+  "aHand": " a Hand, Make a",
   "difference": "Difference",
   "differentText": "At Unnathi, we believe that the strength of our community lies in the selfless hands and hearts of our volunteers. By choosing to volunteer with us, you are not only offering your time and skills but also making a profound impact on countless lives. Every task you undertake, no matter how big or small contributes to our shared vision of a brighter and more equitable world.",
   "whyVolunteer": "Why Volunteer",
   "withUnnathi": "With Unnathi?",
   "whyVolunteerText": "Whether you have a few hours a week or can commit to a longer-term project,there's a place for you at Unnathi. No effort is too small and every contribution matters. Join our family of dedicated volunteers today and be part of a transformative journey.",
   "personalGrowth": "Personal Growth",
-  "personalGrowthText": "Experience the joy of giving, learn new skills, and understand the world from diverse perspectives.",
+  "personalGrowthText": "  Experience the joy of giving, learn new skills, and understand the world from diverse perspectives.",
   "communityImpact": "Community Impact",
   "communityImpactText": "Envision the transformative changes that your skills and time can bring to the lives of communities.",
   "networking": "Networking",
@@ -24,7 +24,7 @@
   "process": "Process",
   "selectionProcessText": "Our comprehensive selection process involves the meticulous evaluation of CV submissions, followed by a rigorous online interview. This interview evaluates candidates on both their adeptness in technical domains and the quality of their soft skills.",
   "lAHand": "Lend a hand.",
-  "touch": "Touch " ,
+  "touch": "Touch",
   "aHeart": "a heart. Make a difference.",
   "volunteerWithUnnathi": "Volunteer with unnathi."
 }
