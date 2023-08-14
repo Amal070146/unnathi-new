@@ -422,9 +422,9 @@
   }
 }
 @media screen and (max-width: 850px) {
-  .submitidea-timeline-wrapper {
+  /* .submitidea-timeline-wrapper {
 
-  }
+  } */
 
   .submitidea-timeline-content .timeline1 {
     left: 13vw;

@@ -13,7 +13,9 @@ import ProjectsFund from "./pages/JoinUs-pages/ProjectFunds/ProjectsFund";
 import UAS from "./pages/JoinUs-pages/UAS/UAS";
 import GoverningBody from './pages/NavbarPages/GoverningBody/GoverningBody'
 import Error404 from "./pages/ErrorPAges/404error";
-import Eligibility from "./pages/EligibilityCheck/Eligibility";
+import VolunteeringEligibility from "./pages/EligibilityCheck/Volunteering/VolunteeringEligibility";
+import InternshipEligibility from "./pages/EligibilityCheck/Internship/InternshipEligibilty";
+import UasEligibility from "./pages/EligibilityCheck/UAS/UasEligibility";
 function App() {
   //Check whether the path contains the query parameter lang and if it does, set the language to the value of the query parameter
   const urlParams = new URLSearchParams(window.location.search);
@@ -97,8 +99,16 @@ function App() {
       element: <GoverningBody />,
     },
     {
-      path: "/eligibilitycheck",
-      element: <Eligibility />,
+      path: "/volunteeringeligibility",
+      element: <VolunteeringEligibility />,
+    },
+    {
+      path: "/uaseligibility",
+      element: <UasEligibility />,
+    },
+    {
+      path: "/volunteeringeligibility",
+      element: <InternshipEligibility />,
     },
   ]);
   return <RouterProvider router={router} />;
