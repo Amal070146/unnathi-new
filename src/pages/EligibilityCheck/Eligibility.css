@@ -86,7 +86,7 @@
   justify-content: center;
 }
 
-.Eligibility .contentBox .btn button {
+.Eligibility .contentBox .btn button,.Eligibility .contentBox .btn .applybutton {
   padding: 0.6rem 1.3rem;
   width: 100%;
   font-size: 1rem;
@@ -96,6 +96,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  text-align: center;
 }
 
 .Eligibility .contentBox .btn button:nth-child(2) {
