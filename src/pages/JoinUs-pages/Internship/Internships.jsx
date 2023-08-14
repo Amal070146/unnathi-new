@@ -402,7 +402,6 @@ const Internship = () => {
               {" "}
               {t("purpose")}
             </span>
-            
             <span style={{ color: "#F37020", fontWeight: 500 }}>
               {" "}
               {t("passion")}
@@ -411,8 +410,8 @@ const Internship = () => {
           </p>
           <a
             rel="noreferrer"
-            target="_blank"
-            href="https://forms.gle/tJAWR74YvRrNkKBB6"
+          
+            href="/internshipeligibility"
             style={{ background: "#FBBA16", color: "white" }}
           >
             <p>Apply for internship</p>

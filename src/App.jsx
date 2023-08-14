@@ -107,7 +107,7 @@ function App() {
       element: <UasEligibility />,
     },
     {
-      path: "/volunteeringeligibility",
+      path: "/internshipeligibility",
       element: <InternshipEligibility />,
     },
   ]);

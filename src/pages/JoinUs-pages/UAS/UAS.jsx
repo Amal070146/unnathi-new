@@ -95,7 +95,6 @@ const UAS = () => {
               </div>
             </div>{" "}
             <div className="internship-individual-cards-wrapper card2">
-            
               <div className="internship-individual-card-content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +132,6 @@ const UAS = () => {
               </div>
             </div>{" "}
             <div className="internship-individual-cards-wrapper card3">
-             
               <div className="internship-individual-card-content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -235,7 +233,6 @@ const UAS = () => {
               </div>
             </div>{" "}
             <div className="internship-individual-cards-wrapper card4">
-              
               <div className="internship-individual-card-content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -266,7 +263,6 @@ const UAS = () => {
               </div>
             </div>
             <div className="internship-individual-cards-wrapper card5">
-             
               <div className="internship-individual-card-content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -489,7 +485,7 @@ const UAS = () => {
           className="volunteering-apply-button-wrapper"
           style={{ background: "transparent" }}
         >
-          <a href="" style={{ background: "#FBBA16" }}>
+          <a href="/uaseligibility" style={{ background: "#FBBA16" }}>
             {/* <p>Apply</p> */}
             <p>Apply for UAS</p>
             <svg

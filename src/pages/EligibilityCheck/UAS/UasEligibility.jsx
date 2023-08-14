@@ -1,8 +1,49 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsCheckLg } from "react-icons/bs";
 import "../Eligibility.css";
 
+import logo from "../../../assets/logo.webp";
+import logo_mal from "../../../assets/logo_mal.webp";
+import { BiMenu } from "react-icons/bi";
+import { RxCross1 } from "react-icons/rx";
+import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import { useReactPath } from "../../../components/Navbar/path.hook";
+
 const UasEligibility = (props) => {
+  const { t } = useTranslation(["GoverningBody"]);
+  const [openmenu, setopenmenu] = useState(false);
+  const [navlogo, setnavlogo] = useState(false);
+  function openMenu() {
+    console.log("true");
+    setopenmenu(!openmenu);
+  }
+
+  useEffect(() => {
+    i18next.changeLanguage("en");
+  }, []);
+
+  const path = useReactPath();
+  const navContent = [
+    t("Governing-Body"),
+    t("UAS"),
+    t("internship"),
+    t("volunteering"),
+  ];
+  useEffect(() => {}, [path]);
+  const changenavlogo = () => {
+    window.scrollY >= 250 ? setnavlogo(true) : setnavlogo(false);
+    return navlogo;
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changenavlogo);
+
+    return () => {
+      window.removeEventListener("scroll", changenavlogo);
+    };
+  }, []);
   const [currSection, setCurrSection] = useState(0);
   const [radioData, setRadioData] = useState(Array(3).fill(null));
 
@@ -70,18 +111,107 @@ const UasEligibility = (props) => {
   };
   return (
     <>
+      <div className="navbar-wrapper">
+        <div
+          className="navbar"
+          style={{
+            background: navlogo ? "rgba(1,1,1,0.4)" : "transparent",
+          }}
+        >
+          <div className="navbar-desk">
+            {navContent.slice(0, 2).map((content, i) => (
+              <a href={`/${content}`} key={i.toString() + content}>
+                <p
+                  style={{
+                    borderBottom: window.location.href.includes(`/${content}`)
+                      ? "4px solid #FBBA16"
+                      : "",
+                    textTransform: "capitalize",
+                    padding: "5px 10px 0px",
+                    color: navlogo ? "#fff" : "#000",
+                  }}
+                >
+                  {content}
+                </p>
+              </a>
+            ))}
+            <a href="/home">
+              <img
+                className="nav-logo"
+                style={{ width: navlogo ? "90px" : "100px" }}
+                src={i18next.language === "en" ? logo : logo_mal}
+                alt=""
+              />
+            </a>
+            {navContent.slice(2, 4).map((content, i) => (
+              <a href={`/${content}`} key={i.toString() + content}>
+                <p
+                  style={{
+                    borderBottom: window.location.href.includes(`/${content}`)
+                      ? "4px solid #FBBA16"
+                      : "",
+                    textTransform: "capitalize",
+                    padding: "5px 10px 0px",
+                    color: navlogo ? "#fff" : "#000",
+                  }}
+                >
+                  {content}
+                </p>
+              </a>
+            ))}
+            <LanguageSwitcher />
+          </div>
+
+          <div className="navbar-mob">
+            <a href="/home">
+              <img
+                className="nav-logo"
+                style={{ width: navlogo ? "90px" : "100px" }}
+                src={i18next.language === "en" ? logo : logo_mal}
+                alt=""
+              />
+            </a>
+            <button
+              style={{ backgroundColor: "transparent", border: "none" }}
+              onClick={openMenu}
+            >
+              {openmenu ? (
+                <RxCross1 style={{ color: "black", fontSize: "40px" }} />
+              ) : (
+                <BiMenu style={{ color: "black", fontSize: "40px" }} />
+              )}
+            </button>
+
+            {openmenu && (
+              <div className="menu-div">
+                {navContent.map((content, i) => (
+                  <a href={`/${content}`} key={i.toString() + content}>
+                    <p
+                      style={{
+                        color: window.location.href.includes(`/${content}`)
+                          ? "#FBBA16"
+                          : "",
+                        textTransform: "capitalize",
+                        padding: "5px 10px",
+                        borderRadius: "20px",
+                        color: navlogo ? "#fff" : "#000",
+                      }}
+                    >
+                      {content}
+                    </p>
+                  </a>
+                ))}
+                <LanguageSwitcher />
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
       {(() => {
         if (page === "NotEligible") {
           return (
             <div className="Eligibility NotEligible">
               <div className="containerBody">
-                <div className="containerImage">
-                  <img
-                    src="https://apply.teachforindia.org/assets/img/IneligibleMobile_02.jpg"
-                    alt=""
-                  />
-                </div>
-
                 <div className="contentBox">
                   <b style={{ fontSize: "1.5rem" }}>
                     Unfortunately, it looks like you're not eligible to apply
@@ -141,14 +271,6 @@ const UasEligibility = (props) => {
           return (
             <div className="Eligibility NotEligible">
               <div className="containerBody">
-                <div className="containerImage">
-                  <img
-                    style={{ height: "100%" }}
-                    src="https://apply.teachforindia.org/assets/img/signuppage_image.jpg"
-                    alt=""
-                  />
-                </div>
-
                 <div
                   style={{ justifyContent: "center" }}
                   className="contentBox"
@@ -160,8 +282,14 @@ const UasEligibility = (props) => {
                   </p>
 
                   <div className="btn">
-                    <button>
-                      <a href="https://apply.teachforindia.org/signup">Apply</a>
+                    <button style={{ background: "#FBBA16", color: "white" }}>
+                      <a
+                        target="_blank"
+                        href="https://apply.teachforindia.org/signup"
+                        style={{ color: "white" }}
+                      >
+                        Apply
+                      </a>
                     </button>
                   </div>
                 </div>
@@ -172,10 +300,6 @@ const UasEligibility = (props) => {
           return (
             <div className="Eligibility">
               <div className="containerBody">
-                <div className="containerImage">
-                  <img src={images[currSection]} alt="" />
-                </div>
-
                 <div className="contentBox">
                   <b>
                     Let's check if you're eligible to apply for the 2024 cohort
@@ -235,6 +359,11 @@ const UasEligibility = (props) => {
           );
         }
       })()}
+      <div className="footer-bottom-eligibility">
+        <p style={{ textAlign: "center" }}>
+          Copyright © 2023 All Rights Reserved. Unnathi
+        </p>
+      </div>
     </>
   );
 };
