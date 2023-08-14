@@ -553,7 +553,7 @@ const NGOCollaboration = () => {
           <h1>
             <span>{t("howTo")}</span>&nbsp;{t("submitYourIdeas")}
           </h1>
-          <div className="submitidea-timeline-content-wrapper">
+          {/* <div className="submitidea-timeline-content-wrapper">
             <div>
               <img src={timeline} alt="" />
             </div>
@@ -591,6 +591,126 @@ const NGOCollaboration = () => {
                 </div>{" "}
                 <div>
                   <h2>4</h2>
+                </div>
+              </div>
+            </div>
+          </div> */}
+          <div class="activities">
+            <div class="content">
+              <div class="line-container">
+                <svg
+                  class="desktop"
+                  width="215"
+                  height="1168"
+                  viewBox="0 0 215 1166"
+                  fill="none"
+                  preserveAspectRatio="xMidYMax meet"
+                >
+                  <path
+                    class="activities-path"
+                    d="M106.5 4.5C-112.5 134 80.4998 273.667 156 340.5C261.5 456 130 565.5 42.5 633C-59 750 80.5 853.5 156 917.5C259.5 1005.24 156 1108 106.5 1162"
+                    stroke="#888888"
+                    stroke-width="2"
+                    strokeLinecap="round"
+                    style={{
+                      strokeDasharray: "1437",
+                      strokeDashoffset: "-107.059",
+                    }}
+                  ></path>
+                  <circle
+                    class="circle1"
+                    cx="6"
+                    cy="132"
+                    r="10"
+                    fill="#FBBA16"
+                    style={{ opacity: 1 }}
+                  ></circle>
+                  <circle
+                    class="circle2"
+                    cx="195"
+                    cy="422"
+                    r="10"
+                    fill="#FBBA16"
+                    style={{ opacity: "1" }}
+                  ></circle>
+                  <circle
+                    class="circle3"
+                    cx="8"
+                    cy="708"
+                    r="10"
+                    fill="#FBBA16"
+                    style={{ opacity: "1" }}
+                  ></circle>
+                  <circle
+                    class="circle4"
+                    cx="200"
+                    cy="1006"
+                    r="10"
+                    fill="#FBBA16"
+                    style={{ opacity: "1" }}
+                  ></circle>
+                </svg>
+              </div>
+              <div class="activities-container desktop">
+                <div class="left">
+                  <div class="activity-none"></div>
+                  <div class="activity activity2" style={{ opacity: "1" }}>
+                    <p class="date">2</p>
+
+                    <span class="description">{t("step2")}</span>
+                  </div>
+                  <div class="activity-none"></div>
+                  <div class="activity activity4" style={{ opacity: "1" }}>
+                    <p class="date">4</p>
+
+                    <span class="description">{t("step4")}</span>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="activity activity1" style={{ opacity: "1" }}>
+                    <p class="date">1</p>
+
+                    <span class="description">{t("step1")}</span>
+                  </div>
+                  <div class="activity-none"></div>
+                  <div class="activity activity3" style={{ opacity: "1" }}>
+                    <p class="date">3</p>
+
+                    <span class="description">{t("step3")}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="activities-container mobile">
+                <div class="content-in-timeline-sets">
+                  <h3>1</h3>
+                  <p>{t("step1")}</p>
+                </div>
+                <div class="bubble-line-bubble">
+                  <div class="bubble"></div>
+                  <div class="bubble-line"></div>
+                  <div class="bubble"></div>
+                </div>
+                <div class="content-in-timeline-sets">
+                  <h3>2</h3>
+                  <p>{t("step2")}</p>
+                </div>
+                <div class="bubble-line-bubble">
+                  <div class="bubble"></div>
+                  <div class="bubble-line"></div>
+                  <div class="bubble"></div>
+                </div>
+                <div class="content-in-timeline-sets">
+                  <h3>3</h3>
+                  <p>{t("step3")}</p>
+                </div>
+                <div class="bubble-line-bubble">
+                  <div class="bubble"></div>
+                  <div class="bubble-line"></div>
+                  <div class="bubble"></div>
+                </div>
+                <div class="content-in-timeline-sets">
+                  <h3>4</h3>
+                  <p>{t("step4")}</p>
                 </div>
               </div>
             </div>

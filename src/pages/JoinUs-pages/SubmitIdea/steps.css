@@ -1,0 +1,144 @@
+.activities {
+  --wave-length: 290px;
+  height: auto;
+  margin: 0px;
+  min-height: 100vh;
+  width: calc(100%);
+  margin-bottom: 60px;
+}
+
+.activities .content {
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+.activities .content .line-container {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.activities .content svg {
+  overflow: visible;
+}
+
+.activities .content svg.mobile {
+  display: none;
+}
+
+.activities .content .activities-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: auto;
+  width: 100%;
+}
+
+.activities .content .activities-container .left {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.activities .content .activity {
+  display: flex;
+  flex-direction: column;
+  height: 290px;
+  justify-content: center;
+  opacity: 0;
+  position: relative;
+  transition: all 0.5s ease;
+  width: 35vw;
+}
+
+.activities .content .activities-container .activity-none {
+  height: 290px;
+}
+
+.activities .content .activity {
+  width: 300px;
+}
+
+.activities .content .activities-container .left .activity span {
+  text-align: right;
+}
+
+.activities .content .activity p.date {
+  color: #ffd56c;
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: -5px;
+}
+.content-in-timeline-sets h3 {
+  color: #ffd56c;
+  font-weight: 900;
+  font-size: 40px;
+  margin-top: 10px;
+}
+.activities .content .activity span {
+  display: block;
+}
+
+.activities .content .activities-container .left .activity span.description {
+  text-align: right !important;
+}
+
+.activities .content .activities-container .left .activity span {
+  text-align: right;
+}
+.activities .content .activity2,
+.activities .content .activity4 {
+  display: flex;
+  align-items: end;
+}
+.activities .content .activity span.description {
+  color: #000000;
+  font-size: 17px;
+  text-align: left;
+}
+
+.activities .content .mobile {
+  display: none;
+}
+
+.activities .content .mobile .bubble-line-bubble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  
+}
+
+.activities .content .mobile .bubble-line-bubble .bubble {
+  width: 15px;
+  height: 15px;
+  background-color: #FBBA16;
+  border-radius: 50%;
+}
+.activities .content .mobile .bubble-line-bubble .bubble-line {
+  width: 2px;
+  height: 45px;
+  background-color: #888888;
+}
+
+@media screen and (max-width: 650px) {
+  .activities .content svg {
+    display: none;
+  }
+
+  .activities .content .desktop {
+    display: none;
+  }
+
+  .activities .content .mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .activities .content .mobile div {
+    max-width: 350px;
+  }
+}
