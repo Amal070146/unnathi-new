@@ -563,9 +563,9 @@ const UAS = () => {
         {/* apply */}
         <div className="volunteering-apply-button-wrapper" style={{background:"transparent"}}>
          
-          <a href="">
-            {/* <p>Apply</p> */}
-            <p>Coming Soon</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8EqIHmztbsmG_ch8vJD4rcbmVKsM82i2UcLfzzDJB_r11oQ/viewform?usp=pp_url">
+            <p>Apply</p>
+{/*             <p>Coming Soon</p> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
