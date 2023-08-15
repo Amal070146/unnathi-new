@@ -61,11 +61,7 @@ const UasEligibility = (props) => {
     "https://apply.teachforindia.org/assets/img/MaskgroupMobile_2_2.png",
   ];
   const radioValue = [
-    [
-      "I’m a professional",
-      "I’m a post graduate",
-      "I’m an entrepreneur",
-    ],
+    ["I’m a professional", "I’m a post graduate", "I’m an entrepreneur"],
     [
       "Indian citizen",
       "Overseas Citizen of India (OCI)",
@@ -92,12 +88,7 @@ const UasEligibility = (props) => {
 
       if (currSection === 2) {
         //At last seciton
-        if (
-          radioData[0] === radioValue[0][2] ||
-          radioData[1] === radioValue[1][2] ||
-          radioData[2] === radioValue[2][1] ||
-          radioData.includes(null)
-        ) {
+        if (radioData[1] === radioValue[1][2] || radioData.includes(null)) {
           //Not Eligible
           setPage("NotEligible");
           setCurrSection(0);
@@ -222,7 +213,10 @@ const UasEligibility = (props) => {
                     the criteria for the Unnathi UAS, that is,
                   </p>
                   <ol>
-                    <li>Must graduate before June/July 2024</li>
+                    <li>
+                      Must be a professional or an entrepreneur with substantial
+                      experience.{" "}
+                    </li>
                     <li>
                       Must be a citizen of India or Overseas Citizen of India
                     </li>
@@ -242,7 +236,7 @@ const UasEligibility = (props) => {
                   <p>
                     If you have already applied before since July 2023 or will
                     not graduate before June/July 2024, you can visit{" "}
-                    <a href="http://www.teachforindia.org/">our website</a> to
+                    <a href="http://www.unnathikerala.org/">our website</a> to
                     explore other internship or volunteering opportunities with
                     us.
                   </p>
