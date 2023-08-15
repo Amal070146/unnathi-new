@@ -51,7 +51,7 @@ const UasEligibility = (props) => {
 
   const sectionCount = 3; //following list should be of this size
   const questions = [
-    "What is your current qualification?",
+    "How do you describe yourself? ",
     "What is your current citizenship status?",
     "Is this the first time you are applying to the Unnathi UAS, since July 2023?",
   ];
