@@ -9,15 +9,15 @@ import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitc
 
 const Volunteering = () => {
   const { t } = useTranslation(["Volunteering"]);
-  // useEffect(() => {
-  //   i18next.changeLanguage("en");
-  // }, []);
+  useEffect(() => {
+    i18next.changeLanguage("en");
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="home-language-switcher">
+      {/* <div className="home-language-switcher">
         <LanguageSwitcher />
-      </div>
+      </div> */}
       <div className="volunteering-wrapper">
         <div className="volunteering-header-sect">
           <h1>{t("volunteering")}</h1>
@@ -312,7 +312,7 @@ const Volunteering = () => {
             {t("aHeart")}
             {t("volunteerWithUnnathi")}
           </p>
-          <a rel="noreferrer" href="/volunteeringeligibility">
+          <a rel="noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSd5FgrM2Z72F0blVXNgx0Q1zNlR24_b0C7G4J5qAiOy7n_XUA/viewform">
             <p>Apply for volunteering</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"

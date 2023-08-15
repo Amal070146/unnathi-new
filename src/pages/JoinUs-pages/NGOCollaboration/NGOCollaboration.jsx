@@ -10,15 +10,15 @@ import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 const NGOCollaboration = () => {
   const { t } = useTranslation(["NGOCollaboration"]);
-  // useEffect(() => {
-  //   i18next.changeLanguage("en");
-  // }, []);
+  useEffect(() => {
+    i18next.changeLanguage("en");
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="home-language-switcher">
+      {/* <div className="home-language-switcher">
         <LanguageSwitcher />
-      </div>
+      </div> */}
       <div className="ngocollaboration-wrapper">
         <div className="volunteering-header-sect ngocollobaration-header-sect">
           <h1> {t("collaboration")}</h1>

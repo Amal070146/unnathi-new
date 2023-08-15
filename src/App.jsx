@@ -8,10 +8,10 @@ import Internship from "./pages/JoinUs-pages/Internship/Internships";
 import SubmitIdea from "./pages/JoinUs-pages/SubmitIdea/SubmitIdea";
 import NGOCollaboration from "./pages/JoinUs-pages/NGOCollaboration/NGOCollaboration";
 import i18next from "i18next";
-import Enterprenuership from './pages/JoinUs-pages/Enterprenuership/Enterprenuership'
+import Enterprenuership from "./pages/JoinUs-pages/Enterprenuership/Enterprenuership";
 import ProjectsFund from "./pages/JoinUs-pages/ProjectFunds/ProjectsFund";
 import UAS from "./pages/JoinUs-pages/UAS/UAS";
-import GoverningBody from './pages/NavbarPages/GoverningBody/GoverningBody'
+import GoverningBody from "./pages/NavbarPages/GoverningBody/GoverningBody";
 import Error404 from "./pages/ErrorPAges/404error";
 import VolunteeringEligibility from "./pages/EligibilityCheck/Volunteering/VolunteeringEligibility";
 import InternshipEligibility from "./pages/EligibilityCheck/Internship/InternshipEligibilty";
@@ -98,18 +98,18 @@ function App() {
       path: "/ഭരണസമിതി",
       element: <GoverningBody />,
     },
-    {
-      path: "/volunteeringeligibility",
-      element: <VolunteeringEligibility />,
-    },
-    {
-      path: "/uaseligibility",
-      element: <UasEligibility />,
-    },
-    {
-      path: "/internshipeligibility",
-      element: <InternshipEligibility />,
-    },
+    // {
+    //   path: "/volunteeringeligibility",
+    //   element: <VolunteeringEligibility />,
+    // },
+    // {
+    //   path: "/uaseligibility",
+    //   element: <UasEligibility />,
+    // },
+    // {
+    //   path: "/internshipeligibility",
+    //   element: <InternshipEligibility />,
+    // },
   ]);
   return <RouterProvider router={router} />;
 }

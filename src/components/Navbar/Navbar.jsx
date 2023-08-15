@@ -29,7 +29,7 @@ const Navbar = () => {
     t("governingBody"),
     t("UAS"),
     t("internship"),
-    t("volunteering")
+    t("volunteering"),
   ];
 
   useEffect(() => {}, [path]);
@@ -134,7 +134,8 @@ const Navbar = () => {
                   </p>
                 </a>
               ))}
-              <LanguageSwitcher />
+              {(window.location.pathname === "/home" ||
+                window.location.pathname === "/") && <LanguageSwitcher />}
             </div>
           )}
         </div>

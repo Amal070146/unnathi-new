@@ -109,7 +109,7 @@ const GoverningBody = () => {
                 </p>
               </a>
             ))}
-            <LanguageSwitcher />
+            {/* <LanguageSwitcher /> */}
           </div>
 
           <div className="navbar-mob">
@@ -151,7 +151,7 @@ const GoverningBody = () => {
                     </p>
                   </a>
                 ))}
-                <LanguageSwitcher />
+                {/* <LanguageSwitcher /> */}
               </div>
             )}
           </div>

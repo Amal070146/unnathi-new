@@ -9,15 +9,15 @@ import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitc
 
 const UAS = () => {
   const { t } = useTranslation(["UAS"]);
-  // useEffect(() => {
-  //   i18next.changeLanguage("en");
-  // }, []);
+  useEffect(() => {
+    i18next.changeLanguage("en");
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="home-language-switcher">
+      {/* <div className="home-language-switcher">
         <LanguageSwitcher />
-      </div>
+      </div> */}
       <div className="uas-wrapper">
         <div className="volunteering-header-sect uas-header-sect">
           <h1> {t("uas")}</h1>

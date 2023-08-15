@@ -8,15 +8,15 @@ import i18next from "i18next";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 const Internship = () => {
   const { t } = useTranslation(["Internship"]);
-  // useEffect(() => {
-  //   i18next.changeLanguage("en");
-  // }, []);
+  useEffect(() => {
+    i18next.changeLanguage("en");
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="home-language-switcher">
+      {/* <div className="home-language-switcher">
         <LanguageSwitcher />
-      </div>
+      </div> */}
       <div className="internship-wrapper">
         <div className="volunteering-header-sect internship-header-sect">
           <h1>{t("internships")}</h1>
@@ -411,10 +411,10 @@ const Internship = () => {
           <a
             rel="noreferrer"
           
-            href="/internshipeligibility"
+            href="https://forms.gle/GV56Vb5D7qP6ZhcR6"
             style={{ background: "#FBBA16", color: "white" }}
           >
-            <p>Apply for internship</p>
+            <p>Apply for Internship</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="29"
