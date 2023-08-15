@@ -52,8 +52,8 @@ const UasEligibility = (props) => {
   const sectionCount = 3; //following list should be of this size
   const questions = [
     "How do you describe yourself? ",
-    "What is your current citizenship status?",
-    "Is this the first time you are applying to the Unnathi UAS, since July 2023?",
+    "Why do you think Unnathi should engage you in such a crucial position? ",
+    "What is the level of time and dedication that can be expected from you for Unnathi?",
   ];
   const images = [
     "https://apply.teachforindia.org/assets/img/MaskgroupMobile_2_0.png",
@@ -61,17 +61,17 @@ const UasEligibility = (props) => {
     "https://apply.teachforindia.org/assets/img/MaskgroupMobile_2_2.png",
   ];
   const radioValue = [
+    ["I’m a professional", "I’m a post graduate", "I’m an entrepreneur"],
     [
-      "I’m a senior professional with substantial experience of leading teams and building organisations. My domain knowledge is exceptional. ",
-      "I’m a passionate leader with exceptional drive, dedication and proven track-record of excellence. My technical knowledge is world-class. ",
-      "I’m an entrepreneur and good at executing idea and building teams. I’m good at conceiving and rolling out new projects.",
+      "I’m on a sabbatical and I wish to utilise my exceptional skills to contribute to the society through Unnathi. My experience and domain knowledge will benefit Unnathi. ",
+      "I’m highly motivated and usual work does not challenge me commensurate to my ability. I wish to take up challenging and meaningful assignments that benefit the society through Unnathi. ",
+      "I wish to understand and participate in the governance process. Hands-on exposure in the social sector of this magnitude is unheard of and I see it as a major educative assignment.",
     ],
     [
-      "Indian citizen",
-      "Overseas Citizen of India (OCI)",
-      "Not an Indian citizen",
+      "One year of dedicated on-site engagement in Unnathi HQ . Timely delivery of results. Passion towards the cause and speed of execution is my strength.",
+      "One year of off-site/remote engagement. Timely delivery of results. Exceptional passion towards the cause and speed of execution compensates for physical absence. I rely on technology big time.",
+      "One year of hybrid engagement and timely delivery of results. Passion towards the cause and speedy execution using technology compensates for my physical absence. I am speed!",
     ],
-    ["Yes, it's my first application", "No, I've applied since July 2023"],
   ];
 
   const handleRadioClick = (e) => {
@@ -92,7 +92,7 @@ const UasEligibility = (props) => {
 
       if (currSection === 2) {
         //At last seciton
-        if (radioData[1] === radioValue[1][2] || radioData.includes(null)) {
+        if (radioData.includes(null)) {
           //Not Eligible
           setPage("NotEligible");
           setCurrSection(0);
@@ -214,21 +214,10 @@ const UasEligibility = (props) => {
                   </b>
                   <p>
                     We wish you could join us, but it looks like you don't meet
-                    the criteria for the Unnathi UAS, that is,
+                    the criteria for the Unnathi UAS, make sure you have filled
+                    all the details correctly.
                   </p>
-                  <ol>
-                    <li>
-                      Must be a professional or an entrepreneur with substantial
-                      experience.{" "}
-                    </li>
-                    <li>
-                      Must be a citizen of India or Overseas Citizen of India
-                    </li>
-                    <li>
-                      Only one application is allowed per person per cohort
-                      year, that is, since July 2023
-                    </li>
-                  </ol>
+                  <ol></ol>
                   {/* <p>
                     If you're not eligible to work in India, you can apply to a{" "}
                     <a href="https://teachforall.org/teach-your-country">
@@ -237,13 +226,7 @@ const UasEligibility = (props) => {
                     .
                   </p> */}
                   <br />
-                  <p>
-                    If you have already applied before since July 2023 or will
-                    not graduate before June/July 2024, you can visit{" "}
-                    <a href="http://www.unnathikerala.org/">our website</a> to
-                    explore other internship or volunteering opportunities with
-                    us.
-                  </p>
+
                   <br />
                   <p>
                     If you actually fit all the criteria, answer the
@@ -274,7 +257,7 @@ const UasEligibility = (props) => {
                 >
                   <b style={{ fontSize: "1.5rem" }}>You are eligible !</b>
                   <p>
-                    You satisfy all our criterias and are eligible to apply.
+                    You satisfy all our criteria and are eligible to apply.
                     Click on the button below to proceed.
                   </p>
 
