@@ -98,14 +98,14 @@ function App() {
       path: "/ഭരണസമിതി",
       element: <GoverningBody />,
     },
-    // {
+    //{
     //   path: "/volunteeringeligibility",
     //   element: <VolunteeringEligibility />,
     // },
-    // {
-    //   path: "/uaseligibility",
-    //   element: <UasEligibility />,
-    // },
+    {
+      path: "/uaseligibility",
+      element: <UasEligibility />,
+    },
     // {
     //   path: "/internshipeligibility",
     //   element: <InternshipEligibility />,

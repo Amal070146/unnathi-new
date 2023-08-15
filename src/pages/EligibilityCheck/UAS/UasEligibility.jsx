@@ -285,7 +285,7 @@ const UasEligibility = (props) => {
                     <a
                       className="applybutton"
                       target="_blank"
-                      href="https://apply.teachforindia.org/signup"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSd8EqIHmztbsmG_ch8vJD4rcbmVKsM82i2UcLfzzDJB_r11oQ/viewform?usp=pp_url"
                       style={{ background: "#FBBA16", color: "white" }}
                     >
                       <a style={{ color: "white" }}>Apply</a>
