@@ -53,7 +53,7 @@ const InternshipEligibility = (props) => {
   const questions = [
     "What is your current qualification?",
     "What is your current citizenship status?",
-    "Is this the first time you are applying to the 2024 cohort of the Teach For India Fellowship, since July 2023?",
+    "Is this the first time you are applying to the UAS, since July 2023?",
   ];
   const images = [
     "https://apply.teachforindia.org/assets/img/MaskgroupMobile_2_0.png",
@@ -219,8 +219,7 @@ const InternshipEligibility = (props) => {
                   </b>
                   <p>
                     We wish you could join us, but it looks like you don't meet
-                    the criteria for the 2024 cohort of the Teach for India
-                    Fellowship, that is,
+                    the criteria for the 2024 cohort of the Unnathi UAS, that is,
                   </p>
                   <ol>
                     <li>Must graduate before June/July 2024</li>
@@ -232,13 +231,13 @@ const InternshipEligibility = (props) => {
                       year, that is, since July 2023
                     </li>
                   </ol>
-                  <p>
+                  {/* <p>
                     If you're not eligible to work in India, you can apply to a{" "}
                     <a href="https://teachforall.org/teach-your-country">
                       Teach For All Fellowship in a different country
                     </a>
                     .
-                  </p>
+                  </p> */}
                   <br />
                   <p>
                     If you have already applied before since July 2023 or will

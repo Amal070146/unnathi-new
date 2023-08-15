@@ -53,7 +53,7 @@ const VolunteeringEligibility = (props) => {
   const questions = [
     "What is your current qualification?",
     "What is your current citizenship status?",
-    "Is this the first time you are applying to the 2024 cohort of the Teach For India Fellowship, since July 2023?",
+    "Is this the first time you are applying to the Unnathi UAS, since July 2023?",
   ];
   const images = [
     "https://apply.teachforindia.org/assets/img/MaskgroupMobile_2_0.png",
@@ -232,13 +232,13 @@ const VolunteeringEligibility = (props) => {
                       year, that is, since July 2023
                     </li>
                   </ol>
-                  <p>
+                  {/* <p>
                     If you're not eligible to work in India, you can apply to a{" "}
                     <a href="https://teachforall.org/teach-your-country">
                       Teach For All Fellowship in a different country
                     </a>
                     .
-                  </p>
+                  </p> */}
                   <br />
                   <p>
                     If you have already applied before since July 2023 or will
