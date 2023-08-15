@@ -189,7 +189,7 @@ const GoverningBody = () => {
           </div>{" "}
           <div className="governingcontent-individual-wrapper">
             <img src={img4} alt="img" loading="lazy" />
-            <h3>{t("member")}r</h3>
+            <h3>{t("member")}</h3>
             <h2>{t("gopalakrishnan")}</h2>
             <p>{t("gopalakrishnanRole")}</p>
           </div>{" "}
