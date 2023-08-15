@@ -135,7 +135,8 @@ const Navbar = () => {
                   </p>
                 </a>
               ))}
-              <LanguageSwitcher />
+            {(window.location.pathname === "/home" ||
+                window.location.pathname === "/") && <LanguageSwitcher />}
             </div>
           )}
         </div>
