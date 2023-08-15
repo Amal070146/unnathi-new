@@ -62,9 +62,9 @@ const UasEligibility = (props) => {
   ];
   const radioValue = [
     [
-      "I'm a graduate",
-      "I will graduate by July 2024",
-      "I will not graduate by July 2024",
+      "I’m a professional",
+      "I’m a post graduate",
+      "I’m an entrepreneur",
     ],
     [
       "Indian citizen",
