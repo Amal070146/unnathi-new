@@ -312,7 +312,7 @@ const Volunteering = () => {
             {t("aHeart")}
             {t("volunteerWithUnnathi")}
           </p>
-          <a rel="noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSd5FgrM2Z72F0blVXNgx0Q1zNlR24_b0C7G4J5qAiOy7n_XUA/viewform">
+          <a rel="noreferrer" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd5FgrM2Z72F0blVXNgx0Q1zNlR24_b0C7G4J5qAiOy7n_XUA/viewform">
             <p>Apply for volunteering</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"

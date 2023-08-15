@@ -63,9 +63,9 @@ const UasEligibility = (props) => {
   const radioValue = [
     ["I’m a professional", "I’m a post graduate", "I’m an entrepreneur"],
     [
-      "I’m on a sabbatical and I wish to utilise my exceptional skills to contribute to the society through Unnathi. My experience and domain knowledge will benefit Unnathi. ",
-      "I’m highly motivated and usual work does not challenge me commensurate to my ability. I wish to take up challenging and meaningful assignments that benefit the society through Unnathi. ",
-      "I wish to understand and participate in the governance process. Hands-on exposure in the social sector of this magnitude is unheard of and I see it as a major educative assignment.",
+      "I’m a senior professional with substantial experience of leading teams and building organisations. My domain knowledge is exceptional. ",
+      "I’m a passionate leader with exceptional drive, dedication and proven track-record of excellence. My technical knowledge is world-class. ",
+      "I’m an entrepreneur and good at executing idea and building teams. I’m good at conceiving and rolling out new projects.",
     ],
     [
       "One year of dedicated on-site engagement in Unnathi HQ . Timely delivery of results. Passion towards the cause and speed of execution is my strength.",

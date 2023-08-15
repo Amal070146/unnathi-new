@@ -410,7 +410,7 @@ const Internship = () => {
           </p>
           <a
             rel="noreferrer"
-          
+            target="_blank"
             href="https://forms.gle/GV56Vb5D7qP6ZhcR6"
             style={{ background: "#FBBA16", color: "white" }}
           >
