@@ -159,7 +159,7 @@ const UasEligibility = (props) => {
                 </p>
               </a>
             ))}
-            <LanguageSwitcher />
+            {/* <LanguageSwitcher /> */}
           </div>
 
           <div className="navbar-mob">
@@ -201,7 +201,7 @@ const UasEligibility = (props) => {
                     </p>
                   </a>
                 ))}
-                <LanguageSwitcher />
+                {/* <LanguageSwitcher /> */}
               </div>
             )}
           </div>
@@ -300,8 +300,7 @@ const UasEligibility = (props) => {
               <div className="containerBody">
                 <div className="contentBox">
                   <b>
-                    Let's check if you're eligible to apply for the 2024 cohort
-                    of the Fellowship.
+                    Let's check if you're eligible to apply for the Unnathi UAS.
                   </b>
                   <div className="steps">
                     <span className="line"></span>
