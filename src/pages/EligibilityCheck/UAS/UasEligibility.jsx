@@ -61,7 +61,11 @@ const UasEligibility = (props) => {
     "https://apply.teachforindia.org/assets/img/MaskgroupMobile_2_2.png",
   ];
   const radioValue = [
-    ["I’m a professional", "I’m a post graduate", "I’m an entrepreneur"],
+    [
+      "I’m a senior professional with substantial experience of leading teams and building organisations. My domain knowledge is exceptional. ",
+      "I’m a passionate leader with exceptional drive, dedication and proven track-record of excellence. My technical knowledge is world-class. ",
+      "I’m an entrepreneur and good at executing idea and building teams. I’m good at conceiving and rolling out new projects.",
+    ],
     [
       "Indian citizen",
       "Overseas Citizen of India (OCI)",
