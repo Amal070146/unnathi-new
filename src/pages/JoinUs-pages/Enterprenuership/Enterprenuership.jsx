@@ -578,9 +578,8 @@ const Enterprenuership = () => {
           <div className="internship-yellow-banner-content-wrapper">
             <h1>{t("embarkUnnathi")}</h1>
             <p>{t("embarkUnnathiText")}</p>
-            <a href="">
-              {/* <p>Apply for the Entrepreneurship Support Programme</p> */}
-              <p>Coming Soon</p>
+            <a target="_blank" rel="noreferrer noopener" href="https://bit.ly/ksumstartupcity">
+               <p>Apply for the Entrepreneurship Support Programme</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
