@@ -99,7 +99,7 @@ const NGO = () => {
           {t("canFund")}
         </p>
       </a>
-      <a href="/enterprenuership">
+      <a href="/entrepreneurship">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="69"
