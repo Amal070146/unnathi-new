@@ -6,7 +6,9 @@ import "./UAS.css";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 const UAS = () => {
   const { t } = useTranslation(["UAS"]);
   useEffect(() => {
@@ -45,7 +47,11 @@ const UAS = () => {
           </div>
         </div>
         {/* card section starts*/}
-        <div className="internship-page-card-wrapper" id="about-internship">
+        <div
+          className="internship-page-card-wrapper"
+          data-aos="fade-right"
+          id="about-internship"
+        >
           <h1>
             <span> {t("why")}</span>&nbsp;{t("uas")}?
           </h1>
@@ -421,7 +427,7 @@ const UAS = () => {
           </div>
         </div>
         {/* card section ends*/}
-        <div className="uas-description-for-eligibility">
+        <div className="uas-description-for-eligibility" data-aos="fade-right">
           <h1>
             <span className=""> {t("who")}</span>&nbsp;{t("areWeLookingFor")}
           </h1>
@@ -455,7 +461,7 @@ const UAS = () => {
 
         {/* eligibility */}
         <div className="volunteering-eligibility-selection">
-          <div>
+          <div data-aos="fade-right">
             <h1>
               <span> {t("eligibility")} </span>&nbsp; {t("criteria")}
             </h1>
@@ -470,7 +476,7 @@ const UAS = () => {
               </div>{" "}
             </div>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <h1>
               <span> {t("selection")}</span>&nbsp; {t("process")}
             </h1>
@@ -483,10 +489,11 @@ const UAS = () => {
         {/* apply */}
         <div
           className="volunteering-apply-button-wrapper"
+          data-aos="fade-right"
           style={{ background: "transparent" }}
         >
           <a href="/uaseligibility" style={{ background: "#FBBA16" }}>
-            <p>Apply</p>
+            <p style={{ color: "white" }}>Apply</p>
             {/* <p>Coming Soon</p> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"

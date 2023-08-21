@@ -535,7 +535,7 @@ const Entrepreneurship = () => {
                 <div class="right">
                   <div
                     class="activity activity1"
-                    data-aos="fade-right"
+                    data-aos="fade-left"
                     style={{ opacity: "1" }}
                   >
                     <p class="date">1</p>
@@ -545,7 +545,7 @@ const Entrepreneurship = () => {
                   <div class="activity-none"></div>
                   <div
                     class="activity activity3"
-                    data-aos="fade-right"
+                    data-aos="fade-left"
                     style={{ opacity: "1" }}
                   >
                     <p class="date">3</p>
