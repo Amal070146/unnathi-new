@@ -8,6 +8,9 @@ import Footer from "../../../components/Footer/Footer";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 const NGOCollaboration = () => {
   const { t } = useTranslation(["NGOCollaboration"]);
   useEffect(() => {
@@ -56,6 +59,7 @@ const NGOCollaboration = () => {
         <div
           className="internship-page-card-wrapper"
           id="about-ngocollaboration"
+          data-aos="fade-right"
         >
           <h1>
             <span>{t("whyCollaborate")}</span>&nbsp;{t("withUnnathi")}
@@ -504,7 +508,7 @@ const NGOCollaboration = () => {
         </div>
         {/* card section ends*/}
         {/* guidelines start */}
-        <div className="submitidea-guidelines-wrapper">
+        <div className="submitidea-guidelines-wrapper" data-aos="fade-right">
           <h1>
             <span>{t("guidelines")}</span>&nbsp;
             {t("forSubmission")}
@@ -648,26 +652,42 @@ const NGOCollaboration = () => {
               <div class="activities-container desktop">
                 <div class="left">
                   <div class="activity-none"></div>
-                  <div class="activity activity2" style={{ opacity: "1" }}>
+                  <div
+                    class="activity activity2"
+                    data-aos="fade-right"
+                    style={{ opacity: "1" }}
+                  >
                     <p class="date">2</p>
 
                     <span class="description">{t("step2")}</span>
                   </div>
                   <div class="activity-none"></div>
-                  <div class="activity activity4" style={{ opacity: "1" }}>
+                  <div
+                    class="activity activity4"
+                    data-aos="fade-right"
+                    style={{ opacity: "1" }}
+                  >
                     <p class="date">4</p>
 
                     <span class="description">{t("step4")}</span>
                   </div>
                 </div>
                 <div class="right">
-                  <div class="activity activity1" style={{ opacity: "1" }}>
+                  <div
+                    class="activity activity1"
+                    data-aos="fade-right"
+                    style={{ opacity: "1" }}
+                  >
                     <p class="date">1</p>
 
                     <span class="description">{t("step1")}</span>
                   </div>
                   <div class="activity-none"></div>
-                  <div class="activity activity3" style={{ opacity: "1" }}>
+                  <div
+                    class="activity activity3"
+                    data-aos="fade-right"
+                    style={{ opacity: "1" }}
+                  >
                     <p class="date">3</p>
 
                     <span class="description">{t("step3")}</span>
@@ -675,7 +695,7 @@ const NGOCollaboration = () => {
                 </div>
               </div>
               <div class="activities-container mobile">
-                <div class="content-in-timeline-sets">
+                <div class="content-in-timeline-sets" data-aos="fade-right">
                   <h3>1</h3>
                   <p>{t("step1")}</p>
                 </div>
@@ -684,7 +704,7 @@ const NGOCollaboration = () => {
                   <div class="bubble-line"></div>
                   <div class="bubble"></div>
                 </div>
-                <div class="content-in-timeline-sets">
+                <div class="content-in-timeline-sets" data-aos="fade-right">
                   <h3>2</h3>
                   <p>{t("step2")}</p>
                 </div>
@@ -693,7 +713,7 @@ const NGOCollaboration = () => {
                   <div class="bubble-line"></div>
                   <div class="bubble"></div>
                 </div>
-                <div class="content-in-timeline-sets">
+                <div class="content-in-timeline-sets" data-aos="fade-right">
                   <h3>3</h3>
                   <p>{t("step3")}</p>
                 </div>
@@ -702,7 +722,7 @@ const NGOCollaboration = () => {
                   <div class="bubble-line"></div>
                   <div class="bubble"></div>
                 </div>
-                <div class="content-in-timeline-sets">
+                <div class="content-in-timeline-sets" data-aos="fade-right">
                   <h3>4</h3>
                   <p>{t("step4")}</p>
                 </div>
@@ -714,7 +734,7 @@ const NGOCollaboration = () => {
         {/*  timeline end */}
 
         {/* yellow banner start */}
-        <div className="internship-yellow-banner-wrapper">
+        <div className="internship-yellow-banner-wrapper" data-aos="fade-right">
           <div className="internship-yellow-banner-content-wrapper">
             <h1>
               {/* <span>{t("together")}</span>{t("weCanAchieveMonumentalChange")} */}
