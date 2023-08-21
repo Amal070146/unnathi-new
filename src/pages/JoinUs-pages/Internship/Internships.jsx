@@ -5,7 +5,11 @@ import Navbar from "../../../components/Navbar/Navbar";
 import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
+
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 const Internship = () => {
   const { t } = useTranslation(["Internship"]);
   useEffect(() => {
@@ -51,7 +55,11 @@ const Internship = () => {
           <p>{t("dddText")}</p>
         </div>
         {/* card section starts*/}
-        <div className="internship-page-card-wrapper" id="about-internship">
+        <div
+          className="internship-page-card-wrapper"
+          id="about-internship"
+          data-aos="fade-right"
+        >
           <h1>
             <span> {t("whyChoose")}</span>&nbsp;{t("unnathiInternship")}
           </h1>
@@ -306,7 +314,10 @@ const Internship = () => {
         </div>
         {/* card section ends*/}
 
-        <div className="internship-numbered-descriptions-wrapper">
+        <div
+          className="internship-numbered-descriptions-wrapper"
+          data-aos="fade-right"
+        >
           <h1>
             <span>{t("who")}</span>&nbsp;{t("lookingFor")}
           </h1>
@@ -336,7 +347,7 @@ const Internship = () => {
         </div>
 
         {/* yellow banner start */}
-        <div className="internship-yellow-banner-wrapper">
+        <div className="internship-yellow-banner-wrapper" data-aos="fade-right">
           <div className="internship-yellow-banner-content-wrapper">
             <h1 style={{ flexDirection: "row" }}>
               {t("theUnnathi")} <span>{t("promise")}</span>
@@ -350,7 +361,7 @@ const Internship = () => {
         {/* yellow banner ends */}
         {/* eligibility criteria */}
         <div className="volunteering-eligibility-selection">
-          <div>
+          <div data-aos="fade-right">
             <h1>
               <span>{t("eligibility")}</span>&nbsp;{t("criteria")}
             </h1>
@@ -373,7 +384,7 @@ const Internship = () => {
               </div>{" "}
             </div>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <h1>
               <span>{t("selection")}</span>&nbsp;{t("process")}
             </h1>
@@ -388,6 +399,7 @@ const Internship = () => {
         {/* apply */}
         <div
           className="volunteering-apply-button-wrapper"
+          data-aos="fade-right"
           style={{ background: "transparent", color: "black" }}
         >
           <p>
