@@ -6,7 +6,9 @@ import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 const Volunteering = () => {
   const { t } = useTranslation(["Volunteering"]);
   useEffect(() => {
@@ -37,7 +39,11 @@ const Volunteering = () => {
           <p>{t("differentText")}</p>
         </div>
 
-        <div id="about-volunteering" className="about-volunteering">
+        <div
+          id="about-volunteering"
+          data-aos="fade-right"
+          className="about-volunteering"
+        >
           <div className="about-volunteering-heading">
             <h1>
               <span>{t("whyVolunteer")}</span>&nbsp;{t("withUnnathi")}
@@ -267,7 +273,7 @@ const Volunteering = () => {
         </div>
 
         <div className="volunteering-eligibility-selection">
-          <div>
+          <div data-aos="fade-right">
             <h1>
               <span>{t("eligibility")}</span>&nbsp;{t("criteria")}
             </h1>
@@ -294,7 +300,7 @@ const Volunteering = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <h1>
               <span>{t("selection")}</span>&nbsp;{t("process")}
             </h1>
@@ -305,14 +311,21 @@ const Volunteering = () => {
         </div>
 
         {/* apply */}
-        <div className="volunteering-apply-button-wrapper">
+        <div
+          className="volunteering-apply-button-wrapper"
+          data-aos="fade-right"
+        >
           <p>
             {t("lAHand")}
             {t("touch")}
             {t("aHeart")}
             {t("volunteerWithUnnathi")}
           </p>
-          <a rel="noreferrer" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd5FgrM2Z72F0blVXNgx0Q1zNlR24_b0C7G4J5qAiOy7n_XUA/viewform">
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd5FgrM2Z72F0blVXNgx0Q1zNlR24_b0C7G4J5qAiOy7n_XUA/viewform"
+          >
             <p>Apply for volunteering</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"

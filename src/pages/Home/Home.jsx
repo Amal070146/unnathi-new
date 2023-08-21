@@ -9,11 +9,10 @@ import Map from "../../components/Map/Map";
 import Footer from "../../components/Footer/Footer";
 
 import Swiper from "../../components/Testimonial/Slider";
+import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher";
 
 import AOS from "aos";
-
 import "aos/dist/aos.css";
-import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher";
 AOS.init();
 const Home = () => {
   return (
