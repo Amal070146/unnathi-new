@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import "./Enterprenuership.css";
-import banner from "../../../assets/JoinUspage/yellow-banner-img/enterprenuership.webp";
+import "./Entrepreneurship.css";
+import banner from "../../../assets/JoinUspage/yellow-banner-img/entrepreneurship.webp";
 import timeline from "../../../assets/JoinUspage/timelinebg.webp";
 
 import Navbar from "../../../components/Navbar/Navbar";
@@ -8,8 +8,8 @@ import Footer from "../../../components/Footer/Footer";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
-const Enterprenuership = () => {
-  const { t } = useTranslation(["Enterprenuership"]);
+const Entrepreneurship = () => {
+  const { t } = useTranslation(["Entrepreneurship"]);
   useEffect(() => {
     i18next.changeLanguage("en");
   }, []);
@@ -19,16 +19,16 @@ const Enterprenuership = () => {
       {/* <div className="home-language-switcher">
         <LanguageSwitcher />
       </div> */}
-      <div className="enterprenuership-wrapper">
-        <div className="volunteering-header-sect enterprenuership-header-sect">
+      <div className="entrepreneurship-wrapper">
+        <div className="volunteering-header-sect entrepreneurship-header-sect">
           <h1>{t("entrepreneurship")}</h1>
-          <a href="#about-enterprenuership" className="volunteering-arrow">
+          <a href="#about-entrepreneurship" className="volunteering-arrow">
             <span className="m_scroll_arrows unu"></span>
             <span className="m_scroll_arrows doi"></span>
             <span className="m_scroll_arrows trei"></span>
           </a>
         </div>
-        <div className="enterprenuership-quote-wrapper">
+        <div className="entrepreneurship-quote-wrapper">
           <div>
             <h1>
               <span style={{ color: "#FBBA16", fontWeight: 600 }}>
@@ -53,7 +53,7 @@ const Enterprenuership = () => {
         </div>
         {/* card section starts */}
         <div
-          id="about-enterprenuership"
+          id="about-entrepreneurship"
           className="projectfund-cardset-wrapper"
         >
           <h1 style={{ display: "flex", flexDirection: "column" }}>
@@ -578,9 +578,8 @@ const Enterprenuership = () => {
           <div className="internship-yellow-banner-content-wrapper">
             <h1>{t("embarkUnnathi")}</h1>
             <p>{t("embarkUnnathiText")}</p>
-            <a href="">
-              {/* <p>Apply for the Entrepreneurship Support Programme</p> */}
-              <p>Coming Soon</p>
+            <a target="_blank" rel="noreferrer noopener" href="https://bit.ly/ksumstartupcity">
+               <p>Apply for the Entrepreneurship Support Programme</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
@@ -608,4 +607,4 @@ const Enterprenuership = () => {
   );
 };
 
-export default Enterprenuership;
+export default Entrepreneurship;
