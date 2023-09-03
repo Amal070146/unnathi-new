@@ -22,7 +22,9 @@ import img2 from "../../../assets/NavbarPages/GoverningBody/img2.webp";
 import img3 from "../../../assets/NavbarPages/GoverningBody/image1.webp";
 import img4 from "../../../assets/NavbarPages/GoverningBody/img4.webp";
 import img5 from "../../../assets/NavbarPages/GoverningBody/img5.webp";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 const GoverningBody = () => {
   const { t } = useTranslation(["GoverningBody"]);
   const [openmenu, setopenmenu] = useState(false);
