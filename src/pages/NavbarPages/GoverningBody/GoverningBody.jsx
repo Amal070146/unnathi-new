@@ -72,6 +72,7 @@ const GoverningBody = () => {
         >
           <div className="navbar-desk">
             {navContent.slice(0, 2).map((content, i) => (
+              //find the value of teh link using content from links object
               <a href={`/${content}`} key={i.toString() + content}>
                 <p
                   style={{
@@ -87,6 +88,13 @@ const GoverningBody = () => {
                 </p>
               </a>
             ))}
+            <a
+              href="/tender"
+              style={{ marginTop: "5px", color: navlogo ? "#fff" : "#000" }}
+            >
+              Tender
+            </a>
+
             <a href="/home">
               <img
                 className="nav-logo"
@@ -111,15 +119,52 @@ const GoverningBody = () => {
                 </p>
               </a>
             ))}
-            {/* <LanguageSwitcher /> */}
+            <div className="dropdown">
+              <button style={{ color: navlogo ? "#fff" : "#000" }}>
+                Others&nbsp;
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="8"
+                  viewBox="0 0 14 8"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1L7 7L13 1"
+                    stroke="white"
+                    style={{ stroke: navlogo ? "#fff" : "#000" }}
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="dropdown-content">
+                <a href="https://scdd.kerala.gov.in" target="_blank">
+                  SCDD
+                </a>
+                <a href="https://www.stdd.kerala.gov.in/home-5" target="_blank">
+                  STDD
+                </a>
+                <a href="https://tribal.nic.in" target="_blank">
+                  MoTA
+                </a>
+                <a href="https://socialjustice.gov.in" target="_blank">
+                  Social Justice
+                </a>
+                <a href="https://stcmis.gov.in" target="_blank">
+                  STCMIS
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="navbar-mob">
             <a href="/home">
               <img
                 className="nav-logo"
-                style={{ width: navlogo ? "90px" : "100px" }}
-                src={i18next.language === "en" ? logo : logo_mal}
+                style={{ width: navlogo ? "90px" : "120px" }}
+                src={i18next.language === "mal" ? logo_mal : logo}
                 alt=""
               />
             </a>
@@ -136,24 +181,70 @@ const GoverningBody = () => {
 
             {openmenu && (
               <div className="menu-div">
-                {navContent.map((content, i) => (
-                  <a href={`/${content}`} key={i.toString() + content}>
-                    <p
-                      style={{
-                        color: window.location.href.includes(`/${content}`)
-                          ? "#FBBA16"
-                          : "",
-                        textTransform: "capitalize",
-                        padding: "5px 10px",
-                        borderRadius: "20px",
-                        color: navlogo ? "#fff" : "#000",
-                      }}
-                    >
-                      {content}
-                    </p>
+                <div className="innerSetMenuDiv">
+                  {navContent.map((content, i) => (
+                    <a href={`/${content}`} key={i.toString() + content}>
+                      <p
+                        style={{
+                          color: window.location.href.includes(`/${content}`)
+                            ? "#FBBA16"
+                            : "",
+                          textTransform: "capitalize",
+                          padding: "5px 0px 0px",
+                          borderRadius: "20px",
+                        }}
+                      >
+                        {content}
+                      </p>
+                    </a>
+                  ))}
+                  <a href="/tender" style={{ marginTop: "5px" }}>
+                    Tender
                   </a>
-                ))}
-                {/* <LanguageSwitcher /> */}
+                  <div className="dropdown">
+                    <button>
+                      Others&nbsp;
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                      >
+                        <path
+                          d="M1 1L7 7L13 1"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="https://scdd.kerala.gov.in" target="_blank">
+                        SCDD
+                      </a>
+                      <a
+                        href="https://www.stdd.kerala.gov.in/home-5"
+                        target="_blank"
+                      >
+                        STDD
+                      </a>
+                      <a href="https://tribal.nic.in" target="_blank">
+                        MoTA
+                      </a>
+                      <a href="https://socialjustice.gov.in" target="_blank">
+                        Social Justice
+                      </a>
+                      <a href="https://stcmis.gov.in" target="_blank">
+                        STCMIS
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="language">
+                  {(window.location.pathname === "/home" ||
+                    window.location.pathname === "/") && <LanguageSwitcher />}
+                </div>
               </div>
             )}
           </div>
@@ -174,8 +265,7 @@ const GoverningBody = () => {
             <img src={img1} alt="img" loading="lazy" />
             <h3>{t("chairman")}</h3>
             <h2>{t("radhakrishnan")}</h2>
-            <p>{t("radhakrishnanRole"
-            )}</p>
+            <p>{t("radhakrishnanRole")}</p>
           </div>{" "}
           <div className="governingcontent-individual-wrapper">
             <img src={img2} alt="img" loading="lazy" />
