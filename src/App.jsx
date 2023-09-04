@@ -16,6 +16,7 @@ import VolunteeringEligibility from "./pages/EligibilityCheck/Volunteering/Volun
 import InternshipEligibility from "./pages/EligibilityCheck/Internship/InternshipEligibilty";
 import UasEligibility from "./pages/EligibilityCheck/UAS/UasEligibility";
 import Entrepreneurship from "./pages/JoinUs-pages/Entrepreneurship/Entrepreneurship"
+import Tender from './pages/NavbarPages/Tender/Tender'
 function App() {
   //Check whether the path contains the query parameter lang and if it does, set the language to the value of the query parameter
   const urlParams = new URLSearchParams(window.location.search);
@@ -110,6 +111,10 @@ function App() {
     //   path: "/internshipeligibility",
     //   element: <InternshipEligibility />,
     // },
+    {
+      path: "/tender",
+      element: <Tender />,
+    },
   ]);
   return <RouterProvider router={router} />;
 }
