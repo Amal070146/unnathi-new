@@ -123,22 +123,25 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-            <div class="dropdown-content">
-              <a href="https://scdd.kerala.gov.in" target="_blank">
-                SCDD
-              </a>
-              <a href="https://www.stdd.kerala.gov.in/home-5" target="_blank">
-                STDD
-              </a>
-              <a href="https://tribal.nic.in" target="_blank">
-                MoTA
-              </a>
-              <a href="https://socialjustice.gov.in" target="_blank">
-                Social Justice
-              </a>
-              <a href="https://stcmis.gov.in" target="_blank">
-                STCMIS
-              </a>
+          <div id="dropdown-content" class="dropdown-content">
+              <div className="space-container"></div>
+              <div className="dropdown-content-in">
+                <a href="https://scdd.kerala.gov.in" target="_blank">
+                  SCDD
+                </a>
+                <a href="https://www.stdd.kerala.gov.in/home-5" target="_blank">
+                  STDD
+                </a>
+                <a href="https://tribal.nic.in" target="_blank">
+                  MoTA
+                </a>
+                <a href="https://socialjustice.gov.in" target="_blank">
+                  Social Justice
+                </a>
+                <a href="https://stcmis.gov.in" target="_blank">
+                  STCMIS
+                </a>
+              </div>
             </div>
           </div>
         </div>

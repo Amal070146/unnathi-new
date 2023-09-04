@@ -40,9 +40,10 @@
   background-color: transparent;
   border: none;
   color: white;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 17px;
   cursor: pointer;
+  font-family: "Red Hat Text";
 }
 .navbar .dropdown {
   position: relative;
@@ -51,17 +52,27 @@
 .dropdown .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  min-width: 190px;
   z-index: 1;
-  padding: 20px 20px;
-  background-color: rgba(0, 0, 0, 0.2);
-  margin-top:0px;
+  margin-top: 0px;
 }
 .dropdown:hover .dropdown-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.dropdown:hover .dropdown-content .space-container {
+  height: 20px;
+}
+.dropdown:hover .dropdown-content .dropdown-content-in {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  padding: 25px 25px;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
 }
 .dropdown .dropdown-content a:hover {
   border-bottom: 4px solid #eaa903;
@@ -97,14 +108,14 @@
     background-color: rgba(255, 255, 255, 1);
     width: 100%;
     height: 90vh;
-    padding:160px 10px 0px 10px;
+    padding: 160px 10px 0px 10px;
     gap: 20px;
   }
   .innerSetMenuDiv {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin-top: -15vh;
+    margin-top: -10vh;
   }
 
   .menu-div a,
@@ -124,7 +135,18 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
     min-width: none;
     background-color: rgba(0, 0, 0, 0);
-    margin-top: 10px;
+    margin-top: 0px;
+    min-width: 140px;
+  }
+  .dropdown:hover .dropdown-content .dropdown-content-in {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0);
+
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
   }
   .navbar {
     padding: 0;
