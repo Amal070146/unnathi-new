@@ -201,19 +201,6 @@ const Curious = () => {
             </div>
           </div>
         </a>
-        {/* href="https://docs.google.com/forms/d/e/1FAIpQLSd5FgrM2Z72F0blVXNgx0Q1zNlR24_b0C7G4J5qAiOy7n_XUA/viewform" */}
-        <a href="/volunteering" className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <img src={kyyb} alt="" />
-              <p>{t("volunteering")}</p>
-            </div>
-            <div className="flip-card-back">
-              <img src={kyyy} alt="" />
-              <p style={{ color: "white" }}>{t("volunteering")}</p>
-            </div>
-          </div>
-        </a>
         <a href="/uas" className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
@@ -265,6 +252,19 @@ const Curious = () => {
                 />
               </svg>
               <p style={{ color: "white" }}>{t("uas")}</p>
+            </div>
+          </div>
+        </a>
+        {/* href="https://docs.google.com/forms/d/e/1FAIpQLSd5FgrM2Z72F0blVXNgx0Q1zNlR24_b0C7G4J5qAiOy7n_XUA/viewform" */}
+        <a href="/volunteering" className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <img src={kyyb} alt="" />
+              <p>{t("volunteering")}</p>
+            </div>
+            <div className="flip-card-back">
+              <img src={kyyy} alt="" />
+              <p style={{ color: "white" }}>{t("volunteering")}</p>
             </div>
           </div>
         </a>
