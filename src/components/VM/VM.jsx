@@ -2,7 +2,6 @@ import React from "react";
 import "./VM.css";
 import JOIN from "../../components/JoinUs/JoinUs";
 import { useTranslation } from "react-i18next";
-import pdf from "./assets/Corporate-Engagement-Proposal-with-Unnathi.pdf";
 
 const VM = () => {
   const { t } = useTranslation(["VM"]);
@@ -105,7 +104,7 @@ const VM = () => {
       </div>
       <JOIN />
       <div className="downladButtonCV">
-        <a href={pdf} download>
+        <a target="_blank" rel="rel noreferrer" href="https://drive.google.com/file/d/1y3rj2D6bZ4Xh0lOyC3hpAKG9rDfBGeI3/view" download>
           Corporate Volunteering&nbsp;
           <svg
             xmlns="http://www.w3.org/2000/svg"
