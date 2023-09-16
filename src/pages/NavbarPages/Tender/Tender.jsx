@@ -7,12 +7,12 @@ import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
 const data = [
-  {
-    id: 1,
-    title:
-      "Quotation Invited for GPR Survey for mapping underground utilities @ Peroorkada in Thiruvananthapuram District",
-    link: "https://web.rbdck.com/wp-content/uploads/2023/09/GPR-Survey-quotation-final.pdf",
-  },
+  // {
+  //   id: 1,
+  //   title:
+  //     "Quotation Invited for GPR Survey for mapping underground utilities @ Peroorkada in Thiruvananthapuram District",
+  //   link: "https://web.rbdck.com/wp-content/uploads/2023/09/GPR-Survey-quotation-final.pdf",
+  // },
 ];
 
 const Tender = () => {
