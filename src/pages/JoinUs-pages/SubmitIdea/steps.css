@@ -2,7 +2,7 @@
   --wave-length: 290px;
   height: auto;
   margin: 0px;
-  min-height: 100vh;
+
   width: calc(100%);
   margin-bottom: 60px;
 }
@@ -130,7 +130,9 @@
   .activities .content .desktop {
     display: none;
   }
-
+.activities{
+  margin-bottom: 40px;
+}
   .activities .content .mobile {
     display: flex;
     flex-direction: column;

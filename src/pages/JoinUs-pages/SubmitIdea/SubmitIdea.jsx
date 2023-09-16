@@ -8,6 +8,9 @@ import Footer from "../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 import i18next from "i18next";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 const SubmitIdea = () => {
   const { t } = useTranslation(["SubmitIdea"]);
   useEffect(() => {
@@ -52,7 +55,11 @@ const SubmitIdea = () => {
         </div>
         {/* about of submitidea */}
         {/* submit idea card */}
-        <div id="about-submitidea" className="about-volunteering">
+        <div
+          id="about-submitidea"
+          className="about-volunteering"
+          data-aos="fade-right"
+        >
           <div className="about-volunteering-heading">
             <h1>
               <span>{t("whyShare")}</span>&nbsp;{t("withUnnathi")}
@@ -309,7 +316,7 @@ const SubmitIdea = () => {
         {/* about of submitidea ends */}
 
         {/* guidelines start */}
-        <div className="submitidea-guidelines-wrapper">
+        <div className="submitidea-guidelines-wrapper" data-aos="fade-right">
           <h1>
             <span>{t("guidelines")}</span>&nbsp;{t("forSubmission")}
           </h1>
@@ -453,26 +460,42 @@ const SubmitIdea = () => {
               <div class="activities-container desktop">
                 <div class="left">
                   <div class="activity-none"></div>
-                  <div class="activity activity2" style={{ opacity: "1" }}>
+                  <div
+                    class="activity activity2"
+                    data-aos="fade-right"
+                    style={{ opacity: "1" }}
+                  >
                     <p class="date">2</p>
 
                     <span class="description">{t("step2")}</span>
                   </div>
                   <div class="activity-none"></div>
-                  <div class="activity activity4" style={{ opacity: "1" }}>
+                  <div
+                    class="activity activity4"
+                    data-aos="fade-right"
+                    style={{ opacity: "1" }}
+                  >
                     <p class="date">4</p>
 
                     <span class="description">{t("step4")}</span>
                   </div>
                 </div>
                 <div class="right">
-                  <div class="activity activity1" style={{ opacity: "1" }}>
+                  <div
+                    class="activity activity1"
+                    data-aos="fade-left"
+                    style={{ opacity: "1" }}
+                  >
                     <p class="date">1</p>
 
                     <span class="description">{t("step1")}</span>
                   </div>
                   <div class="activity-none"></div>
-                  <div class="activity activity3" style={{ opacity: "1" }}>
+                  <div
+                    class="activity activity3"
+                    data-aos="fade-left"
+                    style={{ opacity: "1" }}
+                  >
                     <p class="date">3</p>
 
                     <span class="description">{t("step3")}</span>
@@ -480,7 +503,6 @@ const SubmitIdea = () => {
                 </div>
               </div>
               <div class="activities-container mobile">
-           
                 <div class="content-in-timeline-sets">
                   <h3>1</h3>
                   <p>{t("step1")}</p>
@@ -520,7 +542,7 @@ const SubmitIdea = () => {
         </div>
         {/*  timeline end */}
         {/* yellow banner start */}
-        <div className="internship-yellow-banner-wrapper">
+        <div className="internship-yellow-banner-wrapper" data-aos="fade-right">
           <div className="internship-yellow-banner-content-wrapper">
             <h1>
               <span>{t("beTheSpark")}</span>
@@ -529,7 +551,7 @@ const SubmitIdea = () => {
             <p>{t("transformationText")}</p>
             <a href="">
               {/* <p>{t("submitYourIdea")}</p> */}
-              <p>Coming Soon</p>
+              <p>Coming Soon!</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"

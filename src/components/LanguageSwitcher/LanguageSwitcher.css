@@ -22,9 +22,10 @@
   align-items: center;
   justify-content: center;
   gap: 1px;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 900px) {
   .LanguageSwitcher-wrapper {
     position: initial;
   }

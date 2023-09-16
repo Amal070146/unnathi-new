@@ -1,37 +1,38 @@
-import "./Navbar.css";
-import logo from "../../assets/logo.webp";
-import logo_mal from "../../assets/logo_mal.webp";
+import logo from "../../../assets/logo.webp";
+import logo_mal from "../../../assets/logo_mal.webp";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import { RxCross1 } from "react-icons/rx";
 import { AiFillCloseCircle } from "react-icons/ai";
-import { useReactPath } from "./path.hook";
+import { useReactPath } from "../../../components/Navbar/path.hook";
 
-import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
-
 const Navbar = () => {
-  const { t } = useTranslation(["Navbar"]);
+      const { t } = useTranslation(["GoverningBody"]);
   const [openmenu, setopenmenu] = useState(false);
   const [navlogo, setnavlogo] = useState(false);
   function openMenu() {
+    console.log("true");
     setopenmenu(!openmenu);
   }
   function closeMenu() {
     setopenmenu(false);
   }
 
+  useEffect(() => {
+    i18next.changeLanguage("en");
+  }, []);
+
   const path = useReactPath();
   const navContent = [
-    // t("about"),
     t("governingBody"),
     t("UAS"),
     t("internship"),
     t("volunteering"),
   ];
-
   useEffect(() => {}, [path]);
   const changenavlogo = () => {
     window.scrollY >= 250 ? setnavlogo(true) : setnavlogo(false);
@@ -45,7 +46,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", changenavlogo);
     };
   }, []);
-
   return (
     <div className="navbar-wrapper">
       <div
@@ -65,13 +65,17 @@ const Navbar = () => {
                     : "",
                   textTransform: "capitalize",
                   padding: "5px 10px 0px",
+                  color: navlogo ? "#fff" : "#000",
                 }}
               >
                 {content}
               </p>
             </a>
           ))}
-          <a href="/tender" style={{ marginTop: "5px" }}>
+          <a
+            href="/tender"
+            style={{ marginTop: "5px", color: navlogo ? "#fff" : "#000" }}
+          >
             Tender
           </a>
 
@@ -92,6 +96,7 @@ const Navbar = () => {
                     : "",
                   textTransform: "capitalize",
                   padding: "5px 10px 0px",
+                  color: navlogo ? "#fff" : "#000",
                 }}
               >
                 {content}
@@ -99,7 +104,7 @@ const Navbar = () => {
             </a>
           ))}
           <div className="dropdown">
-            <button>
+            <button style={{ color: navlogo ? "#fff" : "#000" }}>
               Others&nbsp;
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -111,13 +116,14 @@ const Navbar = () => {
                 <path
                   d="M1 1L7 7L13 1"
                   stroke="white"
+                  style={{ stroke: navlogo ? "#fff" : "#000" }}
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
               </svg>
             </button>
-            <div id="dropdown-content" class="dropdown-content">
+          <div id="dropdown-content" class="dropdown-content">
               <div className="space-container"></div>
               <div className="dropdown-content-in">
                 <a href="https://scdd.kerala.gov.in" target="_blank">
@@ -159,7 +165,7 @@ const Navbar = () => {
             {openmenu ? (
               <RxCross1 style={{ color: "black", fontSize: "40px" }} />
             ) : (
-              <BiMenu style={{ color: "white", fontSize: "40px" }} />
+              <BiMenu style={{ color: "black", fontSize: "40px" }} />
             )}
           </button>
 
@@ -203,28 +209,25 @@ const Navbar = () => {
                       />
                     </svg>
                   </button>
-                  <div id="dropdown-content" class="dropdown-content">
-                    <div className="space-container"></div>
-                    <div className="dropdown-content-in">
-                      <a href="https://scdd.kerala.gov.in" target="_blank">
-                        SCDD
-                      </a>
-                      <a
-                        href="https://www.stdd.kerala.gov.in/home-5"
-                        target="_blank"
-                      >
-                        STDD
-                      </a>
-                      <a href="https://tribal.nic.in" target="_blank">
-                        MoTA
-                      </a>
-                      <a href="https://socialjustice.gov.in" target="_blank">
-                        Social Justice
-                      </a>
-                      <a href="https://stcmis.gov.in" target="_blank">
-                        STCMIS
-                      </a>
-                    </div>
+                  <div class="dropdown-content">
+                    <a href="https://scdd.kerala.gov.in" target="_blank">
+                      SCDD
+                    </a>
+                    <a
+                      href="https://www.stdd.kerala.gov.in/home-5"
+                      target="_blank"
+                    >
+                      STDD
+                    </a>
+                    <a href="https://tribal.nic.in" target="_blank">
+                      MoTA
+                    </a>
+                    <a href="https://socialjustice.gov.in" target="_blank">
+                      Social Justice
+                    </a>
+                    <a href="https://stcmis.gov.in" target="_blank">
+                      STCMIS
+                    </a>
                   </div>
                 </div>
               </div>
