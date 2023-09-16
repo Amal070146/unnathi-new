@@ -537,7 +537,7 @@ const ProjectsFund = () => {
             <p>{t("yourVisionTheirDreamsOurSharedMissionText")}</p>
             <a href="">
               {/* <p>{t("exploreCollaborateProjects")}</p> */}
-              <p>Explore & Collaborate on Projects</p>
+              <p>Coming Soon!</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"

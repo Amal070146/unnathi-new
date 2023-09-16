@@ -13,24 +13,6 @@ const data = [
       "Quotation Invited for GPR Survey for mapping underground utilities @ Peroorkada in Thiruvananthapuram District",
     link: "https://web.rbdck.com/wp-content/uploads/2023/09/GPR-Survey-quotation-final.pdf",
   },
-  {
-    id: 2,
-    title:
-      "Quotation Invited for GPR Survey for mapping underground utilities @ Peroorkada in Thiruvananthapuram District",
-    link: "https://web.rbdck.com/wp-content/uploads/2023/09/GPR-Survey-quotation-final.pdf",
-  },
-  {
-    id: 3,
-    title:
-      "Quotation Invited for GPR Survey for mapping underground utilities @ Peroorkada in Thiruvananthapuram District",
-    link: "https://web.rbdck.com/wp-content/uploads/2023/09/GPR-Survey-quotation-final.pdf",
-  },
-  {
-    id: 4,
-    title:
-      "Quotation Invited for GPR Survey for mapping underground utilities @ Peroorkada in Thiruvananthapuram District",
-    link: "https://web.rbdck.com/wp-content/uploads/2023/09/GPR-Survey-quotation-final.pdf",
-  },
 ];
 
 const Tender = () => {
@@ -38,7 +20,7 @@ const Tender = () => {
     <div className={styles.outerWrapper}>
       <Navbar />
       <div className={styles.tenderWrapper}>
-        <h1>quotation for GPR Survey for mapping underground utilities.</h1>
+        <h1>No new tenders are listed. Kindly check back later.</h1>
         <div>
           {data.map(({ id, title, link }) => {
             return (

@@ -551,7 +551,7 @@ const SubmitIdea = () => {
             <p>{t("transformationText")}</p>
             <a href="">
               {/* <p>{t("submitYourIdea")}</p> */}
-              <p>Submit Idea</p>
+              <p>Coming Soon!</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
