@@ -11,7 +11,7 @@ import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitc
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 const Navbar = () => {
-      const { t } = useTranslation(["GoverningBody"]);
+  const { t } = useTranslation(["GoverningBody"]);
   const [openmenu, setopenmenu] = useState(false);
   const [navlogo, setnavlogo] = useState(false);
   function openMenu() {
@@ -73,10 +73,10 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="/tender"
+            href="https://www.odepc.net/unnathi/"
             style={{ marginTop: "5px", color: navlogo ? "#fff" : "#000" }}
           >
-            Tender
+            Scholorships
           </a>
 
           <a href="/home">
@@ -123,9 +123,12 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-          <div id="dropdown-content" class="dropdown-content">
+            <div id="dropdown-content" class="dropdown-content">
               <div className="space-container"></div>
               <div className="dropdown-content-in">
+                <a href="/tender" target="_blank">
+                  Tenders
+                </a>
                 <a href="https://scdd.kerala.gov.in" target="_blank">
                   SCDD
                 </a>
@@ -188,8 +191,11 @@ const Navbar = () => {
                     </p>
                   </a>
                 ))}
-                <a href="/tender" style={{ marginTop: "5px" }}>
-                  Tender
+                <a
+                  href="https://www.odepc.net/unnathi/"
+                  style={{ marginTop: "5px" }}
+                >
+                  Scholorships
                 </a>
                 <div className="dropdown">
                   <button>
@@ -210,6 +216,9 @@ const Navbar = () => {
                     </svg>
                   </button>
                   <div class="dropdown-content">
+                    <a href="/tender" target="_blank">
+                      Tenders
+                    </a>
                     <a href="https://scdd.kerala.gov.in" target="_blank">
                       SCDD
                     </a>
