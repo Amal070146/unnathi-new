@@ -71,8 +71,8 @@ const Navbar = () => {
               </p>
             </a>
           ))}
-          <a href="/tender" style={{ marginTop: "5px" }}>
-            Tender
+          <a href="https://www.odepc.net/unnathi/" style={{ marginTop: "5px" }}>
+           { t("scholarships")}
           </a>
 
           <a href="/home">
@@ -120,6 +120,9 @@ const Navbar = () => {
             <div id="dropdown-content" class="dropdown-content">
               <div className="space-container"></div>
               <div className="dropdown-content-in">
+                <a href="/tender" target="_blank">
+                  Tenders
+                </a>
                 <a href="https://scdd.kerala.gov.in" target="_blank">
                   SCDD
                 </a>
@@ -182,8 +185,11 @@ const Navbar = () => {
                     </p>
                   </a>
                 ))}
-                <a href="/tender" style={{ marginTop: "5px" }}>
-                  Tender
+                <a
+                  href="https://www.odepc.net/unnathi/"
+                  style={{ marginTop: "5px" }}
+                >
+                 { t("scholarships")}
                 </a>
                 <div className="dropdown">
                   <button>
@@ -206,6 +212,9 @@ const Navbar = () => {
                   <div id="dropdown-content" class="dropdown-content">
                     <div className="space-container"></div>
                     <div className="dropdown-content-in">
+                      <a href="/tender" target="_blank">
+                        Tenders
+                      </a>
                       <a href="https://scdd.kerala.gov.in" target="_blank">
                         SCDD
                       </a>
