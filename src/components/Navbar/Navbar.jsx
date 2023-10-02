@@ -72,7 +72,7 @@ const Navbar = () => {
             </a>
           ))}
           <a href="https://www.odepc.net/unnathi/" style={{ marginTop: "5px" }}>
-            Scholorships
+           { t("scholarships")}
           </a>
 
           <a href="/home">
@@ -189,7 +189,7 @@ const Navbar = () => {
                   href="https://www.odepc.net/unnathi/"
                   style={{ marginTop: "5px" }}
                 >
-                  Scholorships
+                 { t("scholarships")}
                 </a>
                 <div className="dropdown">
                   <button>
