@@ -1,9 +1,10 @@
 import React from 'react'
+import './ProjectsFunds.css'
 
 const ListProject = (value) => {
     console.log(value)
   return (
-    <div>
+    <div className='SingleProjectComponent'>
       hello
     </div>
   )

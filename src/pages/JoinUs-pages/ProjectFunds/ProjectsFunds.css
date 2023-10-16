@@ -285,14 +285,19 @@
   height: 3.2vw;
 }
 
-.ProjectListingBoxWrapper >div{
+.ProjectListingBoxWrapper > div {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   background-color: #fbba16;
   flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
 }
-
+.SingleProjectComponent {
+  min-width: 250px;
+  background-color: aqua;
+}
 @media screen and (max-width: 850px) {
   .ProjectListingBoxWrapper h1 {
     font-size: 5vw;
@@ -303,10 +308,13 @@
   }
 }
 @media screen and (max-width: 500px) {
-  .submitidea-timeline-wrapper h1 {
+  .ProjectListingBoxWrapper h1 {
     font-size: 5.8vw;
   }
-  .submitidea-timeline-wrapper h1 span {
+  .ProjectListingBoxWrapper h1 span {
     height: 5.1vw;
+  }
+  .ProjectListingBoxWrapper > div {
+   
   }
 }
