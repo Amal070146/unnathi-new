@@ -285,6 +285,14 @@
   height: 3.2vw;
 }
 
+.ProjectListingBoxWrapper >div{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fbba16;
+  flex-wrap: wrap;
+}
+
 @media screen and (max-width: 850px) {
   .ProjectListingBoxWrapper h1 {
     font-size: 5vw;
