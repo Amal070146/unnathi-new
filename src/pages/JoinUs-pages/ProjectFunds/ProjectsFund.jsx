@@ -342,6 +342,12 @@ const ProjectsFund = () => {
           </div>
         </div>
         {/* card section ends */}
+        <div className="ProjectListingBoxWrapper">
+          <h1>
+            <span>Explore</span>&nbsp;our Projects
+          </h1>
+        </div>
+
         {/*  timeline start */}
 
         <div className="submitidea-timeline-wrapper">

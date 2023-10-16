@@ -10,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
- font-family: "Red Hat Text","Noto Sans Malayalam";
+  font-family: "Red Hat Text", "Noto Sans Malayalam";
 }
 
 .projectfund-wrapper .submitidea-timeline-content {
@@ -237,14 +237,14 @@
   .projectfund-cardset-individual {
     gap: 12px;
     width: 300px;
-      padding: 15px 20px;
+    padding: 15px 20px;
   }
 
   .projectfund-cardset-content-wrapper div:nth-child(2),
-  .projectfund-cardset-content-wrapper div:nth-child(4), .projectfund-cardset-content-wrapper div:nth-child(6) {
+  .projectfund-cardset-content-wrapper div:nth-child(4),
+  .projectfund-cardset-content-wrapper div:nth-child(6) {
     border-left: 0.25px solid rgba(0, 0, 0, 0.2);
   }
-
 
   .projectfund-cardset-content-wrapper div:nth-child(5) {
     border-bottom: 0.25px solid rgba(0, 0, 0, 0.2);
@@ -257,6 +257,48 @@
   }
   .projectfund-cardset-wrapper h1 span {
     border-bottom: 1.6vw solid #fbba16;
+    height: 5.1vw;
+  }
+}
+
+.ProjectListingBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 100px; */
+  width: 100%;
+  padding: 4vh 5vw 0vh;
+}
+
+.ProjectListingBoxWrapper h1 {
+  font-weight: 500;
+  font-size: 3.5vw;
+  line-height: 1;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.ProjectListingBoxWrapper h1 span {
+  border-bottom: 1vw solid #fbba16;
+  height: 3.2vw;
+}
+
+@media screen and (max-width: 850px) {
+  .ProjectListingBoxWrapper h1 {
+    font-size: 5vw;
+  }
+  .ProjectListingBoxWrapper h1 span {
+    height: 4.6vw;
+    border-bottom: 1.6vw solid #fbba16;
+  }
+}
+@media screen and (max-width: 500px) {
+  .submitidea-timeline-wrapper h1 {
+    font-size: 5.8vw;
+  }
+  .submitidea-timeline-wrapper h1 span {
     height: 5.1vw;
   }
 }
