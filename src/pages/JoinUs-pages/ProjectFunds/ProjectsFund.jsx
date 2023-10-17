@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ListProject from "./ListProject";
 AOS.init();
 const ProjectsFund = () => {
   const { t } = useTranslation(["ProjectsFund"]);
@@ -342,6 +343,34 @@ const ProjectsFund = () => {
           </div>
         </div>
         {/* card section ends */}
+        <div className="ProjectListingBoxWrapper">
+          <h1>
+            <span>Explore</span>&nbsp;our Projects
+          </h1>
+          <div>
+            <ListProject
+              title="This is project"
+              knowMore="https://www.google.com"
+              SupportUs="1"
+            />
+            <ListProject
+              title="This is project"
+              knowMore="https://www.google.com"
+              SupportUs="1"
+            />{" "}
+            <ListProject
+              title="This is project"
+              knowMore="https://www.google.com"
+              SupportUs="1"
+            />{" "}
+            <ListProject
+              title="This is project"
+              knowMore="https://www.google.com"
+              SupportUs="1"
+            />
+          </div>
+        </div>
+
         {/*  timeline start */}
 
         <div className="submitidea-timeline-wrapper">
