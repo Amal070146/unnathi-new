@@ -348,26 +348,7 @@ const ProjectsFund = () => {
             <span>Explore</span>&nbsp;our Projects
           </h1>
           <div>
-            <ListProject
-              title="This is project"
-              knowMore="https://www.google.com"
-              SupportUs="1"
-            />
-            <ListProject
-              title="This is project"
-              knowMore="https://www.google.com"
-              SupportUs="1"
-            />{" "}
-            <ListProject
-              title="This is project"
-              knowMore="https://www.google.com"
-              SupportUs="1"
-            />{" "}
-            <ListProject
-              title="This is project"
-              knowMore="https://www.google.com"
-              SupportUs="1"
-            />
+            <ListProject />
           </div>
         </div>
 

@@ -1,26 +1,46 @@
-import React from 'react'
-import './ProjectsFunds.css'
+import React, { useState } from "react";
+import "./ProjectsFunds.css";
 
-const ListProject = (value) => {
-    console.log(value)
+const ListProject = () => {
+  const [data, setData] = useState(require("./data.json"));
+  console.log(data);
   return (
-    <div className='SingleProjectComponent'>
-      <div className='BackgroundCComponent'></div>
-      <div className='FrontComponent'>
-        <h1>{value.title}</h1>
-        <div>
-          <button className='KnowMore'>Know More&nbsp;<ArrowWhite /></button>
-          <button>Support Us&nbsp;<HeartLogo /></button>
+    <>
+      {data.map((value) => (
+        <div className="SingleProjectComponent">
+          <div className="BackgroundCComponent"></div>
+          <div className="FrontComponent">
+            <h1>{value.projectName}</h1>
+            <div>
+              <a
+                href={value.driveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="KnowMore">
+                  Know More&nbsp;
+                  <ArrowWhite />
+                </button>
+              </a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdw2s6WBlIBHuvTXldp8nNFcEUk7b_Rp5ONksHcxvuFPDEJgA/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>
+                  Support Us&nbsp;
+                  <HeartLogo />
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  )
-}
+      ))}
+    </>
+  );
+};
 
-export default ListProject
-
-
-
+export default ListProject;
 
 export const ArrowWhite = () => {
   return (
@@ -39,9 +59,7 @@ export const ArrowWhite = () => {
       />
     </svg>
   );
-}
-
-
+};
 
 export const HeartLogo = () => {
   return (
@@ -61,4 +79,4 @@ export const HeartLogo = () => {
       />
     </svg>
   );
-}
+};
