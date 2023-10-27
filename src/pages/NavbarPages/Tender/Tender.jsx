@@ -26,7 +26,7 @@ const Tender = () => {
     <div className={styles.outerWrapper}>
       <Navbar />
       <div className={styles.tenderWrapper}>
-        <h1>The currently tenders, are listed below, kindly click over them to know more.</h1>
+        <h1>The current tenders are listed below. Kindly click over them to know more.</h1>
         <div>
           {data.map(({ id, title, link }) => {
             return (
