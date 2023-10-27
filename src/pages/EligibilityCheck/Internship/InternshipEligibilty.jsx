@@ -284,7 +284,7 @@ const InternshipEligibility = (props) => {
                     <a
                       className="applybutton"
                       target="_blank"
-                      href="https://forms.gle/GV56Vb5D7qP6ZhcR6"
+                      href="https://forms.zohopublic.in/supratim092020/form/InternshipApplication/formperma/NkYh_BgHggYAr3IMS2OnXkwoQIk6eM6qauM2qYqfThE"
                       style={{ background: "#FBBA16", color: "white" }}
                     >
                       <a style={{ color: "white" }}>Apply</a>
