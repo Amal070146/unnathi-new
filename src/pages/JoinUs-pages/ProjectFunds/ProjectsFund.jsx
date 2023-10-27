@@ -547,7 +547,14 @@ const ProjectsFund = () => {
             <p>{t("yourVisionTheirDreamsOurSharedMissionText")}</p>
             <a href="">
               {/* <p>{t("exploreCollaborateProjects")}</p> */}
-              <p>Coming Soon!</p>
+              <a
+                style={{height: "2rem"}}
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdw2s6WBlIBHuvTXldp8nNFcEUk7b_Rp5ONksHcxvuFPDEJgA/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p>Support Us</p>
+              </a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="23"
