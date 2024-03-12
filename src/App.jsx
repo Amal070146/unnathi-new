@@ -17,6 +17,7 @@ import InternshipEligibility from "./pages/EligibilityCheck/Internship/Internshi
 import UasEligibility from "./pages/EligibilityCheck/UAS/UasEligibility";
 import Entrepreneurship from "./pages/JoinUs-pages/Entrepreneurship/Entrepreneurship"
 import Tender from './pages/NavbarPages/Tender/Tender'
+import GovernmentOrders from './pages/NavbarPages/GovernmentOrders/GovernmentOrders'
 function App() {
   //Check whether the path contains the query parameter lang and if it does, set the language to the value of the query parameter
   const urlParams = new URLSearchParams(window.location.search);
@@ -115,6 +116,10 @@ function App() {
       path: "/tender",
       element: <Tender />,
     },
+    {
+      path: "/governmentorders",
+      element: <GovernmentOrders />,
+    }
   ]);
   return <RouterProvider router={router} />;
 }

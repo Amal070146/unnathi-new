@@ -33,7 +33,7 @@ const Navbar = () => {
     t("internship"),
     t("volunteering"),
   ];
-  useEffect(() => {}, [path]);
+  useEffect(() => { }, [path]);
   const changenavlogo = () => {
     window.scrollY >= 250 ? setnavlogo(true) : setnavlogo(false);
     return navlogo;
@@ -76,7 +76,7 @@ const Navbar = () => {
             href="https://www.odepc.net/unnathi/"
             style={{ marginTop: "5px", color: navlogo ? "#fff" : "#000" }}
           >
-           { t("scholarships")}
+            {t("scholarships")}
           </a>
 
           <a href="/home">
@@ -144,6 +144,9 @@ const Navbar = () => {
                 <a href="https://stcmis.gov.in" target="_blank">
                   STCMIS
                 </a>
+                <a href="/governmentorders" target="_blank">
+                  Government Orders
+                </a>
               </div>
             </div>
           </div>
@@ -195,7 +198,7 @@ const Navbar = () => {
                   href="https://www.odepc.net/unnathi/"
                   style={{ marginTop: "5px" }}
                 >
-                 { t("scholarships")}
+                  {t("scholarships")}
                 </a>
                 <div className="dropdown">
                   <button>
@@ -236,6 +239,9 @@ const Navbar = () => {
                     </a>
                     <a href="https://stcmis.gov.in" target="_blank">
                       STCMIS
+                    </a>
+                    <a href="/governmentorders" target="_blank">
+                      Government Orders
                     </a>
                   </div>
                 </div>
