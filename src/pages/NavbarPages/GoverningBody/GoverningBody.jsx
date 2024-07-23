@@ -6,7 +6,7 @@ import headerimg from "../../../assets/NavbarPages/GoverningBody/header-img.webp
 
 
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
+// import i18next from "i18next";
 
 import img1 from "../../../assets/NavbarPages/GoverningBody/img1.webp";
 import img2 from "../../../assets/NavbarPages/GoverningBody/img2.webp";
@@ -45,12 +45,7 @@ const GoverningBody = () => {
             <h2>{t("jayatilak")}</h2>
             <p>{t("jayatilakRole")}</p>
           </div>{" "}
-          <div className="governingcontent-individual-wrapper">
-            <img src={img3} alt="img" loading="lazy" />
-            <h3>{t("convenorCeo")}</h3>
-            <h2>{t("prasanth")}</h2>
-            <p>{t("prasnathRole")}</p>
-          </div>{" "}
+     
           <div className="governingcontent-individual-wrapper">
             <img src={img4} alt="img" loading="lazy" />
             <h3>{t("member")}</h3>
